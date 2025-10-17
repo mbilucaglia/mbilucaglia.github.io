@@ -18,6 +18,17 @@ author:
   github: "marcobilucaglia"
   linkedin: ""   # optional
 
+# === Papers ===
+scholar:
+  source: _bibliography
+  bibliography: papers.bib
+  bibliography_template: bibliography  # uses theme’s default item template
+  style: apa                           # pick any CSL (apa, ieee, nature, etc., if present)
+  sort_by: year
+  order: descending
+  group_by: year
+  group_order: descending
+
 # === Theme ===
 remote_theme: academicpages/academicpages.github.io
 plugins:
