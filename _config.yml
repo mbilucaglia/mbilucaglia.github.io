@@ -1,5 +1,8 @@
-title: Marco Bilucaglia
-description: Academic profile
-remote_theme: mmistakes/minimal-mistakes
-plugins:
-  - jekyll-include-cache
+name: Marco Bilucaglia
+title: Marco Bilucaglia's personal website
+description: Ph.D. Candidate at Università IULM
+email: marco.bilucaglia@studenti.iulm.it
+github_username: yourusername
+scholar: https://scholar.google.it/citations?user=RvAqXUIAAAAJ&hl=en
+scopus: https://www.scopus.com/authid/detail.uri?authorId=57188983512
+orcid: 0000-0002-8718-2825
