@@ -35,6 +35,8 @@ plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
   - jekyll-paginate
+include:
+  - _pages
 
 # === Collections ===
 collections:
