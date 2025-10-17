@@ -1,8 +1,55 @@
+# === Site settings ===
+locale: en-US
 name: Marco Bilucaglia
-title: Marco Bilucaglia's personal website
-description: Ph.D. Candidate at Università IULM
-email: marco.bilucaglia@studenti.iulm.it
-github_username: yourusername
-scholar: https://scholar.google.it/citations?user=RvAqXUIAAAAJ&hl=en
-scopus: https://www.scopus.com/authid/detail.uri?authorId=57188983512
-orcid: 0000-0002-8718-2825
+title: "Marco Bilucaglia"
+subtitle: "Bioengineer · Ph.D. Candidate · Neuromarketing"
+description: "Biomedical Signal Processing, Machine Learning, Neuromarketing, Human Performance"
+url: ""  # set automatically by GitHub Pages
+baseurl: ""
+repository: marcobilucaglia/marcobilucaglia.github.io
+
+# === Author ===
+author:
+  name: "Marco Bilucaglia, M.Sc., C.Eng."
+  avatar: "/assets/img/headshot.jpg" # replace with your headshot filename
+  bio: "Bioengineer at Behavior and Brain Lab IULM. Ph.D. candidate (Neuromarketing) at Università IULM."
+  location: "Milan, Italy"
+  email: "marco.bilucaglia@studenti.iulm.it"
+  orcid: "0000-0000-0000-0000"  # replace with real ORCID
+  scholar: "https://bit.ly/3GY8weY"
+  website: ""
+  github: marcobilucaglia
+  linkedin: ""  # add your vanity handle
+
+# === Appearance ===
+remote_theme: academicpages/academicpages
+plugins:
+  - jekyll-include-cache
+  - jekyll-paginate
+
+# === Collections ===
+collections:
+  teaching:
+    output: true
+  publications:
+    output: true
+  talks:
+    output: true
+
+# === Markdown / kramdown ===
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# === Navigation ===
+main_nav:
+  - title: "About"
+    url: /
+  - title: "Publications"
+    url: /publications/
+  - title: "Teaching"
+    url: /teaching/
+  - title: "CV"
+    url: /cv/
+  - title: "Contact"
+    url: /contact/
