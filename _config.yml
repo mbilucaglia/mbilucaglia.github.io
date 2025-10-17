@@ -1,27 +1,24 @@
 # === Site settings ===
 locale: en-US
-name: Marco Bilucaglia
 title: "Marco Bilucaglia"
-subtitle: "Bioengineer · Ph.D. Candidate · Neuromarketing"
-description: "Biomedical Signal Processing, Machine Learning, Neuromarketing, Human Performance"
-url: ""  # set automatically by GitHub Pages
-baseurl: ""
+description: "Bioengineer · Ph.D. Candidate · Neuromarketing"
+url: ""   # GitHub Pages will set this automatically
+baseurl: ""   # leave empty for your main site (https://username.github.io)
 repository: marcobilucaglia/marcobilucaglia.github.io
 
-# === Author ===
+# === Author info ===
 author:
   name: "Marco Bilucaglia, M.Sc., C.Eng."
-  avatar: "/assets/img/headshot.jpg" # replace with your headshot filename
+  avatar: "/assets/img/headshot.jpg"   # replace with your photo file
   bio: "Bioengineer at Behavior and Brain Lab IULM. Ph.D. candidate (Neuromarketing) at Università IULM."
   location: "Milan, Italy"
   email: "marco.bilucaglia@studenti.iulm.it"
-  orcid: "0000-0000-0000-0000"  # replace with real ORCID
+  orcid: "0000-0000-0000-0000"   # update with your real ORCID
   scholar: "https://bit.ly/3GY8weY"
-  website: ""
-  github: marcobilucaglia
-  linkedin: ""  # add your vanity handle
+  github: "marcobilucaglia"
+  linkedin: ""   # optional
 
-# === Appearance ===
+# === Theme ===
 remote_theme: academicpages/academicpages
 plugins:
   - jekyll-include-cache
@@ -36,20 +33,39 @@ collections:
   talks:
     output: true
 
-# === Markdown / kramdown ===
+# === Markdown rendering ===
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
 
-# === Navigation ===
-main_nav:
-  - title: "About"
-    url: /
-  - title: "Publications"
-    url: /publications/
-  - title: "Teaching"
-    url: /teaching/
-  - title: "CV"
-    url: /cv/
-  - title: "Contact"
-    url: /contact/
+# === Defaults for layouts ===
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: "_publications"
+      type: publications
+    values:
+      layout: publication
+      author_profile: true
+
+# === Pagination (optional) ===
+paginate: 5
+paginate_path: "/page:num/"
+
+# === Social media usernames (optional) ===
+social:
+  github: marcobilucaglia
+  scholar: https://bit.ly/3GY8weY
+  orcid: https://bit.ly/3R7BmxJ
+  email: marco.bilucaglia@studenti.iulm.it
