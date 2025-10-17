@@ -19,8 +19,9 @@ author:
   linkedin: ""   # optional
 
 # === Theme ===
-remote_theme: academicpages/academicpages
+remote_theme: academicpages/academicpages.github.io
 plugins:
+  - jekyll-remote-theme
   - jekyll-include-cache
   - jekyll-paginate
 
