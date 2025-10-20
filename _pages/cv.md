@@ -11,9 +11,9 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Electronics Engineering (Bioelectronic Engineering curriculum), University of Bologna, Italy
-* B.S. in Electronics Engineering, Politecnico di Milano, Italy
+* Ph.D in Comunication, Markets and Society (Consumer Neuroscience), Università IULM (Italy), 2026 (expected)
+* M.S. in Electronics Engineering (Bioelectronic Engineering), University of Bologna (Italy), 2014
+* B.S. in Electronics Engineering, Politecnico di Milano (Italy), 2007
 
 Work experience
 ======
