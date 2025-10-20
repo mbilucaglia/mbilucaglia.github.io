@@ -26,9 +26,9 @@ author:
   avatar           : "profile.png"
   name             : "Marco Bilucaglia"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "Bioengineer"
+  location         : "Milan, Italy"
+  employer         : "Universtità IULM"
   uri              : # URL
   email            : "none@example.org" 
 
