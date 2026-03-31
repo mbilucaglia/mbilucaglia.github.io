@@ -12,12 +12,15 @@ title: CV
 - Research Fellow (supervisor: Prof. V. Russo), Università IULM, 2019 - 2022
 - Research Assistant (supervisor: Prof. P. Tressoldi), University of Padua, 2019 
 
-## Academic Service
+## Service
 ### Reviewer
 Cognitive Neurodynamics, Scientific Reports, HardwareX, PlosOne, Frontiers in Psychology, Frontiers in Public Health, Frontiers in Psychiatry, BMC Research Notes, Biocibernetics and Biomedical Engineering, Frontiers in Human Neuroscience, EMBC, Frontiers in Child and Adolecent Psychiatry, Frontiers in Physiology 
 ### Handling Editor
 Frontiers in Human Neuroscience, Frontiers in Medicine, Frontiers in Public Health, Frontiers in Social Psychology
 ### Guest Editor
+Frontiers in Human Neuroscience (2 Research Topics)
+
+
 {% if site.data.profile.links.cv_pdf != "" %}
 [Download CV PDF]({{ site.data.profile.links.cv_pdf | relative_url }})
 {% endif %}
