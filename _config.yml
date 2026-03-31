@@ -15,7 +15,7 @@ defaults:
       layout: "page"
 
 scholar:
-  style: ieee
+  style: apa
   locale: en
   source: ./_bibliography
   bibliography: publications.bib
