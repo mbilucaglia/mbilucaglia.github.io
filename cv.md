@@ -7,11 +7,13 @@ You can either:
 2. Write a short CV directly on this page in Markdown.
 
 ## Education
-- PhD in [Your Field], [University], [Year]
-- MSc in [Your Field], [University], [Year]
+- M.Sc. in Electronics Engineering, Alama Mater Studiorum - Università di Bologna, 2018
+- B.Sc. in Electronics Engineering, Politecnico di Milano, 2014
 
 ## Academic Positions
-- Position, Institution, Years
+- Ph.D. Fellow, Università IULM, 2022 - 2025
+- Research Fellow (supervisor: Prof. V. Russo), Università IULM, 2019 - 2022
+- Research Assistant (supervisor: Prof. P. Tressoldi), University of Padua, 2019 
 
 ## Awards
 - Award or grant, Year
