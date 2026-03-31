@@ -7,7 +7,6 @@ title: Contact
 - **Location:** {{ site.data.profile.location }}
 
 ## Profiles
-## Profiles
 {%- if site.data.profile.links.google_scholar != "" -%}
 - [Google Scholar]({{ site.data.profile.links.google_scholar }})
 {%- endif -%}
