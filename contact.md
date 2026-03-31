@@ -7,7 +7,8 @@ title: Contact
 - **Location:** {{ site.data.profile.location }}
 
 ## Profiles
-{% if site.data.profile.links.google_scholar != "" %}- [Google Scholar]({{ site.data.profile.links.google_scholar }}){% endif %}
+{% if site.data.profile.links.google_scholar != "" %}
+- [Google Scholar]({{ site.data.profile.links.google_scholar }}){% endif %}
 {% if site.data.profile.links.orcid != "" %}
 - [ORCID]({{ site.data.profile.links.orcid }})
 {% endif %}
