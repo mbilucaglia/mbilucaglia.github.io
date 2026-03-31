@@ -1,29 +1,39 @@
-- title: "Laboratory of Cognition, Neuroscience and Machine Learning"
+- title: "Course Title 1"
   track: "academic"
-  level: "M.Sc."
-  role: "Teachin Assistant"
-  institution: "Università IULM"
-  year: "2022–2026"
-  hours: 20
-  sessions: 10
+  level: "MSc"
+  role: "Lecturer"
+  institution: "University of ..."
+  year: "2025–2026"
+  hours: 24
+  sessions: 12
   notes: "Core module"
 
-- title: "EEG metrics for emotion, engagement and workload measurement"
+- title: "Course Title 2"
+  track: "academic"
+  level: "BSc"
+  role: "Teaching Assistant"
+  institution: "University of ..."
+  year: "2024–2025"
+  hours: 18
+  sessions: 9
+  notes: "Laboratory sessions"
+
+- title: "Professional Course Title"
   track: "postgrad_professional"
-  level: "Executive Master"
+  level: "Professional"
   role: "Instructor"
-  institution: "Università IULM"
-  year: "2021-2026"
-  hours: 3
-  sessions: 1
+  institution: "Institution / Hospital / Training Center"
+  year: "2025"
+  hours: 8
+  sessions: 2
   notes: "Continuing education course"
 
-  - title: "Introduction to Big Data and Machine Learing"
-  track: "postgrad_professional"
-  level: "Executive Master"
-  role: "Instructor"
-  institution: "Università IULM"
-  year: "2021-2026"
-  hours: 3
-  sessions: 1
-  notes: "Continuing education course"
+- title: "PhD Course Title"
+  track: "phd"
+  level: "PhD"
+  role: "Lecturer"
+  institution: "University of ..."
+  year: "2024–2025"
+  hours: 12
+  sessions: 6
+  notes: "Doctoral training course"
