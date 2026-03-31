@@ -6,7 +6,7 @@
   year: "2021–2026"
   hours: 20
   sessions:
-  notes: 
+  notes: "Decision Theory, Statistical Learning, traditional Machine Learning models, Ensemble Learning, robust Machine Learning deployment"
 
 - title: "EEG metrics for emotion, engagement and workload measurement"
   track: "postgrad_professional"
@@ -14,9 +14,9 @@
   role: "Instructor"
   institution: "Università IULM"
   year: "2025"
-  hours: 3
-  sessions: ""
-  notes: ""
+  hours: 4
+  sessions: 
+  notes: 
 
 - title: "Introduction to Big Data and Machine Learing"
   track: "postgrad_professional"
@@ -24,6 +24,6 @@
   role: "Instructor"
   institution: "Università IULM"
   year: "2025"
-  hours: 8
-  sessions: 2
-  notes: "Continuing education course"
+  hours: 4
+  sessions: 
+  notes: 
