@@ -1,11 +1,11 @@
-- title: "Course Title 1"
+- title: "Laboratory of Cognition, Neuroscience and Machine Learning"
   track: "academic"
   level: "MSc"
   role: "Lecturer"
-  institution: "University of ..."
-  year: "2025–2026"
-  hours: 24
-  sessions: 12
+  institution: "Università IULM"
+  year: "2021–2026"
+  hours: 20
+  sessions: 10
   notes: "Core module"
 
 - title: "Professional Course Title"
