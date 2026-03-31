@@ -6,8 +6,6 @@ permalink: /teaching/
 
 # Teaching
 
-Below is an overview of my teaching activity across academic, professional, and doctoral training.
-
 {% assign academic = site.data.teaching | where: "track", "academic" %}
 {% assign professional = site.data.teaching | where: "track", "postgrad_professional" %}
 {% assign phd = site.data.teaching | where: "track", "phd" %}
