@@ -5,8 +5,8 @@
   institution: "Università IULM"
   year: "2021–2026"
   hours: 20
-  sessions: ""
-  notes: ""
+  sessions:
+  notes: 
 
 - title: "EEG metrics for emotion, engagement and workload measurement"
   track: "postgrad_professional"
