@@ -1,6 +1,10 @@
 ---
 title: CV
 ---
+{% if site.data.profile.links.cv_pdf != "" %}
+[Download CV PDF]({{ site.data.profile.links.cv_pdf | relative_url }})
+{% endif %}
+
 
 ## Education and Qualifications
 - C.Eng. in Information Technology Engineering, Politecnico di Milano, 2020
@@ -20,8 +24,3 @@ Frontiers in Human Neuroscience, Frontiers in Medicine, Frontiers in Public Heal
 ### Guest Editor
 - "Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience", Frontiers in Neuroscience, Frontiers in Human Neuroscience, Frontiers in Psychology
 - "Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience - Volume II", Frontiers in Human Neuroscience
-
-
-{% if site.data.profile.links.cv_pdf != "" %}
-[Download CV PDF]({{ site.data.profile.links.cv_pdf | relative_url }})
-{% endif %}
