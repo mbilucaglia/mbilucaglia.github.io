@@ -27,13 +27,3 @@
   hours: 3
   sessions: 1
   notes: "Continuing education course"
-
-- title: "Advanced Methods in Neuroengineering"
-  track: "phd"
-  level: "PhD"
-  role: "Lecturer"
-  institution: "University of Example"
-  year: "2024–2025"
-  hours: 10
-  sessions: 5
-  notes: "Doctoral school module"
