@@ -177,3 +177,41 @@ h2 {
     align-items: flex-start;
   }
 }
+
+.publication-item {
+  margin-bottom: 1.5rem;
+}
+
+.publication-reference {
+  margin-bottom: 0.35rem;
+}
+
+.publication-links {
+  margin-top: 0.35rem;
+  margin-bottom: 0.35rem;
+  font-size: 0.95rem;
+}
+
+.publication-links a {
+  margin-right: 0.9rem;
+  text-decoration: none;
+}
+
+.publication-links a:hover {
+  text-decoration: underline;
+}
+
+.publication-note {
+  margin-top: 0.25rem;
+  font-style: italic;
+  color: #555;
+}
+
+.publication-abstract {
+  margin-top: 0.4rem;
+}
+
+.publication-abstract summary {
+  cursor: pointer;
+  font-size: 0.95rem;
+}
