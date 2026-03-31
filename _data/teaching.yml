@@ -8,16 +8,6 @@
   sessions: 12
   notes: "Core module"
 
-- title: "Course Title 2"
-  track: "academic"
-  level: "BSc"
-  role: "Teaching Assistant"
-  institution: "University of ..."
-  year: "2024–2025"
-  hours: 18
-  sessions: 9
-  notes: "Laboratory sessions"
-
 - title: "Professional Course Title"
   track: "postgrad_professional"
   level: "Professional"
