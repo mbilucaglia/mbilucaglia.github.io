@@ -8,21 +8,11 @@
   sessions: 10
   notes: "Core module"
 
-- title: "Neuroscience for Communication Lab."
-  track: "academic"
-  level: "M.Sc."
-  role: "Teaching Assistant"
-  institution: "Università IULM"
-  year: "2024–2025"
-  hours: 10
-  sessions: 
-  notes: "Laboratory sessions"
-
-- title: "Professional Course Title"
+- title: "EEG metrics for emotion, engagement and workload measurement"
   track: "postgrad_professional"
-  level: "Professional"
+  level: "Executive Master"
   role: "Instructor"
-  institution: "Institution / Hospital / Training Center"
+  institution: "Università IULM"
   year: "2025"
   hours: 8
   sessions: 2
