@@ -1,0 +1,29 @@
+title: "[Your Name]"
+description: "Academic website"
+baseurl: ""
+url: "https://yourusername.github.io"
+markdown: kramdown
+permalink: pretty
+
+plugins:
+  - jekyll-scholar
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+
+scholar:
+  style: apa
+  locale: en
+  source: ./_bibliography
+  bibliography: publications.bib
+  bibliography_template: bib
+  sort_by:
+    - year
+    - month
+  order:
+    - descending
+    - descending
+  repository: assets/files/papers

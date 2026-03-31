@@ -1,0 +1,11 @@
+- course: "[Course title]"
+  term: "[Semester / Year]"
+  role: "Instructor"
+  institution: "[Institution]"
+  notes: "Optional one-line description."
+
+- course: "[Second course title]"
+  term: "[Semester / Year]"
+  role: "Teaching Assistant"
+  institution: "[Institution]"
+  notes: "Optional one-line description."

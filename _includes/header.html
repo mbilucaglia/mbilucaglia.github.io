@@ -1,0 +1,12 @@
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="site-title" href="{{ '/' | relative_url }}">{{ site.data.profile.name | default: site.title | default: 'Academic Website' }}</a>
+    <nav class="site-nav">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/publications/' | relative_url }}">Publications</a>
+      <a href="{{ '/teaching/' | relative_url }}">Teaching</a>
+      <a href="{{ '/cv/' | relative_url }}">CV</a>
+      <a href="{{ '/contact/' | relative_url }}">Contact</a>
+    </nav>
+  </div>
+</header>

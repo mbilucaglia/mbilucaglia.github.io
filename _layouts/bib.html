@@ -1,0 +1,40 @@
+---
+---
+<div class="publication-entry">
+  <div class="publication-reference">{{ reference }}</div>
+
+  {% assign has_links = false %}
+  {% if link or entry.url or entry.doi or entry.code or entry.slides %}
+    {% assign has_links = true %}
+  {% endif %}
+
+  {% if has_links %}
+  <div class="pub-links">
+    {% if link %}<a href="{{ link | relative_url }}">PDF</a>{% endif %}
+    {% if entry.url %}{% if link %} · {% endif %}<a href="{{ entry.url }}">Link</a>{% endif %}
+    {% if entry.doi %}
+      {% if link or entry.url %} · {% endif %}
+      {% if entry.doi contains 'http' %}
+        <a href="{{ entry.doi }}">DOI</a>
+      {% else %}
+        <a href="https://doi.org/{{ entry.doi }}">DOI</a>
+      {% endif %}
+    {% endif %}
+    {% if entry.code %}
+      {% if link or entry.url or entry.doi %} · {% endif %}
+      <a href="{{ entry.code }}">Code</a>
+    {% endif %}
+    {% if entry.slides %}
+      {% if link or entry.url or entry.doi or entry.code %} · {% endif %}
+      <a href="{{ entry.slides }}">Slides</a>
+    {% endif %}
+  </div>
+  {% endif %}
+
+  {% if entry.abstract %}
+  <details class="pub-abstract">
+    <summary>Abstract</summary>
+    <p>{{ entry.abstract }}</p>
+  </details>
+  {% endif %}
+</div>
