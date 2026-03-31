@@ -1,6 +1,6 @@
 title: "Marco Bilucaglia"
 description: "Academic website"
-baseurl: ""
+baseurl: "https://mbilucaglia.github.io"
 url: "https://mbilucaglia.github.io"
 markdown: kramdown
 permalink: pretty
