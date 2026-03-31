@@ -1,7 +1,7 @@
-title: "[Your Name]"
+title: "Marco Bilucaglia"
 description: "Academic website"
 baseurl: ""
-url: "https://yourusername.github.io"
+url: "https://mbilucaglia.github.io"
 markdown: kramdown
 permalink: pretty
 
