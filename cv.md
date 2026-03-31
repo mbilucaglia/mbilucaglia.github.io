@@ -11,7 +11,7 @@ You can either:
 - B.Sc. in Electronics Engineering, Politecnico di Milano, 2014
 
 ## Academic Positions
-- Ph.D. Fellow, Università IULM, 2022 - 2025
+- Ph.D. Fellow (supervisor: Prof. V. Russo), Università IULM, 2022 - 2025
 - Research Fellow (supervisor: Prof. V. Russo), Università IULM, 2019 - 2022
 - Research Assistant (supervisor: Prof. P. Tressoldi), University of Padua, 2019 
 
