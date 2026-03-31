@@ -25,12 +25,6 @@ title: Home
   </div>
 </section>
 
-<section class="callout">
-  <h2>Publications workflow</h2>
-  <p>This site reads publications directly from <code>_bibliography/publications.bib</code>. Add, remove, or edit entries in that file, then commit and push to GitHub.</p>
-  <p>If you upload PDFs to <code>assets/files/papers/</code> and name each file with its BibTeX key, the publications page will show a PDF link automatically.</p>
-</section>
-
 {% assign links = site.data.profile.links %}
 {% if links %}
 <section>
