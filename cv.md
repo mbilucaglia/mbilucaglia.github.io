@@ -18,7 +18,8 @@ Cognitive Neurodynamics, Scientific Reports, HardwareX, PlosOne, Frontiers in Ps
 ### Handling Editor
 Frontiers in Human Neuroscience, Frontiers in Medicine, Frontiers in Public Health, Frontiers in Social Psychology
 ### Guest Editor
-Frontiers in Human Neuroscience (2 Research Topics)
+- "Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience", Frontiers in Neuroscience, Frontiers in Human Neuroscience, Frontiers in Psychology
+- "Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience - Volume II", Frontiers in Human Neuroscience
 
 
 {% if site.data.profile.links.cv_pdf != "" %}
