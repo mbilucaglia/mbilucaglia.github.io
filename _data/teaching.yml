@@ -3,7 +3,7 @@
   level: "M.Sc."
   role: "Teachin Assistant"
   institution: "Università IULM"
-  year: "2025–2026"
+  year: "2022–2026"
   hours: 20
   sessions: 10
   notes: "Core module"
@@ -13,17 +13,17 @@
   level: "Executive Master"
   role: "Instructor"
   institution: "Università IULM"
-  year: "2025"
-  hours: 8
-  sessions: 2
+  year: "2021-2026"
+  hours: 3
+  sessions: 1
   notes: "Continuing education course"
 
-- title: "PhD Course Title"
-  track: "phd"
-  level: "PhD"
-  role: "Lecturer"
-  institution: "University of ..."
-  year: "2024–2025"
-  hours: 12
-  sessions: 6
-  notes: "Doctoral training course"
+  - title: "Introduction to Big Data and Machine Learing"
+  track: "postgrad_professional"
+  level: "Executive Master"
+  role: "Instructor"
+  institution: "Università IULM"
+  year: "2021-2026"
+  hours: 3
+  sessions: 1
+  notes: "Continuing education course"
