@@ -8,6 +8,7 @@ title: Home
   <p class="lead">{{ site.data.profile.role }}</p>
   <p>{{ site.data.profile.affiliation }}</p>
   <p>{{ site.data.profile.short_bio }}</p>
+  {{ site.data.profile.short_bio | markdownify }}
 
   {% assign interests = site.data.profile.research_interests | default: empty %}
   {% if interests.size > 0 %}
