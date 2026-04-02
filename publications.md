@@ -12,7 +12,6 @@ permalink: /publications/
 - **Journal Articles:** {% bibliography_count --query @article %}
 - **Conference Proceedings:** {% bibliography_count --query @inproceedings[keywords=paper] %}
 - **Conference Abstracts / Presentations:** {% bibliography_count --query @inproceedings[keywords=presentation] %}
-- **Working Manuscripts:** {% bibliography_count --query @unpublished %}
 
 ## Journal Articles
 
@@ -25,7 +24,3 @@ permalink: /publications/
 ## Conference Abstracts / Presentations
 
 {% bibliography --query @inproceedings[keywords=presentation] %}
-
-## Working Manuscripts
-
-{% bibliography --query @unpublished %}
