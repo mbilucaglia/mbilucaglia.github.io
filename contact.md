@@ -7,7 +7,6 @@ title: Contact
 - **Location:** {{ site.data.profile.location }}
 
 ## Profiles
-## Profiles
 <ul class="compact-list">
 {%- if site.data.profile.links.google_scholar -%}
   <li><a href="{{ site.data.profile.links.google_scholar }}">Google Scholar</a></li>
