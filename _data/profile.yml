@@ -4,7 +4,7 @@ affiliation: "Università IULM"
 email: "marco.bilucaglia@studenti.iulm.it"
 office: "Behavior and Brain Lab IULM, Via Pietro Filargo, 38"
 location: "Milan, Italy"
-short_bio: "I am a Bioengineer at the Behaviour and Brain Lab IULM - Neuromarketing Research Center, and a Ph.D. Candidate in Communication, Markets and Society at Università IULM. My work spans the full lifecycle of physiological data in experimental research, from acquisition and multimodal synchronization to artifact cleaning and feature extraction."
+short_bio: "I am a Bioengineer at the Behaviour and Brain Lab IULM - Neuromarketing Research Center, and a Ph.D. Candidate in Communication, Markets and Society at Università IULM. My work spans the full lifecycle of physiological signals in experimental research, from acquisition and multimodal synchronization to artifact cleaning and data classification."
 research_interests:
   - "Biomedical Signal Processing"
   - "Machine Learning"
