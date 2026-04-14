@@ -5,7 +5,6 @@ permalink: /publications/
 ---
 
 # Publications
-
 ## Summary
 
 - **Total:** {% bibliography_count %}
