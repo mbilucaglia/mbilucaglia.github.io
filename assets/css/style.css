@@ -127,28 +127,6 @@ h2 {
   margin-bottom: 1.25rem;
 }
 
-.profile-photo-frame {
-  width: min(60vw, 220px);
-  max-width: calc(100vw - 2rem);
-  aspect-ratio: 1 / 1;
-  margin: 2rem auto;
-  padding: 8px;
-  border: 2px solid #ddd;
-  border-radius: 50%;
-  background: white;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
-  overflow: hidden;
-  box-sizing: border-box;
-}
-
-.profile-photo-frame img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
 .profile-links,
 .interests-list {
   padding-left: 1.1rem;
