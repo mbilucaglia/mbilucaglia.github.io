@@ -21,7 +21,7 @@ title: CV
 - Chartered Engineer, Engineers Council of Milan, 2020
 
 ## Academic Services
-### Reviewer
+### Ad hoc Reviewer
 - Cognitive Neurodynamics
 - Scientific Reports
 - HardwareX, PlosOne
@@ -35,13 +35,13 @@ title: CV
 - Frontiers in Child and Adolecent Psychiatry
 - Frontiers in Physiology
 
-### Handling Editor
+### Ad hoc Handling Editor
 - Frontiers in Human Neuroscience
 - Frontiers in Medicine
 - Frontiers in Public Health
 - Frontiers in Social Psychology
 
-### Guest Editor
+### Guest Associated Editor
 - [Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience](https://www.frontiersin.org/research-topics/49742/machine-learningdeep-learning-methods-in-neuromarketing-and-consumer-neuroscience/magazine) in Frontiers in Neuroscience, Frontiers in Human Neuroscience, Frontiers in Psychology
 - [Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience - Volume II](https://www.frontiersin.org/research-topics/65160/machine-learningdeep-learning-methods-in-neuromarketing-and-consumer-neuroscience-volume-ii) in Frontiers in Human Neuroscience
 - [Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience - Volume III](https://www.frontiersin.org/research-topics/80492/machine-learningdeep-learning-methods-in-neuromarketing-and-consumer-neuroscience-volume-iii) in Frontiers in Human Neuroscience
