@@ -24,7 +24,8 @@ title: CV
 ### Ad hoc Reviewer
 - Cognitive Neurodynamics
 - Scientific Reports
-- HardwareX, PlosOne
+- HardwareX
+- PlosOne
 - Frontiers in Psychology
 - Frontiers in Public Health
 - Frontiers in Psychiatry
