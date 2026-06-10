@@ -114,25 +114,27 @@ h2 {
 }
 
 .profile-photo-frame {
-  width: min(60vw, 220px);
-  max-width: calc(100vw - 2rem);
+  inline-size: clamp(8rem, 35vw, 12rem);
   aspect-ratio: 1 / 1;
-  margin: 2rem auto;
-  padding: 8px;
+  margin: 1.5rem 0 2rem 0;
+  padding: 0;
   border: 2px solid #ddd;
   border-radius: 50%;
-  background: white;
+  background: transparent;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
   overflow: hidden;
   box-sizing: border-box;
 }
 
 .profile-photo-frame img {
-  width: 100%;
-  height: 100%;
+  inline-size: 100%;
+  block-size: 100%;
   display: block;
   object-fit: cover;
-  border-radius: 10%;
+  object-position: center center;
+  border-radius: 50%;
+  transform: scale(1.18);
+  transform-origin: center center;
 }
 
 .card,
