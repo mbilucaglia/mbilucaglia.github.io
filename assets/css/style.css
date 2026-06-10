@@ -114,14 +114,14 @@ h2 {
 }
 
 .profile-photo-frame {
-  inline-size: clamp(8rem, 35vw, 12rem);
+  inline-size: clamp(8rem, 35vw, 16rem);
   aspect-ratio: 1 / 1;
   margin: 1.5rem 0 2rem 0;
   padding: 0;
-  border: 2px solid #ddd;
+  border: none;
   border-radius: 50%;
   background: transparent;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
+  box-shadow: none;
   overflow: hidden;
   box-sizing: border-box;
 }
@@ -136,7 +136,6 @@ h2 {
   transform: scale(1.18);
   transform-origin: center center;
 }
-
 .card,
 .teaching-item,
 .callout {
