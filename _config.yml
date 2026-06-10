@@ -5,10 +5,6 @@ url: "https://mbilucaglia.github.io"
 markdown: kramdown
 permalink: pretty
 
-profile:
-  photo: /assets/img/marcobilucaglia.jpg
-  name: Marco Bilucaglia
-
 plugins:
   - jekyll-scholar
 
