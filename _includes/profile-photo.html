@@ -1,5 +1,7 @@
+{% if site.data.profile.photo %}
 <figure class="profile-photo-frame">
   <img
-    src="{{ site.profile.photo | relative_url }}"
-    alt="{{ site.profile.name | escape }}">
+    src="{{ site.data.profile.photo | relative_url }}"
+    alt="{{ site.data.profile.name | escape }}">
 </figure>
+{% endif %}
