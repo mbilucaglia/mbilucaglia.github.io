@@ -8,6 +8,11 @@ title: Home
   <p class="lead">{{ site.data.profile.role }}</p>
   <p>{{ site.data.profile.affiliation }}</p>
 
+  <img
+  src="{{ '/assets/img/marcobilucaglia.jpg' | relative_url }}"
+  alt="Marco Bilucaglia"
+  class="homepage-photo">
+
   <div class="short-bio">
     {{ site.data.profile.short_bio | markdownify }}
   </div>
