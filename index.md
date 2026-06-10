@@ -10,7 +10,7 @@ title: Home
 
 <figure class="photo-frame">
   <img
-    src="{{ '/assets/img/marco.jpg' | relative_url }}"
+    src="{{ '/assets/img/marcobilucaglia.jpg' | relative_url }}"
     alt="Marco Bilucaglia">
 </figure>
 
