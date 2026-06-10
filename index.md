@@ -8,7 +8,13 @@ title: Home
   <p class="lead">{{ site.data.profile.role }}</p>
   <p>{{ site.data.profile.affiliation }}</p>
 
-{% include profile-photo.html %}
+{% if site.data.profile.photo %}
+<figure class="profile-photo-frame">
+  <img
+    src="{{ site.data.profile.photo | relative_url }}"
+    alt="{{ site.data.profile.name | escape }}">
+</figure>
+{% endif %}
 
   <div class="short-bio">
     {{ site.data.profile.short_bio | markdownify }}
