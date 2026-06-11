@@ -48,4 +48,4 @@ title: CV
 - **2026 - 2027:** ["Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience - Volume III"](https://www.frontiersin.org/research-topics/80492/machine-learningdeep-learning-methods-in-neuromarketing-and-consumer-neuroscience-volume-iii) hosted by Frontiers in Human Neuroscience
 
 ### Conference Services
-- **2025:** Event Comitee Member of the [The 1st International Online Conference on Behavioral Sciences](https://sciforum.net/event/iocbs2026)
+- **2025:** Event Comitee Member of the [The 1st International Online Conference on Behavioral Sciences](https://sciforum.net/event/iocbs2026) organised by Behavioural Sciences - MDPI
