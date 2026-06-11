@@ -21,7 +21,9 @@ title: CV
 - Chartered Engineer, Engineers Council of Milan, 2020
 
 ## Academic Services
-### Ad hoc Reviewer
+
+### Editorial Services
+#### Ad hoc Reviewer
 - Frontiers in Psychology
 - Frontiers in Public Health
 - Scientific Reports
@@ -35,14 +37,15 @@ title: CV
 - Proceedings of the Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)
 - BMC Research Notes
 - Biocibernetics an Biomedical Engineering
-
-### Ad hoc Handling Editor
+#### Ad hoc Handling Editor
 - Frontiers in Human Neuroscience
 - Frontiers in Medicine
 - Frontiers in Public Health
 - Frontiers in Social Psychology
-
-### Guest Editor - Research Topics / Special Issues
+#### Guest Editor - Research Topics / Special Issues
 - **2024 - 2025:** ["Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience"](https://www.frontiersin.org/research-topics/49742/machine-learningdeep-learning-methods-in-neuromarketing-and-consumer-neuroscience/magazine) hosted by Frontiers in Neuroscience, Frontiers in Human Neuroscience and Frontiers in Psychology
 - **2025 - 2026:** ["Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience - Volume II"](https://www.frontiersin.org/research-topics/65160/machine-learningdeep-learning-methods-in-neuromarketing-and-consumer-neuroscience-volume-ii) hosted by Frontiers in Human Neuroscience
 - **2026 - 2027:** ["Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience - Volume III"](https://www.frontiersin.org/research-topics/80492/machine-learningdeep-learning-methods-in-neuromarketing-and-consumer-neuroscience-volume-iii) hosted by Frontiers in Human Neuroscience
+
+### Conference Services
+- **2025:** Event Comitee Member of the [The 1st International Online Conference on Behavioral Sciences](https://sciforum.net/event/iocbs2026)
