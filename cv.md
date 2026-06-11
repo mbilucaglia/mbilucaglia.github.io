@@ -22,19 +22,19 @@ title: CV
 
 ## Academic Services
 ### Ad hoc Reviewer
-- Cognitive Neurodynamics
-- Scientific Reports
-- HardwareX
-- PlosOne
 - Frontiers in Psychology
 - Frontiers in Public Health
+- Scientific Reports
+- Cognitive Neurodynamics
+- PlosOne
+- HardwareX
 - Frontiers in Psychiatry
-- BMC Research Notes
-- Biocibernetics and Biomedical Engineering
 - Frontiers in Human Neuroscience
-- EMBC
-- Frontiers in Child and Adolecent Psychiatry
 - Frontiers in Physiology
+- Frontiers in Child and Adolescent Psychiatry
+- Proceedings of the Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)
+- BMC Research Notes
+- Biocibernetics an Biomedical Engineering
 
 ### Ad hoc Handling Editor
 - Frontiers in Human Neuroscience
