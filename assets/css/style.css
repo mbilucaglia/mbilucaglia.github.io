@@ -248,3 +248,47 @@ h2 {
 .compact-list li {
   margin: 0.1rem 0;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.back-to-top {
+  position: fixed;
+  right: max(1rem, calc((100vw - 900px) / 2));
+  bottom: 1.25rem;
+  inline-size: 2.6rem;
+  block-size: 2.6rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--accent);
+  font-size: 1.35rem;
+  line-height: 1;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  z-index: 20;
+}
+
+.back-to-top:hover {
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 640px) {
+  .back-to-top {
+    right: 1rem;
+    bottom: 1rem;
+    inline-size: 2.4rem;
+    block-size: 2.4rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media print {
+  .back-to-top {
+    display: none;
+  }
+}
