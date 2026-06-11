@@ -43,6 +43,6 @@ title: CV
 - Frontiers in Social Psychology
 
 ### Guest Associate Editor
-- [Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience](https://www.frontiersin.org/research-topics/49742/machine-learningdeep-learning-methods-in-neuromarketing-and-consumer-neuroscience/magazine) in Frontiers in Neuroscience, Frontiers in Human Neuroscience, Frontiers in Psychology
-- [Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience - Volume II](https://www.frontiersin.org/research-topics/65160/machine-learningdeep-learning-methods-in-neuromarketing-and-consumer-neuroscience-volume-ii) in Frontiers in Human Neuroscience
-- [Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience - Volume III](https://www.frontiersin.org/research-topics/80492/machine-learningdeep-learning-methods-in-neuromarketing-and-consumer-neuroscience-volume-iii) in Frontiers in Human Neuroscience
+- **2024 - 2025:** ["Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience"](https://www.frontiersin.org/research-topics/49742/machine-learningdeep-learning-methods-in-neuromarketing-and-consumer-neuroscience/magazine) busted by Frontiers in Neuroscience, Frontiers in Human Neuroscience, Frontiers in Psychology
+- **2025 - 2026:** ["Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience - Volume II"](https://www.frontiersin.org/research-topics/65160/machine-learningdeep-learning-methods-in-neuromarketing-and-consumer-neuroscience-volume-ii) hosted by Frontiers in Human Neuroscience
+- **2026 - 2027:** ["Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience - Volume III"](https://www.frontiersin.org/research-topics/80492/machine-learningdeep-learning-methods-in-neuromarketing-and-consumer-neuroscience-volume-iii) hoisted by Frontiers in Human Neuroscience
