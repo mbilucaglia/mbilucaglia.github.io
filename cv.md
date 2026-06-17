@@ -6,6 +6,7 @@ title: CV
 {% endif %}
 
 ## Education and Qualifications
+- Ph.D. in Cominication Markets and Society, Università IULM, 2026 (expected)
 - C.Eng. in Information Technology Engineering, Politecnico di Milano, 2020
 - M.Sc. in Electronics Bioengineering, Alama Mater Studiorum - Università di Bologna, 2018
 - B.Sc. in Electronics Engineering, Politecnico di Milano, 2014
