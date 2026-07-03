@@ -49,7 +49,51 @@ jobs:
             --scholar-id "$SCHOLAR_ID" \
             --output _data/scholar.json
 
+      - name: Verify Google Scholar metrics
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path("_data/scholar.json")
+
+          if not path.exists():
+              raise SystemExit(
+                  "_data/scholar.json does not exist"
+              )
+
+          data = json.loads(
+              path.read_text(encoding="utf-8")
+          )
+
+          required = [
+              "citations",
+              "h_index",
+              "i10_index",
+          ]
+
+          missing = [
+              key
+              for key in required
+              if key not in data
+          ]
+
+          if missing:
+              raise SystemExit(
+                  "Missing Scholar metrics: "
+                  + ", ".join(missing)
+              )
+
+          print("Scholar metrics verified")
+          print(f"Citations: {data['citations']}")
+          print(f"h-index: {data['h_index']}")
+          print(f"i10-index: {data['i10_index']}")
+          print(f"Updated at: {data.get('updated_at')}")
+          PY
+
       - name: Commit updated Scholar metrics
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: |
           if git diff --quiet -- _data/scholar.json; then
             echo "Google Scholar metrics are unchanged."
@@ -62,9 +106,7 @@ jobs:
 
           git add _data/scholar.json
           git commit -m "Update Google Scholar metrics"
-
-          git push || echo \
-            "::warning::Metrics were deployed but could not be committed."
+          git push
 
       - name: Configure GitHub Pages
         id: pages
