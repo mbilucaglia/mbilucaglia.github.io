@@ -1,17 +1,12 @@
-#!/usr/bin/env python3
-"""Fetch public Google Scholar author metrics and write them as Jekyll data."""
-
 from __future__ import annotations
 
 import argparse
 import json
-import os
 import sys
 import time
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
-from urllib.parse import urlencode
 
 import requests
 from bs4 import BeautifulSoup
@@ -24,71 +19,87 @@ METRIC_KEYS = {
 }
 
 
-def parse_int(value: str) -> int:
+def parse_integer(value: str) -> int:
     digits = "".join(character for character in value if character.isdigit())
 
     if not digits:
-        raise ValueError(f"Expected an integer metric, got {value!r}")
+        raise ValueError(f"Could not parse integer from {value!r}")
 
     return int(digits)
 
 
-def parse_google_scholar_html(
+def parse_scholar_page(
     html: str,
     scholar_id: str,
 ) -> dict[str, Any]:
     soup = BeautifulSoup(html, "html.parser")
 
-    table = soup.select_one("#gsc_rsb_st")
+    metrics_table = soup.select_one("#gsc_rsb_st")
 
-    if table is None:
-        raise ValueError("Google Scholar metrics table was not found")
+    if metrics_table is None:
+        raise ValueError(
+            "The Google Scholar metrics table was not found. "
+            "Google may have returned a block, consent, or CAPTCHA page."
+        )
 
     metrics: dict[str, Any] = {}
 
-    for row in table.select("tr"):
-        label_cell = row.select_one("td.gsc_rsb_sc1")
-        values = row.select("td.gsc_rsb_std")
+    for row in metrics_table.select("tr"):
+        label_element = row.select_one("td.gsc_rsb_sc1")
+        value_elements = row.select("td.gsc_rsb_std")
 
-        if label_cell is None or not values:
+        if label_element is None or not value_elements:
             continue
 
         label = " ".join(
-            label_cell.get_text(" ", strip=True).lower().split()
+            label_element.get_text(" ", strip=True).lower().split()
         )
 
-        key = METRIC_KEYS.get(label)
+        output_key = METRIC_KEYS.get(label)
 
-        if key is None:
+        if output_key is None:
             continue
 
-        metrics[key] = parse_int(
-            values[0].get_text(" ", strip=True)
+        metrics[output_key] = parse_integer(
+            value_elements[0].get_text(" ", strip=True)
         )
 
-        if len(values) > 1:
-            metrics[f"{key}_recent"] = parse_int(
-                values[1].get_text(" ", strip=True)
+        if len(value_elements) > 1:
+            metrics[f"{output_key}_recent"] = parse_integer(
+                value_elements[1].get_text(" ", strip=True)
             )
 
-    missing = [
+    required_keys = [
+        "citations",
+        "h_index",
+        "i10_index",
+    ]
+
+    missing_keys = [
         key
-        for key in METRIC_KEYS.values()
+        for key in required_keys
         if key not in metrics
     ]
 
-    if missing:
+    if missing_keys:
         raise ValueError(
-            f"Missing Google Scholar metrics: {', '.join(missing)}"
+            "Missing metrics: " + ", ".join(missing_keys)
         )
 
     headings = [
-        cell.get_text(" ", strip=True)
-        for cell in table.select("thead th")
+        element.get_text(" ", strip=True)
+        for element in metrics_table.select("thead th")
     ]
 
     recent_period = headings[2] if len(headings) >= 3 else None
-    profile_name = soup.select_one("#gsc_prf_in")
+
+    profile_name_element = soup.select_one("#gsc_prf_in")
+
+    profile_name = (
+        profile_name_element.get_text(" ", strip=True)
+        if profile_name_element
+        else None
+    )
 
     metrics.update(
         {
@@ -97,11 +108,7 @@ def parse_google_scholar_html(
                 "https://scholar.google.com/citations"
                 f"?user={scholar_id}&hl=en"
             ),
-            "name": (
-                profile_name.get_text(" ", strip=True)
-                if profile_name
-                else None
-            ),
+            "name": profile_name,
             "recent_period": recent_period,
             "source": "Google Scholar",
             "updated_at": (
@@ -115,24 +122,9 @@ def parse_google_scholar_html(
     return metrics
 
 
-def fetch_google_scholar_html(
+def download_scholar_page(
     scholar_id: str,
-    attempts: int = 3,
 ) -> str:
-    session = requests.Session()
-
-    session.headers.update(
-        {
-            "User-Agent": (
-                "Mozilla/5.0 (X11; Linux x86_64) "
-                "AppleWebKit/537.36 "
-                "(KHTML, like Gecko) "
-                "Chrome/126.0 Safari/537.36"
-            ),
-            "Accept-Language": "en-US,en;q=0.9",
-        }
-    )
-
     urls = [
         (
             "https://scholar.google.com/citations"
@@ -144,144 +136,70 @@ def fetch_google_scholar_html(
         ),
     ]
 
+    headers = {
+        "User-Agent": (
+            "Mozilla/5.0 (X11; Linux x86_64) "
+            "AppleWebKit/537.36 "
+            "(KHTML, like Gecko) "
+            "Chrome/126.0 Safari/537.36"
+        ),
+        "Accept-Language": "en-US,en;q=0.9",
+    }
+
     errors: list[str] = []
 
-    for url in urls:
-        for attempt in range(1, attempts + 1):
-            try:
-                response = session.get(url, timeout=30)
-                response.raise_for_status()
+    with requests.Session() as session:
+        session.headers.update(headers)
 
-                if "gsc_rsb_st" not in response.text:
-                    raise ValueError(
-                        "response did not contain the metrics table"
+        for url in urls:
+            for attempt in range(1, 4):
+                try:
+                    response = session.get(
+                        url,
+                        timeout=30,
                     )
 
-                return response.text
+                    response.raise_for_status()
 
-            except (requests.RequestException, ValueError) as exc:
-                errors.append(
-                    f"{url} attempt {attempt}: {exc}"
-                )
+                    if "gsc_rsb_st" not in response.text:
+                        raise ValueError(
+                            "response does not contain the metrics table"
+                        )
 
-                if attempt < attempts:
-                    time.sleep(attempt * 2)
+                    print(f"Downloaded metrics from {url}")
 
-    raise RuntimeError("; ".join(errors))
+                    return response.text
 
+                except (requests.RequestException, ValueError) as error:
+                    errors.append(
+                        f"{url}, attempt {attempt}: {error}"
+                    )
 
-def fetch_serpapi_metrics(
-    scholar_id: str,
-    api_key: str,
-) -> dict[str, Any]:
-    query = urlencode(
-        {
-            "engine": "google_scholar_author",
-            "author_id": scholar_id,
-            "hl": "en",
-            "api_key": api_key,
-        }
+                    if attempt < 3:
+                        time.sleep(attempt * 2)
+
+    raise RuntimeError(
+        "Google Scholar retrieval failed:\n"
+        + "\n".join(errors)
     )
-
-    response = requests.get(
-        f"https://serpapi.com/search.json?{query}",
-        timeout=30,
-    )
-
-    response.raise_for_status()
-
-    payload = response.json()
-
-    metrics: dict[str, Any] = {}
-    recent_period = None
-
-    for row in payload.get("cited_by", {}).get("table", []):
-        if not isinstance(row, dict) or len(row) != 1:
-            continue
-
-        api_name, values = next(iter(row.items()))
-
-        output_key = {
-            "citations": "citations",
-            "h_index": "h_index",
-            "i10_index": "i10_index",
-        }.get(api_name)
-
-        if (
-            output_key is None
-            or not isinstance(values, dict)
-            or "all" not in values
-        ):
-            continue
-
-        metrics[output_key] = int(values["all"])
-
-        recent_keys = [
-            key
-            for key in values
-            if key != "all"
-        ]
-
-        if recent_keys:
-            recent_key = recent_keys[0]
-
-            metrics[f"{output_key}_recent"] = int(
-                values[recent_key]
-            )
-
-            recent_period = (
-                recent_key
-                .replace("since_", "Since ")
-                .replace("_", " ")
-            )
-
-    missing = [
-        key
-        for key in METRIC_KEYS.values()
-        if key not in metrics
-    ]
-
-    if missing:
-        raise ValueError(
-            "SerpAPI response is missing metrics: "
-            f"{', '.join(missing)}"
-        )
-
-    author = payload.get("author", {})
-
-    metrics.update(
-        {
-            "scholar_id": scholar_id,
-            "profile_url": (
-                "https://scholar.google.com/citations"
-                f"?user={scholar_id}&hl=en"
-            ),
-            "name": author.get("name"),
-            "recent_period": recent_period,
-            "source": "Google Scholar via SerpAPI",
-            "updated_at": (
-                datetime.now(timezone.utc)
-                .replace(microsecond=0)
-                .isoformat()
-            ),
-        }
-    )
-
-    return metrics
 
 
 def write_json(
-    output: Path,
-    payload: dict[str, Any],
+    output_path: Path,
+    metrics: dict[str, Any],
 ) -> None:
-    output.parent.mkdir(
+    output_path.parent.mkdir(
         parents=True,
         exist_ok=True,
     )
 
-    output.write_text(
+    temporary_path = output_path.with_suffix(
+        output_path.suffix + ".tmp"
+    )
+
+    temporary_path.write_text(
         json.dumps(
-            payload,
+            metrics,
             indent=2,
             ensure_ascii=False,
             sort_keys=True,
@@ -290,27 +208,7 @@ def write_json(
         encoding="utf-8",
     )
 
-
-def keep_existing_metrics(
-    output: Path,
-    message: str,
-) -> int:
-    print(message, file=sys.stderr)
-
-    if output.exists():
-        print(
-            f"Keeping existing metrics in {output}.",
-            file=sys.stderr,
-        )
-
-        return 0
-
-    print(
-        "No existing metrics file is available.",
-        file=sys.stderr,
-    )
-
-    return 1
+    temporary_path.replace(output_path)
 
 
 def main() -> int:
@@ -319,61 +217,50 @@ def main() -> int:
     parser.add_argument(
         "--scholar-id",
         required=True,
+        help="Google Scholar profile identifier",
     )
 
     parser.add_argument(
         "--output",
         type=Path,
         default=Path("_data/scholar.json"),
+        help="Destination JSON file",
     )
 
-    args = parser.parse_args()
+    arguments = parser.parse_args()
 
     try:
-        html = fetch_google_scholar_html(
-            args.scholar_id
+        html = download_scholar_page(
+            arguments.scholar_id
         )
 
-        metrics = parse_google_scholar_html(
+        metrics = parse_scholar_page(
             html,
-            args.scholar_id,
+            arguments.scholar_id,
         )
 
-    except Exception as direct_error:
-        serpapi_key = os.getenv(
-            "SERPAPI_KEY",
-            "",
-        ).strip()
+        write_json(
+            arguments.output,
+            metrics,
+        )
 
-        if not serpapi_key:
-            return keep_existing_metrics(
-                args.output,
-                f"Google Scholar fetch failed: {direct_error}",
-            )
+    except Exception as error:
+        print(
+            f"ERROR: {error}",
+            file=sys.stderr,
+        )
 
-        try:
-            metrics = fetch_serpapi_metrics(
-                args.scholar_id,
-                serpapi_key,
-            )
+        print(
+            "The existing JSON file was not modified.",
+            file=sys.stderr,
+        )
 
-        except Exception as fallback_error:
-            return keep_existing_metrics(
-                args.output,
-                (
-                    "Google Scholar fetch failed: "
-                    f"{direct_error}\n"
-                    "SerpAPI fallback failed: "
-                    f"{fallback_error}"
-                ),
-            )
+        return 1
 
-    write_json(
-        args.output,
-        metrics,
-    )
-
-    print(f"Updated {args.output}")
+    print(f"Updated {arguments.output}")
+    print(f"Citations: {metrics['citations']}")
+    print(f"h-index: {metrics['h_index']}")
+    print(f"i10-index: {metrics['i10_index']}")
 
     return 0
 
