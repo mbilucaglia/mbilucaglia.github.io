@@ -2,11 +2,15 @@ name: Deploy Jekyll site to Pages
 
 on:
   push:
-    branches: ["main", "master"]
+    branches: ["main"]
+
+  schedule:
+    - cron: "17 5 * * 1"
+
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -21,6 +25,46 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Scholar updater dependencies
+        run: |
+          python -m pip install \
+            "beautifulsoup4>=4.12,<5" \
+            "requests>=2.31,<3"
+
+      - name: Update Google Scholar metrics
+        env:
+          SCHOLAR_ID: RvAqXUIAAAAJ
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+        run: |
+          python scripts/update_scholar_metrics.py \
+            --scholar-id "$SCHOLAR_ID" \
+            --output _data/scholar.json
+
+      - name: Commit updated Scholar metrics
+        run: |
+          if git diff --quiet -- _data/scholar.json; then
+            echo "Google Scholar metrics are unchanged."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add _data/scholar.json
+          git commit -m "Update Google Scholar metrics"
+
+          git push || echo \
+            "::warning::Metrics were deployed but could not be committed."
 
       - name: Configure GitHub Pages
         id: pages
@@ -35,7 +79,9 @@ jobs:
       - name: Build site
         env:
           JEKYLL_ENV: production
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        run: |
+          bundle exec jekyll build \
+            --baseurl "${{ steps.pages.outputs.base_path }}"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
