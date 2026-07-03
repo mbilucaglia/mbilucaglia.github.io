@@ -22,7 +22,6 @@ permalink: /publications/
   </small>
 </p>
 {% endif %}
-{% endif %}
 
 ## Summary
 
