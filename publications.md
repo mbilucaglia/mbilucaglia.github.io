@@ -6,20 +6,10 @@ permalink: /publications/
 
 # Publications
 ## Bibliographic Indices
-{% assign scholar = site.data.scholar %}
-
-{% if scholar.citations %}
-<p>
-  According to
-  <a
-    href="{{ scholar.profile_url }}"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Google Scholar
-  </a>,
-  my publications have received
-  <strong>{{ scholar.citations }}</strong> citations.
+- **Citations:** {{ scholar.citations }}
+- **h-index:** {{ scholar.h_index }}
+- **i10-index:** {{ scholar.i10_index }}
+  <strong></strong> citations.
   My h-index is <strong>{{ scholar.h_index }}</strong>
   and my i10-index is <strong>{{ scholar.i10_index }}</strong>.
 </p>
