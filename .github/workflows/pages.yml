@@ -30,11 +30,13 @@ jobs:
           fetch-depth: 0
 
       - name: Set up Python
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
       - name: Install Scholar updater dependencies
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: |
           python -m pip install \
             "beautifulsoup4>=4.12,<5" \
@@ -44,6 +46,7 @@ jobs:
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         env:
           SCHOLAR_ID: RvAqXUIAAAAJ
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
         run: |
           python scripts/update_scholar_metrics.py \
             --scholar-id "$SCHOLAR_ID" \
@@ -90,6 +93,7 @@ jobs:
           print(f"h-index: {data['h_index']}")
           print(f"i10-index: {data['i10_index']}")
           print(f"Updated at: {data.get('updated_at')}")
+          print(f"Source: {data.get('source')}")
           PY
 
       - name: Commit updated Scholar metrics
