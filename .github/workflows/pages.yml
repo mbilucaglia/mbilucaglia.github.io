@@ -41,9 +41,9 @@ jobs:
             "requests>=2.31,<3"
 
       - name: Update Google Scholar metrics
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         env:
           SCHOLAR_ID: RvAqXUIAAAAJ
-          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
         run: |
           python scripts/update_scholar_metrics.py \
             --scholar-id "$SCHOLAR_ID" \
