@@ -5,22 +5,21 @@ permalink: /publications/
 ---
 
 # Publications
+{% assign scholar = site.data.scholar %}
+
+{% if scholar.citations %}
 ## Bibliographic Indices
+
 - **Citations:** {{ scholar.citations }}
 - **h-index:** {{ scholar.h_index }}
 - **i10-index:** {{ scholar.i10_index }}
-  <strong></strong> citations.
-  My h-index is <strong>{{ scholar.h_index }}</strong>
-  and my i10-index is <strong>{{ scholar.i10_index }}</strong>.
-</p>
 
 {% if scholar.updated_at %}
-<p>
-  <small>
-    Metrics last updated:
-    {{ scholar.updated_at | date: "%d %B %Y" }}.
-  </small>
-</p>
+<small>
+  Metrics last updated:
+  {{ scholar.updated_at | date: "%d %B %Y" }}.
+</small>
+{% endif %}
 {% endif %}
 
 ## Summary
