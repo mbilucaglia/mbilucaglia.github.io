@@ -24,6 +24,9 @@ title: CV
 ## Academic Services
 ### Editorial Services
 
+#### Membership of Editorial Boards
+- **2026 - present:** Community Reviewer for Frontiers in Human Neuroscience
+
 #### Ad hoc Reviewer
 - Frontiers in Psychology
 - Frontiers in Public Health
