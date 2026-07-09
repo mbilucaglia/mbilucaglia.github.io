@@ -28,8 +28,7 @@ title: CV
 - **2026 - present:** Community Reviewer for Frontiers in Human Neuroscience
 
 #### Ad hoc Reviewer [reviews, manuscripts]
-Cognitive Neurodynamics [16, 5], Scientific Reports [13, 5], HardwareX [9, 4], PlosOne [9, 4], Frontiers in Psychology [8, 8], Frontiers in Public Health [7, 7], Frontiers in Psychiatry [3, 3], Frontiers in Human Neuroscience [2, 2], Biocibernetics an Biomedical Engineering [2, 1], BMC Research Notes [2, 1], EMBC [1, 1], Frontiers in Child and Adolescent Psychiatry [1, 1], Frontiers in Physiology [1, 1]
-
+Cognitive Neurodynamics [16, 5], Scientific Reports [13, 5], HardwareX [9, 4], PlosOne [9, 4], Frontiers in Psychology [8, 8], Frontiers in Public Health [7, 7], Frontiers in Psychiatry [3, 3], Frontiers in Human Neuroscience [2, 2], Biocibernetics an Biomedical Engineering [2, 1], BMC Research Notes [2, 1], Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC) [1, 1], Frontiers in Child and Adolescent Psychiatry [1, 1], Frontiers in Physiology [1, 1]
 #### Ad hoc Handling Editor
 - Frontiers in Human Neuroscience
 - Frontiers in Medicine
