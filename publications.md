@@ -8,19 +8,12 @@ permalink: /publications/
 {% assign scholar = site.data.scholar %}
 
 {% if scholar.citations %}
-## Bibliographic Indices [Source: Google Scholar, {{ scholar.updated_at | date: "%d %B %Y" }}]
+## Bibliographic Indices 
+[source: [Google Scholar](https://scholar.google.it/citations?user=RvAqXUIAAAAJ&hl), updated: {{ scholar.updated_at | date: "%d %B %Y" }}]
 
 - **Citations:** {{ scholar.citations }}
 - **h-index:** {{ scholar.h_index }}
 - **i10-index:** {{ scholar.i10_index }}
-
-{% if scholar.updated_at %}
-<small>
-  Metrics last updated:
-  {{ scholar.updated_at | date: "%d %B %Y" }}.
-</small>
-{% endif %}
-{% endif %}
 
 ## Journal Articles {#journal-articles}
 
