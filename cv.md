@@ -45,18 +45,15 @@ Frontiers in Human Neuroscience [5], Frontiers in Medicine [2], Frontiers in Pub
 Co-author of {% bibliography_count %} peer-reviewes publications, including {% bibliography_count --query @article %} [journal articles](/publications/#journal-articles), {% bibliography_count --query @inproceedings[keywords=paper] %} [conference papers](/publications/#conference-proceedings) and {% bibliography_count --query @inproceedings[keywords=presentation] %}  [conference abstracts / presentations](/publications/#conference-presentations). 
 
 {% assign scholar = site.data.scholar %}
+{% if scholar.top_cited_bibtex_keys and scholar.top_cited_bibtex_keys.size > 0 %}
+## Most Cited Publications
 
-{% if scholar.top_cited_papers %}
-### Selected publications
-
-{% for paper in scholar.top_cited_papers %}
-- {% if paper.link %}[{{ paper.title }}]({{ paper.link }}){% else %}{{ paper.title }}{% endif %} — **{{ paper.citations }} citations**{% if paper.year %} ({{ paper.year }}){% endif %}
-{% endfor %}
+{% bibliography --file top_cited --template bib %}
 
 {% if scholar.updated_at %}
 <small>
-  Metrics last updated:
-  {{ scholar.updated_at | date: "%d %B %Y" }}.
+  Citation data from {{ scholar.source }},
+  last updated {{ scholar.updated_at | date: "%d %B %Y" }}.
 </small>
 {% endif %}
 {% endif %}
