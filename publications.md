@@ -8,7 +8,7 @@ permalink: /publications/
 {% assign scholar = site.data.scholar %}
 
 {% if scholar.citations %}
-## Bibliographic Indices [Source: Google Scholar, {{ scholar.updated_at | updated "%d %B %Y" }}]
+## Bibliographic Indices [Source: Google Scholar, {{ scholar.updated_at | date: "%d %B %Y" }}]
 
 - **Citations:** {{ scholar.citations }}
 - **h-index:** {{ scholar.h_index }}
