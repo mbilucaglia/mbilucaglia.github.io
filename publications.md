@@ -9,7 +9,7 @@ permalink: /publications/
 
 ## Bibliographic Indices 
 <small>
-\Source: [Google Scholar](https://scholar.google.it/citations?user=RvAqXUIAAAAJ&hl=en) | Last updated: {{ scholar.updated_at | date: "%d %B %Y" }}\]
+Source: [Google Scholar](https://scholar.google.it/citations?user=RvAqXUIAAAAJ&hl=en) | Last updated: {{ scholar.updated_at | date: "%d %B %Y" }}
 </small>
 
 - **Citations:** {{ scholar.citations }}
