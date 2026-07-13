@@ -47,6 +47,7 @@ Co-author of {% bibliography_count %} peer-reviewes publications, including {% b
 {% assign scholar = site.data.scholar %}
 {% if scholar.top_cited_bibtex_keys and scholar.top_cited_bibtex_keys.size > 0 %}
 ### Selected Publications
+\[source: [Google Scholar](https://scholar.google.it/citations?user=RvAqXUIAAAAJ&hl=en), updated: {{ scholar.updated_at | date: "%d %B %Y" }}\]
 
 {% bibliography --file top_cited --template bib %}
 
