@@ -17,9 +17,9 @@ title: CV
 - Research Assistant (supervisor: Prof. P. Tressoldi), University of Padua, 2019
 
 ## Professional Affiliations
-- Member, IEEE (Institute of Electrical and Electronics Engineers), 2014
-- Member, IEEE-EMBS (Engineering in Medicine and Biology Society), 2018
 - Chartered Engineer, Engineers Council of Milan, 2020
+- Member, IEEE-EMBS (Engineering in Medicine and Biology Society), 2018
+- Member, IEEE (Institute of Electrical and Electronics Engineers), 2014
 
 ## Academic Services
 ### Editorial Services
@@ -35,7 +35,7 @@ Frontiers in Human Neuroscience [5], Frontiers in Medicine [2], Frontiers in Pub
 
 #### Guest Editor - Research Topics / Special Issues
 - **2026 - 2027:** ["Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience - Volume III"](https://www.frontiersin.org/research-topics/80492/machine-learningdeep-learning-methods-in-neuromarketing-and-consumer-neuroscience-volume-iii) hosted by Frontiers in Human Neuroscience
--  **2025 - 2026:** ["Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience - Volume II"](https://www.frontiersin.org/research-topics/65160/machine-learningdeep-learning-methods-in-neuromarketing-and-consumer-neuroscience-volume-ii) hosted by Frontiers in Human Neuroscience
+- **2025 - 2026:** ["Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience - Volume II"](https://www.frontiersin.org/research-topics/65160/machine-learningdeep-learning-methods-in-neuromarketing-and-consumer-neuroscience-volume-ii) hosted by Frontiers in Human Neuroscience
 - **2024 - 2025:** ["Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience"](https://www.frontiersin.org/research-topics/49742/machine-learningdeep-learning-methods-in-neuromarketing-and-consumer-neuroscience/magazine) hosted by Frontiers in Neuroscience, Frontiers in Human Neuroscience and Frontiers in Psychology
 
 ### Conference Services
