@@ -42,4 +42,4 @@ Frontiers in Human Neuroscience [5], Frontiers in Medicine [2], Frontiers in Pub
 - **2025:** Event Comitee Member of the [The 1st International Online Conference on Behavioral Sciences](https://sciforum.net/event/iocbs2026) organised by Behavioural Sciences
 
 ## Publications
-Co-author of {% bibliography_count %} peer-reviewes publications, including {% bibliography_count --query @article %} [journal articles](publications/#journal-articles), {% bibliography_count --query @inproceedings[keywords=paper] %} [conference papers](publications/#conference-proceedings) and {% bibliography_count --query @inproceedings[keywords=presentation] %}  [conference abstracts / presentations:**](publications/#conference-presentations)
+Co-author of {% bibliography_count %} peer-reviewes publications, including {% bibliography_count --query @article %} [journal articles](/publications/#journal-articles), {% bibliography_count --query @inproceedings[keywords=paper] %} [conference papers](/publications/#conference-proceedings) and {% bibliography_count --query @inproceedings[keywords=presentation] %}  [conference abstracts / presentations](/publications/#conference-presentations). 
