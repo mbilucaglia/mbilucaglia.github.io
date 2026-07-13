@@ -46,7 +46,7 @@ Co-author of {% bibliography_count %} peer-reviewes publications, including {% b
 
 {% assign scholar = site.data.scholar %}
 {% if scholar.top_cited_bibtex_keys and scholar.top_cited_bibtex_keys.size > 0 %}
-## Most Cited Publications
+### Selected Publications
 
 {% bibliography --file top_cited --template bib %}
 
