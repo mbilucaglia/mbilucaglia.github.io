@@ -10,9 +10,19 @@
   "recent_period": "Since 2021",
   "scholar_id": "RvAqXUIAAAAJ",
   "source": "Google Scholar via SerpAPI",
+  "top_cited_bibliography": "_bibliography/top_cited.bib",
+  "top_cited_bibtex_keys": [
+    "zito2021",
+    "Bilucaglia2020a",
+    "fici2024",
+    "Laureanti2020",
+    "Giroldini2016b"
+  ],
   "top_cited_papers": [
     {
       "authors": "M Zito, A Fici, M Bilucaglia, FS Ambrogetti, V Russo",
+      "bibtex_key": "zito2021",
+      "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:VOx2b1Wkg3QC",
       "citations": 64,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&citation_for_view=RvAqXUIAAAAJ:VOx2b1Wkg3QC",
@@ -22,6 +32,8 @@
     },
     {
       "authors": "M Bilucaglia, GM Duma, G Mento, L Semenzato, PE Tressoldi",
+      "bibtex_key": "Bilucaglia2020a",
+      "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:RYcK_YlVTxYC",
       "citations": 49,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&citation_for_view=RvAqXUIAAAAJ:RYcK_YlVTxYC",
@@ -31,6 +43,8 @@
     },
     {
       "authors": "A Fici, M Bilucaglia, C Casiraghi, C Rossi, S Chiarelli, M Columbano, ...",
+      "bibtex_key": "fici2024",
+      "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:Ri6SYOTghG4C",
       "citations": 47,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&citation_for_view=RvAqXUIAAAAJ:Ri6SYOTghG4C",
@@ -40,6 +54,8 @@
     },
     {
       "authors": "R Laureanti, M Bilucaglia, M Zito, R Circi, A Fici, F Rivetti, R Valesi, ...",
+      "bibtex_key": "Laureanti2020",
+      "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:yD5IFk8b50cC",
       "citations": 42,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&citation_for_view=RvAqXUIAAAAJ:yD5IFk8b50cC",
@@ -49,6 +65,8 @@
     },
     {
       "authors": "W Giroldini, L Pederzoli, M Bilucaglia, S Melloni, P Tressoldi",
+      "bibtex_key": "Giroldini2016b",
+      "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:d1gkVwhDpl0C",
       "citations": 37,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&citation_for_view=RvAqXUIAAAAJ:d1gkVwhDpl0C",
@@ -57,5 +75,5 @@
       "year": "2016"
     }
   ],
-  "updated_at": "2026-07-13T08:52:42+00:00"
+  "updated_at": "2026-07-13T09:12:55+00:00"
 }
