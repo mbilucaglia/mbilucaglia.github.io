@@ -51,30 +51,36 @@ jobs:
           python scripts/update_scholar_metrics.py \
             --scholar-id "$SCHOLAR_ID" \
             --output _data/scholar.json \
-            --top-papers 5
+            --top-papers 5 \
+            --bibliography _bibliography/publications.bib \
+            --top-cited-bibliography _bibliography/top_cited.bib
 
-      - name: Verify Google Scholar metrics
+      - name: Verify Google Scholar metrics and top-cited bibliography
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
 
-          path = Path("_data/scholar.json")
+          scholar_path = Path("_data/scholar.json")
+          top_cited_path = Path("_bibliography/top_cited.bib")
 
-          if not path.exists():
-              raise SystemExit(
-                  "_data/scholar.json does not exist"
-              )
+          if not scholar_path.exists():
+              raise SystemExit("_data/scholar.json does not exist")
+
+          if not top_cited_path.exists():
+              raise SystemExit("_bibliography/top_cited.bib does not exist")
 
           data = json.loads(
-              path.read_text(encoding="utf-8")
+              scholar_path.read_text(encoding="utf-8")
           )
 
           required = [
               "citations",
               "h_index",
               "i10_index",
+              "top_cited_papers",
+              "top_cited_bibtex_keys",
           ]
 
           missing = [
@@ -85,8 +91,20 @@ jobs:
 
           if missing:
               raise SystemExit(
-                  "Missing Scholar metrics: "
+                  "Missing Scholar data: "
                   + ", ".join(missing)
+              )
+
+          if not data["top_cited_bibtex_keys"]:
+              raise SystemExit(
+                  "No top-cited papers were matched to BibTeX keys"
+              )
+
+          bibtex_text = top_cited_path.read_text(encoding="utf-8")
+
+          if "@article" not in bibtex_text.lower():
+              raise SystemExit(
+                  "_bibliography/top_cited.bib does not contain BibTeX entries"
               )
 
           print("Scholar metrics verified")
@@ -95,13 +113,17 @@ jobs:
           print(f"i10-index: {data['i10_index']}")
           print(f"Updated at: {data.get('updated_at')}")
           print(f"Source: {data.get('source')}")
+          print(
+              "Matched BibTeX keys: "
+              + ", ".join(data["top_cited_bibtex_keys"])
+          )
           PY
 
       - name: Commit updated Scholar metrics
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: |
-          if git diff --quiet -- _data/scholar.json; then
-            echo "Google Scholar metrics are unchanged."
+          if git diff --quiet -- _data/scholar.json _bibliography/top_cited.bib; then
+            echo "Google Scholar metrics and top-cited bibliography are unchanged."
             exit 0
           fi
 
@@ -109,7 +131,7 @@ jobs:
           git config user.email \
             "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add _data/scholar.json
+          git add _data/scholar.json _bibliography/top_cited.bib
           git commit -m "Update Google Scholar metrics"
           git push
 
