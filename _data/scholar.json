@@ -10,5 +10,52 @@
   "recent_period": "Since 2021",
   "scholar_id": "RvAqXUIAAAAJ",
   "source": "Google Scholar via SerpAPI",
-  "updated_at": "2026-07-13T08:28:29+00:00"
+  "top_cited_papers": [
+    {
+      "authors": "M Zito, A Fici, M Bilucaglia, FS Ambrogetti, V Russo",
+      "citation_id": "RvAqXUIAAAAJ:VOx2b1Wkg3QC",
+      "citations": 64,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&citation_for_view=RvAqXUIAAAAJ:VOx2b1Wkg3QC",
+      "publication": "Frontiers in Psychology 12, 1784, 2021",
+      "title": "Assessing the emotional response in social communication: the role of neuromarketing",
+      "year": "2021"
+    },
+    {
+      "authors": "M Bilucaglia, GM Duma, G Mento, L Semenzato, PE Tressoldi",
+      "citation_id": "RvAqXUIAAAAJ:RYcK_YlVTxYC",
+      "citations": 49,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&citation_for_view=RvAqXUIAAAAJ:RYcK_YlVTxYC",
+      "publication": "F1000Research 9, 173, 2021",
+      "title": "Applying machine learning EEG signal classification to emotion related brain anticipatory activity",
+      "year": "2021"
+    },
+    {
+      "authors": "A Fici, M Bilucaglia, C Casiraghi, C Rossi, S Chiarelli, M Columbano, ...",
+      "citation_id": "RvAqXUIAAAAJ:Ri6SYOTghG4C",
+      "citations": 47,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&citation_for_view=RvAqXUIAAAAJ:Ri6SYOTghG4C",
+      "publication": "Behavioral Sciences 14 (7), 596, 2024",
+      "title": "From E-Commerce to the Metaverse: A Neuroscientific Analysis of Digital Consumer Behavior",
+      "year": "2024"
+    },
+    {
+      "authors": "R Laureanti, M Bilucaglia, M Zito, R Circi, A Fici, F Rivetti, R Valesi, ...",
+      "citation_id": "RvAqXUIAAAAJ:yD5IFk8b50cC",
+      "citations": 42,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&citation_for_view=RvAqXUIAAAAJ:yD5IFk8b50cC",
+      "publication": "2020 42nd Annual International Conference of the IEEE Engineering in …, 2020",
+      "title": "Emotion assessment using Machine Learning and low-cost wearable devices",
+      "year": "2020"
+    },
+    {
+      "authors": "W Giroldini, L Pederzoli, M Bilucaglia, S Melloni, P Tressoldi",
+      "citation_id": "RvAqXUIAAAAJ:d1gkVwhDpl0C",
+      "citations": 37,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&citation_for_view=RvAqXUIAAAAJ:d1gkVwhDpl0C",
+      "publication": "EURASIP Journal on Bioinformatics and Systems Biology 2016 (1), 11, 2016",
+      "title": "A new method to detect event-related potentials based on Pearson’s correlation",
+      "year": "2016"
+    }
+  ],
+  "updated_at": "2026-07-13T08:52:42+00:00"
 }
