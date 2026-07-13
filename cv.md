@@ -43,3 +43,23 @@ Frontiers in Human Neuroscience [5], Frontiers in Medicine [2], Frontiers in Pub
 
 ## Publications
 Co-author of {% bibliography_count %} peer-reviewes publications, including {% bibliography_count --query @article %} [journal articles](/publications/#journal-articles), {% bibliography_count --query @inproceedings[keywords=paper] %} [conference papers](/publications/#conference-proceedings) and {% bibliography_count --query @inproceedings[keywords=presentation] %}  [conference abstracts / presentations](/publications/#conference-presentations). 
+
+### Selected publications
+{% for paper in scholar.top_cited_papers %}
+- {% if paper.link %}
+  [{{ paper.title }}]({{ paper.link }})
+  {% else %}
+  {{ paper.title }}
+  {% endif %}
+  — **{{ paper.citations }} citations**
+  {% if paper.year %}({{ paper.year }}){% endif %}
+{% endfor %}
+{% endif %}
+
+{% if scholar.updated_at %}
+<small>
+  Metrics last updated:
+  {{ scholar.updated_at | date: "%d %B %Y" }}.
+</small>
+{% endif %}
+{% endif %}
