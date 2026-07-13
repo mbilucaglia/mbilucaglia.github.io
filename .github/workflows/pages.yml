@@ -42,7 +42,7 @@ jobs:
             "beautifulsoup4>=4.12,<5" \
             "requests>=2.31,<3"
 
-           - name: Update Google Scholar metrics
+      - name: Update Google Scholar metrics
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         env:
           SCHOLAR_ID: RvAqXUIAAAAJ
