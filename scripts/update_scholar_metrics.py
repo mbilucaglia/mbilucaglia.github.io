@@ -530,7 +530,7 @@ def add_citation_note_to_bibtex(
 
     return (
         f"{body}\n"
-        f"  note = {{Google Scholar citations: {citations}}}\n"
+        f"  note = {{Citations: {citations}}}\n"
         f"}}"
     )
 
