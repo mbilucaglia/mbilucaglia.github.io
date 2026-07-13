@@ -50,10 +50,4 @@ Co-author of {% bibliography_count %} peer-reviewes publications, including {% b
 
 {% bibliography --file top_cited --template bib %}
 
-{% if scholar.updated_at %}
-<small>
-  Citation data from {{ scholar.source }},
-  last updated {{ scholar.updated_at | date: "%d %B %Y" }}.
-</small>
-{% endif %}
 {% endif %}
