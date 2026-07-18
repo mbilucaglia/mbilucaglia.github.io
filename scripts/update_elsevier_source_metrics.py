@@ -924,9 +924,14 @@ def parse_elsevier_payload(
         "citescore_year": citescore["year"],
         "citescore_percentile": citescore["percentile"],
         "citescore_quartile": citescore["quartile"],
-        "citescore_category": citescore["category"],
-        "citescore_rank": citescore["rank"],
-        "citescore_rank_out_of": citescore["rank_out_of"],
+        "citescore_category": (
+    citescore.get("category", "")
+    or citescore.get("subject_area", "")
+    or citescore.get("subject_code", "")
+),
+"citescore_subject_code": citescore.get("subject_code", ""),
+"citescore_rank": citescore.get("rank", ""),
+"citescore_rank_out_of": citescore.get("rank_out_of", ""),
         "citescore_records": citescore_records,
         "updated_at": utc_timestamp(),
     }
