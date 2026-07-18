@@ -35,7 +35,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install Scholar updater dependencies
+      - name: Install bibliometric updater dependencies
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: |
           python -m pip install \
@@ -55,27 +55,46 @@ jobs:
             --bibliography _bibliography/publications.bib \
             --top-cited-bibliography _bibliography/top_cited.bib
 
-      - name: Verify Google Scholar metrics and top-cited bibliography
+      - name: Update Elsevier source metrics
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        env:
+          ELSEVIER_API_KEY: ${{ secrets.ELSEVIER_API_KEY }}
+          ELSEVIER_INSTTOKEN: ${{ secrets.ELSEVIER_INSTTOKEN }}
+        run: |
+          python scripts/update_elsevier_source_metrics.py \
+            --bibliography _bibliography/publications.bib \
+            --source-output _data/elsevier_source_metrics.json \
+            --publication-output _data/publication_metrics.json
+
+      - name: Verify bibliometric outputs
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: |
           python - <<'PY'
           import json
+          import re
           from pathlib import Path
 
           scholar_path = Path("_data/scholar.json")
           top_cited_path = Path("_bibliography/top_cited.bib")
+          elsevier_path = Path("_data/elsevier_source_metrics.json")
+          publication_metrics_path = Path("_data/publication_metrics.json")
 
-          if not scholar_path.exists():
-              raise SystemExit("_data/scholar.json does not exist")
+          required_paths = [
+              scholar_path,
+              top_cited_path,
+              elsevier_path,
+              publication_metrics_path,
+          ]
 
-          if not top_cited_path.exists():
-              raise SystemExit("_bibliography/top_cited.bib does not exist")
+          for path in required_paths:
+              if not path.exists():
+                  raise SystemExit(f"{path} does not exist")
 
-          data = json.loads(
+          scholar = json.loads(
               scholar_path.read_text(encoding="utf-8")
           )
 
-          required = [
+          scholar_required = [
               "citations",
               "h_index",
               "i10_index",
@@ -83,47 +102,94 @@ jobs:
               "top_cited_bibtex_keys",
           ]
 
-          missing = [
+          missing_scholar = [
               key
-              for key in required
-              if key not in data
+              for key in scholar_required
+              if key not in scholar
           ]
 
-          if missing:
+          if missing_scholar:
               raise SystemExit(
                   "Missing Scholar data: "
-                  + ", ".join(missing)
+                  + ", ".join(missing_scholar)
               )
 
-          if not data["top_cited_bibtex_keys"]:
+          if not scholar["top_cited_bibtex_keys"]:
               raise SystemExit(
                   "No top-cited papers were matched to BibTeX keys"
               )
 
-          bibtex_text = top_cited_path.read_text(encoding="utf-8")
+          top_cited_text = top_cited_path.read_text(encoding="utf-8")
 
-          if "@article" not in bibtex_text.lower():
+          if not re.search(r"@\w+\s*\{", top_cited_text):
               raise SystemExit(
                   "_bibliography/top_cited.bib does not contain BibTeX entries"
               )
 
-          print("Scholar metrics verified")
-          print(f"Citations: {data['citations']}")
-          print(f"h-index: {data['h_index']}")
-          print(f"i10-index: {data['i10_index']}")
-          print(f"Updated at: {data.get('updated_at')}")
-          print(f"Source: {data.get('source')}")
-          print(
-              "Matched BibTeX keys: "
-              + ", ".join(data["top_cited_bibtex_keys"])
+          missing_top_cited_keys = [
+              key
+              for key in scholar["top_cited_bibtex_keys"]
+              if key not in top_cited_text
+          ]
+
+          if missing_top_cited_keys:
+              raise SystemExit(
+                  "Matched keys missing from top_cited.bib: "
+                  + ", ".join(missing_top_cited_keys)
+              )
+
+          elsevier = json.loads(
+              elsevier_path.read_text(encoding="utf-8")
           )
+
+          publication_metrics = json.loads(
+              publication_metrics_path.read_text(encoding="utf-8")
+          )
+
+          if not elsevier:
+              raise SystemExit(
+                  "_data/elsevier_source_metrics.json is empty"
+              )
+
+          if not publication_metrics:
+              raise SystemExit(
+                  "_data/publication_metrics.json is empty"
+              )
+
+          matched_elsevier = [
+              key
+              for key, value in publication_metrics.items()
+              if isinstance(value, dict)
+              and value.get("elsevier_matched")
+          ]
+
+          if not matched_elsevier:
+              raise SystemExit(
+                  "No publications were matched to Elsevier source metrics"
+              )
+
+          print("Bibliometric outputs verified")
+          print(f"Citations: {scholar['citations']}")
+          print(f"h-index: {scholar['h_index']}")
+          print(f"i10-index: {scholar['i10_index']}")
+          print(f"Scholar source: {scholar.get('source')}")
+          print(
+              "Top-cited BibTeX keys: "
+              + ", ".join(scholar["top_cited_bibtex_keys"])
+          )
+          print(f"Elsevier ISSNs indexed: {len(elsevier)}")
+          print(f"Elsevier-matched publications: {len(matched_elsevier)}")
           PY
 
-      - name: Commit updated Scholar metrics
+      - name: Commit updated bibliometric data
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: |
-          if git diff --quiet -- _data/scholar.json _bibliography/top_cited.bib; then
-            echo "Google Scholar metrics and top-cited bibliography are unchanged."
+          if git diff --quiet -- \
+            _data/scholar.json \
+            _bibliography/top_cited.bib \
+            _data/elsevier_source_metrics.json \
+            _data/publication_metrics.json; then
+            echo "Bibliometric data are unchanged."
             exit 0
           fi
 
@@ -131,8 +197,13 @@ jobs:
           git config user.email \
             "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add _data/scholar.json _bibliography/top_cited.bib
-          git commit -m "Update Google Scholar metrics"
+          git add \
+            _data/scholar.json \
+            _bibliography/top_cited.bib \
+            _data/elsevier_source_metrics.json \
+            _data/publication_metrics.json
+
+          git commit -m "Update bibliometric data"
           git push
 
       - name: Configure GitHub Pages
