@@ -441,12 +441,48 @@ def percentile_to_quartile(value: str) -> str:
 def extract_citescore_records(payload: Any) -> list[dict[str, str]]:
     """Extract CiteScore records from Elsevier Serial Title JSON.
 
-    The API can return CiteScore information in nested structures such as
-    citeScoreYearInfoList / citeScoreYearInfo. This function is intentionally
-    permissive and searches for keys containing CiteScore-related terms.
+    The previous version was too permissive and could mistake
+    citeScoreCurrentMetricYear for the CiteScore value.
     """
 
     records: list[dict[str, str]] = []
+
+    metric_value_keys = {
+        "citescorecurrentmetric",
+        "citescoremetric",
+        "citescorevalue",
+        "citescore",
+    }
+
+    year_keys = {
+        "citescorecurrentmetricyear",
+        "citescoreyear",
+        "year",
+        "@year",
+    }
+
+    percentile_keys = {
+        "citescorepercentile",
+        "percentile",
+    }
+
+    rank_keys = {
+        "citescorerank",
+        "rank",
+    }
+
+    rank_out_of_keys = {
+        "citescorerankoutof",
+        "rankoutof",
+        "outof",
+    }
+
+    category_keys = {
+        "citescorecategory",
+        "category",
+        "subjectarea",
+        "subject",
+    }
 
     for node in iter_nested_values(payload):
         if not isinstance(node, dict):
@@ -457,20 +493,10 @@ def extract_citescore_records(payload: Any) -> list[dict[str, str]]:
             for key in node.keys()
         }
 
-        has_citescore = any(
-            "citescore" in key
-            for key in lower_keys
-        )
-
-        if not has_citescore:
+        if not any("citescore" in key for key in lower_keys):
             continue
 
-        year = text_value(
-            node.get(lower_keys.get("year", ""))
-            or node.get(lower_keys.get("@year", ""))
-            or node.get(lower_keys.get("citescoreyear", ""))
-        )
-
+        year = ""
         current_metric = ""
         percentile = ""
         rank = ""
@@ -483,45 +509,45 @@ def extract_citescore_records(payload: Any) -> list[dict[str, str]]:
             if not value:
                 continue
 
-            if "currentmetric" in lower_key:
+            compact_key = lower_key.replace("-", "").replace("_", "")
+
+            if compact_key in metric_value_keys:
                 current_metric = value
 
-            elif lower_key in {
-                "citescore",
-                "citescorevalue",
-                "citescoremetric",
-            }:
-                current_metric = value
+            elif compact_key in year_keys:
+                year = value
 
-            elif "percentile" in lower_key:
+            elif compact_key in percentile_keys:
                 percentile = value
 
-            elif lower_key in {
-                "rank",
-                "citescorerank",
-            }:
+            elif compact_key in rank_keys:
                 rank = value
 
-            elif "rankoutof" in lower_key or "outof" in lower_key:
+            elif compact_key in rank_out_of_keys:
                 rank_out_of = value
 
-            elif "category" in lower_key or "subject" in lower_key:
+            elif compact_key in category_keys:
                 category = value
 
-        if current_metric or percentile or rank:
-            records.append(
-                {
-                    "year": year,
-                    "citescore": current_metric,
-                    "percentile": percentile,
-                    "rank": rank,
-                    "rank_out_of": rank_out_of,
-                    "category": category,
-                    "quartile": percentile_to_quartile(percentile),
-                }
-            )
+        if not current_metric:
+            continue
 
-    # Deduplicate loose recursive hits.
+        # Avoid accidentally storing a year as the CiteScore value.
+        if re.fullmatch(r"20\d{2}", current_metric):
+            continue
+
+        records.append(
+            {
+                "year": year,
+                "citescore": current_metric,
+                "percentile": percentile,
+                "rank": rank,
+                "rank_out_of": rank_out_of,
+                "category": category,
+                "quartile": percentile_to_quartile(percentile),
+            }
+        )
+
     seen: set[tuple[str, str, str, str]] = set()
     unique_records: list[dict[str, str]] = []
 
@@ -540,7 +566,6 @@ def extract_citescore_records(payload: Any) -> list[dict[str, str]]:
         unique_records.append(record)
 
     return unique_records
-
 
 def latest_citescore(
     records: list[dict[str, str]],
