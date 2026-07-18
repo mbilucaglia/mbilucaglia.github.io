@@ -6,10 +6,58 @@
   | replace: 'Bilucaglia, Marco', '<strong>Bilucaglia, Marco</strong>'
   | replace: 'Marco Bilucaglia', '<strong>Marco Bilucaglia</strong>' %}
 
+{% assign metrics = site.data.publication_metrics[entry.key] %}
+
 <div class="publication-item">
   <div class="publication-reference">
     {{ ref }}
   </div>
+
+  {% if metrics %}
+    {% if metrics.elsevier_matched or metrics.google_scholar_citations %}
+      <div class="publication-metrics">
+        {% if metrics.google_scholar_citations %}
+          <span>
+            Google Scholar citations: {{ metrics.google_scholar_citations }}
+          </span>
+        {% endif %}
+
+        {% if metrics.citescore %}
+          <span>
+            CiteScore{% if metrics.citescore_year %} {{ metrics.citescore_year }}{% endif %}:
+            {% if metrics.scopus_source_url %}
+              <a href="{{ metrics.scopus_source_url }}" target="_blank" rel="noopener">
+                {{ metrics.citescore }}
+              </a>
+            {% else %}
+              {{ metrics.citescore }}
+            {% endif %}
+          </span>
+        {% endif %}
+
+        {% if metrics.citescore_quartile %}
+          <span>
+            CiteScore quartile: {{ metrics.citescore_quartile }}
+            {% if metrics.citescore_category %}
+              — {{ metrics.citescore_category }}
+            {% endif %}
+          </span>
+        {% endif %}
+
+        {% if metrics.sjr %}
+          <span>
+            SJR{% if metrics.sjr_year %} {{ metrics.sjr_year }}{% endif %}: {{ metrics.sjr }}
+          </span>
+        {% endif %}
+
+        {% if metrics.snip %}
+          <span>
+            SNIP{% if metrics.snip_year %} {{ metrics.snip_year }}{% endif %}: {{ metrics.snip }}
+          </span>
+        {% endif %}
+      </div>
+    {% endif %}
+  {% endif %}
 
   {% if entry.note %}
     <div class="publication-note">
