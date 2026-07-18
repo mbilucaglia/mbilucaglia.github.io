@@ -1001,6 +1001,7 @@ def build_publication_metrics(
         "citescore_year": "",
         "citescore_percentile": "",
         "citescore_quartile": "",
+        "citescore_subject_code": "",
         "citescore_category": "",
         "citescore_rank": "",
         "citescore_rank_out_of": "",
@@ -1063,10 +1064,11 @@ def build_publication_metrics(
                     "citescore": matched_source.get("citescore", ""),
                     "citescore_year": matched_source.get("citescore_year", ""),
                     "citescore_percentile": matched_source.get("citescore_percentile", ""),
-                    "citescore_quartile": matched_source.get("citescore_quartile", ""),
-                    "citescore_category": matched_source.get("citescore_category", ""),
-                    "citescore_rank": matched_source.get("citescore_rank", ""),
-                    "citescore_rank_out_of": matched_source.get("citescore_rank_out_of", ""),
+"citescore_quartile": matched_source.get("citescore_quartile", ""),
+"citescore_category": matched_source.get("citescore_category", ""),
+"citescore_subject_code": matched_source.get("citescore_subject_code", ""),
+"citescore_rank": matched_source.get("citescore_rank", ""),
+"citescore_rank_out_of": matched_source.get("citescore_rank_out_of", ""),
                 }
             )
         else:
