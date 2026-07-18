@@ -980,6 +980,27 @@ def build_publication_metrics(
 ) -> dict[str, dict[str, Any]]:
     output: dict[str, dict[str, Any]] = {}
 
+    empty_elsevier_fields = {
+        "source_metric_source": "",
+        "source_title": "",
+        "source_id": "",
+        "scopus_source_url": "",
+        "publisher": "",
+        "sjr": "",
+        "sjr_year": "",
+        "snip": "",
+        "snip_year": "",
+        "ipp": "",
+        "ipp_year": "",
+        "citescore": "",
+        "citescore_year": "",
+        "citescore_percentile": "",
+        "citescore_quartile": "",
+        "citescore_category": "",
+        "citescore_rank": "",
+        "citescore_rank_out_of": "",
+    }
+
     for publication in publications:
         key = publication["key"]
 
@@ -992,10 +1013,20 @@ def build_publication_metrics(
         matched_source = None
 
         for issn in publication["all_issns"]:
-            if issn in source_metrics_by_issn:
-                matched_issn = issn
-                matched_source = source_metrics_by_issn[issn]
-                break
+            candidate = source_metrics_by_issn.get(issn)
+
+            if not candidate:
+                continue
+
+            # Important:
+            # A not-found ISSN is still stored in source_metrics_by_issn,
+            # but it must not count as an Elsevier match.
+            if not candidate.get("found"):
+                continue
+
+            matched_issn = issn
+            matched_source = candidate
+            break
 
         record: dict[str, Any] = {
             **existing,
@@ -1013,54 +1044,32 @@ def build_publication_metrics(
         if matched_source:
             record.update(
                 {
-                    "source_metric_source": matched_source["source"],
-                    "source_title": matched_source["title"],
-                    "source_id": matched_source["source_id"],
-                    "scopus_source_url": matched_source["scopus_source_url"],
-                    "publisher": matched_source["publisher"],
-                    "sjr": matched_source["sjr"],
-                    "sjr_year": matched_source["sjr_year"],
-                    "snip": matched_source["snip"],
-                    "snip_year": matched_source["snip_year"],
-                    "ipp": matched_source["ipp"],
-                    "ipp_year": matched_source["ipp_year"],
-                    "citescore": matched_source["citescore"],
-                    "citescore_year": matched_source["citescore_year"],
-                    "citescore_percentile": matched_source["citescore_percentile"],
-                    "citescore_quartile": matched_source["citescore_quartile"],
-                    "citescore_category": matched_source["citescore_category"],
-                    "citescore_rank": matched_source["citescore_rank"],
-                    "citescore_rank_out_of": matched_source["citescore_rank_out_of"],
+                    "source_metric_source": matched_source.get("source", ""),
+                    "source_title": matched_source.get("title", ""),
+                    "source_id": matched_source.get("source_id", ""),
+                    "scopus_source_url": matched_source.get("scopus_source_url", ""),
+                    "publisher": matched_source.get("publisher", ""),
+                    "sjr": matched_source.get("sjr", ""),
+                    "sjr_year": matched_source.get("sjr_year", ""),
+                    "snip": matched_source.get("snip", ""),
+                    "snip_year": matched_source.get("snip_year", ""),
+                    "ipp": matched_source.get("ipp", ""),
+                    "ipp_year": matched_source.get("ipp_year", ""),
+                    "citescore": matched_source.get("citescore", ""),
+                    "citescore_year": matched_source.get("citescore_year", ""),
+                    "citescore_percentile": matched_source.get("citescore_percentile", ""),
+                    "citescore_quartile": matched_source.get("citescore_quartile", ""),
+                    "citescore_category": matched_source.get("citescore_category", ""),
+                    "citescore_rank": matched_source.get("citescore_rank", ""),
+                    "citescore_rank_out_of": matched_source.get("citescore_rank_out_of", ""),
                 }
             )
         else:
-            record.update(
-                {
-                    "source_metric_source": "",
-                    "source_title": "",
-                    "source_id": "",
-                    "scopus_source_url": "",
-                    "publisher": "",
-                    "sjr": "",
-                    "sjr_year": "",
-                    "snip": "",
-                    "snip_year": "",
-                    "ipp": "",
-                    "ipp_year": "",
-                    "citescore": "",
-                    "citescore_year": "",
-                    "citescore_percentile": "",
-                    "citescore_quartile": "",
-                    "citescore_category": "",
-                    "citescore_rank": "",
-                    "citescore_rank_out_of": "",
-                }
-            )
+            record.update(empty_elsevier_fields)
 
         output[key] = record
 
     return output
-
 
 def main() -> int:
     parser = argparse.ArgumentParser()
