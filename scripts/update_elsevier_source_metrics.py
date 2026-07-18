@@ -441,110 +441,203 @@ def percentile_to_quartile(value: str) -> str:
 def extract_citescore_records(payload: Any) -> list[dict[str, str]]:
     """Extract CiteScore records from Elsevier Serial Title JSON.
 
-    The previous version was too permissive and could mistake
-    citeScoreCurrentMetricYear for the CiteScore value.
+    This version avoids mistaking the metric year for the CiteScore value
+    and extracts the best available percentile from nested subject-rank data.
     """
 
+    def compact_key(value: str) -> str:
+        return re.sub(r"[^a-z0-9]", "", value.lower())
+
+    def first_value_by_keys(
+        node: dict[str, Any],
+        possible_keys: set[str],
+    ) -> str:
+        for key, value in node.items():
+            if compact_key(key) in possible_keys:
+                return text_value(value)
+        return ""
+
+    def looks_like_year(value: str) -> bool:
+        return bool(re.fullmatch(r"20\d{2}", value.strip()))
+
+    def looks_numeric(value: str) -> bool:
+        return bool(re.fullmatch(r"\d+(\.\d+)?", value.strip()))
+
+    def collect_rank_records(node: Any) -> list[dict[str, str]]:
+        rank_records: list[dict[str, str]] = []
+
+        for child in iter_nested_values(node):
+            if not isinstance(child, dict):
+                continue
+
+            keys = {
+                compact_key(key): key
+                for key in child.keys()
+            }
+
+            has_rank_context = any(
+                key in keys
+                for key in {
+                    "rank",
+                    "rankoutof",
+                    "percentile",
+                    "citescorerank",
+                    "citescorepercentile",
+                    "subjectarea",
+                    "subjectcode",
+                    "category",
+                }
+            )
+
+            if not has_rank_context:
+                continue
+
+            percentile = first_value_by_keys(
+                child,
+                {
+                    "percentile",
+                    "citescorepercentile",
+                },
+            )
+
+            rank = first_value_by_keys(
+                child,
+                {
+                    "rank",
+                    "citescorerank",
+                },
+            )
+
+            rank_out_of = first_value_by_keys(
+                child,
+                {
+                    "rankoutof",
+                    "outof",
+                    "citescorerankoutof",
+                },
+            )
+
+            category = first_value_by_keys(
+                child,
+                {
+                    "category",
+                    "subject",
+                    "subjectarea",
+                    "subjectname",
+                    "description",
+                },
+            )
+
+            subject_code = first_value_by_keys(
+                child,
+                {
+                    "subjectcode",
+                    "code",
+                },
+            )
+
+            if percentile or rank or category or subject_code:
+                rank_records.append(
+                    {
+                        "percentile": percentile,
+                        "rank": rank,
+                        "rank_out_of": rank_out_of,
+                        "category": category,
+                        "subject_code": subject_code,
+                    }
+                )
+
+        return rank_records
+
+    def best_rank_record(
+        rank_records: list[dict[str, str]],
+    ) -> dict[str, str]:
+        if not rank_records:
+            return {
+                "percentile": "",
+                "rank": "",
+                "rank_out_of": "",
+                "category": "",
+                "subject_code": "",
+            }
+
+        def sort_key(record: dict[str, str]) -> float:
+            try:
+                return float(record.get("percentile") or -1)
+            except ValueError:
+                return -1
+
+        return sorted(
+            rank_records,
+            key=sort_key,
+            reverse=True,
+        )[0]
+
     records: list[dict[str, str]] = []
-
-    metric_value_keys = {
-        "citescorecurrentmetric",
-        "citescoremetric",
-        "citescorevalue",
-        "citescore",
-    }
-
-    year_keys = {
-        "citescorecurrentmetricyear",
-        "citescoreyear",
-        "year",
-        "@year",
-    }
-
-    percentile_keys = {
-        "citescorepercentile",
-        "percentile",
-    }
-
-    rank_keys = {
-        "citescorerank",
-        "rank",
-    }
-
-    rank_out_of_keys = {
-        "citescorerankoutof",
-        "rankoutof",
-        "outof",
-    }
-
-    category_keys = {
-        "citescorecategory",
-        "category",
-        "subjectarea",
-        "subject",
-    }
 
     for node in iter_nested_values(payload):
         if not isinstance(node, dict):
             continue
 
-        lower_keys = {
-            key.lower(): key
+        node_keys = {
+            compact_key(key)
             for key in node.keys()
         }
 
-        if not any("citescore" in key for key in lower_keys):
+        has_citescore_context = any(
+            "citescore" in key
+            for key in node_keys
+        )
+
+        if not has_citescore_context:
             continue
 
-        year = ""
-        current_metric = ""
-        percentile = ""
-        rank = ""
-        rank_out_of = ""
-        category = ""
+        year = first_value_by_keys(
+            node,
+            {
+                "year",
+                "citescoreyear",
+                "citescorecurrentmetricyear",
+                "citescoretrackeryear",
+            },
+        )
 
-        for lower_key, original_key in lower_keys.items():
-            value = text_value(node[original_key])
+        citescore = first_value_by_keys(
+            node,
+            {
+                "citescorecurrentmetric",
+                "citescoremetric",
+                "citescorevalue",
+                "citescore",
+                "currentmetric",
+            },
+        )
 
-            if not value:
-                continue
-
-            compact_key = lower_key.replace("-", "").replace("_", "")
-
-            if compact_key in metric_value_keys:
-                current_metric = value
-
-            elif compact_key in year_keys:
-                year = value
-
-            elif compact_key in percentile_keys:
-                percentile = value
-
-            elif compact_key in rank_keys:
-                rank = value
-
-            elif compact_key in rank_out_of_keys:
-                rank_out_of = value
-
-            elif compact_key in category_keys:
-                category = value
-
-        if not current_metric:
+        # Do not store the year as the CiteScore value.
+        if not citescore or looks_like_year(citescore):
             continue
 
-        # Avoid accidentally storing a year as the CiteScore value.
-        if re.fullmatch(r"20\d{2}", current_metric):
+        # CiteScore should be numeric. This avoids storing labels/status text.
+        if not looks_numeric(citescore):
             continue
+
+        rank_record = best_rank_record(
+            collect_rank_records(node)
+        )
+
+        percentile = rank_record["percentile"]
+        quartile = percentile_to_quartile(percentile)
 
         records.append(
             {
                 "year": year,
-                "citescore": current_metric,
+                "citescore": citescore,
                 "percentile": percentile,
-                "rank": rank,
-                "rank_out_of": rank_out_of,
-                "category": category,
-                "quartile": percentile_to_quartile(percentile),
+                "rank": rank_record["rank"],
+                "rank_out_of": rank_record["rank_out_of"],
+                "category": rank_record["category"],
+                "subject_code": rank_record["subject_code"],
+                "quartile": quartile,
             }
         )
 
@@ -578,14 +671,22 @@ def latest_citescore(
             "rank": "",
             "rank_out_of": "",
             "category": "",
+            "subject_code": "",
             "quartile": "",
         }
 
-    def sort_key(record: dict[str, str]) -> int:
+    def sort_key(record: dict[str, str]) -> tuple[int, float]:
         try:
-            return int(record.get("year") or -1)
+            year = int(record.get("year") or -1)
         except ValueError:
-            return -1
+            year = -1
+
+        try:
+            percentile = float(record.get("percentile") or -1)
+        except ValueError:
+            percentile = -1
+
+        return year, percentile
 
     return sorted(
         records,
