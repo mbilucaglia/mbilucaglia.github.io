@@ -39,10 +39,9 @@ jobs:
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: |
           python -m pip install \
-            "beautifulsoup4>=4.12,<5" \
             "requests>=2.31,<3"
 
-     - name: Update Google Scholar metrics
+      - name: Update Google Scholar metrics
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         env:
           SCHOLAR_ID: RvAqXUIAAAAJ
@@ -66,7 +65,8 @@ jobs:
           python scripts/update_elsevier_source_metrics.py \
             --bibliography _bibliography/publications.bib \
             --source-output _data/elsevier_source_metrics.json \
-            --publication-output _data/publication_metrics.json
+            --publication-output _data/publication_metrics.json \
+            --asjc-codes _data/asjc_codes.json
 
       - name: Verify bibliometric outputs
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
@@ -80,12 +80,14 @@ jobs:
           top_cited_path = Path("_bibliography/top_cited.bib")
           elsevier_path = Path("_data/elsevier_source_metrics.json")
           publication_metrics_path = Path("_data/publication_metrics.json")
+          asjc_codes_path = Path("_data/asjc_codes.json")
 
           required_paths = [
               scholar_path,
               top_cited_path,
               elsevier_path,
               publication_metrics_path,
+              asjc_codes_path,
           ]
 
           for path in required_paths:
@@ -102,6 +104,7 @@ jobs:
               "i10_index",
               "top_cited_papers",
               "top_cited_bibtex_keys",
+              "publication_metrics_matched_keys",
           ]
 
           missing_scholar = [
@@ -119,6 +122,11 @@ jobs:
           if not scholar["top_cited_bibtex_keys"]:
               raise SystemExit(
                   "No top-cited papers were matched to BibTeX keys"
+              )
+
+          if not scholar["publication_metrics_matched_keys"]:
+              raise SystemExit(
+                  "No Google Scholar papers were matched to publication_metrics.json"
               )
 
           top_cited_text = top_cited_path.read_text(encoding="utf-8")
@@ -148,6 +156,10 @@ jobs:
               publication_metrics_path.read_text(encoding="utf-8")
           )
 
+          asjc_codes = json.loads(
+              asjc_codes_path.read_text(encoding="utf-8")
+          )
+
           if not elsevier:
               raise SystemExit(
                   "_data/elsevier_source_metrics.json is empty"
@@ -158,6 +170,11 @@ jobs:
                   "_data/publication_metrics.json is empty"
               )
 
+          if not asjc_codes:
+              raise SystemExit(
+                  "_data/asjc_codes.json is empty"
+              )
+
           matched_elsevier = [
               key
               for key, value in publication_metrics.items()
@@ -165,9 +182,33 @@ jobs:
               and value.get("elsevier_matched")
           ]
 
+          matched_scholar = [
+              key
+              for key, value in publication_metrics.items()
+              if isinstance(value, dict)
+              and value.get("google_scholar_citations") is not None
+          ]
+
+          matched_categories = [
+              key
+              for key, value in publication_metrics.items()
+              if isinstance(value, dict)
+              and value.get("citescore_category")
+          ]
+
           if not matched_elsevier:
               raise SystemExit(
                   "No publications were matched to Elsevier source metrics"
+              )
+
+          if not matched_scholar:
+              raise SystemExit(
+                  "No publications have Google Scholar citation counts"
+              )
+
+          if not matched_categories:
+              raise SystemExit(
+                  "No publications have CiteScore category names"
               )
 
           print("Bibliometric outputs verified")
@@ -179,8 +220,14 @@ jobs:
               "Top-cited BibTeX keys: "
               + ", ".join(scholar["top_cited_bibtex_keys"])
           )
+          print(
+              "Google Scholar matched keys: "
+              + ", ".join(scholar["publication_metrics_matched_keys"])
+          )
           print(f"Elsevier ISSNs indexed: {len(elsevier)}")
           print(f"Elsevier-matched publications: {len(matched_elsevier)}")
+          print(f"Google Scholar citation-count publications: {len(matched_scholar)}")
+          print(f"CiteScore category publications: {len(matched_categories)}")
           PY
 
       - name: Commit updated bibliometric data
