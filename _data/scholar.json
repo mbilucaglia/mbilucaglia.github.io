@@ -1,6 +1,6 @@
 {
-  "citations": 625,
-  "citations_recent": 517,
+  "citations": 627,
+  "citations_recent": 519,
   "h_index": 16,
   "h_index_recent": 15,
   "i10_index": 21,
@@ -24,7 +24,7 @@
       "bibtex_key": "zito2021",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:VOx2b1Wkg3QC",
-      "citations": 63,
+      "citations": 64,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&citation_for_view=RvAqXUIAAAAJ:VOx2b1Wkg3QC",
       "publication": "Frontiers in Psychology 12, 1784, 2021",
       "title": "Assessing the emotional response in social communication: the role of neuromarketing",
@@ -75,5 +75,5 @@
       "year": "2016"
     }
   ],
-  "updated_at": "2026-07-18T06:00:57+00:00"
+  "updated_at": "2026-07-20T08:18:51+00:00"
 }
