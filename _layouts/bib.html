@@ -40,8 +40,6 @@
     CiteScore quartile: {{ metrics.citescore_quartile }}
     {% if metrics.citescore_category and metrics.citescore_category != "—" %}
       — {{ metrics.citescore_category }}
-    {% elsif metrics.citescore_subject_code and metrics.citescore_subject_code != "—" %}
-      — subject code {{ metrics.citescore_subject_code }}
     {% endif %}
   </span>
 {% endif %}
