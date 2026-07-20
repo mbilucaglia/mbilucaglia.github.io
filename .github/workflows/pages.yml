@@ -42,7 +42,7 @@ jobs:
             "beautifulsoup4>=4.12,<5" \
             "requests>=2.31,<3"
 
-      - name: Update Google Scholar metrics
+     - name: Update Google Scholar metrics
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         env:
           SCHOLAR_ID: RvAqXUIAAAAJ
@@ -51,9 +51,11 @@ jobs:
           python scripts/update_scholar_metrics.py \
             --scholar-id "$SCHOLAR_ID" \
             --output _data/scholar.json \
-            --top-papers 5 \
             --bibliography _bibliography/publications.bib \
-            --top-cited-bibliography _bibliography/top_cited.bib
+            --top-cited-bibliography _bibliography/top_cited.bib \
+            --publication-metrics _data/publication_metrics.json \
+            --top-papers 5 \
+            --scholar-articles 100
 
       - name: Update Elsevier source metrics
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
