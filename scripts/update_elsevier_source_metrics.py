@@ -3,6 +3,7 @@
 
 Inputs:
 - _bibliography/publications.bib
+- _data/asjc_codes.json
 - ELSEVIER_API_KEY environment variable
 - Optional: ELSEVIER_INSTTOKEN environment variable
 
@@ -513,10 +514,15 @@ def looks_like_year(value: str) -> bool:
 
 
 def looks_numeric(value: str) -> bool:
-    return bool(re.fullmatch(r"\d+(\.\d+)?", value.strip().replace(",", ".")))
+    return bool(
+        re.fullmatch(
+            r"\d+(\.\d+)?",
+            value.strip().replace(",", "."),
+        )
+    )
 
 
-def clean_category(value: str) -> str:
+def clean_category(value: str | None) -> str:
     text = str(value or "").strip()
 
     if not text:
@@ -526,11 +532,65 @@ def clean_category(value: str) -> str:
     if re.fullmatch(r"\d+", text):
         return ""
 
-    # Avoid storing quartile strings or rank text as category names.
+    # Avoid storing quartile strings as category names.
     if re.fullmatch(r"Q[1-4]", text.upper()):
         return ""
 
     return text
+
+
+def load_existing_json(path: Path) -> dict[str, Any]:
+    if not path.exists():
+        return {}
+
+    data = json.loads(
+        path.read_text(encoding="utf-8")
+    )
+
+    if not isinstance(data, dict):
+        return {}
+
+    return data
+
+
+def load_asjc_codes(path: Path) -> dict[str, str]:
+    if not path.exists():
+        return {}
+
+    data = json.loads(
+        path.read_text(encoding="utf-8")
+    )
+
+    if not isinstance(data, dict):
+        return {}
+
+    return {
+        str(code).strip(): str(name).strip()
+        for code, name in data.items()
+        if str(code).strip() and str(name).strip()
+    }
+
+
+def asjc_category_name(
+    subject_code: str | None,
+    asjc_codes: dict[str, str],
+) -> str:
+    code = str(subject_code or "").strip()
+
+    if not code:
+        return ""
+
+    return asjc_codes.get(code, "")
+
+
+def category_from_record(
+    record: dict[str, Any],
+    asjc_codes: dict[str, str],
+) -> str:
+    return (
+        clean_category(record.get("category", ""))
+        or asjc_category_name(record.get("subject_code", ""), asjc_codes)
+    )
 
 
 def collect_rank_records(node: Any) -> list[dict[str, str]]:
@@ -646,6 +706,13 @@ def collect_rank_records(node: Any) -> list[dict[str, str]]:
 def best_rank_record(
     rank_records: list[dict[str, str]],
 ) -> dict[str, str]:
+    """Choose the highest percentile rank record.
+
+    This is appropriate for journal/source-level data. For non-article
+    publication entries, build_publication_metrics() applies a more
+    conservative publication-level selection.
+    """
+
     if not rank_records:
         return {
             "percentile": "",
@@ -678,13 +745,54 @@ def best_rank_record(
     )[0]
 
 
-def extract_citescore_records(payload: Any) -> list[dict[str, str]]:
-    """Extract CiteScore records from Elsevier Serial Title JSON.
+def worst_rank_record(
+    rank_records: list[dict[str, str]],
+) -> dict[str, str]:
+    """Choose the lowest available percentile rank record.
 
-    This version avoids mistaking CiteScore year fields for CiteScore values,
-    derives quartiles from percentiles when needed, and avoids storing numeric
-    subject codes as category names.
+    This is used for non-article entries such as conference proceedings,
+    where broad source-level categories can otherwise overstate the quartile.
     """
+
+    clean_records = [
+        record
+        for record in rank_records
+        if record.get("percentile") or record.get("quartile")
+    ]
+
+    if not clean_records:
+        return {
+            "percentile": "",
+            "quartile": "",
+            "rank": "",
+            "rank_out_of": "",
+            "category": "",
+            "subject_code": "",
+        }
+
+    def sort_key(record: dict[str, str]) -> tuple[float, int]:
+        try:
+            percentile = float(
+                str(record.get("percentile") or "999")
+                .replace("%", "")
+                .replace(",", ".")
+            )
+        except ValueError:
+            percentile = 999
+
+        return (
+            percentile,
+            quartile_score(record.get("quartile", "")),
+        )
+
+    return sorted(
+        clean_records,
+        key=sort_key,
+    )[0]
+
+
+def extract_citescore_records(payload: Any) -> list[dict[str, str]]:
+    """Extract CiteScore records from Elsevier Serial Title JSON."""
 
     records: list[dict[str, str]] = []
 
@@ -762,7 +870,7 @@ def extract_citescore_records(payload: Any) -> list[dict[str, str]]:
             }
         )
 
-    seen: set[tuple[str, str, str, str, str]] = set()
+    seen: set[tuple[str, str, str, str, str, str]] = set()
     unique_records: list[dict[str, str]] = []
 
     for record in records:
@@ -772,6 +880,7 @@ def extract_citescore_records(payload: Any) -> list[dict[str, str]]:
             record["percentile"],
             record["quartile"],
             record["category"],
+            record["subject_code"],
         )
 
         if identity in seen:
@@ -824,6 +933,61 @@ def latest_citescore(
         key=sort_key,
         reverse=True,
     )[0]
+
+
+def conservative_citescore_record(
+    matched_source: dict[str, Any],
+) -> dict[str, str]:
+    """Choose a conservative CiteScore record for non-article entries.
+
+    For broad conference series, the highest percentile can be misleading.
+    This function chooses the lowest percentile among available CiteScore
+    records for the matched source.
+    """
+
+    records = matched_source.get("citescore_records", [])
+
+    if not isinstance(records, list):
+        records = []
+
+    rank_records: list[dict[str, str]] = []
+
+    for record in records:
+        if not isinstance(record, dict):
+            continue
+
+        percentile = str(record.get("percentile", "")).strip()
+        quartile = str(record.get("quartile", "")).strip()
+
+        if not percentile and not quartile:
+            continue
+
+        rank_records.append(
+            {
+                "percentile": percentile,
+                "quartile": (
+                    normalize_quartile(quartile)
+                    or percentile_to_quartile(percentile)
+                ),
+                "rank": str(record.get("rank", "")).strip(),
+                "rank_out_of": str(record.get("rank_out_of", "")).strip(),
+                "category": clean_category(record.get("category", "")),
+                "subject_code": str(record.get("subject_code", "")).strip(),
+            }
+        )
+
+    conservative_rank = worst_rank_record(rank_records)
+
+    return {
+        "citescore": str(matched_source.get("citescore", "")).strip(),
+        "year": str(matched_source.get("citescore_year", "")).strip(),
+        "percentile": conservative_rank.get("percentile", ""),
+        "quartile": conservative_rank.get("quartile", ""),
+        "category": conservative_rank.get("category", ""),
+        "subject_code": conservative_rank.get("subject_code", ""),
+        "rank": conservative_rank.get("rank", ""),
+        "rank_out_of": conservative_rank.get("rank_out_of", ""),
+    }
 
 
 def fetch_elsevier_serial_title(
@@ -947,6 +1111,7 @@ def parse_elsevier_payload(
     issn: str,
     payload: dict[str, Any],
     raw_payload: bool,
+    asjc_codes: dict[str, str],
 ) -> dict[str, Any]:
     links = extract_links(payload)
 
@@ -1055,8 +1220,9 @@ def parse_elsevier_payload(
         "citescore_year": citescore.get("year", ""),
         "citescore_percentile": citescore.get("percentile", ""),
         "citescore_quartile": citescore.get("quartile", ""),
-        "citescore_category": clean_category(
-            citescore.get("category", "")
+        "citescore_category": category_from_record(
+            citescore,
+            asjc_codes,
         ),
         "citescore_subject_code": citescore.get("subject_code", ""),
         "citescore_rank": citescore.get("rank", ""),
@@ -1069,15 +1235,6 @@ def parse_elsevier_payload(
         record["raw_payload"] = payload
 
     return record
-
-
-def load_existing_json(path: Path) -> dict[str, Any]:
-    if not path.exists():
-        return {}
-
-    return json.loads(
-        path.read_text(encoding="utf-8")
-    )
 
 
 def write_json(
@@ -1135,6 +1292,7 @@ def build_publication_metrics(
     publications: list[dict[str, Any]],
     source_metrics_by_issn: dict[str, dict[str, Any]],
     existing_publication_metrics: dict[str, Any],
+    asjc_codes: dict[str, str],
 ) -> dict[str, dict[str, Any]]:
     output: dict[str, dict[str, Any]] = {}
 
@@ -1178,6 +1336,22 @@ def build_publication_metrics(
         }
 
         if matched_source:
+            if publication["type"] == "article":
+                citescore_for_publication = {
+                    "citescore": matched_source.get("citescore", ""),
+                    "year": matched_source.get("citescore_year", ""),
+                    "percentile": matched_source.get("citescore_percentile", ""),
+                    "quartile": matched_source.get("citescore_quartile", ""),
+                    "category": matched_source.get("citescore_category", ""),
+                    "subject_code": matched_source.get("citescore_subject_code", ""),
+                    "rank": matched_source.get("citescore_rank", ""),
+                    "rank_out_of": matched_source.get("citescore_rank_out_of", ""),
+                }
+            else:
+                citescore_for_publication = conservative_citescore_record(
+                    matched_source
+                )
+
             record.update(
                 {
                     "source_metric_source": matched_source.get("source", ""),
@@ -1191,16 +1365,17 @@ def build_publication_metrics(
                     "snip_year": matched_source.get("snip_year", ""),
                     "ipp": matched_source.get("ipp", ""),
                     "ipp_year": matched_source.get("ipp_year", ""),
-                    "citescore": matched_source.get("citescore", ""),
-                    "citescore_year": matched_source.get("citescore_year", ""),
-                    "citescore_percentile": matched_source.get("citescore_percentile", ""),
-                    "citescore_quartile": matched_source.get("citescore_quartile", ""),
-                    "citescore_category": clean_category(
-                        matched_source.get("citescore_category", "")
+                    "citescore": citescore_for_publication.get("citescore", ""),
+                    "citescore_year": citescore_for_publication.get("year", ""),
+                    "citescore_percentile": citescore_for_publication.get("percentile", ""),
+                    "citescore_quartile": citescore_for_publication.get("quartile", ""),
+                    "citescore_category": category_from_record(
+                        citescore_for_publication,
+                        asjc_codes,
                     ),
-                    "citescore_subject_code": matched_source.get("citescore_subject_code", ""),
-                    "citescore_rank": matched_source.get("citescore_rank", ""),
-                    "citescore_rank_out_of": matched_source.get("citescore_rank_out_of", ""),
+                    "citescore_subject_code": citescore_for_publication.get("subject_code", ""),
+                    "citescore_rank": citescore_for_publication.get("rank", ""),
+                    "citescore_rank_out_of": citescore_for_publication.get("rank_out_of", ""),
                 }
             )
         else:
@@ -1230,6 +1405,12 @@ def main() -> int:
         "--publication-output",
         type=Path,
         default=Path("_data/publication_metrics.json"),
+    )
+
+    parser.add_argument(
+        "--asjc-codes",
+        type=Path,
+        default=Path("_data/asjc_codes.json"),
     )
 
     parser.add_argument(
@@ -1264,6 +1445,10 @@ def main() -> int:
         return 1
 
     try:
+        asjc_codes = load_asjc_codes(
+            args.asjc_codes
+        )
+
         publications = load_bibtex_publications(
             args.bibliography
         )
@@ -1279,6 +1464,7 @@ def main() -> int:
 
         source_metrics_by_issn: dict[str, dict[str, Any]] = {}
 
+        print(f"ASJC codes loaded: {len(asjc_codes)}")
         print(f"Unique ISSNs to query: {len(unique_issns)}")
 
         for index, issn in enumerate(unique_issns, start=1):
@@ -1312,6 +1498,7 @@ def main() -> int:
                     issn=issn,
                     payload=result["payload"],
                     raw_payload=args.include_raw_payload,
+                    asjc_codes=asjc_codes,
                 ),
             }
 
@@ -1326,6 +1513,7 @@ def main() -> int:
             publications=publications,
             source_metrics_by_issn=source_metrics_by_issn,
             existing_publication_metrics=existing_publication_metrics,
+            asjc_codes=asjc_codes,
         )
 
         write_json(
@@ -1369,12 +1557,19 @@ def main() -> int:
         if metric.get("citescore_quartile")
     ]
 
+    matched_with_category = [
+        key
+        for key, metric in publication_metrics.items()
+        if metric.get("citescore_category")
+    ]
+
     print(f"Publications read: {len(publications)}")
     print(f"ISSNs queried: {len(unique_issns)}")
     print(f"Matched publications: {len(matched_publications)}")
     print(f"Unmatched publications: {len(unmatched_publications)}")
     print(f"Publications with CiteScore: {len(matched_with_citescore)}")
     print(f"Publications with CiteScore quartile: {len(matched_with_quartile)}")
+    print(f"Publications with CiteScore category: {len(matched_with_category)}")
     print(f"Updated: {args.source_output}")
     print(f"Updated: {args.publication_output}")
 
