@@ -956,10 +956,9 @@ def parse_elsevier_payload(
         "citescore_percentile": citescore["percentile"],
         "citescore_quartile": citescore["quartile"],
         "citescore_category": (
-"citescore_category": (
-    citescore.get("category", "")
-    or citescore.get("subject_area", "")
-),
+        citescore.get("category", "")
+        or citescore.get("subject_area", "")
+        ),
 "citescore_subject_code": citescore.get("subject_code", ""),
 ),
 "citescore_subject_code": citescore.get("subject_code", ""),
