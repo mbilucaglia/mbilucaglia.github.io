@@ -37,9 +37,9 @@
 
 {% if metrics.citescore_quartile and metrics.citescore_quartile != "—" %}
   <span class="publication-metric">
-    CiteScore quartile: {{ metrics.citescore_quartile }}
+    {{ metrics.citescore_quartile }}
     {% if metrics.citescore_category and metrics.citescore_category != "—" %}
-      — {{ metrics.citescore_category }}
+    ({{ metrics.citescore_category }})
     {% endif %}
   </span>
 {% endif %}
