@@ -421,21 +421,52 @@ def latest_metric(
 
 
 def percentile_to_quartile(value: str) -> str:
+    """Convert CiteScore percentile to CiteScore quartile.
+
+    Elsevier/Scopus convention:
+    - Q1: 75th–99th percentile
+    - Q2: 50th–74th percentile
+    - Q3: 25th–49th percentile
+    - Q4: 0th–24th percentile
+    """
+
+    if value is None:
+        return ""
+
+    text = str(value).strip()
+
+    if not text:
+        return ""
+
+    text = text.replace("%", "").replace(",", ".")
+
+    match = re.search(r"\d+(\.\d+)?", text)
+
+    if not match:
+        return ""
+
     try:
-        percentile = float(value)
+        percentile = float(match.group(0))
     except ValueError:
         return ""
 
-    if percentile >= 75:
-        return "Q1"
+    # Defensive handling in case an API ever returns 0–1 instead of 0–100.
+    if 0 <= percentile <= 1:
+        percentile = percentile * 100
 
-    if percentile >= 50:
-        return "Q2"
+    if percentile < 0 or percentile > 100:
+        return ""
 
-    if percentile >= 25:
+    if percentile < 25:
+        return "Q4"
+
+    if percentile < 50:
         return "Q3"
 
-    return "Q4"
+    if percentile < 75:
+        return "Q2"
+
+    return "Q1"
 
 
 def extract_citescore_records(payload: Any) -> list[dict[str, str]]:
