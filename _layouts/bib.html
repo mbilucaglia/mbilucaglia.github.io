@@ -14,48 +14,40 @@
   </div>
 
   {% if metrics %}
-    {% if metrics.elsevier_matched or metrics.google_scholar_citations %}
-      <div class="publication-metrics">
+    {% if metrics.google_scholar_citations or metrics.citescore %}
+      <small class="publication-metrics publication-metrics-compact">
         {% if metrics.google_scholar_citations %}
-          <span>
-            Google Scholar citations: {{ metrics.google_scholar_citations }}
-          </span>
-        {% endif %}
-
-        {% if metrics.citescore %}
-          <span>
-            CiteScore{% if metrics.citescore_year %} {{ metrics.citescore_year }}{% endif %}:
-            {% if metrics.scopus_source_url %}
-              <a href="{{ metrics.scopus_source_url }}" target="_blank" rel="noopener">
-                {{ metrics.citescore }}
+          <span class="publication-metric-line">
+            {% if metrics.google_scholar_link %}
+              <a href="{{ metrics.google_scholar_link }}" target="_blank" rel="noopener">
+                Citations: {{ metrics.google_scholar_citations }}
               </a>
             {% else %}
-              {{ metrics.citescore }}
+              Citations: {{ metrics.google_scholar_citations }}
             {% endif %}
           </span>
         {% endif %}
 
-{% if metrics.citescore_quartile and metrics.citescore_quartile != "—" %}
-  <span class="publication-metric">
-    {{ metrics.citescore_quartile }}
-    {% if metrics.citescore_category and metrics.citescore_category != "—" %}
-    ({{ metrics.citescore_category }})
-    {% endif %}
-  </span>
-{% endif %}
+        {% if metrics.citescore %}
+          <span class="publication-metric-line">
+            {% if metrics.scopus_source_url %}
+              <a href="{{ metrics.scopus_source_url }}" target="_blank" rel="noopener">
+                CiteScore{% if metrics.citescore_year %} {{ metrics.citescore_year }}{% endif %}: {{ metrics.citescore }}
+              </a>
+            {% else %}
+              CiteScore{% if metrics.citescore_year %} {{ metrics.citescore_year }}{% endif %}: {{ metrics.citescore }}
+            {% endif %}
 
-        {% if metrics.sjr %}
-          <span>
-            SJR{% if metrics.sjr_year %} {{ metrics.sjr_year }}{% endif %}: {{ metrics.sjr }}
+            {% if metrics.citescore_quartile and metrics.citescore_quartile != "—" %}
+              , {{ metrics.citescore_quartile }}
+            {% endif %}
+
+            {% if metrics.citescore_category and metrics.citescore_category != "—" %}
+              - {{ metrics.citescore_category }}
+            {% endif %}
           </span>
         {% endif %}
-
-        {% if metrics.snip %}
-          <span>
-            SNIP{% if metrics.snip_year %} {{ metrics.snip_year }}{% endif %}: {{ metrics.snip }}
-          </span>
-        {% endif %}
-      </div>
+      </small>
     {% endif %}
   {% endif %}
 
