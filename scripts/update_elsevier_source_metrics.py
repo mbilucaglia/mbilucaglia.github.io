@@ -42,18 +42,21 @@ def utc_timestamp() -> str:
     )
 
 
+def compact_key(value: str) -> str:
+    return re.sub(r"[^a-z0-9]", "", value.lower())
+
+
 def normalize_issn(value: str | None) -> str:
     if not value:
         return ""
 
-    value = value.strip()
-    value = value.replace("{", "").replace("}", "")
-    value = value.replace("ISSN", "")
-    value = value.replace("issn", "")
+    text = str(value).strip()
+    text = text.replace("{", "").replace("}", "")
+    text = text.replace("ISSN", "").replace("issn", "")
 
     characters = [
         character.upper()
-        for character in value
+        for character in text
         if character.isdigit() or character.upper() == "X"
     ]
 
@@ -194,10 +197,11 @@ def normalize_text(value: str | None) -> str:
     if not value:
         return ""
 
-    value = value.replace("{", "").replace("}", "")
-    value = re.sub(r"\s+", " ", value)
+    text = str(value)
+    text = text.replace("{", "").replace("}", "")
+    text = re.sub(r"\s+", " ", text)
 
-    return value.strip()
+    return text.strip()
 
 
 def load_bibtex_publications(
@@ -221,7 +225,7 @@ def load_bibtex_publications(
             extract_bibtex_field(entry, "print_issn")
         )
 
-        all_issns = []
+        all_issns: list[str] = []
 
         for candidate in [issn, print_issn]:
             if candidate and candidate not in all_issns:
@@ -271,6 +275,42 @@ def iter_nested_values(value: Any) -> list[Any]:
     return output
 
 
+def text_value(value: Any) -> str:
+    if value is None:
+        return ""
+
+    if isinstance(value, str):
+        return value.strip()
+
+    if isinstance(value, (int, float)):
+        return str(value)
+
+    if isinstance(value, dict):
+        for key in [
+            "$",
+            "#text",
+            "_",
+            "value",
+            "@value",
+            "text",
+        ]:
+            if key in value:
+                return text_value(value[key])
+
+    return ""
+
+
+def first_value_by_compact_keys(
+    node: dict[str, Any],
+    possible_keys: set[str],
+) -> str:
+    for key, value in node.items():
+        if compact_key(key) in possible_keys:
+            return text_value(value)
+
+    return ""
+
+
 def find_first_key(
     payload: Any,
     possible_keys: list[str],
@@ -291,51 +331,20 @@ def find_first_key(
     return None
 
 
-def text_value(value: Any) -> str:
-    if value is None:
-        return ""
-
-    if isinstance(value, str):
-        return value.strip()
-
-    if isinstance(value, int | float):
-        return str(value)
-
-    if isinstance(value, dict):
-        for key in [
-            "$",
-            "_",
-            "value",
-            "@value",
-            "#text",
-            "text",
-        ]:
-            if key in value:
-                return text_value(value[key])
-
-    return ""
-
-
 def extract_year_value_list(
     payload: Any,
     list_names: list[str],
     item_names: list[str],
 ) -> list[dict[str, str]]:
-    """Extract values like SJRList/SJR[@year].
+    """Extract metric values such as SJRList/SJR[@year]."""
 
-    Elsevier JSON can vary by view and endpoint form. This function accepts
-    common JSON translations of XML such as:
-    - {"SJRList": {"SJR": [{"@year": "2023", "$": "1.234"}]}}
-    - {"SJRList": [{"SJR": {...}}]}
-    """
-
-    list_names_lower = {
-        name.lower()
+    list_names_compact = {
+        compact_key(name)
         for name in list_names
     }
 
-    item_names_lower = {
-        name.lower()
+    item_names_compact = {
+        compact_key(name)
         for name in item_names
     }
 
@@ -346,7 +355,7 @@ def extract_year_value_list(
             continue
 
         for key, value in node.items():
-            if key.lower() not in list_names_lower:
+            if compact_key(key) not in list_names_compact:
                 continue
 
             for child in iter_nested_values(value):
@@ -354,7 +363,7 @@ def extract_year_value_list(
                     continue
 
                 for child_key, child_value in child.items():
-                    if child_key.lower() not in item_names_lower:
+                    if compact_key(child_key) not in item_names_compact:
                         continue
 
                     items = child_value
@@ -379,13 +388,13 @@ def extract_year_value_list(
                                 )
 
                         else:
-                            value_text = text_value(item)
+                            metric_value = text_value(item)
 
-                            if value_text:
+                            if metric_value:
                                 results.append(
                                     {
                                         "year": "",
-                                        "value": value_text,
+                                        "value": metric_value,
                                     }
                                 )
 
@@ -420,14 +429,14 @@ def latest_metric(
     )[0]
 
 
-def percentile_to_quartile(value: str) -> str:
+def percentile_to_quartile(value: str | None) -> str:
     """Convert CiteScore percentile to CiteScore quartile.
 
-    Elsevier/Scopus convention:
-    - Q1: 75th–99th percentile
-    - Q2: 50th–74th percentile
-    - Q3: 25th–49th percentile
-    - Q4: 0th–24th percentile
+    Convention:
+    - Q1: percentile >= 75
+    - Q2: percentile >= 50 and < 75
+    - Q3: percentile >= 25 and < 50
+    - Q4: percentile < 25
     """
 
     if value is None:
@@ -450,9 +459,9 @@ def percentile_to_quartile(value: str) -> str:
     except ValueError:
         return ""
 
-    # Defensive handling in case an API ever returns 0–1 instead of 0–100.
+    # Defensive handling if an API ever returns 0–1 instead of 0–100.
     if 0 <= percentile <= 1:
-        percentile = percentile * 100
+        percentile *= 100
 
     if percentile < 0 or percentile > 100:
         return ""
@@ -469,86 +478,132 @@ def percentile_to_quartile(value: str) -> str:
     return "Q1"
 
 
-def extract_citescore_records(payload: Any) -> list[dict[str, str]]:
-    """Extract CiteScore records from Elsevier Serial Title JSON.
-
-    This version avoids mistaking the metric year for the CiteScore value
-    and extracts the best available percentile from nested subject-rank data.
-    """
-
-    def compact_key(value: str) -> str:
-        return re.sub(r"[^a-z0-9]", "", value.lower())
-
-    def first_value_by_keys(
-        node: dict[str, Any],
-        possible_keys: set[str],
-    ) -> str:
-        for key, value in node.items():
-            if compact_key(key) in possible_keys:
-                return text_value(value)
+def normalize_quartile(value: str | None) -> str:
+    if value is None:
         return ""
 
-    def looks_like_year(value: str) -> bool:
-        return bool(re.fullmatch(r"20\d{2}", value.strip()))
+    text = str(value).strip().upper()
 
-    def looks_numeric(value: str) -> bool:
-        return bool(re.fullmatch(r"\d+(\.\d+)?", value.strip()))
+    match = re.search(r"\bQ[1-4]\b", text)
 
-    def collect_rank_records(node: Any) -> list[dict[str, str]]:
-        rank_records: list[dict[str, str]] = []
+    if match:
+        return match.group(0)
 
-        for child in iter_nested_values(node):
-            if not isinstance(child, dict):
-                continue
+    return ""
 
-            keys = {
-                compact_key(key): key
-                for key in child.keys()
+
+def quartile_score(value: str) -> int:
+    if value == "Q1":
+        return 4
+
+    if value == "Q2":
+        return 3
+
+    if value == "Q3":
+        return 2
+
+    if value == "Q4":
+        return 1
+
+    return 0
+
+
+def looks_like_year(value: str) -> bool:
+    return bool(re.fullmatch(r"20\d{2}", value.strip()))
+
+
+def looks_numeric(value: str) -> bool:
+    return bool(re.fullmatch(r"\d+(\.\d+)?", value.strip().replace(",", ".")))
+
+
+def clean_category(value: str) -> str:
+    text = str(value or "").strip()
+
+    if not text:
+        return ""
+
+    # Do not treat ASJC numeric subject codes as category names.
+    if re.fullmatch(r"\d+", text):
+        return ""
+
+    # Avoid storing quartile strings or rank text as category names.
+    if re.fullmatch(r"Q[1-4]", text.upper()):
+        return ""
+
+    return text
+
+
+def collect_rank_records(node: Any) -> list[dict[str, str]]:
+    """Collect nested CiteScore rank/percentile/category records."""
+
+    records: list[dict[str, str]] = []
+
+    for child in iter_nested_values(node):
+        if not isinstance(child, dict):
+            continue
+
+        keys = {
+            compact_key(key): key
+            for key in child.keys()
+        }
+
+        has_rank_context = any(
+            key in keys
+            for key in {
+                "rank",
+                "rankoutof",
+                "outof",
+                "percentile",
+                "quartile",
+                "citescorerank",
+                "citescorerankoutof",
+                "citescorepercentile",
+                "citescorequartile",
+                "subjectarea",
+                "subjectname",
+                "subjectcode",
+                "category",
             }
+        )
 
-            has_rank_context = any(
-                key in keys
-                for key in {
-                    "rank",
-                    "rankoutof",
-                    "percentile",
-                    "citescorerank",
-                    "citescorepercentile",
-                    "subjectarea",
-                    "subjectcode",
-                    "category",
-                }
-            )
+        if not has_rank_context:
+            continue
 
-            if not has_rank_context:
-                continue
+        percentile = first_value_by_compact_keys(
+            child,
+            {
+                "percentile",
+                "citescorepercentile",
+            },
+        )
 
-            percentile = first_value_by_keys(
-                child,
-                {
-                    "percentile",
-                    "citescorepercentile",
-                },
-            )
+        direct_quartile = first_value_by_compact_keys(
+            child,
+            {
+                "quartile",
+                "citescorequartile",
+            },
+        )
 
-            rank = first_value_by_keys(
-                child,
-                {
-                    "rank",
-                    "citescorerank",
-                },
-            )
+        rank = first_value_by_compact_keys(
+            child,
+            {
+                "rank",
+                "citescorerank",
+            },
+        )
 
-            rank_out_of = first_value_by_keys(
-                child,
-                {
-                    "rankoutof",
-                    "outof",
-                    "citescorerankoutof",
-                },
-            )
+        rank_out_of = first_value_by_compact_keys(
+            child,
+            {
+                "rankoutof",
+                "outof",
+                "citescorerankoutof",
+            },
+        )
 
-            category = first_value_by_keys(
+        category = clean_category(
+            first_value_by_compact_keys(
                 child,
                 {
                     "category",
@@ -558,51 +613,78 @@ def extract_citescore_records(payload: Any) -> list[dict[str, str]]:
                     "description",
                 },
             )
+        )
 
-            subject_code = first_value_by_keys(
-                child,
+        subject_code = first_value_by_compact_keys(
+            child,
+            {
+                "subjectcode",
+                "code",
+            },
+        )
+
+        quartile = (
+            normalize_quartile(direct_quartile)
+            or percentile_to_quartile(percentile)
+        )
+
+        if percentile or quartile or rank or category or subject_code:
+            records.append(
                 {
-                    "subjectcode",
-                    "code",
-                },
+                    "percentile": percentile,
+                    "quartile": quartile,
+                    "rank": rank,
+                    "rank_out_of": rank_out_of,
+                    "category": category,
+                    "subject_code": subject_code,
+                }
             )
 
-            if percentile or rank or category or subject_code:
-                rank_records.append(
-                    {
-                        "percentile": percentile,
-                        "rank": rank,
-                        "rank_out_of": rank_out_of,
-                        "category": category,
-                        "subject_code": subject_code,
-                    }
-                )
+    return records
 
-        return rank_records
 
-    def best_rank_record(
-        rank_records: list[dict[str, str]],
-    ) -> dict[str, str]:
-        if not rank_records:
-            return {
-                "percentile": "",
-                "rank": "",
-                "rank_out_of": "",
-                "category": "",
-                "subject_code": "",
-            }
+def best_rank_record(
+    rank_records: list[dict[str, str]],
+) -> dict[str, str]:
+    if not rank_records:
+        return {
+            "percentile": "",
+            "quartile": "",
+            "rank": "",
+            "rank_out_of": "",
+            "category": "",
+            "subject_code": "",
+        }
 
-        def sort_key(record: dict[str, str]) -> float:
-            try:
-                return float(record.get("percentile") or -1)
-            except ValueError:
-                return -1
+    def sort_key(record: dict[str, str]) -> tuple[float, int]:
+        try:
+            percentile = float(
+                str(record.get("percentile") or "-1")
+                .replace("%", "")
+                .replace(",", ".")
+            )
+        except ValueError:
+            percentile = -1
 
-        return sorted(
-            rank_records,
-            key=sort_key,
-            reverse=True,
-        )[0]
+        return (
+            percentile,
+            quartile_score(record.get("quartile", "")),
+        )
+
+    return sorted(
+        rank_records,
+        key=sort_key,
+        reverse=True,
+    )[0]
+
+
+def extract_citescore_records(payload: Any) -> list[dict[str, str]]:
+    """Extract CiteScore records from Elsevier Serial Title JSON.
+
+    This version avoids mistaking CiteScore year fields for CiteScore values,
+    derives quartiles from percentiles when needed, and avoids storing numeric
+    subject codes as category names.
+    """
 
     records: list[dict[str, str]] = []
 
@@ -623,7 +705,7 @@ def extract_citescore_records(payload: Any) -> list[dict[str, str]]:
         if not has_citescore_context:
             continue
 
-        year = first_value_by_keys(
+        year = first_value_by_compact_keys(
             node,
             {
                 "year",
@@ -633,7 +715,7 @@ def extract_citescore_records(payload: Any) -> list[dict[str, str]]:
             },
         )
 
-        citescore = first_value_by_keys(
+        citescore = first_value_by_compact_keys(
             node,
             {
                 "citescorecurrentmetric",
@@ -644,11 +726,14 @@ def extract_citescore_records(payload: Any) -> list[dict[str, str]]:
             },
         )
 
-        # Do not store the year as the CiteScore value.
-        if not citescore or looks_like_year(citescore):
+        if not citescore:
             continue
 
-        # CiteScore should be numeric. This avoids storing labels/status text.
+        # Avoid storing the metric year as the CiteScore value.
+        if looks_like_year(citescore):
+            continue
+
+        # CiteScore should be numeric.
         if not looks_numeric(citescore):
             continue
 
@@ -656,23 +741,28 @@ def extract_citescore_records(payload: Any) -> list[dict[str, str]]:
             collect_rank_records(node)
         )
 
-        percentile = rank_record["percentile"]
-        quartile = percentile_to_quartile(percentile)
+        percentile = rank_record.get("percentile", "")
+        quartile = (
+            rank_record.get("quartile", "")
+            or percentile_to_quartile(percentile)
+        )
 
         records.append(
             {
                 "year": year,
-                "citescore": citescore,
+                "citescore": citescore.replace(",", "."),
                 "percentile": percentile,
-                "rank": rank_record["rank"],
-                "rank_out_of": rank_record["rank_out_of"],
-                "category": rank_record["category"],
-                "subject_code": rank_record["subject_code"],
                 "quartile": quartile,
+                "rank": rank_record.get("rank", ""),
+                "rank_out_of": rank_record.get("rank_out_of", ""),
+                "category": clean_category(
+                    rank_record.get("category", "")
+                ),
+                "subject_code": rank_record.get("subject_code", ""),
             }
         )
 
-    seen: set[tuple[str, str, str, str]] = set()
+    seen: set[tuple[str, str, str, str, str]] = set()
     unique_records: list[dict[str, str]] = []
 
     for record in records:
@@ -680,6 +770,7 @@ def extract_citescore_records(payload: Any) -> list[dict[str, str]]:
             record["year"],
             record["citescore"],
             record["percentile"],
+            record["quartile"],
             record["category"],
         )
 
@@ -691,6 +782,7 @@ def extract_citescore_records(payload: Any) -> list[dict[str, str]]:
 
     return unique_records
 
+
 def latest_citescore(
     records: list[dict[str, str]],
 ) -> dict[str, str]:
@@ -699,25 +791,33 @@ def latest_citescore(
             "year": "",
             "citescore": "",
             "percentile": "",
+            "quartile": "",
             "rank": "",
             "rank_out_of": "",
             "category": "",
             "subject_code": "",
-            "quartile": "",
         }
 
-    def sort_key(record: dict[str, str]) -> tuple[int, float]:
+    def sort_key(record: dict[str, str]) -> tuple[int, float, int]:
         try:
             year = int(record.get("year") or -1)
         except ValueError:
             year = -1
 
         try:
-            percentile = float(record.get("percentile") or -1)
+            percentile = float(
+                str(record.get("percentile") or "-1")
+                .replace("%", "")
+                .replace(",", ".")
+            )
         except ValueError:
             percentile = -1
 
-        return year, percentile
+        return (
+            year,
+            percentile,
+            quartile_score(record.get("quartile", "")),
+        )
 
     return sorted(
         records,
@@ -951,19 +1051,16 @@ def parse_elsevier_payload(
         "snip_year": snip["year"],
         "ipp": ipp["value"],
         "ipp_year": ipp["year"],
-        "citescore": citescore["citescore"],
-        "citescore_year": citescore["year"],
-        "citescore_percentile": citescore["percentile"],
-        "citescore_quartile": citescore["quartile"],
-        "citescore_category": (
-        citescore.get("category", "")
-        or citescore.get("subject_area", "")
+        "citescore": citescore.get("citescore", ""),
+        "citescore_year": citescore.get("year", ""),
+        "citescore_percentile": citescore.get("percentile", ""),
+        "citescore_quartile": citescore.get("quartile", ""),
+        "citescore_category": clean_category(
+            citescore.get("category", "")
         ),
-"citescore_subject_code": citescore.get("subject_code", ""),
-),
-"citescore_subject_code": citescore.get("subject_code", ""),
-"citescore_rank": citescore.get("rank", ""),
-"citescore_rank_out_of": citescore.get("rank_out_of", ""),
+        "citescore_subject_code": citescore.get("subject_code", ""),
+        "citescore_rank": citescore.get("rank", ""),
+        "citescore_rank_out_of": citescore.get("rank_out_of", ""),
         "citescore_records": citescore_records,
         "updated_at": utc_timestamp(),
     }
@@ -1010,14 +1107,8 @@ def write_json(
     temporary_path.replace(path)
 
 
-def build_publication_metrics(
-    publications: list[dict[str, Any]],
-    source_metrics_by_issn: dict[str, dict[str, Any]],
-    existing_publication_metrics: dict[str, Any],
-) -> dict[str, dict[str, Any]]:
-    output: dict[str, dict[str, Any]] = {}
-
-    empty_elsevier_fields = {
+def empty_elsevier_fields() -> dict[str, str]:
+    return {
         "source_metric_source": "",
         "source_title": "",
         "source_id": "",
@@ -1033,11 +1124,19 @@ def build_publication_metrics(
         "citescore_year": "",
         "citescore_percentile": "",
         "citescore_quartile": "",
-        "citescore_subject_code": "",
         "citescore_category": "",
+        "citescore_subject_code": "",
         "citescore_rank": "",
         "citescore_rank_out_of": "",
     }
+
+
+def build_publication_metrics(
+    publications: list[dict[str, Any]],
+    source_metrics_by_issn: dict[str, dict[str, Any]],
+    existing_publication_metrics: dict[str, Any],
+) -> dict[str, dict[str, Any]]:
+    output: dict[str, dict[str, Any]] = {}
 
     for publication in publications:
         key = publication["key"]
@@ -1048,7 +1147,7 @@ def build_publication_metrics(
             existing = {}
 
         matched_issn = ""
-        matched_source = None
+        matched_source: dict[str, Any] | None = None
 
         for issn in publication["all_issns"]:
             candidate = source_metrics_by_issn.get(issn)
@@ -1056,7 +1155,6 @@ def build_publication_metrics(
             if not candidate:
                 continue
 
-            # Important:
             # A not-found ISSN is still stored in source_metrics_by_issn,
             # but it must not count as an Elsevier match.
             if not candidate.get("found"):
@@ -1096,19 +1194,22 @@ def build_publication_metrics(
                     "citescore": matched_source.get("citescore", ""),
                     "citescore_year": matched_source.get("citescore_year", ""),
                     "citescore_percentile": matched_source.get("citescore_percentile", ""),
-"citescore_quartile": matched_source.get("citescore_quartile", ""),
-"citescore_category": matched_source.get("citescore_category", ""),
-"citescore_subject_code": matched_source.get("citescore_subject_code", ""),
-"citescore_rank": matched_source.get("citescore_rank", ""),
-"citescore_rank_out_of": matched_source.get("citescore_rank_out_of", ""),
+                    "citescore_quartile": matched_source.get("citescore_quartile", ""),
+                    "citescore_category": clean_category(
+                        matched_source.get("citescore_category", "")
+                    ),
+                    "citescore_subject_code": matched_source.get("citescore_subject_code", ""),
+                    "citescore_rank": matched_source.get("citescore_rank", ""),
+                    "citescore_rank_out_of": matched_source.get("citescore_rank_out_of", ""),
                 }
             )
         else:
-            record.update(empty_elsevier_fields)
+            record.update(empty_elsevier_fields())
 
         output[key] = record
 
     return output
+
 
 def main() -> int:
     parser = argparse.ArgumentParser()
@@ -1192,15 +1293,21 @@ def main() -> int:
 
             if not result["found"]:
                 source_metrics_by_issn[issn] = {
+                    "found": False,
                     "source": "Elsevier Serial Title API / Scopus",
                     "queried_issn": issn,
-                    "found": False,
+                    "status_code": result["status_code"],
                     "updated_at": utc_timestamp(),
                 }
+
+                if args.delay:
+                    time.sleep(args.delay)
+
                 continue
 
             source_metrics_by_issn[issn] = {
                 "found": True,
+                "status_code": result["status_code"],
                 **parse_elsevier_payload(
                     issn=issn,
                     payload=result["payload"],
@@ -1250,10 +1357,24 @@ def main() -> int:
         if not metric.get("elsevier_matched")
     ]
 
+    matched_with_citescore = [
+        key
+        for key, metric in publication_metrics.items()
+        if metric.get("citescore")
+    ]
+
+    matched_with_quartile = [
+        key
+        for key, metric in publication_metrics.items()
+        if metric.get("citescore_quartile")
+    ]
+
     print(f"Publications read: {len(publications)}")
     print(f"ISSNs queried: {len(unique_issns)}")
     print(f"Matched publications: {len(matched_publications)}")
     print(f"Unmatched publications: {len(unmatched_publications)}")
+    print(f"Publications with CiteScore: {len(matched_with_citescore)}")
+    print(f"Publications with CiteScore quartile: {len(matched_with_quartile)}")
     print(f"Updated: {args.source_output}")
     print(f"Updated: {args.publication_output}")
 
