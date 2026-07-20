@@ -1,7 +1,7 @@
 {
   "0022-3387": {
     "citescore": "0.9",
-    "citescore_category": "",
+    "citescore_category": "Psychology (miscellaneous)",
     "citescore_percentile": "51",
     "citescore_quartile": "Q2",
     "citescore_rank": "35",
@@ -186,11 +186,11 @@
     "source_id": "15925",
     "status_code": 200,
     "title": "Journal of Parapsychology",
-    "updated_at": "2026-07-20T11:18:57+00:00"
+    "updated_at": "2026-07-20T11:34:28+00:00"
   },
   "0302-9743": {
     "citescore": "3.1",
-    "citescore_category": "",
+    "citescore_category": "General Computer Science",
     "citescore_percentile": "60",
     "citescore_quartile": "Q2",
     "citescore_rank": "79",
@@ -385,11 +385,11 @@
     "source_id": "25674",
     "status_code": 200,
     "title": "Lecture Notes in Computer Science",
-    "updated_at": "2026-07-20T11:18:57+00:00"
+    "updated_at": "2026-07-20T11:34:28+00:00"
   },
   "1046-1310": {
     "citescore": "6.2",
-    "citescore_category": "",
+    "citescore_category": "General Psychology",
     "citescore_percentile": "86",
     "citescore_quartile": "Q1",
     "citescore_rank": "30",
@@ -574,18 +574,18 @@
     "source_id": "13479",
     "status_code": 200,
     "title": "Current Psychology",
-    "updated_at": "2026-07-20T11:18:58+00:00"
+    "updated_at": "2026-07-20T11:34:29+00:00"
   },
   "1558-4615": {
     "found": false,
     "queried_issn": "1558-4615",
     "source": "Elsevier Serial Title API / Scopus",
     "status_code": 404,
-    "updated_at": "2026-07-20T11:18:58+00:00"
+    "updated_at": "2026-07-20T11:34:29+00:00"
   },
   "1662-5161": {
     "citescore": "5.9",
-    "citescore_category": "",
+    "citescore_category": "Behavioral Neuroscience",
     "citescore_percentile": "93",
     "citescore_quartile": "Q1",
     "citescore_rank": "5",
@@ -780,11 +780,11 @@
     "source_id": "19700175164",
     "status_code": 200,
     "title": "Frontiers in Human Neuroscience",
-    "updated_at": "2026-07-20T11:18:59+00:00"
+    "updated_at": "2026-07-20T11:34:29+00:00"
   },
   "1664-1078": {
     "citescore": "7.0",
-    "citescore_category": "",
+    "citescore_category": "General Psychology",
     "citescore_percentile": "86",
     "citescore_quartile": "Q1",
     "citescore_rank": "30",
@@ -979,11 +979,11 @@
     "source_id": "21100216571",
     "status_code": 200,
     "title": "Frontiers in Psychology",
-    "updated_at": "2026-07-20T11:18:59+00:00"
+    "updated_at": "2026-07-20T11:34:30+00:00"
   },
   "1687-4153": {
     "citescore": "3.0",
-    "citescore_category": "",
+    "citescore_category": "Multidisciplinary",
     "citescore_percentile": "95",
     "citescore_quartile": "Q1",
     "citescore_rank": "5",
@@ -1098,11 +1098,11 @@
     "source_id": "4400151506",
     "status_code": 200,
     "title": "Eurasip Journal on Bioinformatics and Systems Biology",
-    "updated_at": "2026-07-20T11:19:00+00:00"
+    "updated_at": "2026-07-20T11:34:30+00:00"
   },
   "1932-6203": {
     "citescore": "4.8",
-    "citescore_category": "",
+    "citescore_category": "Multidisciplinary",
     "citescore_percentile": "92",
     "citescore_quartile": "Q1",
     "citescore_rank": "9",
@@ -1297,11 +1297,11 @@
     "source_id": "10600153309",
     "status_code": 200,
     "title": "PLOS ONE",
-    "updated_at": "2026-07-20T11:19:00+00:00"
+    "updated_at": "2026-07-20T11:34:31+00:00"
   },
   "1936-4733": {
     "citescore": "6.2",
-    "citescore_category": "",
+    "citescore_category": "General Psychology",
     "citescore_percentile": "86",
     "citescore_quartile": "Q1",
     "citescore_rank": "30",
@@ -1486,11 +1486,11 @@
     "source_id": "13479",
     "status_code": 200,
     "title": "Current Psychology",
-    "updated_at": "2026-07-20T11:19:01+00:00"
+    "updated_at": "2026-07-20T11:34:32+00:00"
   },
   "2046-1402": {
     "citescore": "2.9",
-    "citescore_category": "",
+    "citescore_category": "General Pharmacology",
     "citescore_percentile": "88",
     "citescore_quartile": "Q1",
     "citescore_rank": "8",
@@ -1655,11 +1655,11 @@
     "source_id": "21100258853",
     "status_code": 200,
     "title": "F1000Research",
-    "updated_at": "2026-07-20T11:19:02+00:00"
+    "updated_at": "2026-07-20T11:34:32+00:00"
   },
   "2076-328X": {
     "citescore": "4.1",
-    "citescore_category": "",
+    "citescore_category": "Ecology",
     "citescore_percentile": "82",
     "citescore_quartile": "Q1",
     "citescore_rank": "128",
@@ -1774,11 +1774,11 @@
     "source_id": "21100901748",
     "status_code": 200,
     "title": "Behavioral Sciences",
-    "updated_at": "2026-07-20T11:19:02+00:00"
+    "updated_at": "2026-07-20T11:34:33+00:00"
   },
   "2190-3018": {
     "citescore": "1.2",
-    "citescore_category": "",
+    "citescore_category": "General Computer Science",
     "citescore_percentile": "54",
     "citescore_quartile": "Q2",
     "citescore_rank": "80",
@@ -1963,11 +1963,11 @@
     "source_id": "21100204111",
     "status_code": 200,
     "title": "Smart Innovation, Systems and Technologies",
-    "updated_at": "2026-07-20T11:19:03+00:00"
+    "updated_at": "2026-07-20T11:34:33+00:00"
   },
   "2297-900X": {
     "citescore": "2.9",
-    "citescore_category": "",
+    "citescore_category": "Social Sciences (miscellaneous)",
     "citescore_percentile": "78",
     "citescore_quartile": "Q1",
     "citescore_rank": "130",
@@ -2062,11 +2062,11 @@
     "source_id": "21101061926",
     "status_code": 200,
     "title": "Frontiers in Communication",
-    "updated_at": "2026-07-20T11:19:03+00:00"
+    "updated_at": "2026-07-20T11:34:34+00:00"
   },
   "2304-8158": {
     "citescore": "10.3",
-    "citescore_category": "",
+    "citescore_category": "Health Professions (miscellaneous)",
     "citescore_percentile": "99",
     "citescore_quartile": "Q1",
     "citescore_rank": "1",
@@ -2191,11 +2191,11 @@
     "source_id": "21100898636",
     "status_code": 200,
     "title": "Foods",
-    "updated_at": "2026-07-20T11:19:04+00:00"
+    "updated_at": "2026-07-20T11:34:34+00:00"
   },
   "2468-0672": {
     "citescore": "4.6",
-    "citescore_category": "",
+    "citescore_category": "Instrumentation",
     "citescore_percentile": "74",
     "citescore_quartile": "Q2",
     "citescore_rank": "54",
@@ -2330,11 +2330,11 @@
     "source_id": "21100842867",
     "status_code": 200,
     "title": "HardwareX",
-    "updated_at": "2026-07-20T11:19:04+00:00"
+    "updated_at": "2026-07-20T11:34:35+00:00"
   },
   "2673-4192": {
     "citescore": "7.9",
-    "citescore_category": "",
+    "citescore_category": "Computer Graphics and Computer-Aided Design",
     "citescore_percentile": "88",
     "citescore_quartile": "Q1",
     "citescore_rank": "15",
@@ -2419,11 +2419,11 @@
     "source_id": "21101107986",
     "status_code": 200,
     "title": "Frontiers in Virtual Reality",
-    "updated_at": "2026-07-20T11:19:05+00:00"
+    "updated_at": "2026-07-20T11:34:35+00:00"
   },
   "2694-0604": {
     "citescore": "0.4",
-    "citescore_category": "",
+    "citescore_category": "General Medicine",
     "citescore_percentile": "58",
     "citescore_quartile": "Q2",
     "citescore_rank": "347",
@@ -2518,11 +2518,11 @@
     "source_id": "21101033200",
     "status_code": 200,
     "title": "Annual International Conference of the IEEE Engineering in Medicine and Biology Society. IEEE Engineering in Medicine and Biology Society. Annual International Conference",
-    "updated_at": "2026-07-20T11:19:05+00:00"
+    "updated_at": "2026-07-20T11:34:36+00:00"
   },
   "2766-6530": {
     "citescore": "0.0",
-    "citescore_category": "",
+    "citescore_category": "Media Technology",
     "citescore_percentile": "18",
     "citescore_quartile": "Q4",
     "citescore_rank": "69",
@@ -2577,6 +2577,6 @@
     "source_id": "21101394124",
     "status_code": 200,
     "title": "Proceedings of IEEE Games, Entertainment and Media Conference, GEM",
-    "updated_at": "2026-07-20T11:19:05+00:00"
+    "updated_at": "2026-07-20T11:34:36+00:00"
   }
 }
