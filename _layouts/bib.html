@@ -20,8 +20,8 @@
           <span class="publication-metric-line">
             {% if metrics.google_scholar_link %}
               <a href="{{ metrics.google_scholar_link }}" target="_blank" rel="noopener">
-                Citations: {{ metrics.google_scholar_citations }}
-              </a>
+                Citations:
+              </a>  {{ metrics.google_scholar_citations }}
             {% else %}
               Citations: {{ metrics.google_scholar_citations }}
             {% endif %}
