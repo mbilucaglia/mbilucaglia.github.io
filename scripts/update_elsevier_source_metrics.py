@@ -15,12 +15,13 @@ Outputs:
 Selection rule:
 1. Parse each BibTeX entry.
 2. Extract issn and print_issn.
-3. Query Elsevier Serial Title API by ISSN.
-4. Extract the current CiteScore for that source.
-5. Extract all available CiteScore subject-ranking records.
-6. Select the record with the highest percentile.
-7. Convert percentile to quartile.
-8. Convert ASJC subject code to category using _data/asjc_codes.json.
+3. Query Elsevier Serial Title API by ISSN with view=CITESCORE.
+4. Extract current source-level CiteScore.
+5. Extract CiteScore subject-ranking rows.
+6. Select the subject-ranking row with the highest percentile.
+7. Prefer the category name directly returned by the API.
+8. Convert percentile to quartile.
+9. Use _data/asjc_codes.json only as fallback if the API row has no category name.
 
 The script preserves existing Google Scholar fields in publication_metrics.json.
 """
@@ -439,6 +440,9 @@ def clean_category(value: str | None) -> str:
     if re.fullmatch(r"Q[1-4]", text.upper()):
         return ""
 
+    if looks_numeric(text):
+        return ""
+
     return text
 
 
@@ -524,8 +528,6 @@ def source_id_from_payload(
         payload,
         {
             "sourceid",
-            "sourceid",
-            "sourceid",
             "dcidentifier",
         },
     )
@@ -539,7 +541,7 @@ def source_id_from_payload(
 
 
 def extract_current_citescore(payload: Any) -> tuple[str, str]:
-    """Return current CiteScore value and year.
+    """Return current source-level CiteScore value and year.
 
     This deliberately prioritizes explicit current-metric keys.
     It does not infer CiteScore from percentile/rank rows.
@@ -606,7 +608,7 @@ def extract_current_citescore(payload: Any) -> tuple[str, str]:
         return "", ""
 
     def sort_key(item: tuple[str, str, int]) -> tuple[int, int]:
-        score, year, priority = item
+        _score, year, priority = item
 
         return (
             priority,
@@ -698,17 +700,141 @@ def latest_metric(records: list[dict[str, str]]) -> dict[str, str]:
     )[0]
 
 
-def extract_ranking_records(payload: Any) -> list[dict[str, str]]:
-    """Extract CiteScore ranking records.
+def node_keyset(node: dict[str, Any]) -> set[str]:
+    return {
+        compact_key(key)
+        for key in node.keys()
+    }
 
-    These are subject-ranking rows, not independent CiteScore values.
-    The chosen row is the one with the highest percentile.
+
+def extract_category_from_subject_child(
+    node: dict[str, Any],
+) -> tuple[str, str]:
+    """Return subject_code and category from a nested subject-area object.
+
+    Used only after the parent node already looks like a CiteScore ranking row.
+    """
+
+    subject_code = ""
+    category = ""
+
+    for child in iter_nested_values(node):
+        if not isinstance(child, dict):
+            continue
+
+        child_keys = node_keyset(child)
+
+        subject_like = bool(
+            child_keys
+            & {
+                "subjectarea",
+                "subjectareas",
+                "subjectareaname",
+                "subjectname",
+                "subject",
+                "asjccode",
+                "subjectcode",
+                "subjectareacode",
+                "subjcode",
+                "code",
+                "description",
+            }
+        )
+
+        if not subject_like:
+            continue
+
+        if not subject_code:
+            subject_code = first_value_by_keys(
+                child,
+                {
+                    "subjectcode",
+                    "asjccode",
+                    "subjectareacode",
+                    "subjcode",
+                    "code",
+                },
+            )
+
+        if not category:
+            category = clean_category(
+                first_value_by_keys(
+                    child,
+                    {
+                        "subjectareaname",
+                        "subjectname",
+                        "subjectarea",
+                        "subject",
+                        "description",
+                        "name",
+                        "label",
+                        "$",
+                        "text",
+                    },
+                )
+            )
+
+        if subject_code and category:
+            return subject_code, category
+
+    return subject_code, category
+
+
+def extract_ranking_records(payload: Any) -> list[dict[str, str]]:
+    """Extract CiteScore subject-ranking rows from the Scopus API payload.
+
+    Important:
+    - The category name is taken directly from the API row when present.
+    - Generic keys such as "code" and "description" are accepted only
+      inside a clear subject/ranking context.
+    - The ASJC mapping is not used here. It is only a later fallback.
     """
 
     records: list[dict[str, str]] = []
 
     for node in iter_nested_values(payload):
         if not isinstance(node, dict):
+            continue
+
+        keys = node_keyset(node)
+
+        has_percentile = bool(
+            keys
+            & {
+                "percentile",
+                "citescorepercentile",
+                "percentilevalue",
+            }
+        )
+
+        has_rank = bool(
+            keys
+            & {
+                "rank",
+                "citescorerank",
+                "rankposition",
+            }
+        )
+
+        has_subject_marker = bool(
+            keys
+            & {
+                "subjectarea",
+                "subjectareas",
+                "subjectareaname",
+                "subjectname",
+                "subject",
+                "asjccode",
+                "subjectcode",
+                "subjectareacode",
+                "subjcode",
+            }
+        )
+
+        if not has_percentile:
+            continue
+
+        if not has_rank and not has_subject_marker:
             continue
 
         percentile = first_value_by_keys(
@@ -720,33 +846,12 @@ def extract_ranking_records(payload: Any) -> list[dict[str, str]]:
             },
         )
 
-        subject_code = first_value_by_keys(
-            node,
-            {
-                "subjectcode",
-                "asjccode",
-                "code",
-            },
-        )
-
-        category = clean_category(
-            first_value_by_keys(
-                node,
-                {
-                    "category",
-                    "subject",
-                    "subjectarea",
-                    "subjectname",
-                    "description",
-                },
-            )
-        )
-
         rank = first_value_by_keys(
             node,
             {
                 "rank",
                 "citescorerank",
+                "rankposition",
             },
         )
 
@@ -758,6 +863,40 @@ def extract_ranking_records(payload: Any) -> list[dict[str, str]]:
                 "citescorerankoutof",
             },
         )
+
+        subject_code = first_value_by_keys(
+            node,
+            {
+                "subjectcode",
+                "asjccode",
+                "subjectareacode",
+                "subjcode",
+            },
+        )
+
+        category = clean_category(
+            first_value_by_keys(
+                node,
+                {
+                    "subjectareaname",
+                    "subjectname",
+                    "subjectarea",
+                    "subject",
+                    "category",
+                },
+            )
+        )
+
+        if not subject_code or not category:
+            nested_subject_code, nested_category = (
+                extract_category_from_subject_child(node)
+            )
+
+            if not subject_code:
+                subject_code = nested_subject_code
+
+            if not category:
+                category = nested_category
 
         if not percentile:
             continue
@@ -958,6 +1097,8 @@ def parse_elsevier_payload(
 
     subject_code = selected_rank.get("subject_code", "")
 
+    # Prefer the category returned directly by the Scopus API row.
+    # Fall back to ASJC mapping only if the API row has no category text.
     category = (
         clean_category(selected_rank.get("category"))
         or asjc_name(subject_code, asjc_codes)
@@ -966,7 +1107,7 @@ def parse_elsevier_payload(
     sjr = latest_metric(
         extract_metric_year_value_list(
             payload,
-            {"sjrlist", "sjrlist"},
+            {"sjrlist"},
             {"sjr"},
         )
     )
@@ -974,10 +1115,28 @@ def parse_elsevier_payload(
     snip = latest_metric(
         extract_metric_year_value_list(
             payload,
-            {"sniplist", "sniplist"},
+            {"sniplist"},
             {"snip"},
         )
     )
+
+    normalized_ranking_records = []
+
+    for ranking in ranking_records:
+        ranking_subject_code = ranking.get("subject_code", "")
+
+        normalized_ranking_records.append(
+            {
+                **ranking,
+                "category": (
+                    clean_category(ranking.get("category"))
+                    or asjc_name(ranking_subject_code, asjc_codes)
+                ),
+                "quartile": percentile_to_quartile(
+                    ranking.get("percentile")
+                ),
+            }
+        )
 
     record: dict[str, Any] = {
         "found": True,
@@ -999,19 +1158,7 @@ def parse_elsevier_payload(
         "citescore_subject_code": subject_code,
         "citescore_category": category,
         "citescore_ranking_selection": "highest_percentile",
-        "citescore_ranking_records": [
-            {
-                **ranking,
-                "category": (
-                    clean_category(ranking.get("category"))
-                    or asjc_name(ranking.get("subject_code"), asjc_codes)
-                ),
-                "quartile": percentile_to_quartile(
-                    ranking.get("percentile")
-                ),
-            }
-            for ranking in ranking_records
-        ],
+        "citescore_ranking_records": normalized_ranking_records,
         "sjr": sjr.get("value", ""),
         "sjr_year": sjr.get("year", ""),
         "snip": snip.get("value", ""),
@@ -1378,6 +1525,7 @@ def main() -> int:
         print(
             "WARNING: These BibTeX entries have a pages field that looks like an ISSN:"
         )
+
         for key in warnings:
             value = publication_metrics[key]["warning_pages_field_looks_like_issn"]
             print(f"- {key}: pages looks like ISSN {value}")
