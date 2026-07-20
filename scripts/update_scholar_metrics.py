@@ -1,17 +1,22 @@
 #!/usr/bin/env python3
-"""Fetch Google Scholar metrics and most-cited papers via SerpAPI.
+"""Fetch Google Scholar metrics and per-publication citations via SerpAPI.
 
-The script writes two outputs:
+The script writes three outputs:
 
 1. _data/scholar.json
-   Jekyll data file containing citation indices and most-cited paper metadata.
+   Jekyll data file containing aggregate Google Scholar citation indices,
+   most-cited paper metadata, and matched BibTeX keys.
 
 2. _bibliography/top_cited.bib
    Generated BibTeX file containing matched entries from
    _bibliography/publications.bib, ordered by Google Scholar citation count.
 
-The generated BibTeX file lets Jekyll-Scholar render the most-cited papers
-with the same template used by the Publications page.
+3. _data/publication_metrics.json
+   Existing publication metrics file, updated in-place with
+   google_scholar_citations, google_scholar_link, and match metadata.
+
+This script preserves existing Elsevier/Scopus fields already present in
+publication_metrics.json.
 """
 
 from __future__ import annotations
@@ -83,7 +88,6 @@ def extract_metric_value(
                 continue
 
             total = parse_int(values.get("all"))
-
             recent_value = None
             recent_period = None
 
@@ -117,7 +121,6 @@ def normalize_article(
         return None
 
     cited_by = article.get("cited_by", {})
-
     citations = 0
 
     if isinstance(cited_by, dict):
@@ -138,7 +141,13 @@ def fetch_serpapi_author(
     scholar_id: str,
     api_key: str,
     top_papers: int,
+    scholar_articles: int,
 ) -> dict[str, Any]:
+    requested_articles = min(
+        max(top_papers, scholar_articles, 20),
+        100,
+    )
+
     response = requests.get(
         "https://serpapi.com/search.json",
         params={
@@ -146,10 +155,8 @@ def fetch_serpapi_author(
             "author_id": scholar_id,
             "hl": "en",
             "api_key": api_key,
-            # SerpAPI returns author articles sorted by citations by default.
-            # Request at least 20 so title matching has enough candidates.
-            # The endpoint supports up to 100 in one call.
-            "num": min(max(top_papers, 20), 100),
+            # SerpAPI author endpoint supports up to 100 articles per call.
+            "num": requested_articles,
         },
         timeout=60,
     )
@@ -253,6 +260,7 @@ def fetch_serpapi_author(
         "i10_index": i10_index,
         "i10_index_recent": i10_index_recent,
         "top_cited_papers": normalized_articles[:top_papers],
+        "scholar_articles": normalized_articles[:scholar_articles],
     }
 
 
@@ -267,7 +275,7 @@ def normalize_title(value: str | None) -> str:
     value = value.replace("–", "-")
     value = value.replace("—", "-")
 
-    # Convert a few common LaTeX accent patterns before stripping commands.
+    # Convert common LaTeX accents before stripping commands.
     value = re.sub(r'\\"([A-Za-z])', r"\1", value)
     value = re.sub(r"\\'([A-Za-z])", r"\1", value)
     value = re.sub(r"\\`([A-Za-z])", r"\1", value)
@@ -517,7 +525,6 @@ def add_citation_note_to_bibtex(
     citations: int,
 ) -> str:
     cleaned_entry = remove_existing_note_field(entry)
-
     closing_position = cleaned_entry.rfind("}")
 
     if closing_position == -1:
@@ -597,6 +604,20 @@ def write_top_cited_bibliography(
     return matched_keys
 
 
+def load_json_dict(path: Path) -> dict[str, Any]:
+    if not path.exists():
+        return {}
+
+    data = json.loads(
+        path.read_text(encoding="utf-8")
+    )
+
+    if not isinstance(data, dict):
+        return {}
+
+    return data
+
+
 def write_json(
     output_path: Path,
     data: dict[str, Any],
@@ -624,12 +645,111 @@ def write_json(
     temporary_path.replace(output_path)
 
 
+def clear_existing_google_scholar_fields(
+    publication_metrics: dict[str, Any],
+) -> None:
+    """Remove old Google Scholar per-publication fields before rewriting.
+
+    This prevents stale citation counts from remaining if a paper disappears
+    from the current SerpAPI response or no longer matches the BibTeX file.
+    """
+
+    google_scholar_fields = {
+        "google_scholar_citations",
+        "google_scholar_link",
+        "google_scholar_citation_id",
+        "google_scholar_match_score",
+        "google_scholar_updated_at",
+    }
+
+    for value in publication_metrics.values():
+        if not isinstance(value, dict):
+            continue
+
+        for field in google_scholar_fields:
+            value.pop(field, None)
+
+
+def update_publication_metrics_with_scholar(
+    papers: list[dict[str, Any]],
+    bibliography_path: Path,
+    publication_metrics_path: Path,
+    updated_at: str,
+) -> list[str]:
+    """Merge Google Scholar per-publication citations into metrics JSON."""
+
+    bibtex_entries = load_bibtex_entries(
+        bibliography_path
+    )
+
+    publication_metrics = load_json_dict(
+        publication_metrics_path
+    )
+
+    clear_existing_google_scholar_fields(
+        publication_metrics
+    )
+
+    matched_keys: list[str] = []
+
+    for paper in papers:
+        title = str(paper.get("title") or "")
+        citations = int(paper.get("citations") or 0)
+
+        match, score = find_matching_bibtex_entry(
+            title,
+            bibtex_entries,
+        )
+
+        if match is None:
+            print(
+                (
+                    "WARNING: No publication_metrics match found for "
+                    f"{title!r}. Best score: {score:.3f}"
+                ),
+                file=sys.stderr,
+            )
+            continue
+
+        key = match["key"]
+
+        existing = publication_metrics.get(key, {})
+
+        if not isinstance(existing, dict):
+            existing = {}
+
+        existing.update(
+            {
+                "google_scholar_citations": citations,
+                "google_scholar_link": paper.get("link") or "",
+                "google_scholar_citation_id": paper.get("citation_id") or "",
+                "google_scholar_match_score": round(score, 3),
+                "google_scholar_updated_at": updated_at,
+            }
+        )
+
+        publication_metrics[key] = existing
+        matched_keys.append(key)
+
+        paper["bibtex_key"] = key
+        paper["bibtex_match_score"] = round(score, 3)
+
+    write_json(
+        publication_metrics_path,
+        publication_metrics,
+    )
+
+    return matched_keys
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description=(
             "Fetch Google Scholar metrics through SerpAPI, "
-            "write Jekyll JSON data, and generate a BibTeX file "
-            "for the most-cited publications."
+            "write Jekyll JSON data, generate a BibTeX file "
+            "for the most-cited publications, and update "
+            "_data/publication_metrics.json with per-publication "
+            "Google Scholar citation counts."
         )
     )
 
@@ -648,7 +768,17 @@ def main() -> int:
         "--top-papers",
         type=int,
         default=5,
-        help="Number of most-cited papers to store",
+        help="Number of most-cited papers to store and render separately",
+    )
+
+    parser.add_argument(
+        "--scholar-articles",
+        type=int,
+        default=100,
+        help=(
+            "Number of Google Scholar profile articles to request "
+            "for per-publication citation matching; maximum is 100"
+        ),
     )
 
     parser.add_argument(
@@ -663,6 +793,16 @@ def main() -> int:
         type=Path,
         default=Path("_bibliography/top_cited.bib"),
         help="Generated BibTeX file for most-cited papers",
+    )
+
+    parser.add_argument(
+        "--publication-metrics",
+        type=Path,
+        default=Path("_data/publication_metrics.json"),
+        help=(
+            "Publication metrics JSON file to update with "
+            "Google Scholar per-publication citation counts"
+        ),
     )
 
     args = parser.parse_args()
@@ -681,17 +821,31 @@ def main() -> int:
             scholar_id=args.scholar_id,
             api_key=api_key,
             top_papers=args.top_papers,
+            scholar_articles=args.scholar_articles,
         )
 
-        matched_keys = write_top_cited_bibliography(
+        matched_top_cited_keys = write_top_cited_bibliography(
             papers=data.get("top_cited_papers", []),
             bibliography_path=args.bibliography,
             output_path=args.top_cited_bibliography,
         )
 
-        data["top_cited_bibtex_keys"] = matched_keys
+        matched_publication_metric_keys = update_publication_metrics_with_scholar(
+            papers=data.get("scholar_articles", []),
+            bibliography_path=args.bibliography,
+            publication_metrics_path=args.publication_metrics,
+            updated_at=str(data["updated_at"]),
+        )
+
+        data["top_cited_bibtex_keys"] = matched_top_cited_keys
         data["top_cited_bibliography"] = str(
             args.top_cited_bibliography
+        )
+        data["publication_metrics"] = str(
+            args.publication_metrics
+        )
+        data["publication_metrics_matched_keys"] = (
+            matched_publication_metric_keys
         )
 
         write_json(
@@ -712,13 +866,18 @@ def main() -> int:
 
     print(f"Updated {args.output}")
     print(f"Updated {args.top_cited_bibliography}")
+    print(f"Updated {args.publication_metrics}")
     print(f"Source: {data['source']}")
     print(f"Citations: {data['citations']}")
     print(f"h-index: {data['h_index']}")
     print(f"i10-index: {data['i10_index']}")
     print(
-        "Matched BibTeX keys: "
+        "Matched top-cited BibTeX keys: "
         + ", ".join(data.get("top_cited_bibtex_keys", []))
+    )
+    print(
+        "Matched publication metrics keys: "
+        + ", ".join(data.get("publication_metrics_matched_keys", []))
     )
 
     print("Most cited papers:")
