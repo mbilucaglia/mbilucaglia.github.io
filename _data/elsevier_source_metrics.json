@@ -6,174 +6,133 @@
     "citescore_quartile": "Q2",
     "citescore_rank": "35",
     "citescore_rank_out_of": "",
-    "citescore_records": [
+    "citescore_ranking_records": [
       {
-        "category": "",
-        "citescore": "0.9",
-        "percentile": "51",
-        "quartile": "Q2",
-        "rank": "35",
-        "rank_out_of": "",
-        "subject_code": "3201",
-        "year": "2025"
-      },
-      {
-        "category": "",
-        "citescore": "1.0",
+        "category": "Psychology (miscellaneous)",
         "percentile": "27",
         "quartile": "Q3",
         "rank": "86",
         "rank_out_of": "",
-        "subject_code": "3201",
-        "year": ""
+        "subject_code": "3201"
       },
       {
-        "category": "",
-        "citescore": "0.9",
+        "category": "Psychology (miscellaneous)",
         "percentile": "22",
         "quartile": "Q4",
         "rank": "92",
         "rank_out_of": "",
-        "subject_code": "3201",
-        "year": ""
+        "subject_code": "3201"
       },
       {
-        "category": "",
-        "citescore": "0.5",
+        "category": "Psychology (miscellaneous)",
         "percentile": "14",
         "quartile": "Q4",
         "rank": "91",
         "rank_out_of": "",
-        "subject_code": "3201",
-        "year": ""
+        "subject_code": "3201"
       },
       {
-        "category": "",
-        "citescore": "1.3",
+        "category": "Psychology (miscellaneous)",
         "percentile": "32",
         "quartile": "Q3",
         "rank": "66",
         "rank_out_of": "",
-        "subject_code": "3201",
-        "year": ""
+        "subject_code": "3201"
       },
       {
-        "category": "",
-        "citescore": "2.1",
+        "category": "Psychology (miscellaneous)",
         "percentile": "51",
         "quartile": "Q2",
         "rank": "35",
         "rank_out_of": "",
-        "subject_code": "3201",
-        "year": ""
+        "subject_code": "3201"
       },
       {
-        "category": "",
-        "citescore": "1.0",
+        "category": "Psychology (miscellaneous)",
         "percentile": "25",
         "quartile": "Q3",
         "rank": "46",
         "rank_out_of": "",
-        "subject_code": "3201",
-        "year": ""
+        "subject_code": "3201"
       },
       {
-        "category": "",
-        "citescore": "0.6",
+        "category": "Psychology (miscellaneous)",
         "percentile": "16",
         "quartile": "Q4",
         "rank": "45",
         "rank_out_of": "",
-        "subject_code": "3201",
-        "year": ""
+        "subject_code": "3201"
       },
       {
-        "category": "",
-        "citescore": "0.6",
+        "category": "Psychology (miscellaneous)",
         "percentile": "20",
         "quartile": "Q4",
         "rank": "38",
         "rank_out_of": "",
-        "subject_code": "3201",
-        "year": ""
+        "subject_code": "3201"
       },
       {
-        "category": "",
-        "citescore": "1.1",
+        "category": "Psychology (miscellaneous)",
         "percentile": "31",
         "quartile": "Q3",
         "rank": "32",
         "rank_out_of": "",
-        "subject_code": "3201",
-        "year": ""
+        "subject_code": "3201"
       },
       {
-        "category": "",
-        "citescore": "1.4",
+        "category": "Psychology (miscellaneous)",
         "percentile": "40",
         "quartile": "Q3",
         "rank": "22",
         "rank_out_of": "",
-        "subject_code": "3201",
-        "year": ""
+        "subject_code": "3201"
       },
       {
-        "category": "",
-        "citescore": "1.2",
+        "category": "Psychology (miscellaneous)",
         "percentile": "30",
         "quartile": "Q3",
         "rank": "24",
         "rank_out_of": "",
-        "subject_code": "3201",
-        "year": ""
+        "subject_code": "3201"
       },
       {
-        "category": "",
-        "citescore": "0.7",
+        "category": "Psychology (miscellaneous)",
         "percentile": "7",
         "quartile": "Q4",
         "rank": "32",
         "rank_out_of": "",
-        "subject_code": "3201",
-        "year": ""
+        "subject_code": "3201"
       },
       {
-        "category": "",
-        "citescore": "0.6",
+        "category": "Psychology (miscellaneous)",
         "percentile": "10",
         "quartile": "Q4",
         "rank": "31",
         "rank_out_of": "",
-        "subject_code": "3201",
-        "year": ""
+        "subject_code": "3201"
       },
       {
-        "category": "",
-        "citescore": "0.5",
+        "category": "Psychology (miscellaneous)",
         "percentile": "7",
         "quartile": "Q4",
-        "rank": "32",
+        "rank": "31",
         "rank_out_of": "",
-        "subject_code": "3201",
-        "year": ""
+        "subject_code": "3201"
       },
       {
-        "category": "",
-        "citescore": "0.5",
+        "category": "Psychology (miscellaneous)",
         "percentile": "4",
         "quartile": "Q4",
         "rank": "32",
         "rank_out_of": "",
-        "subject_code": "3201",
-        "year": ""
+        "subject_code": "3201"
       }
     ],
+    "citescore_ranking_selection": "highest_percentile",
     "citescore_subject_code": "3201",
     "citescore_year": "2025",
     "eissn": "",
     "found": true,
-    "ipp": "",
-    "ipp_year": "",
     "issn": "0022-3387",
     "publisher": "Rhine Research Center",
     "queried_issn": "0022-3387",
@@ -186,7 +145,7 @@
     "source_id": "15925",
     "status_code": 200,
     "title": "Journal of Parapsychology",
-    "updated_at": "2026-07-20T13:04:28+00:00"
+    "updated_at": "2026-07-20T13:27:14+00:00"
   },
   "0302-9743": {
     "citescore": "3.1",
@@ -195,184 +154,261 @@
     "citescore_quartile": "Q2",
     "citescore_rank": "79",
     "citescore_rank_out_of": "",
-    "citescore_records": [
+    "citescore_ranking_records": [
       {
-        "category": "",
-        "citescore": "3.1",
-        "percentile": "60",
-        "quartile": "Q2",
-        "rank": "79",
-        "rank_out_of": "",
-        "subject_code": "1700",
-        "year": "2025"
-      },
-      {
-        "category": "",
-        "citescore": "2.0",
+        "category": "General Computer Science",
         "percentile": "40",
         "quartile": "Q3",
         "rank": "145",
         "rank_out_of": "",
-        "subject_code": "1700",
-        "year": ""
+        "subject_code": "1700"
       },
       {
-        "category": "",
-        "citescore": "3.1",
+        "category": "Theoretical Computer Science",
+        "percentile": "39",
+        "quartile": "Q3",
+        "rank": "82",
+        "rank_out_of": "",
+        "subject_code": "2614"
+      },
+      {
+        "category": "Theoretical Computer Science",
         "percentile": "53",
         "quartile": "Q2",
         "rank": "63",
         "rank_out_of": "",
-        "subject_code": "2614",
-        "year": ""
+        "subject_code": "2614"
       },
       {
-        "category": "",
-        "citescore": "2.4",
+        "category": "General Computer Science",
+        "percentile": "49",
+        "quartile": "Q3",
+        "rank": "123",
+        "rank_out_of": "",
+        "subject_code": "1700"
+      },
+      {
+        "category": "Theoretical Computer Science",
         "percentile": "43",
         "quartile": "Q3",
         "rank": "77",
         "rank_out_of": "",
-        "subject_code": "2614",
-        "year": ""
+        "subject_code": "2614"
       },
       {
-        "category": "",
-        "citescore": "2.6",
+        "category": "General Computer Science",
+        "percentile": "42",
+        "quartile": "Q3",
+        "rank": "139",
+        "rank_out_of": "",
+        "subject_code": "1700"
+      },
+      {
+        "category": "General Computer Science",
         "percentile": "48",
         "quartile": "Q3",
         "rank": "121",
         "rank_out_of": "",
-        "subject_code": "1700",
-        "year": ""
+        "subject_code": "1700"
       },
       {
-        "category": "",
-        "citescore": "2.2",
+        "category": "Theoretical Computer Science",
+        "percentile": "47",
+        "quartile": "Q3",
+        "rank": "69",
+        "rank_out_of": "",
+        "subject_code": "2614"
+      },
+      {
+        "category": "General Computer Science",
         "percentile": "46",
         "quartile": "Q3",
         "rank": "126",
         "rank_out_of": "",
-        "subject_code": "1700",
-        "year": ""
+        "subject_code": "1700"
       },
       {
-        "category": "",
-        "citescore": "2.1",
+        "category": "Theoretical Computer Science",
+        "percentile": "34",
+        "quartile": "Q3",
+        "rank": "84",
+        "rank_out_of": "",
+        "subject_code": "2614"
+      },
+      {
+        "category": "General Computer Science",
         "percentile": "50",
         "quartile": "Q2",
         "rank": "114",
         "rank_out_of": "",
-        "subject_code": "1700",
-        "year": ""
+        "subject_code": "1700"
       },
       {
-        "category": "",
-        "citescore": "1.8",
+        "category": "Theoretical Computer Science",
+        "percentile": "36",
+        "quartile": "Q3",
+        "rank": "78",
+        "rank_out_of": "",
+        "subject_code": "2614"
+      },
+      {
+        "category": "General Computer Science",
         "percentile": "50",
         "quartile": "Q2",
         "rank": "113",
         "rank_out_of": "",
-        "subject_code": "1700",
-        "year": ""
+        "subject_code": "1700"
       },
       {
-        "category": "",
-        "citescore": "1.9",
+        "category": "Theoretical Computer Science",
+        "percentile": "24",
+        "quartile": "Q4",
+        "rank": "91",
+        "rank_out_of": "",
+        "subject_code": "2614"
+      },
+      {
+        "category": "General Computer Science",
         "percentile": "57",
         "quartile": "Q2",
         "rank": "95",
         "rank_out_of": "",
-        "subject_code": "1700",
-        "year": ""
+        "subject_code": "1700"
       },
       {
-        "category": "",
-        "citescore": "1.6",
+        "category": "Theoretical Computer Science",
+        "percentile": "35",
+        "quartile": "Q3",
+        "rank": "77",
+        "rank_out_of": "",
+        "subject_code": "2614"
+      },
+      {
+        "category": "General Computer Science",
         "percentile": "54",
         "quartile": "Q2",
         "rank": "95",
         "rank_out_of": "",
-        "subject_code": "1700",
-        "year": ""
+        "subject_code": "1700"
       },
       {
-        "category": "",
-        "citescore": "1.6",
+        "category": "Theoretical Computer Science",
+        "percentile": "28",
+        "quartile": "Q3",
+        "rank": "85",
+        "rank_out_of": "",
+        "subject_code": "2614"
+      },
+      {
+        "category": "General Computer Science",
         "percentile": "59",
         "quartile": "Q2",
         "rank": "84",
         "rank_out_of": "",
-        "subject_code": "1700",
-        "year": ""
+        "subject_code": "1700"
       },
       {
-        "category": "",
-        "citescore": "1.6",
+        "category": "Theoretical Computer Science",
+        "percentile": "34",
+        "quartile": "Q3",
+        "rank": "76",
+        "rank_out_of": "",
+        "subject_code": "2614"
+      },
+      {
+        "category": "General Computer Science",
         "percentile": "60",
         "quartile": "Q2",
         "rank": "79",
         "rank_out_of": "",
-        "subject_code": "1700",
-        "year": ""
+        "subject_code": "1700"
       },
       {
-        "category": "",
-        "citescore": "1.5",
+        "category": "Theoretical Computer Science",
+        "percentile": "33",
+        "quartile": "Q3",
+        "rank": "79",
+        "rank_out_of": "",
+        "subject_code": "2614"
+      },
+      {
+        "category": "General Computer Science",
         "percentile": "57",
         "quartile": "Q2",
         "rank": "87",
         "rank_out_of": "",
-        "subject_code": "1700",
-        "year": ""
+        "subject_code": "1700"
       },
       {
-        "category": "",
-        "citescore": "1.5",
+        "category": "Theoretical Computer Science",
+        "percentile": "36",
+        "quartile": "Q3",
+        "rank": "76",
+        "rank_out_of": "",
+        "subject_code": "2614"
+      },
+      {
+        "category": "General Computer Science",
         "percentile": "56",
         "quartile": "Q2",
         "rank": "87",
         "rank_out_of": "",
-        "subject_code": "1700",
-        "year": ""
+        "subject_code": "1700"
       },
       {
-        "category": "",
-        "citescore": "1.5",
-        "percentile": "60",
-        "quartile": "Q2",
-        "rank": "79",
+        "category": "Theoretical Computer Science",
+        "percentile": "30",
+        "quartile": "Q3",
+        "rank": "82",
         "rank_out_of": "",
-        "subject_code": "1700",
-        "year": ""
+        "subject_code": "2614"
       },
       {
-        "category": "",
-        "citescore": "1.4",
+        "category": "Theoretical Computer Science",
+        "percentile": "37",
+        "quartile": "Q3",
+        "rank": "74",
+        "rank_out_of": "",
+        "subject_code": "2614"
+      },
+      {
+        "category": "General Computer Science",
         "percentile": "56",
         "quartile": "Q2",
         "rank": "84",
         "rank_out_of": "",
-        "subject_code": "1700",
-        "year": ""
+        "subject_code": "1700"
       },
       {
-        "category": "",
-        "citescore": "1.3",
+        "category": "Theoretical Computer Science",
+        "percentile": "30",
+        "quartile": "Q3",
+        "rank": "83",
+        "rank_out_of": "",
+        "subject_code": "2614"
+      },
+      {
+        "category": "General Computer Science",
         "percentile": "55",
         "quartile": "Q2",
         "rank": "79",
         "rank_out_of": "",
-        "subject_code": "1700",
-        "year": ""
+        "subject_code": "1700"
+      },
+      {
+        "category": "Theoretical Computer Science",
+        "percentile": "26",
+        "quartile": "Q3",
+        "rank": "85",
+        "rank_out_of": "",
+        "subject_code": "2614"
       }
     ],
+    "citescore_ranking_selection": "highest_percentile",
     "citescore_subject_code": "1700",
     "citescore_year": "2025",
     "eissn": "1611-3349",
     "found": true,
-    "ipp": "",
-    "ipp_year": "",
     "issn": "0302-9743",
     "publisher": "Springer Science and Business Media Deutschland GmbH",
     "queried_issn": "0302-9743",
@@ -385,7 +421,7 @@
     "source_id": "25674",
     "status_code": 200,
     "title": "Lecture Notes in Computer Science",
-    "updated_at": "2026-07-20T13:04:28+00:00"
+    "updated_at": "2026-07-20T13:27:15+00:00"
   },
   "0589-1019": {
     "citescore": "1.6",
@@ -394,184 +430,469 @@
     "citescore_quartile": "Q3",
     "citescore_rank": "48",
     "citescore_rank_out_of": "",
-    "citescore_records": [
+    "citescore_ranking_records": [
       {
-        "category": "",
-        "citescore": "1.6",
-        "percentile": "41",
-        "quartile": "Q3",
-        "rank": "48",
-        "rank_out_of": "",
-        "subject_code": "1707",
-        "year": "2025"
-      },
-      {
-        "category": "",
-        "citescore": "1.2",
+        "category": "Electrical and Electronic Engineering",
         "percentile": "31",
         "quartile": "Q3",
         "rank": "720",
         "rank_out_of": "",
-        "subject_code": "2208",
-        "year": ""
+        "subject_code": "2208"
       },
       {
-        "category": "",
-        "citescore": "1.6",
+        "category": "Electrical and Electronic Engineering",
         "percentile": "35",
         "quartile": "Q3",
         "rank": "667",
         "rank_out_of": "",
-        "subject_code": "2208",
-        "year": ""
+        "subject_code": "2208"
       },
       {
-        "category": "",
-        "citescore": "1.9",
+        "category": "Electrical and Electronic Engineering",
         "percentile": "40",
         "quartile": "Q3",
         "rank": "576",
         "rank_out_of": "",
-        "subject_code": "2208",
-        "year": ""
+        "subject_code": "2208"
       },
       {
-        "category": "",
-        "citescore": "2.2",
+        "category": "Electrical and Electronic Engineering",
         "percentile": "39",
         "quartile": "Q3",
         "rank": "483",
         "rank_out_of": "",
-        "subject_code": "2208",
-        "year": ""
+        "subject_code": "2208"
       },
       {
-        "category": "",
-        "citescore": "2.1",
+        "category": "Computer Vision and Pattern Recognition",
         "percentile": "33",
         "quartile": "Q3",
         "rank": "67",
         "rank_out_of": "",
-        "subject_code": "1707",
-        "year": ""
+        "subject_code": "1707"
       },
       {
-        "category": "",
-        "citescore": "1.8",
+        "category": "Signal Processing",
+        "percentile": "30",
+        "quartile": "Q3",
+        "rank": "85",
+        "rank_out_of": "",
+        "subject_code": "1711"
+      },
+      {
+        "category": "Health Informatics",
+        "percentile": "29",
+        "quartile": "Q3",
+        "rank": "87",
+        "rank_out_of": "",
+        "subject_code": "2718"
+      },
+      {
+        "category": "Biomedical Engineering",
+        "percentile": "27",
+        "quartile": "Q3",
+        "rank": "202",
+        "rank_out_of": "",
+        "subject_code": "2204"
+      },
+      {
+        "category": "Computer Vision and Pattern Recognition",
         "percentile": "34",
         "quartile": "Q3",
         "rank": "62",
         "rank_out_of": "",
-        "subject_code": "1707",
-        "year": ""
+        "subject_code": "1707"
       },
       {
-        "category": "",
-        "citescore": "1.5",
+        "category": "Signal Processing",
+        "percentile": "32",
+        "quartile": "Q3",
+        "rank": "78",
+        "rank_out_of": "",
+        "subject_code": "1711"
+      },
+      {
+        "category": "Health Informatics",
         "percentile": "27",
         "quartile": "Q3",
         "rank": "79",
         "rank_out_of": "",
-        "subject_code": "1711",
-        "year": ""
+        "subject_code": "2718"
       },
       {
-        "category": "",
-        "citescore": "1.5",
+        "category": "Biomedical Engineering",
+        "percentile": "25",
+        "quartile": "Q3",
+        "rank": "188",
+        "rank_out_of": "",
+        "subject_code": "2204"
+      },
+      {
+        "category": "Signal Processing",
+        "percentile": "27",
+        "quartile": "Q3",
+        "rank": "79",
+        "rank_out_of": "",
+        "subject_code": "1711"
+      },
+      {
+        "category": "Health Informatics",
+        "percentile": "26",
+        "quartile": "Q3",
+        "rank": "70",
+        "rank_out_of": "",
+        "subject_code": "2718"
+      },
+      {
+        "category": "Computer Vision and Pattern Recognition",
+        "percentile": "26",
+        "quartile": "Q3",
+        "rank": "63",
+        "rank_out_of": "",
+        "subject_code": "1707"
+      },
+      {
+        "category": "Biomedical Engineering",
+        "percentile": "22",
+        "quartile": "Q4",
+        "rank": "177",
+        "rank_out_of": "",
+        "subject_code": "2204"
+      },
+      {
+        "category": "Computer Vision and Pattern Recognition",
         "percentile": "33",
         "quartile": "Q3",
         "rank": "56",
         "rank_out_of": "",
-        "subject_code": "1707",
-        "year": ""
+        "subject_code": "1707"
       },
       {
-        "category": "",
-        "citescore": "1.6",
+        "category": "Health Informatics",
+        "percentile": "33",
+        "quartile": "Q3",
+        "rank": "52",
+        "rank_out_of": "",
+        "subject_code": "2718"
+      },
+      {
+        "category": "Signal Processing",
+        "percentile": "31",
+        "quartile": "Q3",
+        "rank": "71",
+        "rank_out_of": "",
+        "subject_code": "1711"
+      },
+      {
+        "category": "Biomedical Engineering",
+        "percentile": "26",
+        "quartile": "Q3",
+        "rank": "165",
+        "rank_out_of": "",
+        "subject_code": "2204"
+      },
+      {
+        "category": "Computer Vision and Pattern Recognition",
         "percentile": "41",
         "quartile": "Q3",
         "rank": "48",
         "rank_out_of": "",
-        "subject_code": "1707",
-        "year": ""
+        "subject_code": "1707"
       },
       {
-        "category": "",
-        "citescore": "1.0",
+        "category": "Signal Processing",
+        "percentile": "40",
+        "quartile": "Q3",
+        "rank": "61",
+        "rank_out_of": "",
+        "subject_code": "1711"
+      },
+      {
+        "category": "Health Informatics",
+        "percentile": "38",
+        "quartile": "Q3",
+        "rank": "42",
+        "rank_out_of": "",
+        "subject_code": "2718"
+      },
+      {
+        "category": "Biomedical Engineering",
+        "percentile": "29",
+        "quartile": "Q3",
+        "rank": "148",
+        "rank_out_of": "",
+        "subject_code": "2204"
+      },
+      {
+        "category": "Signal Processing",
         "percentile": "26",
         "quartile": "Q3",
         "rank": "74",
         "rank_out_of": "",
-        "subject_code": "1711",
-        "year": ""
+        "subject_code": "1711"
       },
       {
-        "category": "",
-        "citescore": "1.1",
+        "category": "Computer Vision and Pattern Recognition",
+        "percentile": "24",
+        "quartile": "Q4",
+        "rank": "57",
+        "rank_out_of": "",
+        "subject_code": "1707"
+      },
+      {
+        "category": "Biomedical Engineering",
+        "percentile": "23",
+        "quartile": "Q4",
+        "rank": "156",
+        "rank_out_of": "",
+        "subject_code": "2204"
+      },
+      {
+        "category": "Health Informatics",
+        "percentile": "21",
+        "quartile": "Q4",
+        "rank": "49",
+        "rank_out_of": "",
+        "subject_code": "2718"
+      },
+      {
+        "category": "Signal Processing",
         "percentile": "33",
         "quartile": "Q3",
         "rank": "62",
         "rank_out_of": "",
-        "subject_code": "1711",
-        "year": ""
+        "subject_code": "1711"
       },
       {
-        "category": "",
-        "citescore": "1.2",
+        "category": "Health Informatics",
+        "percentile": "25",
+        "quartile": "Q3",
+        "rank": "45",
+        "rank_out_of": "",
+        "subject_code": "2718"
+      },
+      {
+        "category": "Computer Vision and Pattern Recognition",
+        "percentile": "25",
+        "quartile": "Q3",
+        "rank": "52",
+        "rank_out_of": "",
+        "subject_code": "1707"
+      },
+      {
+        "category": "Biomedical Engineering",
+        "percentile": "22",
+        "quartile": "Q4",
+        "rank": "145",
+        "rank_out_of": "",
+        "subject_code": "2204"
+      },
+      {
+        "category": "Signal Processing",
         "percentile": "33",
         "quartile": "Q3",
         "rank": "59",
         "rank_out_of": "",
-        "subject_code": "1711",
-        "year": ""
+        "subject_code": "1711"
       },
       {
-        "category": "",
-        "citescore": "1.1",
+        "category": "General Medicine",
+        "percentile": "30",
+        "quartile": "Q3",
+        "rank": "2279",
+        "rank_out_of": "",
+        "subject_code": "2700"
+      },
+      {
+        "category": "Computer Vision and Pattern Recognition",
+        "percentile": "28",
+        "quartile": "Q3",
+        "rank": "46",
+        "rank_out_of": "",
+        "subject_code": "1707"
+      },
+      {
+        "category": "Biomedical Engineering",
+        "percentile": "28",
+        "quartile": "Q3",
+        "rank": "132",
+        "rank_out_of": "",
+        "subject_code": "2204"
+      },
+      {
+        "category": "Health Informatics",
+        "percentile": "21",
+        "quartile": "Q4",
+        "rank": "43",
+        "rank_out_of": "",
+        "subject_code": "2718"
+      },
+      {
+        "category": "General Medicine",
         "percentile": "29",
         "quartile": "Q3",
         "rank": "2296",
         "rank_out_of": "",
-        "subject_code": "2700",
-        "year": ""
+        "subject_code": "2700"
       },
       {
-        "category": "",
-        "citescore": "0.6",
+        "category": "Biomedical Engineering",
+        "percentile": "28",
+        "quartile": "Q3",
+        "rank": "130",
+        "rank_out_of": "",
+        "subject_code": "2204"
+      },
+      {
+        "category": "Signal Processing",
+        "percentile": "26",
+        "quartile": "Q3",
+        "rank": "61",
+        "rank_out_of": "",
+        "subject_code": "1711"
+      },
+      {
+        "category": "Computer Vision and Pattern Recognition",
+        "percentile": "25",
+        "quartile": "Q3",
+        "rank": "48",
+        "rank_out_of": "",
+        "subject_code": "1707"
+      },
+      {
+        "category": "Health Informatics",
+        "percentile": "23",
+        "quartile": "Q4",
+        "rank": "42",
+        "rank_out_of": "",
+        "subject_code": "2718"
+      },
+      {
+        "category": "General Medicine",
         "percentile": "22",
         "quartile": "Q4",
         "rank": "2497",
         "rank_out_of": "",
-        "subject_code": "2700",
-        "year": ""
+        "subject_code": "2700"
       },
       {
-        "category": "",
-        "citescore": "0.3",
+        "category": "Biomedical Engineering",
+        "percentile": "14",
+        "quartile": "Q4",
+        "rank": "148",
+        "rank_out_of": "",
+        "subject_code": "2204"
+      },
+      {
+        "category": "Computer Vision and Pattern Recognition",
+        "percentile": "11",
+        "quartile": "Q4",
+        "rank": "56",
+        "rank_out_of": "",
+        "subject_code": "1707"
+      },
+      {
+        "category": "Signal Processing",
+        "percentile": "10",
+        "quartile": "Q4",
+        "rank": "68",
+        "rank_out_of": "",
+        "subject_code": "1711"
+      },
+      {
+        "category": "Health Informatics",
+        "percentile": "6",
+        "quartile": "Q4",
+        "rank": "49",
+        "rank_out_of": "",
+        "subject_code": "2718"
+      },
+      {
+        "category": "General Medicine",
         "percentile": "15",
         "quartile": "Q4",
         "rank": "2693",
         "rank_out_of": "",
-        "subject_code": "2700",
-        "year": ""
+        "subject_code": "2700"
       },
       {
-        "category": "",
-        "citescore": "0.0",
+        "category": "Biomedical Engineering",
+        "percentile": "8",
+        "quartile": "Q4",
+        "rank": "155",
+        "rank_out_of": "",
+        "subject_code": "2204"
+      },
+      {
+        "category": "Health Informatics",
+        "percentile": "2",
+        "quartile": "Q4",
+        "rank": "50",
+        "rank_out_of": "",
+        "subject_code": "2718"
+      },
+      {
+        "category": "Computer Vision and Pattern Recognition",
+        "percentile": "2",
+        "quartile": "Q4",
+        "rank": "57",
+        "rank_out_of": "",
+        "subject_code": "1707"
+      },
+      {
+        "category": "Signal Processing",
+        "percentile": "2",
+        "quartile": "Q4",
+        "rank": "69",
+        "rank_out_of": "",
+        "subject_code": "1711"
+      },
+      {
+        "category": "General Medicine",
         "percentile": "5",
         "quartile": "Q4",
         "rank": "3002",
         "rank_out_of": "",
-        "subject_code": "2700",
-        "year": ""
+        "subject_code": "2700"
+      },
+      {
+        "category": "Computer Vision and Pattern Recognition",
+        "percentile": "4",
+        "quartile": "Q4",
+        "rank": "53",
+        "rank_out_of": "",
+        "subject_code": "1707"
+      },
+      {
+        "category": "Biomedical Engineering",
+        "percentile": "3",
+        "quartile": "Q4",
+        "rank": "155",
+        "rank_out_of": "",
+        "subject_code": "2204"
+      },
+      {
+        "category": "Health Informatics",
+        "percentile": "1",
+        "quartile": "Q1",
+        "rank": "49",
+        "rank_out_of": "",
+        "subject_code": "2718"
+      },
+      {
+        "category": "Signal Processing",
+        "percentile": "0",
+        "quartile": "Q4",
+        "rank": "67",
+        "rank_out_of": "",
+        "subject_code": "1711"
       }
     ],
+    "citescore_ranking_selection": "highest_percentile",
     "citescore_subject_code": "1707",
     "citescore_year": "2025",
     "eissn": "",
     "found": true,
-    "ipp": "",
-    "ipp_year": "",
     "issn": "0589-1019",
     "publisher": "Institute of Electrical and Electronics Engineers Inc.",
     "queried_issn": "0589-1019",
@@ -584,7 +905,7 @@
     "source_id": "34202",
     "status_code": 200,
     "title": "Annual International Conference of the IEEE Engineering in Medicine and Biology - Proceedings",
-    "updated_at": "2026-07-20T13:04:29+00:00"
+    "updated_at": "2026-07-20T13:27:16+00:00"
   },
   "1046-1310": {
     "citescore": "6.2",
@@ -593,174 +914,141 @@
     "citescore_quartile": "Q1",
     "citescore_rank": "30",
     "citescore_rank_out_of": "",
-    "citescore_records": [
+    "citescore_ranking_records": [
       {
-        "category": "",
-        "citescore": "6.2",
+        "category": "General Psychology",
         "percentile": "86",
         "quartile": "Q1",
         "rank": "30",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": "2025"
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "5.8",
-        "percentile": "86",
-        "quartile": "Q1",
-        "rank": "30",
-        "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
-      },
-      {
-        "category": "",
-        "citescore": "6.2",
+        "category": "General Psychology",
         "percentile": "82",
         "quartile": "Q1",
         "rank": "38",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "5.2",
+        "category": "General Psychology",
         "percentile": "77",
         "quartile": "Q1",
         "rank": "50",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "4.6",
+        "category": "General Psychology",
         "percentile": "73",
         "quartile": "Q2",
         "rank": "58",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "4.6",
+        "category": "General Psychology",
         "percentile": "74",
         "quartile": "Q2",
         "rank": "54",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "3.4",
+        "category": "General Psychology",
         "percentile": "64",
         "quartile": "Q2",
         "rank": "75",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "2.7",
+        "category": "General Psychology",
         "percentile": "61",
         "quartile": "Q2",
         "rank": "78",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "2.3",
+        "category": "General Psychology",
         "percentile": "55",
         "quartile": "Q2",
         "rank": "92",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "2.3",
+        "category": "General Psychology",
         "percentile": "58",
         "quartile": "Q2",
         "rank": "83",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "1.7",
+        "category": "General Psychology",
         "percentile": "47",
         "quartile": "Q3",
         "rank": "101",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "1.0",
+        "category": "General Psychology",
         "percentile": "36",
         "quartile": "Q3",
         "rank": "118",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "1.0",
+        "category": "General Psychology",
         "percentile": "35",
         "quartile": "Q3",
         "rank": "114",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "0.8",
+        "category": "General Psychology",
+        "percentile": "36",
+        "quartile": "Q3",
+        "rank": "108",
+        "rank_out_of": "",
+        "subject_code": "3200"
+      },
+      {
+        "category": "General Psychology",
         "percentile": "32",
         "quartile": "Q3",
         "rank": "114",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "1.0",
+        "category": "General Psychology",
         "percentile": "38",
         "quartile": "Q3",
         "rank": "105",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "1.0",
+        "category": "General Psychology",
         "percentile": "37",
         "quartile": "Q3",
         "rank": "103",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       }
     ],
+    "citescore_ranking_selection": "highest_percentile",
     "citescore_subject_code": "3200",
     "citescore_year": "2025",
     "eissn": "1936-4733",
     "found": true,
-    "ipp": "",
-    "ipp_year": "",
     "issn": "1046-1310",
     "publisher": "Springer",
     "queried_issn": "1046-1310",
@@ -773,7 +1061,7 @@
     "source_id": "13479",
     "status_code": 200,
     "title": "Current Psychology",
-    "updated_at": "2026-07-20T13:04:30+00:00"
+    "updated_at": "2026-07-20T13:27:17+00:00"
   },
   "1662-5161": {
     "citescore": "5.9",
@@ -782,184 +1070,645 @@
     "citescore_quartile": "Q1",
     "citescore_rank": "5",
     "citescore_rank_out_of": "",
-    "citescore_records": [
+    "citescore_ranking_records": [
       {
-        "category": "",
-        "citescore": "5.9",
-        "percentile": "93",
-        "quartile": "Q1",
-        "rank": "5",
-        "rank_out_of": "",
-        "subject_code": "2802",
-        "year": "2025"
-      },
-      {
-        "category": "",
-        "citescore": "5.2",
+        "category": "Neuropsychology and Physiological Psychology",
         "percentile": "83",
         "quartile": "Q1",
         "rank": "13",
         "rank_out_of": "",
-        "subject_code": "3206",
-        "year": ""
+        "subject_code": "3206"
       },
       {
-        "category": "",
-        "citescore": "5.9",
+        "category": "Behavioral Neuroscience",
+        "percentile": "81",
+        "quartile": "Q1",
+        "rank": "18",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Psychiatry and Mental Health",
+        "percentile": "79",
+        "quartile": "Q1",
+        "rank": "119",
+        "rank_out_of": "",
+        "subject_code": "2738"
+      },
+      {
+        "category": "Neurology",
+        "percentile": "76",
+        "quartile": "Q1",
+        "rank": "48",
+        "rank_out_of": "",
+        "subject_code": "2808"
+      },
+      {
+        "category": "Biological Psychiatry",
+        "percentile": "63",
+        "quartile": "Q2",
+        "rank": "20",
+        "rank_out_of": "",
+        "subject_code": "2803"
+      },
+      {
+        "category": "Neuropsychology and Physiological Psychology",
         "percentile": "82",
         "quartile": "Q1",
         "rank": "14",
         "rank_out_of": "",
-        "subject_code": "3206",
-        "year": ""
+        "subject_code": "3206"
       },
       {
-        "category": "",
-        "citescore": "5.5",
+        "category": "Behavioral Neuroscience",
+        "percentile": "76",
+        "quartile": "Q1",
+        "rank": "22",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Psychiatry and Mental Health",
+        "percentile": "75",
+        "quartile": "Q1",
+        "rank": "140",
+        "rank_out_of": "",
+        "subject_code": "2738"
+      },
+      {
+        "category": "Neurology",
+        "percentile": "73",
+        "quartile": "Q2",
+        "rank": "53",
+        "rank_out_of": "",
+        "subject_code": "2808"
+      },
+      {
+        "category": "Biological Psychiatry",
+        "percentile": "58",
+        "quartile": "Q2",
+        "rank": "23",
+        "rank_out_of": "",
+        "subject_code": "2803"
+      },
+      {
+        "category": "Neuropsychology and Physiological Psychology",
         "percentile": "78",
         "quartile": "Q1",
         "rank": "17",
         "rank_out_of": "",
-        "subject_code": "3206",
-        "year": ""
+        "subject_code": "3206"
       },
       {
-        "category": "",
-        "citescore": "4.7",
+        "category": "Psychiatry and Mental Health",
+        "percentile": "72",
+        "quartile": "Q2",
+        "rank": "162",
+        "rank_out_of": "",
+        "subject_code": "2738"
+      },
+      {
+        "category": "Neurology",
+        "percentile": "68",
+        "quartile": "Q2",
+        "rank": "61",
+        "rank_out_of": "",
+        "subject_code": "2808"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "65",
+        "quartile": "Q2",
+        "rank": "32",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Neuropsychology and Physiological Psychology",
         "percentile": "73",
         "quartile": "Q2",
         "rank": "21",
         "rank_out_of": "",
-        "subject_code": "3206",
-        "year": ""
+        "subject_code": "3206"
       },
       {
-        "category": "",
-        "citescore": "4.4",
+        "category": "Psychiatry and Mental Health",
+        "percentile": "62",
+        "quartile": "Q2",
+        "rank": "212",
+        "rank_out_of": "",
+        "subject_code": "2738"
+      },
+      {
+        "category": "Neurology",
+        "percentile": "58",
+        "quartile": "Q2",
+        "rank": "81",
+        "rank_out_of": "",
+        "subject_code": "2808"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "53",
+        "quartile": "Q2",
+        "rank": "41",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Biological Psychiatry",
+        "percentile": "46",
+        "quartile": "Q3",
+        "rank": "28",
+        "rank_out_of": "",
+        "subject_code": "2803"
+      },
+      {
+        "category": "Neuropsychology and Physiological Psychology",
         "percentile": "63",
         "quartile": "Q2",
         "rank": "25",
         "rank_out_of": "",
-        "subject_code": "3206",
-        "year": ""
+        "subject_code": "3206"
       },
       {
-        "category": "",
-        "citescore": "4.6",
+        "category": "Psychiatry and Mental Health",
+        "percentile": "61",
+        "quartile": "Q2",
+        "rank": "205",
+        "rank_out_of": "",
+        "subject_code": "2738"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "56",
+        "quartile": "Q2",
+        "rank": "36",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Neurology",
+        "percentile": "49",
+        "quartile": "Q3",
+        "rank": "89",
+        "rank_out_of": "",
+        "subject_code": "2808"
+      },
+      {
+        "category": "Biological Psychiatry",
+        "percentile": "39",
+        "quartile": "Q3",
+        "rank": "29",
+        "rank_out_of": "",
+        "subject_code": "2803"
+      },
+      {
+        "category": "Neuropsychology and Physiological Psychology",
         "percentile": "70",
         "quartile": "Q2",
         "rank": "20",
         "rank_out_of": "",
-        "subject_code": "3206",
-        "year": ""
+        "subject_code": "3206"
       },
       {
-        "category": "",
-        "citescore": "5.1",
+        "category": "Psychiatry and Mental Health",
+        "percentile": "69",
+        "quartile": "Q2",
+        "rank": "162",
+        "rank_out_of": "",
+        "subject_code": "2738"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "63",
+        "quartile": "Q2",
+        "rank": "29",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Neurology",
+        "percentile": "59",
+        "quartile": "Q2",
+        "rank": "70",
+        "rank_out_of": "",
+        "subject_code": "2808"
+      },
+      {
+        "category": "Biological Psychiatry",
+        "percentile": "40",
+        "quartile": "Q3",
+        "rank": "26",
+        "rank_out_of": "",
+        "subject_code": "2803"
+      },
+      {
+        "category": "Neuropsychology and Physiological Psychology",
         "percentile": "80",
         "quartile": "Q1",
         "rank": "12",
         "rank_out_of": "",
-        "subject_code": "3206",
-        "year": ""
+        "subject_code": "3206"
       },
       {
-        "category": "",
-        "citescore": "5.4",
+        "category": "Psychiatry and Mental Health",
+        "percentile": "80",
+        "quartile": "Q1",
+        "rank": "100",
+        "rank_out_of": "",
+        "subject_code": "2738"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "75",
+        "quartile": "Q1",
+        "rank": "20",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Neurology",
+        "percentile": "63",
+        "quartile": "Q2",
+        "rank": "57",
+        "rank_out_of": "",
+        "subject_code": "2808"
+      },
+      {
+        "category": "Biological Psychiatry",
+        "percentile": "46",
+        "quartile": "Q3",
+        "rank": "21",
+        "rank_out_of": "",
+        "subject_code": "2803"
+      },
+      {
+        "category": "Neuropsychology and Physiological Psychology",
         "percentile": "86",
         "quartile": "Q1",
         "rank": "9",
         "rank_out_of": "",
-        "subject_code": "3206",
-        "year": ""
+        "subject_code": "3206"
       },
       {
-        "category": "",
-        "citescore": "4.7",
+        "category": "Psychiatry and Mental Health",
+        "percentile": "83",
+        "quartile": "Q1",
+        "rank": "84",
+        "rank_out_of": "",
+        "subject_code": "2738"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "82",
+        "quartile": "Q1",
+        "rank": "13",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Neurology",
+        "percentile": "70",
+        "quartile": "Q2",
+        "rank": "45",
+        "rank_out_of": "",
+        "subject_code": "2808"
+      },
+      {
+        "category": "Biological Psychiatry",
+        "percentile": "51",
+        "quartile": "Q2",
+        "rank": "19",
+        "rank_out_of": "",
+        "subject_code": "2803"
+      },
+      {
+        "category": "Psychiatry and Mental Health",
         "percentile": "79",
         "quartile": "Q1",
         "rank": "103",
         "rank_out_of": "",
-        "subject_code": "2738",
-        "year": ""
+        "subject_code": "2738"
       },
       {
-        "category": "",
-        "citescore": "5.6",
+        "category": "Neuropsychology and Physiological Psychology",
+        "percentile": "72",
+        "quartile": "Q2",
+        "rank": "17",
+        "rank_out_of": "",
+        "subject_code": "3206"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "69",
+        "quartile": "Q2",
+        "rank": "23",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Neurology",
+        "percentile": "62",
+        "quartile": "Q2",
+        "rank": "57",
+        "rank_out_of": "",
+        "subject_code": "2808"
+      },
+      {
+        "category": "Biological Psychiatry",
+        "percentile": "46",
+        "quartile": "Q3",
+        "rank": "22",
+        "rank_out_of": "",
+        "subject_code": "2803"
+      },
+      {
+        "category": "Psychiatry and Mental Health",
         "percentile": "85",
         "quartile": "Q1",
         "rank": "72",
         "rank_out_of": "",
-        "subject_code": "2738",
-        "year": ""
+        "subject_code": "2738"
       },
       {
-        "category": "",
-        "citescore": "6.7",
+        "category": "Neuropsychology and Physiological Psychology",
+        "percentile": "84",
+        "quartile": "Q1",
+        "rank": "10",
+        "rank_out_of": "",
+        "subject_code": "3206"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "83",
+        "quartile": "Q1",
+        "rank": "12",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Neurology",
+        "percentile": "73",
+        "quartile": "Q2",
+        "rank": "39",
+        "rank_out_of": "",
+        "subject_code": "2808"
+      },
+      {
+        "category": "Biological Psychiatry",
+        "percentile": "58",
+        "quartile": "Q2",
+        "rank": "16",
+        "rank_out_of": "",
+        "subject_code": "2803"
+      },
+      {
+        "category": "Behavioral Neuroscience",
         "percentile": "93",
         "quartile": "Q1",
         "rank": "5",
         "rank_out_of": "",
-        "subject_code": "2802",
-        "year": ""
+        "subject_code": "2802"
       },
       {
-        "category": "",
-        "citescore": "6.0",
+        "category": "Psychiatry and Mental Health",
+        "percentile": "89",
+        "quartile": "Q1",
+        "rank": "50",
+        "rank_out_of": "",
+        "subject_code": "2738"
+      },
+      {
+        "category": "Neuropsychology and Physiological Psychology",
+        "percentile": "88",
+        "quartile": "Q1",
+        "rank": "7",
+        "rank_out_of": "",
+        "subject_code": "3206"
+      },
+      {
+        "category": "Neurology",
+        "percentile": "80",
+        "quartile": "Q1",
+        "rank": "27",
+        "rank_out_of": "",
+        "subject_code": "2808"
+      },
+      {
+        "category": "Biological Psychiatry",
+        "percentile": "59",
+        "quartile": "Q2",
+        "rank": "16",
+        "rank_out_of": "",
+        "subject_code": "2803"
+      },
+      {
+        "category": "Behavioral Neuroscience",
         "percentile": "87",
         "quartile": "Q1",
         "rank": "8",
         "rank_out_of": "",
-        "subject_code": "2802",
-        "year": ""
+        "subject_code": "2802"
       },
       {
-        "category": "",
-        "citescore": "2.9",
+        "category": "Psychiatry and Mental Health",
+        "percentile": "87",
+        "quartile": "Q1",
+        "rank": "60",
+        "rank_out_of": "",
+        "subject_code": "2738"
+      },
+      {
+        "category": "Neuropsychology and Physiological Psychology",
+        "percentile": "85",
+        "quartile": "Q1",
+        "rank": "9",
+        "rank_out_of": "",
+        "subject_code": "3206"
+      },
+      {
+        "category": "Neurology",
+        "percentile": "73",
+        "quartile": "Q2",
+        "rank": "36",
+        "rank_out_of": "",
+        "subject_code": "2808"
+      },
+      {
+        "category": "Biological Psychiatry",
+        "percentile": "65",
+        "quartile": "Q2",
+        "rank": "13",
+        "rank_out_of": "",
+        "subject_code": "2803"
+      },
+      {
+        "category": "Psychiatry and Mental Health",
         "percentile": "64",
         "quartile": "Q2",
         "rank": "167",
         "rank_out_of": "",
-        "subject_code": "2738",
-        "year": ""
+        "subject_code": "2738"
       },
       {
-        "category": "",
-        "citescore": "4.3",
+        "category": "Neuropsychology and Physiological Psychology",
+        "percentile": "47",
+        "quartile": "Q3",
+        "rank": "30",
+        "rank_out_of": "",
+        "subject_code": "3206"
+      },
+      {
+        "category": "Neurology",
+        "percentile": "43",
+        "quartile": "Q3",
+        "rank": "76",
+        "rank_out_of": "",
+        "subject_code": "2808"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "42",
+        "quartile": "Q3",
+        "rank": "34",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Biological Psychiatry",
+        "percentile": "41",
+        "quartile": "Q3",
+        "rank": "21",
+        "rank_out_of": "",
+        "subject_code": "2803"
+      },
+      {
+        "category": "Psychiatry and Mental Health",
         "percentile": "78",
         "quartile": "Q1",
         "rank": "99",
         "rank_out_of": "",
-        "subject_code": "2738",
-        "year": ""
+        "subject_code": "2738"
       },
       {
-        "category": "",
-        "citescore": "5.4",
+        "category": "Neuropsychology and Physiological Psychology",
+        "percentile": "70",
+        "quartile": "Q2",
+        "rank": "17",
+        "rank_out_of": "",
+        "subject_code": "3206"
+      },
+      {
+        "category": "Neurology",
+        "percentile": "59",
+        "quartile": "Q2",
+        "rank": "54",
+        "rank_out_of": "",
+        "subject_code": "2808"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "58",
+        "quartile": "Q2",
+        "rank": "24",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Biological Psychiatry",
+        "percentile": "50",
+        "quartile": "Q2",
+        "rank": "17",
+        "rank_out_of": "",
+        "subject_code": "2803"
+      },
+      {
+        "category": "Psychiatry and Mental Health",
         "percentile": "85",
         "quartile": "Q1",
         "rank": "67",
         "rank_out_of": "",
-        "subject_code": "2738",
-        "year": ""
+        "subject_code": "2738"
       },
       {
-        "category": "",
-        "citescore": "4.5",
+        "category": "Behavioral Neuroscience",
+        "percentile": "79",
+        "quartile": "Q1",
+        "rank": "12",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Neuropsychology and Physiological Psychology",
+        "percentile": "79",
+        "quartile": "Q1",
+        "rank": "12",
+        "rank_out_of": "",
+        "subject_code": "3206"
+      },
+      {
+        "category": "Neurology",
+        "percentile": "74",
+        "quartile": "Q2",
+        "rank": "34",
+        "rank_out_of": "",
+        "subject_code": "2808"
+      },
+      {
+        "category": "Biological Psychiatry",
+        "percentile": "65",
+        "quartile": "Q2",
+        "rank": "12",
+        "rank_out_of": "",
+        "subject_code": "2803"
+      },
+      {
+        "category": "Psychiatry and Mental Health",
         "percentile": "81",
         "quartile": "Q1",
         "rank": "82",
         "rank_out_of": "",
-        "subject_code": "2738",
-        "year": ""
+        "subject_code": "2738"
+      },
+      {
+        "category": "Neuropsychology and Physiological Psychology",
+        "percentile": "68",
+        "quartile": "Q2",
+        "rank": "18",
+        "rank_out_of": "",
+        "subject_code": "3206"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "66",
+        "quartile": "Q2",
+        "rank": "18",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Neurology",
+        "percentile": "66",
+        "quartile": "Q2",
+        "rank": "44",
+        "rank_out_of": "",
+        "subject_code": "2808"
+      },
+      {
+        "category": "Biological Psychiatry",
+        "percentile": "59",
+        "quartile": "Q2",
+        "rank": "14",
+        "rank_out_of": "",
+        "subject_code": "2803"
       }
     ],
+    "citescore_ranking_selection": "highest_percentile",
     "citescore_subject_code": "2802",
     "citescore_year": "2025",
     "eissn": "1662-5161",
     "found": true,
-    "ipp": "",
-    "ipp_year": "",
     "issn": "",
     "publisher": "Frontiers Media SA",
     "queried_issn": "1662-5161",
@@ -972,7 +1721,7 @@
     "source_id": "19700175164",
     "status_code": 200,
     "title": "Frontiers in Human Neuroscience",
-    "updated_at": "2026-07-20T13:04:30+00:00"
+    "updated_at": "2026-07-20T13:27:18+00:00"
   },
   "1664-1078": {
     "citescore": "7.0",
@@ -981,184 +1730,125 @@
     "citescore_quartile": "Q1",
     "citescore_rank": "30",
     "citescore_rank_out_of": "",
-    "citescore_records": [
+    "citescore_ranking_records": [
       {
-        "category": "",
-        "citescore": "7.0",
-        "percentile": "86",
-        "quartile": "Q1",
-        "rank": "30",
-        "rank_out_of": "",
-        "subject_code": "3200",
-        "year": "2025"
-      },
-      {
-        "category": "",
-        "citescore": "5.4",
+        "category": "General Psychology",
         "percentile": "83",
         "quartile": "Q1",
         "rank": "37",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "7.0",
+        "category": "General Psychology",
         "percentile": "86",
         "quartile": "Q1",
         "rank": "30",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "6.3",
+        "category": "General Psychology",
         "percentile": "83",
         "quartile": "Q1",
         "rank": "36",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "5.3",
+        "category": "General Psychology",
         "percentile": "78",
         "quartile": "Q1",
         "rank": "47",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "4.5",
+        "category": "General Psychology",
         "percentile": "73",
         "quartile": "Q2",
         "rank": "55",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "4.0",
-        "percentile": "73",
-        "quartile": "Q2",
-        "rank": "55",
-        "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
-      },
-      {
-        "category": "",
-        "citescore": "3.5",
+        "category": "General Psychology",
         "percentile": "73",
         "quartile": "Q2",
         "rank": "54",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "3.2",
-        "percentile": "73",
-        "quartile": "Q2",
-        "rank": "54",
-        "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
-      },
-      {
-        "category": "",
-        "citescore": "3.0",
+        "category": "General Psychology",
         "percentile": "71",
         "quartile": "Q2",
         "rank": "58",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "3.4",
+        "category": "General Psychology",
         "percentile": "73",
         "quartile": "Q2",
         "rank": "51",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "3.4",
+        "category": "General Psychology",
         "percentile": "75",
         "quartile": "Q1",
         "rank": "46",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "3.3",
+        "category": "General Psychology",
         "percentile": "75",
         "quartile": "Q1",
         "rank": "44",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "3.1",
+        "category": "General Psychology",
         "percentile": "75",
         "quartile": "Q1",
         "rank": "43",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "2.7",
+        "category": "General Psychology",
         "percentile": "69",
         "quartile": "Q2",
         "rank": "52",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "1.7",
+        "category": "General Psychology",
         "percentile": "53",
         "quartile": "Q2",
         "rank": "80",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "1.3",
+        "category": "General Psychology",
         "percentile": "48",
         "quartile": "Q3",
         "rank": "84",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       }
     ],
+    "citescore_ranking_selection": "highest_percentile",
     "citescore_subject_code": "3200",
     "citescore_year": "2025",
     "eissn": "1664-1078",
     "found": true,
-    "ipp": "",
-    "ipp_year": "",
     "issn": "",
     "publisher": "Frontiers Media SA",
     "queried_issn": "1664-1078",
@@ -1171,7 +1861,7 @@
     "source_id": "21100216571",
     "status_code": 200,
     "title": "Frontiers in Psychology",
-    "updated_at": "2026-07-20T13:04:31+00:00"
+    "updated_at": "2026-07-20T13:27:18+00:00"
   },
   "1687-4153": {
     "citescore": "3.0",
@@ -1180,104 +1870,285 @@
     "citescore_quartile": "Q1",
     "citescore_rank": "5",
     "citescore_rank_out_of": "",
-    "citescore_records": [
+    "citescore_ranking_records": [
       {
-        "category": "",
-        "citescore": "3.0",
-        "percentile": "95",
-        "quartile": "Q1",
-        "rank": "5",
-        "rank_out_of": "",
-        "subject_code": "1000",
-        "year": "2018"
-      },
-      {
-        "category": "",
-        "citescore": "3.0",
+        "category": "Computational Mathematics",
         "percentile": "73",
         "quartile": "Q2",
         "rank": "41",
         "rank_out_of": "",
-        "subject_code": "2605",
-        "year": ""
+        "subject_code": "2605"
       },
       {
-        "category": "",
-        "citescore": "1.5",
+        "category": "Computer Science Applications",
+        "percentile": "58",
+        "quartile": "Q2",
+        "rank": "246",
+        "rank_out_of": "",
+        "subject_code": "1706"
+      },
+      {
+        "category": "General Biochemistry",
+        "percentile": "57",
+        "quartile": "Q2",
+        "rank": "82",
+        "rank_out_of": "",
+        "subject_code": "1300"
+      },
+      {
+        "category": "Computational Mathematics",
         "percentile": "40",
         "quartile": "Q3",
         "rank": "82",
         "rank_out_of": "",
-        "subject_code": "2605",
-        "year": ""
+        "subject_code": "2605"
       },
       {
-        "category": "",
-        "citescore": "1.5",
+        "category": "Computer Science Applications",
+        "percentile": "39",
+        "quartile": "Q3",
+        "rank": "345",
+        "rank_out_of": "",
+        "subject_code": "1706"
+      },
+      {
+        "category": "General Biochemistry",
+        "percentile": "39",
+        "quartile": "Q3",
+        "rank": "119",
+        "rank_out_of": "",
+        "subject_code": "1300"
+      },
+      {
+        "category": "Computational Mathematics",
         "percentile": "44",
         "quartile": "Q3",
         "rank": "66",
         "rank_out_of": "",
-        "subject_code": "2605",
-        "year": ""
+        "subject_code": "2605"
       },
       {
-        "category": "",
-        "citescore": "1.8",
+        "category": "Computer Science Applications",
+        "percentile": "39",
+        "quartile": "Q3",
+        "rank": "321",
+        "rank_out_of": "",
+        "subject_code": "1706"
+      },
+      {
+        "category": "General Biochemistry",
+        "percentile": "38",
+        "quartile": "Q3",
+        "rank": "115",
+        "rank_out_of": "",
+        "subject_code": "1300"
+      },
+      {
+        "category": "Multidisciplinary",
         "percentile": "81",
         "quartile": "Q1",
         "rank": "20",
         "rank_out_of": "",
-        "subject_code": "1000",
-        "year": ""
+        "subject_code": "1000"
       },
       {
-        "category": "",
-        "citescore": "1.4",
+        "category": "General Computer Science",
+        "percentile": "61",
+        "quartile": "Q2",
+        "rank": "78",
+        "rank_out_of": "",
+        "subject_code": "1700"
+      },
+      {
+        "category": "Statistics and Probability",
+        "percentile": "60",
+        "quartile": "Q2",
+        "rank": "72",
+        "rank_out_of": "",
+        "subject_code": "2613"
+      },
+      {
+        "category": "Signal Processing",
+        "percentile": "49",
+        "quartile": "Q3",
+        "rank": "45",
+        "rank_out_of": "",
+        "subject_code": "1711"
+      },
+      {
+        "category": "General Medicine",
+        "percentile": "38",
+        "quartile": "Q3",
+        "rank": "2015",
+        "rank_out_of": "",
+        "subject_code": "2700"
+      },
+      {
+        "category": "Multidisciplinary",
         "percentile": "76",
         "quartile": "Q1",
         "rank": "24",
         "rank_out_of": "",
-        "subject_code": "1000",
-        "year": ""
+        "subject_code": "1000"
       },
       {
-        "category": "",
-        "citescore": "1.1",
+        "category": "General Computer Science",
+        "percentile": "53",
+        "quartile": "Q2",
+        "rank": "93",
+        "rank_out_of": "",
+        "subject_code": "1700"
+      },
+      {
+        "category": "Statistics and Probability",
+        "percentile": "43",
+        "quartile": "Q3",
+        "rank": "100",
+        "rank_out_of": "",
+        "subject_code": "2613"
+      },
+      {
+        "category": "Signal Processing",
+        "percentile": "38",
+        "quartile": "Q3",
+        "rank": "51",
+        "rank_out_of": "",
+        "subject_code": "1711"
+      },
+      {
+        "category": "General Medicine",
+        "percentile": "35",
+        "quartile": "Q3",
+        "rank": "2122",
+        "rank_out_of": "",
+        "subject_code": "2700"
+      },
+      {
+        "category": "Multidisciplinary",
         "percentile": "75",
         "quartile": "Q1",
         "rank": "25",
         "rank_out_of": "",
-        "subject_code": "1000",
-        "year": ""
+        "subject_code": "1000"
       },
       {
-        "category": "",
-        "citescore": "3.4",
+        "category": "General Computer Science",
+        "percentile": "48",
+        "quartile": "Q3",
+        "rank": "102",
+        "rank_out_of": "",
+        "subject_code": "1700"
+      },
+      {
+        "category": "Statistics and Probability",
+        "percentile": "33",
+        "quartile": "Q3",
+        "rank": "115",
+        "rank_out_of": "",
+        "subject_code": "2613"
+      },
+      {
+        "category": "General Medicine",
+        "percentile": "31",
+        "quartile": "Q3",
+        "rank": "2222",
+        "rank_out_of": "",
+        "subject_code": "2700"
+      },
+      {
+        "category": "Signal Processing",
+        "percentile": "26",
+        "quartile": "Q3",
+        "rank": "56",
+        "rank_out_of": "",
+        "subject_code": "1711"
+      },
+      {
+        "category": "Multidisciplinary",
         "percentile": "95",
         "quartile": "Q1",
         "rank": "5",
         "rank_out_of": "",
-        "subject_code": "1000",
-        "year": ""
+        "subject_code": "1000"
       },
       {
-        "category": "",
-        "citescore": "3.1",
+        "category": "Statistics and Probability",
+        "percentile": "84",
+        "quartile": "Q1",
+        "rank": "27",
+        "rank_out_of": "",
+        "subject_code": "2613"
+      },
+      {
+        "category": "General Computer Science",
+        "percentile": "82",
+        "quartile": "Q1",
+        "rank": "34",
+        "rank_out_of": "",
+        "subject_code": "1700"
+      },
+      {
+        "category": "Signal Processing",
+        "percentile": "72",
+        "quartile": "Q2",
+        "rank": "20",
+        "rank_out_of": "",
+        "subject_code": "1711"
+      },
+      {
+        "category": "General Medicine",
+        "percentile": "61",
+        "quartile": "Q2",
+        "rank": "1230",
+        "rank_out_of": "",
+        "subject_code": "2700"
+      },
+      {
+        "category": "Multidisciplinary",
         "percentile": "94",
         "quartile": "Q1",
         "rank": "6",
         "rank_out_of": "",
-        "subject_code": "1000",
-        "year": ""
+        "subject_code": "1000"
+      },
+      {
+        "category": "Statistics and Probability",
+        "percentile": "82",
+        "quartile": "Q1",
+        "rank": "29",
+        "rank_out_of": "",
+        "subject_code": "2613"
+      },
+      {
+        "category": "General Computer Science",
+        "percentile": "80",
+        "quartile": "Q1",
+        "rank": "34",
+        "rank_out_of": "",
+        "subject_code": "1700"
+      },
+      {
+        "category": "Signal Processing",
+        "percentile": "69",
+        "quartile": "Q2",
+        "rank": "21",
+        "rank_out_of": "",
+        "subject_code": "1711"
+      },
+      {
+        "category": "General Medicine",
+        "percentile": "59",
+        "quartile": "Q2",
+        "rank": "1269",
+        "rank_out_of": "",
+        "subject_code": "2700"
       }
     ],
+    "citescore_ranking_selection": "highest_percentile",
     "citescore_subject_code": "1000",
     "citescore_year": "2018",
     "eissn": "1687-4153",
     "found": true,
-    "ipp": "",
-    "ipp_year": "",
     "issn": "1687-4145",
     "publisher": "SpringerOpen",
     "queried_issn": "1687-4153",
@@ -1290,7 +2161,7 @@
     "source_id": "4400151506",
     "status_code": 200,
     "title": "Eurasip Journal on Bioinformatics and Systems Biology",
-    "updated_at": "2026-07-20T13:04:32+00:00"
+    "updated_at": "2026-07-20T13:27:19+00:00"
   },
   "1932-6203": {
     "citescore": "4.8",
@@ -1299,184 +2170,253 @@
     "citescore_quartile": "Q1",
     "citescore_rank": "9",
     "citescore_rank_out_of": "",
-    "citescore_records": [
+    "citescore_ranking_records": [
       {
-        "category": "",
-        "citescore": "4.8",
-        "percentile": "92",
-        "quartile": "Q1",
-        "rank": "9",
-        "rank_out_of": "",
-        "subject_code": "1000",
-        "year": "2025"
-      },
-      {
-        "category": "",
-        "citescore": "4.1",
+        "category": "Multidisciplinary",
         "percentile": "82",
         "quartile": "Q1",
         "rank": "41",
         "rank_out_of": "",
-        "subject_code": "1000",
-        "year": ""
+        "subject_code": "1000"
       },
       {
-        "category": "",
-        "citescore": "4.8",
+        "category": "Multidisciplinary",
         "percentile": "83",
         "quartile": "Q1",
         "rank": "38",
         "rank_out_of": "",
-        "subject_code": "1000",
-        "year": ""
+        "subject_code": "1000"
       },
       {
-        "category": "",
-        "citescore": "5.4",
+        "category": "Multidisciplinary",
         "percentile": "86",
         "quartile": "Q1",
         "rank": "28",
         "rank_out_of": "",
-        "subject_code": "1000",
-        "year": ""
+        "subject_code": "1000"
       },
       {
-        "category": "",
-        "citescore": "6.2",
+        "category": "Multidisciplinary",
         "percentile": "89",
         "quartile": "Q1",
         "rank": "18",
         "rank_out_of": "",
-        "subject_code": "1000",
-        "year": ""
+        "subject_code": "1000"
       },
       {
-        "category": "",
-        "citescore": "6.0",
+        "category": "Multidisciplinary",
         "percentile": "87",
         "quartile": "Q1",
         "rank": "17",
         "rank_out_of": "",
-        "subject_code": "1000",
-        "year": ""
+        "subject_code": "1000"
       },
       {
-        "category": "",
-        "citescore": "5.6",
+        "category": "Multidisciplinary",
         "percentile": "87",
         "quartile": "Q1",
         "rank": "15",
         "rank_out_of": "",
-        "subject_code": "1000",
-        "year": ""
+        "subject_code": "1000"
       },
       {
-        "category": "",
-        "citescore": "5.3",
+        "category": "Multidisciplinary",
         "percentile": "92",
         "quartile": "Q1",
         "rank": "9",
         "rank_out_of": "",
-        "subject_code": "1000",
-        "year": ""
+        "subject_code": "1000"
       },
       {
-        "category": "",
-        "citescore": "5.2",
+        "category": "Multidisciplinary",
         "percentile": "91",
         "quartile": "Q1",
         "rank": "10",
         "rank_out_of": "",
-        "subject_code": "1000",
-        "year": ""
+        "subject_code": "1000"
       },
       {
-        "category": "",
-        "citescore": "5.4",
+        "category": "Multidisciplinary",
         "percentile": "91",
         "quartile": "Q1",
         "rank": "9",
         "rank_out_of": "",
-        "subject_code": "1000",
-        "year": ""
+        "subject_code": "1000"
       },
       {
-        "category": "",
-        "citescore": "5.7",
+        "category": "General Agricultural and Biological Sciences",
+        "percentile": "90",
+        "quartile": "Q1",
+        "rank": "19",
+        "rank_out_of": "",
+        "subject_code": "1100"
+      },
+      {
+        "category": "General Biochemistry",
+        "percentile": "78",
+        "quartile": "Q1",
+        "rank": "42",
+        "rank_out_of": "",
+        "subject_code": "1300"
+      },
+      {
+        "category": "General Agricultural and Biological Sciences",
         "percentile": "92",
         "quartile": "Q1",
         "rank": "14",
         "rank_out_of": "",
-        "subject_code": "1100",
-        "year": ""
+        "subject_code": "1100"
       },
       {
-        "category": "",
-        "citescore": "5.9",
+        "category": "General Biochemistry",
+        "percentile": "81",
+        "quartile": "Q1",
+        "rank": "36",
+        "rank_out_of": "",
+        "subject_code": "1300"
+      },
+      {
+        "category": "General Agricultural and Biological Sciences",
         "percentile": "92",
         "quartile": "Q1",
         "rank": "13",
         "rank_out_of": "",
-        "subject_code": "1100",
-        "year": ""
+        "subject_code": "1100"
       },
       {
-        "category": "",
-        "citescore": "5.6",
+        "category": "General Biochemistry",
+        "percentile": "82",
+        "quartile": "Q1",
+        "rank": "33",
+        "rank_out_of": "",
+        "subject_code": "1300"
+      },
+      {
+        "category": "General Agricultural and Biological Sciences",
         "percentile": "90",
         "quartile": "Q1",
         "rank": "16",
         "rank_out_of": "",
-        "subject_code": "1100",
-        "year": ""
+        "subject_code": "1100"
       },
       {
-        "category": "",
-        "citescore": "5.1",
+        "category": "General Biochemistry",
+        "percentile": "78",
+        "quartile": "Q1",
+        "rank": "41",
+        "rank_out_of": "",
+        "subject_code": "1300"
+      },
+      {
+        "category": "General Medicine",
+        "percentile": "78",
+        "quartile": "Q1",
+        "rank": "708",
+        "rank_out_of": "",
+        "subject_code": "2700"
+      },
+      {
+        "category": "General Agricultural and Biological Sciences",
         "percentile": "89",
         "quartile": "Q1",
         "rank": "18",
         "rank_out_of": "",
-        "subject_code": "1100",
-        "year": ""
+        "subject_code": "1100"
       },
       {
-        "category": "",
-        "citescore": "4.4",
+        "category": "General Biochemistry",
+        "percentile": "76",
+        "quartile": "Q1",
+        "rank": "44",
+        "rank_out_of": "",
+        "subject_code": "1300"
+      },
+      {
+        "category": "General Medicine",
+        "percentile": "74",
+        "quartile": "Q2",
+        "rank": "819",
+        "rank_out_of": "",
+        "subject_code": "2700"
+      },
+      {
+        "category": "General Agricultural and Biological Sciences",
         "percentile": "87",
         "quartile": "Q1",
         "rank": "20",
         "rank_out_of": "",
-        "subject_code": "1100",
-        "year": ""
+        "subject_code": "1100"
       },
       {
-        "category": "",
-        "citescore": "4.1",
+        "category": "General Biochemistry",
+        "percentile": "78",
+        "quartile": "Q1",
+        "rank": "39",
+        "rank_out_of": "",
+        "subject_code": "1300"
+      },
+      {
+        "category": "General Medicine",
+        "percentile": "69",
+        "quartile": "Q2",
+        "rank": "986",
+        "rank_out_of": "",
+        "subject_code": "2700"
+      },
+      {
+        "category": "General Agricultural and Biological Sciences",
         "percentile": "85",
         "quartile": "Q1",
         "rank": "22",
         "rank_out_of": "",
-        "subject_code": "1100",
-        "year": ""
+        "subject_code": "1100"
       },
       {
-        "category": "",
-        "citescore": "4.5",
+        "category": "General Biochemistry",
+        "percentile": "77",
+        "quartile": "Q1",
+        "rank": "39",
+        "rank_out_of": "",
+        "subject_code": "1300"
+      },
+      {
+        "category": "General Medicine",
+        "percentile": "67",
+        "quartile": "Q2",
+        "rank": "1029",
+        "rank_out_of": "",
+        "subject_code": "2700"
+      },
+      {
+        "category": "General Agricultural and Biological Sciences",
         "percentile": "86",
         "quartile": "Q1",
         "rank": "19",
         "rank_out_of": "",
-        "subject_code": "1100",
-        "year": ""
+        "subject_code": "1100"
+      },
+      {
+        "category": "General Biochemistry",
+        "percentile": "80",
+        "quartile": "Q1",
+        "rank": "32",
+        "rank_out_of": "",
+        "subject_code": "1300"
+      },
+      {
+        "category": "General Medicine",
+        "percentile": "73",
+        "quartile": "Q2",
+        "rank": "847",
+        "rank_out_of": "",
+        "subject_code": "2700"
       }
     ],
+    "citescore_ranking_selection": "highest_percentile",
     "citescore_subject_code": "1000",
     "citescore_year": "2025",
     "eissn": "1932-6203",
     "found": true,
-    "ipp": "",
-    "ipp_year": "",
     "issn": "",
     "publisher": "Public Library of Science",
     "queried_issn": "1932-6203",
@@ -1489,7 +2429,7 @@
     "source_id": "10600153309",
     "status_code": 200,
     "title": "PLOS ONE",
-    "updated_at": "2026-07-20T13:04:32+00:00"
+    "updated_at": "2026-07-20T13:27:19+00:00"
   },
   "1936-4733": {
     "citescore": "6.2",
@@ -1498,174 +2438,141 @@
     "citescore_quartile": "Q1",
     "citescore_rank": "30",
     "citescore_rank_out_of": "",
-    "citescore_records": [
+    "citescore_ranking_records": [
       {
-        "category": "",
-        "citescore": "6.2",
+        "category": "General Psychology",
         "percentile": "86",
         "quartile": "Q1",
         "rank": "30",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": "2025"
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "5.8",
-        "percentile": "86",
-        "quartile": "Q1",
-        "rank": "30",
-        "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
-      },
-      {
-        "category": "",
-        "citescore": "6.2",
+        "category": "General Psychology",
         "percentile": "82",
         "quartile": "Q1",
         "rank": "38",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "5.2",
+        "category": "General Psychology",
         "percentile": "77",
         "quartile": "Q1",
         "rank": "50",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "4.6",
+        "category": "General Psychology",
         "percentile": "73",
         "quartile": "Q2",
         "rank": "58",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "4.6",
+        "category": "General Psychology",
         "percentile": "74",
         "quartile": "Q2",
         "rank": "54",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "3.4",
+        "category": "General Psychology",
         "percentile": "64",
         "quartile": "Q2",
         "rank": "75",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "2.7",
+        "category": "General Psychology",
         "percentile": "61",
         "quartile": "Q2",
         "rank": "78",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "2.3",
+        "category": "General Psychology",
         "percentile": "55",
         "quartile": "Q2",
         "rank": "92",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "2.3",
+        "category": "General Psychology",
         "percentile": "58",
         "quartile": "Q2",
         "rank": "83",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "1.7",
+        "category": "General Psychology",
         "percentile": "47",
         "quartile": "Q3",
         "rank": "101",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "1.0",
+        "category": "General Psychology",
         "percentile": "36",
         "quartile": "Q3",
         "rank": "118",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "1.0",
+        "category": "General Psychology",
         "percentile": "35",
         "quartile": "Q3",
         "rank": "114",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "0.8",
+        "category": "General Psychology",
+        "percentile": "36",
+        "quartile": "Q3",
+        "rank": "108",
+        "rank_out_of": "",
+        "subject_code": "3200"
+      },
+      {
+        "category": "General Psychology",
         "percentile": "32",
         "quartile": "Q3",
         "rank": "114",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "1.0",
+        "category": "General Psychology",
         "percentile": "38",
         "quartile": "Q3",
         "rank": "105",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       },
       {
-        "category": "",
-        "citescore": "1.0",
+        "category": "General Psychology",
         "percentile": "37",
         "quartile": "Q3",
         "rank": "103",
         "rank_out_of": "",
-        "subject_code": "3200",
-        "year": ""
+        "subject_code": "3200"
       }
     ],
+    "citescore_ranking_selection": "highest_percentile",
     "citescore_subject_code": "3200",
     "citescore_year": "2025",
     "eissn": "1936-4733",
     "found": true,
-    "ipp": "",
-    "ipp_year": "",
     "issn": "1046-1310",
     "publisher": "Springer",
     "queried_issn": "1936-4733",
@@ -1678,7 +2585,7 @@
     "source_id": "13479",
     "status_code": 200,
     "title": "Current Psychology",
-    "updated_at": "2026-07-20T13:04:33+00:00"
+    "updated_at": "2026-07-20T13:27:20+00:00"
   },
   "2046-1402": {
     "citescore": "2.9",
@@ -1687,154 +2594,469 @@
     "citescore_quartile": "Q1",
     "citescore_rank": "8",
     "citescore_rank_out_of": "",
-    "citescore_records": [
+    "citescore_ranking_records": [
       {
-        "category": "",
-        "citescore": "2.9",
-        "percentile": "88",
-        "quartile": "Q1",
-        "rank": "8",
-        "rank_out_of": "",
-        "subject_code": "3000",
-        "year": "2025"
-      },
-      {
-        "category": "",
-        "citescore": "2.9",
+        "category": "Arts and Humanities (miscellaneous)",
         "percentile": "82",
         "quartile": "Q1",
         "rank": "125",
         "rank_out_of": "",
-        "subject_code": "1201",
-        "year": ""
+        "subject_code": "1201"
       },
       {
-        "category": "",
-        "citescore": "2.9",
+        "category": "General Medicine",
+        "percentile": "75",
+        "quartile": "Q1",
+        "rank": "168",
+        "rank_out_of": "",
+        "subject_code": "2700"
+      },
+      {
+        "category": "Social Sciences (miscellaneous)",
+        "percentile": "74",
+        "quartile": "Q2",
+        "rank": "195",
+        "rank_out_of": "",
+        "subject_code": "3301"
+      },
+      {
+        "category": "Library and Information Sciences",
+        "percentile": "70",
+        "quartile": "Q2",
+        "rank": "87",
+        "rank_out_of": "",
+        "subject_code": "3309"
+      },
+      {
+        "category": "General Pharmacology",
+        "percentile": "60",
+        "quartile": "Q2",
+        "rank": "33",
+        "rank_out_of": "",
+        "subject_code": "3000"
+      },
+      {
+        "category": "General Biochemistry",
+        "percentile": "48",
+        "quartile": "Q3",
+        "rank": "117",
+        "rank_out_of": "",
+        "subject_code": "1300"
+      },
+      {
+        "category": "General Immunology and Microbiology",
+        "percentile": "45",
+        "quartile": "Q3",
+        "rank": "35",
+        "rank_out_of": "",
+        "subject_code": "2400"
+      },
+      {
+        "category": "Arts and Humanities (miscellaneous)",
         "percentile": "79",
         "quartile": "Q1",
         "rank": "139",
         "rank_out_of": "",
-        "subject_code": "1201",
-        "year": ""
+        "subject_code": "1201"
       },
       {
-        "category": "",
-        "citescore": "2.9",
+        "category": "Social Sciences (miscellaneous)",
+        "percentile": "71",
+        "quartile": "Q2",
+        "rank": "214",
+        "rank_out_of": "",
+        "subject_code": "3301"
+      },
+      {
+        "category": "General Medicine",
+        "percentile": "69",
+        "quartile": "Q2",
+        "rank": "204",
+        "rank_out_of": "",
+        "subject_code": "2700"
+      },
+      {
+        "category": "Library and Information Sciences",
+        "percentile": "68",
+        "quartile": "Q2",
+        "rank": "93",
+        "rank_out_of": "",
+        "subject_code": "3309"
+      },
+      {
+        "category": "General Pharmacology",
+        "percentile": "56",
+        "quartile": "Q2",
+        "rank": "35",
+        "rank_out_of": "",
+        "subject_code": "3000"
+      },
+      {
+        "category": "General Biochemistry",
+        "percentile": "45",
+        "quartile": "Q3",
+        "rank": "122",
+        "rank_out_of": "",
+        "subject_code": "1300"
+      },
+      {
+        "category": "General Immunology and Microbiology",
+        "percentile": "40",
+        "quartile": "Q3",
+        "rank": "38",
+        "rank_out_of": "",
+        "subject_code": "2400"
+      },
+      {
+        "category": "Arts and Humanities (miscellaneous)",
         "percentile": "77",
         "quartile": "Q1",
         "rank": "140",
         "rank_out_of": "",
-        "subject_code": "1201",
-        "year": ""
+        "subject_code": "1201"
       },
       {
-        "category": "",
-        "citescore": "5.0",
+        "category": "Social Sciences (miscellaneous)",
+        "percentile": "73",
+        "quartile": "Q2",
+        "rank": "180",
+        "rank_out_of": "",
+        "subject_code": "3301"
+      },
+      {
+        "category": "Library and Information Sciences",
+        "percentile": "71",
+        "quartile": "Q2",
+        "rank": "81",
+        "rank_out_of": "",
+        "subject_code": "3309"
+      },
+      {
+        "category": "General Medicine",
+        "percentile": "71",
+        "quartile": "Q2",
+        "rank": "190",
+        "rank_out_of": "",
+        "subject_code": "2700"
+      },
+      {
+        "category": "General Pharmacology",
+        "percentile": "60",
+        "quartile": "Q2",
+        "rank": "31",
+        "rank_out_of": "",
+        "subject_code": "3000"
+      },
+      {
+        "category": "General Biochemistry",
+        "percentile": "46",
+        "quartile": "Q3",
+        "rank": "120",
+        "rank_out_of": "",
+        "subject_code": "1300"
+      },
+      {
+        "category": "General Medicine",
         "percentile": "84",
         "quartile": "Q1",
         "rank": "96",
         "rank_out_of": "",
-        "subject_code": "2700",
-        "year": ""
+        "subject_code": "2700"
       },
       {
-        "category": "",
-        "citescore": "3.6",
+        "category": "General Pharmacology",
+        "percentile": "84",
+        "quartile": "Q1",
+        "rank": "13",
+        "rank_out_of": "",
+        "subject_code": "3000"
+      },
+      {
+        "category": "General Immunology and Microbiology",
+        "percentile": "66",
+        "quartile": "Q2",
+        "rank": "21",
+        "rank_out_of": "",
+        "subject_code": "2400"
+      },
+      {
+        "category": "General Biochemistry",
+        "percentile": "64",
+        "quartile": "Q2",
+        "rank": "78",
+        "rank_out_of": "",
+        "subject_code": "1300"
+      },
+      {
+        "category": "General Pharmacology",
         "percentile": "70",
         "quartile": "Q2",
         "rank": "24",
         "rank_out_of": "",
-        "subject_code": "3000",
-        "year": ""
+        "subject_code": "3000"
       },
       {
-        "category": "",
-        "citescore": "5.0",
+        "category": "General Immunology and Microbiology",
+        "percentile": "59",
+        "quartile": "Q2",
+        "rank": "22",
+        "rank_out_of": "",
+        "subject_code": "2400"
+      },
+      {
+        "category": "General Biochemistry",
+        "percentile": "55",
+        "quartile": "Q2",
+        "rank": "95",
+        "rank_out_of": "",
+        "subject_code": "1300"
+      },
+      {
+        "category": "General Pharmacology",
         "percentile": "85",
         "quartile": "Q1",
         "rank": "11",
         "rank_out_of": "",
-        "subject_code": "3000",
-        "year": ""
+        "subject_code": "3000"
       },
       {
-        "category": "",
-        "citescore": "4.4",
+        "category": "General Biochemistry",
+        "percentile": "68",
+        "quartile": "Q2",
+        "rank": "65",
+        "rank_out_of": "",
+        "subject_code": "1300"
+      },
+      {
+        "category": "General Immunology and Microbiology",
+        "percentile": "66",
+        "quartile": "Q2",
+        "rank": "19",
+        "rank_out_of": "",
+        "subject_code": "2400"
+      },
+      {
+        "category": "General Pharmacology",
         "percentile": "81",
         "quartile": "Q1",
         "rank": "13",
         "rank_out_of": "",
-        "subject_code": "3000",
-        "year": ""
+        "subject_code": "3000"
       },
       {
-        "category": "",
-        "citescore": "4.1",
+        "category": "General Biochemistry",
+        "percentile": "70",
+        "quartile": "Q2",
+        "rank": "60",
+        "rank_out_of": "",
+        "subject_code": "1300"
+      },
+      {
+        "category": "General Immunology and Microbiology",
+        "percentile": "67",
+        "quartile": "Q2",
+        "rank": "15",
+        "rank_out_of": "",
+        "subject_code": "2400"
+      },
+      {
+        "category": "General Pharmacology",
         "percentile": "88",
         "quartile": "Q1",
         "rank": "8",
         "rank_out_of": "",
-        "subject_code": "3000",
-        "year": ""
+        "subject_code": "3000"
       },
       {
-        "category": "",
-        "citescore": "3.2",
+        "category": "General Biochemistry",
+        "percentile": "67",
+        "quartile": "Q2",
+        "rank": "64",
+        "rank_out_of": "",
+        "subject_code": "1300"
+      },
+      {
+        "category": "General Immunology and Microbiology",
+        "percentile": "61",
+        "quartile": "Q2",
+        "rank": "18",
+        "rank_out_of": "",
+        "subject_code": "2400"
+      },
+      {
+        "category": "General Pharmacology",
         "percentile": "75",
         "quartile": "Q1",
         "rank": "16",
         "rank_out_of": "",
-        "subject_code": "3000",
-        "year": ""
+        "subject_code": "3000"
       },
       {
-        "category": "",
-        "citescore": "2.3",
+        "category": "General Biochemistry",
+        "percentile": "60",
+        "quartile": "Q2",
+        "rank": "75",
+        "rank_out_of": "",
+        "subject_code": "1300"
+      },
+      {
+        "category": "General Immunology and Microbiology",
+        "percentile": "48",
+        "quartile": "Q3",
+        "rank": "21",
+        "rank_out_of": "",
+        "subject_code": "2400"
+      },
+      {
+        "category": "General Pharmacology",
         "percentile": "60",
         "quartile": "Q2",
         "rank": "28",
         "rank_out_of": "",
-        "subject_code": "3000",
-        "year": ""
+        "subject_code": "3000"
       },
       {
-        "category": "",
-        "citescore": "1.6",
+        "category": "General Biochemistry",
+        "percentile": "50",
+        "quartile": "Q2",
+        "rank": "98",
+        "rank_out_of": "",
+        "subject_code": "1300"
+      },
+      {
+        "category": "General Immunology and Microbiology",
+        "percentile": "26",
+        "quartile": "Q3",
+        "rank": "30",
+        "rank_out_of": "",
+        "subject_code": "2400"
+      },
+      {
+        "category": "General Pharmacology",
         "percentile": "57",
         "quartile": "Q2",
         "rank": "28",
         "rank_out_of": "",
-        "subject_code": "3000",
-        "year": ""
+        "subject_code": "3000"
       },
       {
-        "category": "",
-        "citescore": "1.4",
+        "category": "General Biochemistry",
+        "percentile": "41",
+        "quartile": "Q3",
+        "rank": "110",
+        "rank_out_of": "",
+        "subject_code": "1300"
+      },
+      {
+        "category": "General Immunology and Microbiology",
+        "percentile": "13",
+        "quartile": "Q4",
+        "rank": "35",
+        "rank_out_of": "",
+        "subject_code": "2400"
+      },
+      {
+        "category": "General Pharmacology",
         "percentile": "55",
         "quartile": "Q2",
         "rank": "33",
         "rank_out_of": "",
-        "subject_code": "3000",
-        "year": ""
+        "subject_code": "3000"
       },
       {
-        "category": "",
-        "citescore": "0.6",
+        "category": "General Biochemistry",
+        "percentile": "38",
+        "quartile": "Q3",
+        "rank": "116",
+        "rank_out_of": "",
+        "subject_code": "1300"
+      },
+      {
+        "category": "General Medicine",
+        "percentile": "33",
+        "quartile": "Q3",
+        "rank": "2167",
+        "rank_out_of": "",
+        "subject_code": "2700"
+      },
+      {
+        "category": "General Immunology and Microbiology",
+        "percentile": "15",
+        "quartile": "Q4",
+        "rank": "36",
+        "rank_out_of": "",
+        "subject_code": "2400"
+      },
+      {
+        "category": "General Pharmacology",
         "percentile": "27",
         "quartile": "Q3",
         "rank": "51",
         "rank_out_of": "",
-        "subject_code": "3000",
-        "year": ""
+        "subject_code": "3000"
+      },
+      {
+        "category": "General Medicine",
+        "percentile": "22",
+        "quartile": "Q4",
+        "rank": "2529",
+        "rank_out_of": "",
+        "subject_code": "2700"
+      },
+      {
+        "category": "General Biochemistry",
+        "percentile": "20",
+        "quartile": "Q4",
+        "rank": "150",
+        "rank_out_of": "",
+        "subject_code": "1300"
+      },
+      {
+        "category": "General Immunology and Microbiology",
+        "percentile": "8",
+        "quartile": "Q4",
+        "rank": "39",
+        "rank_out_of": "",
+        "subject_code": "2400"
+      },
+      {
+        "category": "General Pharmacology",
+        "percentile": "27",
+        "quartile": "Q3",
+        "rank": "50",
+        "rank_out_of": "",
+        "subject_code": "3000"
+      },
+      {
+        "category": "General Medicine",
+        "percentile": "22",
+        "quartile": "Q4",
+        "rank": "2501",
+        "rank_out_of": "",
+        "subject_code": "2700"
+      },
+      {
+        "category": "General Biochemistry",
+        "percentile": "18",
+        "quartile": "Q4",
+        "rank": "148",
+        "rank_out_of": "",
+        "subject_code": "1300"
+      },
+      {
+        "category": "General Immunology and Microbiology",
+        "percentile": "8",
+        "quartile": "Q4",
+        "rank": "38",
+        "rank_out_of": "",
+        "subject_code": "2400"
       }
     ],
+    "citescore_ranking_selection": "highest_percentile",
     "citescore_subject_code": "3000",
     "citescore_year": "2025",
     "eissn": "2046-1402",
     "found": true,
-    "ipp": "",
-    "ipp_year": "",
     "issn": "",
     "publisher": "F1000 Research Ltd",
     "queried_issn": "2046-1402",
@@ -1847,7 +3069,7 @@
     "source_id": "21100258853",
     "status_code": 200,
     "title": "F1000Research",
-    "updated_at": "2026-07-20T13:04:34+00:00"
+    "updated_at": "2026-07-20T13:27:20+00:00"
   },
   "2076-328X": {
     "citescore": "4.1",
@@ -1856,104 +3078,333 @@
     "citescore_quartile": "Q1",
     "citescore_rank": "128",
     "citescore_rank_out_of": "",
-    "citescore_records": [
+    "citescore_ranking_records": [
       {
-        "category": "",
-        "citescore": "4.1",
+        "category": "Ecology",
         "percentile": "82",
         "quartile": "Q1",
         "rank": "128",
         "rank_out_of": "",
-        "subject_code": "1105",
-        "year": "2025"
+        "subject_code": "1105"
       },
       {
-        "category": "",
-        "citescore": "4.3",
-        "percentile": "82",
+        "category": "Development",
+        "percentile": "77",
         "quartile": "Q1",
-        "rank": "128",
+        "rank": "70",
         "rank_out_of": "",
-        "subject_code": "1105",
-        "year": ""
+        "subject_code": "3303"
       },
       {
-        "category": "",
-        "citescore": "4.1",
+        "category": "General Psychology",
+        "percentile": "73",
+        "quartile": "Q2",
+        "rank": "60",
+        "rank_out_of": "",
+        "subject_code": "3200"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "68",
+        "quartile": "Q2",
+        "rank": "30",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Genetics",
+        "percentile": "56",
+        "quartile": "Q2",
+        "rank": "156",
+        "rank_out_of": "",
+        "subject_code": "1311"
+      },
+      {
+        "category": "Ecology",
         "percentile": "75",
         "quartile": "Q1",
         "rank": "183",
         "rank_out_of": "",
-        "subject_code": "1105",
-        "year": ""
+        "subject_code": "1105"
       },
       {
-        "category": "",
-        "citescore": "3.1",
+        "category": "Development",
+        "percentile": "70",
+        "quartile": "Q2",
+        "rank": "94",
+        "rank_out_of": "",
+        "subject_code": "3303"
+      },
+      {
+        "category": "General Psychology",
+        "percentile": "61",
+        "quartile": "Q2",
+        "rank": "85",
+        "rank_out_of": "",
+        "subject_code": "3200"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "50",
+        "quartile": "Q2",
+        "rank": "47",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Genetics",
+        "percentile": "47",
+        "quartile": "Q3",
+        "rank": "188",
+        "rank_out_of": "",
+        "subject_code": "1311"
+      },
+      {
+        "category": "Development",
         "percentile": "62",
         "quartile": "Q2",
         "rank": "117",
         "rank_out_of": "",
-        "subject_code": "3303",
-        "year": ""
+        "subject_code": "3303"
       },
       {
-        "category": "",
-        "citescore": "2.6",
+        "category": "Ecology",
+        "percentile": "61",
+        "quartile": "Q2",
+        "rank": "281",
+        "rank_out_of": "",
+        "subject_code": "1105"
+      },
+      {
+        "category": "General Psychology",
+        "percentile": "50",
+        "quartile": "Q2",
+        "rank": "108",
+        "rank_out_of": "",
+        "subject_code": "3200"
+      },
+      {
+        "category": "Genetics",
+        "percentile": "30",
+        "quartile": "Q3",
+        "rank": "242",
+        "rank_out_of": "",
+        "subject_code": "1311"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "27",
+        "quartile": "Q3",
+        "rank": "66",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Development",
         "percentile": "58",
         "quartile": "Q2",
         "rank": "126",
         "rank_out_of": "",
-        "subject_code": "3303",
-        "year": ""
+        "subject_code": "3303"
       },
       {
-        "category": "",
-        "citescore": "3.0",
+        "category": "Ecology",
+        "percentile": "52",
+        "quartile": "Q2",
+        "rank": "345",
+        "rank_out_of": "",
+        "subject_code": "1105"
+      },
+      {
+        "category": "General Psychology",
+        "percentile": "45",
+        "quartile": "Q3",
+        "rank": "119",
+        "rank_out_of": "",
+        "subject_code": "3200"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "24",
+        "quartile": "Q4",
+        "rank": "67",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Genetics",
+        "percentile": "22",
+        "quartile": "Q4",
+        "rank": "269",
+        "rank_out_of": "",
+        "subject_code": "1311"
+      },
+      {
+        "category": "Development",
         "percentile": "67",
         "quartile": "Q2",
         "rank": "98",
         "rank_out_of": "",
-        "subject_code": "3303",
-        "year": ""
+        "subject_code": "3303"
       },
       {
-        "category": "",
-        "citescore": "3.8",
+        "category": "Ecology",
+        "percentile": "57",
+        "quartile": "Q2",
+        "rank": "293",
+        "rank_out_of": "",
+        "subject_code": "1105"
+      },
+      {
+        "category": "General Psychology",
+        "percentile": "53",
+        "quartile": "Q2",
+        "rank": "98",
+        "rank_out_of": "",
+        "subject_code": "3200"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "31",
+        "quartile": "Q3",
+        "rank": "57",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Genetics",
+        "percentile": "26",
+        "quartile": "Q3",
+        "rank": "243",
+        "rank_out_of": "",
+        "subject_code": "1311"
+      },
+      {
+        "category": "Development",
         "percentile": "79",
         "quartile": "Q1",
         "rank": "58",
         "rank_out_of": "",
-        "subject_code": "3303",
-        "year": ""
+        "subject_code": "3303"
       },
       {
-        "category": "",
-        "citescore": "3.4",
+        "category": "Ecology",
+        "percentile": "71",
+        "quartile": "Q2",
+        "rank": "196",
+        "rank_out_of": "",
+        "subject_code": "1105"
+      },
+      {
+        "category": "General Psychology",
+        "percentile": "71",
+        "quartile": "Q2",
+        "rank": "60",
+        "rank_out_of": "",
+        "subject_code": "3200"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "47",
+        "quartile": "Q3",
+        "rank": "42",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Genetics",
+        "percentile": "41",
+        "quartile": "Q3",
+        "rank": "198",
+        "rank_out_of": "",
+        "subject_code": "1311"
+      },
+      {
+        "category": "Development",
         "percentile": "80",
         "quartile": "Q1",
         "rank": "51",
         "rank_out_of": "",
-        "subject_code": "3303",
-        "year": ""
+        "subject_code": "3303"
       },
       {
-        "category": "",
-        "citescore": "2.5",
+        "category": "General Psychology",
+        "percentile": "72",
+        "quartile": "Q2",
+        "rank": "56",
+        "rank_out_of": "",
+        "subject_code": "3200"
+      },
+      {
+        "category": "Ecology",
+        "percentile": "70",
+        "quartile": "Q2",
+        "rank": "191",
+        "rank_out_of": "",
+        "subject_code": "1105"
+      },
+      {
+        "category": "Genetics",
+        "percentile": "42",
+        "quartile": "Q3",
+        "rank": "186",
+        "rank_out_of": "",
+        "subject_code": "1311"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "41",
+        "quartile": "Q3",
+        "rank": "46",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Development",
         "percentile": "73",
         "quartile": "Q2",
         "rank": "64",
         "rank_out_of": "",
-        "subject_code": "3303",
-        "year": ""
+        "subject_code": "3303"
+      },
+      {
+        "category": "General Psychology",
+        "percentile": "61",
+        "quartile": "Q2",
+        "rank": "79",
+        "rank_out_of": "",
+        "subject_code": "3200"
+      },
+      {
+        "category": "Ecology",
+        "percentile": "57",
+        "quartile": "Q2",
+        "rank": "267",
+        "rank_out_of": "",
+        "subject_code": "1105"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "30",
+        "quartile": "Q3",
+        "rank": "51",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Genetics",
+        "percentile": "30",
+        "quartile": "Q3",
+        "rank": "225",
+        "rank_out_of": "",
+        "subject_code": "1311"
       }
     ],
+    "citescore_ranking_selection": "highest_percentile",
     "citescore_subject_code": "1105",
     "citescore_year": "2025",
     "eissn": "2076-328X",
     "found": true,
-    "ipp": "",
-    "ipp_year": "",
     "issn": "",
     "publisher": "Multidisciplinary Digital Publishing Institute (MDPI)",
     "queried_issn": "2076-328X",
@@ -1966,7 +3417,7 @@
     "source_id": "21100901748",
     "status_code": 200,
     "title": "Behavioral Sciences",
-    "updated_at": "2026-07-20T13:04:34+00:00"
+    "updated_at": "2026-07-20T13:27:21+00:00"
   },
   "2190-3018": {
     "citescore": "1.2",
@@ -1975,174 +3426,269 @@
     "citescore_quartile": "Q2",
     "citescore_rank": "80",
     "citescore_rank_out_of": "",
-    "citescore_records": [
+    "citescore_ranking_records": [
       {
-        "category": "",
-        "citescore": "1.2",
-        "percentile": "54",
-        "quartile": "Q2",
-        "rank": "80",
-        "rank_out_of": "",
-        "subject_code": "1700",
-        "year": "2025"
-      },
-      {
-        "category": "",
-        "citescore": "0.7",
+        "category": "General Decision Sciences",
         "percentile": "10",
         "quartile": "Q4",
         "rank": "39",
         "rank_out_of": "",
-        "subject_code": "1800",
-        "year": ""
+        "subject_code": "1800"
       },
       {
-        "category": "",
-        "citescore": "1.2",
+        "category": "General Computer Science",
+        "percentile": "10",
+        "quartile": "Q4",
+        "rank": "220",
+        "rank_out_of": "",
+        "subject_code": "1700"
+      },
+      {
+        "category": "General Computer Science",
         "percentile": "19",
         "quartile": "Q4",
         "rank": "194",
         "rank_out_of": "",
-        "subject_code": "1700",
-        "year": ""
+        "subject_code": "1700"
       },
       {
-        "category": "",
-        "citescore": "1.2",
+        "category": "General Decision Sciences",
+        "percentile": "12",
+        "quartile": "Q4",
+        "rank": "38",
+        "rank_out_of": "",
+        "subject_code": "1800"
+      },
+      {
+        "category": "General Computer Science",
         "percentile": "21",
         "quartile": "Q4",
         "rank": "188",
         "rank_out_of": "",
-        "subject_code": "1700",
-        "year": ""
+        "subject_code": "1700"
       },
       {
-        "category": "",
-        "citescore": "1.1",
+        "category": "General Decision Sciences",
+        "percentile": "5",
+        "quartile": "Q4",
+        "rank": "40",
+        "rank_out_of": "",
+        "subject_code": "1800"
+      },
+      {
+        "category": "General Computer Science",
         "percentile": "17",
         "quartile": "Q4",
         "rank": "191",
         "rank_out_of": "",
-        "subject_code": "1700",
-        "year": ""
+        "subject_code": "1700"
       },
       {
-        "category": "",
-        "citescore": "1.1",
+        "category": "General Decision Sciences",
+        "percentile": "8",
+        "quartile": "Q4",
+        "rank": "38",
+        "rank_out_of": "",
+        "subject_code": "1800"
+      },
+      {
+        "category": "General Computer Science",
         "percentile": "19",
         "quartile": "Q4",
         "rank": "188",
         "rank_out_of": "",
-        "subject_code": "1700",
-        "year": ""
+        "subject_code": "1700"
       },
       {
-        "category": "",
-        "citescore": "1.1",
+        "category": "General Decision Sciences",
+        "percentile": "11",
+        "quartile": "Q4",
+        "rank": "36",
+        "rank_out_of": "",
+        "subject_code": "1800"
+      },
+      {
+        "category": "General Computer Science",
         "percentile": "26",
         "quartile": "Q3",
         "rank": "171",
         "rank_out_of": "",
-        "subject_code": "1700",
-        "year": ""
+        "subject_code": "1700"
       },
       {
-        "category": "",
-        "citescore": "1.0",
+        "category": "General Decision Sciences",
+        "percentile": "8",
+        "quartile": "Q4",
+        "rank": "37",
+        "rank_out_of": "",
+        "subject_code": "1800"
+      },
+      {
+        "category": "General Computer Science",
         "percentile": "27",
         "quartile": "Q3",
         "rank": "165",
         "rank_out_of": "",
-        "subject_code": "1700",
-        "year": ""
+        "subject_code": "1700"
       },
       {
-        "category": "",
-        "citescore": "0.9",
+        "category": "General Decision Sciences",
+        "percentile": "14",
+        "quartile": "Q4",
+        "rank": "32",
+        "rank_out_of": "",
+        "subject_code": "1800"
+      },
+      {
+        "category": "General Computer Science",
         "percentile": "28",
         "quartile": "Q3",
         "rank": "159",
         "rank_out_of": "",
-        "subject_code": "1700",
-        "year": ""
+        "subject_code": "1700"
       },
       {
-        "category": "",
-        "citescore": "0.7",
+        "category": "General Decision Sciences",
+        "percentile": "13",
+        "quartile": "Q4",
+        "rank": "29",
+        "rank_out_of": "",
+        "subject_code": "1800"
+      },
+      {
+        "category": "General Computer Science",
+        "percentile": "28",
+        "quartile": "Q3",
+        "rank": "152",
+        "rank_out_of": "",
+        "subject_code": "1700"
+      },
+      {
+        "category": "General Decision Sciences",
+        "percentile": "18",
+        "quartile": "Q4",
+        "rank": "29",
+        "rank_out_of": "",
+        "subject_code": "1800"
+      },
+      {
+        "category": "General Computer Science",
         "percentile": "23",
         "quartile": "Q4",
         "rank": "159",
         "rank_out_of": "",
-        "subject_code": "1700",
-        "year": ""
+        "subject_code": "1700"
       },
       {
-        "category": "",
-        "citescore": "0.6",
+        "category": "General Decision Sciences",
+        "percentile": "12",
+        "quartile": "Q4",
+        "rank": "31",
+        "rank_out_of": "",
+        "subject_code": "1800"
+      },
+      {
+        "category": "General Computer Science",
         "percentile": "15",
         "quartile": "Q4",
         "rank": "166",
         "rank_out_of": "",
-        "subject_code": "1700",
-        "year": ""
+        "subject_code": "1700"
       },
       {
-        "category": "",
-        "citescore": "0.5",
+        "category": "General Decision Sciences",
+        "percentile": "10",
+        "quartile": "Q4",
+        "rank": "31",
+        "rank_out_of": "",
+        "subject_code": "1800"
+      },
+      {
+        "category": "General Computer Science",
         "percentile": "16",
         "quartile": "Q4",
         "rank": "170",
         "rank_out_of": "",
-        "subject_code": "1700",
-        "year": ""
+        "subject_code": "1700"
       },
       {
-        "category": "",
-        "citescore": "0.5",
+        "category": "General Decision Sciences",
+        "percentile": "7",
+        "quartile": "Q4",
+        "rank": "32",
+        "rank_out_of": "",
+        "subject_code": "1800"
+      },
+      {
+        "category": "General Computer Science",
         "percentile": "18",
         "quartile": "Q4",
         "rank": "163",
         "rank_out_of": "",
-        "subject_code": "1700",
-        "year": ""
+        "subject_code": "1700"
       },
       {
-        "category": "",
-        "citescore": "0.4",
+        "category": "General Decision Sciences",
+        "percentile": "13",
+        "quartile": "Q4",
+        "rank": "30",
+        "rank_out_of": "",
+        "subject_code": "1800"
+      },
+      {
+        "category": "General Computer Science",
         "percentile": "17",
         "quartile": "Q4",
         "rank": "164",
         "rank_out_of": "",
-        "subject_code": "1700",
-        "year": ""
+        "subject_code": "1700"
       },
       {
-        "category": "",
-        "citescore": "0.4",
+        "category": "General Decision Sciences",
+        "percentile": "7",
+        "quartile": "Q4",
+        "rank": "31",
+        "rank_out_of": "",
+        "subject_code": "1800"
+      },
+      {
+        "category": "General Computer Science",
         "percentile": "23",
         "quartile": "Q4",
         "rank": "148",
         "rank_out_of": "",
-        "subject_code": "1700",
-        "year": ""
+        "subject_code": "1700"
       },
       {
-        "category": "",
-        "citescore": "1.3",
+        "category": "General Decision Sciences",
+        "percentile": "14",
+        "quartile": "Q4",
+        "rank": "28",
+        "rank_out_of": "",
+        "subject_code": "1800"
+      },
+      {
+        "category": "General Computer Science",
         "percentile": "54",
         "quartile": "Q2",
         "rank": "80",
         "rank_out_of": "",
-        "subject_code": "1700",
-        "year": ""
+        "subject_code": "1700"
+      },
+      {
+        "category": "General Decision Sciences",
+        "percentile": "34",
+        "quartile": "Q3",
+        "rank": "21",
+        "rank_out_of": "",
+        "subject_code": "1800"
       }
     ],
+    "citescore_ranking_selection": "highest_percentile",
     "citescore_subject_code": "1700",
     "citescore_year": "2025",
     "eissn": "2190-3026",
     "found": true,
-    "ipp": "",
-    "ipp_year": "",
     "issn": "2190-3018",
     "publisher": "Springer Science and Business Media Deutschland GmbH",
     "queried_issn": "2190-3018",
@@ -2155,7 +3701,7 @@
     "source_id": "21100204111",
     "status_code": 200,
     "title": "Smart Innovation, Systems and Technologies",
-    "updated_at": "2026-07-20T13:04:35+00:00"
+    "updated_at": "2026-07-20T13:27:21+00:00"
   },
   "2297-900X": {
     "citescore": "2.9",
@@ -2164,84 +3710,109 @@
     "citescore_quartile": "Q1",
     "citescore_rank": "130",
     "citescore_rank_out_of": "",
-    "citescore_records": [
+    "citescore_ranking_records": [
       {
-        "category": "",
-        "citescore": "2.9",
-        "percentile": "78",
-        "quartile": "Q1",
-        "rank": "130",
-        "rank_out_of": "",
-        "subject_code": "3301",
-        "year": "2025"
-      },
-      {
-        "category": "",
-        "citescore": "2.8",
+        "category": "Social Sciences (miscellaneous)",
         "percentile": "72",
         "quartile": "Q2",
         "rank": "204",
         "rank_out_of": "",
-        "subject_code": "3301",
-        "year": ""
+        "subject_code": "3301"
       },
       {
-        "category": "",
-        "citescore": "2.9",
+        "category": "Communication",
+        "percentile": "72",
+        "quartile": "Q2",
+        "rank": "151",
+        "rank_out_of": "",
+        "subject_code": "3315"
+      },
+      {
+        "category": "Social Sciences (miscellaneous)",
         "percentile": "71",
         "quartile": "Q2",
         "rank": "216",
         "rank_out_of": "",
-        "subject_code": "3301",
-        "year": ""
+        "subject_code": "3301"
       },
       {
-        "category": "",
-        "citescore": "3.0",
+        "category": "Communication",
+        "percentile": "68",
+        "quartile": "Q2",
+        "rank": "173",
+        "rank_out_of": "",
+        "subject_code": "3315"
+      },
+      {
+        "category": "Social Sciences (miscellaneous)",
         "percentile": "74",
         "quartile": "Q2",
         "rank": "175",
         "rank_out_of": "",
-        "subject_code": "3301",
-        "year": ""
+        "subject_code": "3301"
       },
       {
-        "category": "",
-        "citescore": "3.3",
+        "category": "Communication",
+        "percentile": "71",
+        "quartile": "Q2",
+        "rank": "153",
+        "rank_out_of": "",
+        "subject_code": "3315"
+      },
+      {
+        "category": "Social Sciences (miscellaneous)",
         "percentile": "78",
         "quartile": "Q1",
         "rank": "130",
         "rank_out_of": "",
-        "subject_code": "3301",
-        "year": ""
+        "subject_code": "3301"
       },
       {
-        "category": "",
-        "citescore": "2.7",
+        "category": "Communication",
+        "percentile": "75",
+        "quartile": "Q1",
+        "rank": "125",
+        "rank_out_of": "",
+        "subject_code": "3315"
+      },
+      {
+        "category": "Social Sciences (miscellaneous)",
         "percentile": "74",
         "quartile": "Q2",
         "rank": "130",
         "rank_out_of": "",
-        "subject_code": "3301",
-        "year": ""
+        "subject_code": "3301"
       },
       {
-        "category": "",
-        "citescore": "2.1",
+        "category": "Communication",
+        "percentile": "74",
+        "quartile": "Q2",
+        "rank": "128",
+        "rank_out_of": "",
+        "subject_code": "3315"
+      },
+      {
+        "category": "Communication",
         "percentile": "70",
         "quartile": "Q2",
         "rank": "136",
         "rank_out_of": "",
-        "subject_code": "3315",
-        "year": ""
+        "subject_code": "3315"
+      },
+      {
+        "category": "Social Sciences (miscellaneous)",
+        "percentile": "69",
+        "quartile": "Q2",
+        "rank": "129",
+        "rank_out_of": "",
+        "subject_code": "3301"
       }
     ],
+    "citescore_ranking_selection": "highest_percentile",
     "citescore_subject_code": "3301",
     "citescore_year": "2025",
     "eissn": "2297-900X",
     "found": true,
-    "ipp": "",
-    "ipp_year": "",
     "issn": "",
     "publisher": "Frontiers Media SA",
     "queried_issn": "2297-900X",
@@ -2254,7 +3825,7 @@
     "source_id": "21101061926",
     "status_code": 200,
     "title": "Frontiers in Communication",
-    "updated_at": "2026-07-20T13:04:35+00:00"
+    "updated_at": "2026-07-20T13:27:22+00:00"
   },
   "2304-8158": {
     "citescore": "10.3",
@@ -2263,114 +3834,357 @@
     "citescore_quartile": "Q1",
     "citescore_rank": "1",
     "citescore_rank_out_of": "",
-    "citescore_records": [
+    "citescore_ranking_records": [
       {
-        "category": "",
-        "citescore": "10.3",
+        "category": "Health Professions (miscellaneous)",
         "percentile": "99",
         "quartile": "Q1",
         "rank": "1",
         "rank_out_of": "",
-        "subject_code": "3601",
-        "year": "2025"
+        "subject_code": "3601"
       },
       {
-        "category": "",
-        "citescore": "9.7",
-        "percentile": "99",
+        "category": "Health (social science)",
+        "percentile": "97",
         "quartile": "Q1",
-        "rank": "1",
+        "rank": "9",
         "rank_out_of": "",
-        "subject_code": "3601",
-        "year": ""
+        "subject_code": "3306"
       },
       {
-        "category": "",
-        "citescore": "10.3",
-        "percentile": "99",
+        "category": "Plant Science",
+        "percentile": "95",
         "quartile": "Q1",
-        "rank": "1",
+        "rank": "27",
         "rank_out_of": "",
-        "subject_code": "3601",
-        "year": ""
+        "subject_code": "1110"
       },
       {
-        "category": "",
-        "citescore": "8.7",
-        "percentile": "99",
+        "category": "Food Science",
+        "percentile": "91",
         "quartile": "Q1",
-        "rank": "1",
+        "rank": "38",
         "rank_out_of": "",
-        "subject_code": "3601",
-        "year": ""
+        "subject_code": "1106"
       },
       {
-        "category": "",
-        "citescore": "7.4",
+        "category": "Microbiology",
+        "percentile": "87",
+        "quartile": "Q1",
+        "rank": "26",
+        "rank_out_of": "",
+        "subject_code": "2404"
+      },
+      {
+        "category": "Health (social science)",
+        "percentile": "97",
+        "quartile": "Q1",
+        "rank": "12",
+        "rank_out_of": "",
+        "subject_code": "3306"
+      },
+      {
+        "category": "Plant Science",
+        "percentile": "94",
+        "quartile": "Q1",
+        "rank": "30",
+        "rank_out_of": "",
+        "subject_code": "1110"
+      },
+      {
+        "category": "Food Science",
+        "percentile": "90",
+        "quartile": "Q1",
+        "rank": "39",
+        "rank_out_of": "",
+        "subject_code": "1106"
+      },
+      {
+        "category": "Microbiology",
+        "percentile": "87",
+        "quartile": "Q1",
+        "rank": "24",
+        "rank_out_of": "",
+        "subject_code": "2404"
+      },
+      {
+        "category": "Health (social science)",
+        "percentile": "95",
+        "quartile": "Q1",
+        "rank": "17",
+        "rank_out_of": "",
+        "subject_code": "3306"
+      },
+      {
+        "category": "Plant Science",
+        "percentile": "92",
+        "quartile": "Q1",
+        "rank": "40",
+        "rank_out_of": "",
+        "subject_code": "1110"
+      },
+      {
+        "category": "Food Science",
+        "percentile": "87",
+        "quartile": "Q1",
+        "rank": "52",
+        "rank_out_of": "",
+        "subject_code": "1106"
+      },
+      {
+        "category": "Microbiology",
+        "percentile": "79",
+        "quartile": "Q1",
+        "rank": "39",
+        "rank_out_of": "",
+        "subject_code": "2404"
+      },
+      {
+        "category": "Health Professions (miscellaneous)",
         "percentile": "98",
         "quartile": "Q1",
         "rank": "2",
         "rank_out_of": "",
-        "subject_code": "3601",
-        "year": ""
+        "subject_code": "3601"
       },
       {
-        "category": "",
-        "citescore": "5.8",
+        "category": "Health (social science)",
+        "percentile": "92",
+        "quartile": "Q1",
+        "rank": "30",
+        "rank_out_of": "",
+        "subject_code": "3306"
+      },
+      {
+        "category": "Plant Science",
+        "percentile": "88",
+        "quartile": "Q1",
+        "rank": "60",
+        "rank_out_of": "",
+        "subject_code": "1110"
+      },
+      {
+        "category": "Food Science",
+        "percentile": "83",
+        "quartile": "Q1",
+        "rank": "64",
+        "rank_out_of": "",
+        "subject_code": "1106"
+      },
+      {
+        "category": "Microbiology",
+        "percentile": "68",
+        "quartile": "Q2",
+        "rank": "58",
+        "rank_out_of": "",
+        "subject_code": "2404"
+      },
+      {
+        "category": "Health Professions (miscellaneous)",
         "percentile": "97",
         "quartile": "Q1",
         "rank": "2",
         "rank_out_of": "",
-        "subject_code": "3601",
-        "year": ""
+        "subject_code": "3601"
       },
       {
-        "category": "",
-        "citescore": "4.1",
+        "category": "Health (social science)",
+        "percentile": "88",
+        "quartile": "Q1",
+        "rank": "41",
+        "rank_out_of": "",
+        "subject_code": "3306"
+      },
+      {
+        "category": "Plant Science",
+        "percentile": "85",
+        "quartile": "Q1",
+        "rank": "73",
+        "rank_out_of": "",
+        "subject_code": "1110"
+      },
+      {
+        "category": "Food Science",
+        "percentile": "78",
+        "quartile": "Q1",
+        "rank": "78",
+        "rank_out_of": "",
+        "subject_code": "1106"
+      },
+      {
+        "category": "Microbiology",
+        "percentile": "55",
+        "quartile": "Q2",
+        "rank": "73",
+        "rank_out_of": "",
+        "subject_code": "2404"
+      },
+      {
+        "category": "Health Professions (miscellaneous)",
         "percentile": "95",
         "quartile": "Q1",
         "rank": "2",
         "rank_out_of": "",
-        "subject_code": "3601",
-        "year": ""
+        "subject_code": "3601"
       },
       {
-        "category": "",
-        "citescore": "3.0",
+        "category": "Health (social science)",
+        "percentile": "80",
+        "quartile": "Q1",
+        "rank": "62",
+        "rank_out_of": "",
+        "subject_code": "3306"
+      },
+      {
+        "category": "Plant Science",
+        "percentile": "76",
+        "quartile": "Q1",
+        "rank": "115",
+        "rank_out_of": "",
+        "subject_code": "1110"
+      },
+      {
+        "category": "Food Science",
+        "percentile": "66",
+        "quartile": "Q2",
+        "rank": "113",
+        "rank_out_of": "",
+        "subject_code": "1106"
+      },
+      {
+        "category": "Microbiology",
+        "percentile": "34",
+        "quartile": "Q3",
+        "rank": "102",
+        "rank_out_of": "",
+        "subject_code": "2404"
+      },
+      {
+        "category": "Health Professions (miscellaneous)",
         "percentile": "93",
         "quartile": "Q1",
         "rank": "2",
         "rank_out_of": "",
-        "subject_code": "3601",
-        "year": ""
+        "subject_code": "3601"
       },
       {
-        "category": "",
-        "citescore": "1.3",
+        "category": "Health (social science)",
+        "percentile": "71",
+        "quartile": "Q2",
+        "rank": "84",
+        "rank_out_of": "",
+        "subject_code": "3306"
+      },
+      {
+        "category": "Plant Science",
+        "percentile": "68",
+        "quartile": "Q2",
+        "rank": "141",
+        "rank_out_of": "",
+        "subject_code": "1110"
+      },
+      {
+        "category": "Food Science",
+        "percentile": "59",
+        "quartile": "Q2",
+        "rank": "125",
+        "rank_out_of": "",
+        "subject_code": "1106"
+      },
+      {
+        "category": "Microbiology",
+        "percentile": "33",
+        "quartile": "Q3",
+        "rank": "100",
+        "rank_out_of": "",
+        "subject_code": "2404"
+      },
+      {
+        "category": "Plant Science",
         "percentile": "39",
         "quartile": "Q3",
         "rank": "260",
         "rank_out_of": "",
-        "subject_code": "1110",
-        "year": ""
+        "subject_code": "1110"
       },
       {
-        "category": "",
-        "citescore": "0.6",
+        "category": "Health (social science)",
+        "percentile": "38",
+        "quartile": "Q3",
+        "rank": "170",
+        "rank_out_of": "",
+        "subject_code": "3306"
+      },
+      {
+        "category": "Food Science",
+        "percentile": "36",
+        "quartile": "Q3",
+        "rank": "191",
+        "rank_out_of": "",
+        "subject_code": "1106"
+      },
+      {
+        "category": "Health Professions (miscellaneous)",
+        "percentile": "34",
+        "quartile": "Q3",
+        "rank": "13",
+        "rank_out_of": "",
+        "subject_code": "3601"
+      },
+      {
+        "category": "Microbiology",
+        "percentile": "16",
+        "quartile": "Q4",
+        "rank": "123",
+        "rank_out_of": "",
+        "subject_code": "2404"
+      },
+      {
+        "category": "Plant Science",
         "percentile": "22",
         "quartile": "Q4",
         "rank": "324",
         "rank_out_of": "",
-        "subject_code": "1110",
-        "year": ""
+        "subject_code": "1110"
+      },
+      {
+        "category": "Health (social science)",
+        "percentile": "21",
+        "quartile": "Q4",
+        "rank": "205",
+        "rank_out_of": "",
+        "subject_code": "3306"
+      },
+      {
+        "category": "Food Science",
+        "percentile": "20",
+        "quartile": "Q4",
+        "rank": "226",
+        "rank_out_of": "",
+        "subject_code": "1106"
+      },
+      {
+        "category": "Health Professions (miscellaneous)",
+        "percentile": "13",
+        "quartile": "Q4",
+        "rank": "16",
+        "rank_out_of": "",
+        "subject_code": "3601"
+      },
+      {
+        "category": "Microbiology",
+        "percentile": "13",
+        "quartile": "Q4",
+        "rank": "126",
+        "rank_out_of": "",
+        "subject_code": "2404"
       }
     ],
+    "citescore_ranking_selection": "highest_percentile",
     "citescore_subject_code": "3601",
     "citescore_year": "2025",
     "eissn": "2304-8158",
     "found": true,
-    "ipp": "",
-    "ipp_year": "",
     "issn": "",
     "publisher": "Multidisciplinary Digital Publishing Institute (MDPI)",
     "queried_issn": "2304-8158",
@@ -2383,7 +4197,7 @@
     "source_id": "21100898636",
     "status_code": 200,
     "title": "Foods",
-    "updated_at": "2026-07-20T13:04:36+00:00"
+    "updated_at": "2026-07-20T13:27:23+00:00"
   },
   "2468-0672": {
     "citescore": "4.6",
@@ -2392,124 +4206,413 @@
     "citescore_quartile": "Q2",
     "citescore_rank": "54",
     "citescore_rank_out_of": "",
-    "citescore_records": [
+    "citescore_ranking_records": [
       {
-        "category": "",
-        "citescore": "4.6",
-        "percentile": "74",
-        "quartile": "Q2",
-        "rank": "54",
-        "rank_out_of": "",
-        "subject_code": "3105",
-        "year": "2025"
-      },
-      {
-        "category": "",
-        "citescore": "3.3",
+        "category": "Instrumentation",
         "percentile": "67",
         "quartile": "Q2",
         "rank": "69",
         "rank_out_of": "",
-        "subject_code": "3105",
-        "year": ""
+        "subject_code": "3105"
       },
       {
-        "category": "",
-        "citescore": "4.6",
+        "category": "Industrial and Manufacturing Engineering",
+        "percentile": "59",
+        "quartile": "Q2",
+        "rank": "174",
+        "rank_out_of": "",
+        "subject_code": "2209"
+      },
+      {
+        "category": "Civil and Structural Engineering",
+        "percentile": "58",
+        "quartile": "Q2",
+        "rank": "181",
+        "rank_out_of": "",
+        "subject_code": "2205"
+      },
+      {
+        "category": "Mechanical Engineering",
+        "percentile": "56",
+        "quartile": "Q2",
+        "rank": "323",
+        "rank_out_of": "",
+        "subject_code": "2210"
+      },
+      {
+        "category": "Biomedical Engineering",
+        "percentile": "41",
+        "quartile": "Q3",
+        "rank": "205",
+        "rank_out_of": "",
+        "subject_code": "2204"
+      },
+      {
+        "category": "Instrumentation",
         "percentile": "74",
         "quartile": "Q2",
         "rank": "54",
         "rank_out_of": "",
-        "subject_code": "3105",
-        "year": ""
+        "subject_code": "3105"
       },
       {
-        "category": "",
-        "citescore": "4.5",
+        "category": "Mechanical Engineering",
+        "percentile": "67",
+        "quartile": "Q2",
+        "rank": "244",
+        "rank_out_of": "",
+        "subject_code": "2210"
+      },
+      {
+        "category": "Civil and Structural Engineering",
+        "percentile": "66",
+        "quartile": "Q2",
+        "rank": "144",
+        "rank_out_of": "",
+        "subject_code": "2205"
+      },
+      {
+        "category": "Industrial and Manufacturing Engineering",
+        "percentile": "66",
+        "quartile": "Q2",
+        "rank": "145",
+        "rank_out_of": "",
+        "subject_code": "2209"
+      },
+      {
+        "category": "Biomedical Engineering",
+        "percentile": "51",
+        "quartile": "Q2",
+        "rank": "168",
+        "rank_out_of": "",
+        "subject_code": "2204"
+      },
+      {
+        "category": "Instrumentation",
         "percentile": "70",
         "quartile": "Q2",
         "rank": "52",
         "rank_out_of": "",
-        "subject_code": "3105",
-        "year": ""
+        "subject_code": "3105"
       },
       {
-        "category": "",
-        "citescore": "4.1",
+        "category": "Civil and Structural Engineering",
+        "percentile": "68",
+        "quartile": "Q2",
+        "rank": "128",
+        "rank_out_of": "",
+        "subject_code": "2205"
+      },
+      {
+        "category": "Industrial and Manufacturing Engineering",
+        "percentile": "68",
+        "quartile": "Q2",
+        "rank": "127",
+        "rank_out_of": "",
+        "subject_code": "2209"
+      },
+      {
+        "category": "Mechanical Engineering",
+        "percentile": "68",
+        "quartile": "Q2",
+        "rank": "229",
+        "rank_out_of": "",
+        "subject_code": "2210"
+      },
+      {
+        "category": "Biomedical Engineering",
+        "percentile": "50",
+        "quartile": "Q2",
+        "rank": "160",
+        "rank_out_of": "",
+        "subject_code": "2204"
+      },
+      {
+        "category": "Mechanical Engineering",
         "percentile": "65",
         "quartile": "Q2",
         "rank": "232",
         "rank_out_of": "",
-        "subject_code": "2210",
-        "year": ""
+        "subject_code": "2210"
       },
       {
-        "category": "",
-        "citescore": "3.7",
+        "category": "Industrial and Manufacturing Engineering",
+        "percentile": "64",
+        "quartile": "Q2",
+        "rank": "136",
+        "rank_out_of": "",
+        "subject_code": "2209"
+      },
+      {
+        "category": "Civil and Structural Engineering",
+        "percentile": "64",
+        "quartile": "Q2",
+        "rank": "136",
+        "rank_out_of": "",
+        "subject_code": "2205"
+      },
+      {
+        "category": "Instrumentation",
+        "percentile": "59",
+        "quartile": "Q2",
+        "rank": "57",
+        "rank_out_of": "",
+        "subject_code": "3105"
+      },
+      {
+        "category": "Biomedical Engineering",
+        "percentile": "46",
+        "quartile": "Q3",
+        "rank": "163",
+        "rank_out_of": "",
+        "subject_code": "2204"
+      },
+      {
+        "category": "Mechanical Engineering",
         "percentile": "62",
         "quartile": "Q2",
         "rank": "240",
         "rank_out_of": "",
-        "subject_code": "2210",
-        "year": ""
+        "subject_code": "2210"
       },
       {
-        "category": "",
-        "citescore": "4.2",
+        "category": "Industrial and Manufacturing Engineering",
+        "percentile": "61",
+        "quartile": "Q2",
+        "rank": "138",
+        "rank_out_of": "",
+        "subject_code": "2209"
+      },
+      {
+        "category": "Civil and Structural Engineering",
+        "percentile": "59",
+        "quartile": "Q2",
+        "rank": "141",
+        "rank_out_of": "",
+        "subject_code": "2205"
+      },
+      {
+        "category": "Instrumentation",
+        "percentile": "58",
+        "quartile": "Q2",
+        "rank": "57",
+        "rank_out_of": "",
+        "subject_code": "3105"
+      },
+      {
+        "category": "Biomedical Engineering",
+        "percentile": "44",
+        "quartile": "Q3",
+        "rank": "154",
+        "rank_out_of": "",
+        "subject_code": "2204"
+      },
+      {
+        "category": "Mechanical Engineering",
         "percentile": "69",
         "quartile": "Q2",
         "rank": "181",
         "rank_out_of": "",
-        "subject_code": "2210",
-        "year": ""
+        "subject_code": "2210"
       },
       {
-        "category": "",
-        "citescore": "3.7",
+        "category": "Industrial and Manufacturing Engineering",
+        "percentile": "69",
+        "quartile": "Q2",
+        "rank": "104",
+        "rank_out_of": "",
+        "subject_code": "2209"
+      },
+      {
+        "category": "Civil and Structural Engineering",
+        "percentile": "69",
+        "quartile": "Q2",
+        "rank": "101",
+        "rank_out_of": "",
+        "subject_code": "2205"
+      },
+      {
+        "category": "Instrumentation",
+        "percentile": "69",
+        "quartile": "Q2",
+        "rank": "42",
+        "rank_out_of": "",
+        "subject_code": "3105"
+      },
+      {
+        "category": "Biomedical Engineering",
+        "percentile": "50",
+        "quartile": "Q2",
+        "rank": "125",
+        "rank_out_of": "",
+        "subject_code": "2204"
+      },
+      {
+        "category": "Industrial and Manufacturing Engineering",
         "percentile": "71",
         "quartile": "Q2",
         "rank": "97",
         "rank_out_of": "",
-        "subject_code": "2209",
-        "year": ""
+        "subject_code": "2209"
       },
       {
-        "category": "",
-        "citescore": "2.7",
+        "category": "Mechanical Engineering",
+        "percentile": "70",
+        "quartile": "Q2",
+        "rank": "177",
+        "rank_out_of": "",
+        "subject_code": "2210"
+      },
+      {
+        "category": "Civil and Structural Engineering",
+        "percentile": "69",
+        "quartile": "Q2",
+        "rank": "98",
+        "rank_out_of": "",
+        "subject_code": "2205"
+      },
+      {
+        "category": "Instrumentation",
+        "percentile": "68",
+        "quartile": "Q2",
+        "rank": "41",
+        "rank_out_of": "",
+        "subject_code": "3105"
+      },
+      {
+        "category": "Biomedical Engineering",
+        "percentile": "53",
+        "quartile": "Q2",
+        "rank": "108",
+        "rank_out_of": "",
+        "subject_code": "2204"
+      },
+      {
+        "category": "Industrial and Manufacturing Engineering",
         "percentile": "67",
         "quartile": "Q2",
         "rank": "111",
         "rank_out_of": "",
-        "subject_code": "2209",
-        "year": ""
+        "subject_code": "2209"
       },
       {
-        "category": "",
-        "citescore": "1.8",
+        "category": "Mechanical Engineering",
+        "percentile": "62",
+        "quartile": "Q2",
+        "rank": "217",
+        "rank_out_of": "",
+        "subject_code": "2210"
+      },
+      {
+        "category": "Civil and Structural Engineering",
+        "percentile": "61",
+        "quartile": "Q2",
+        "rank": "119",
+        "rank_out_of": "",
+        "subject_code": "2205"
+      },
+      {
+        "category": "Instrumentation",
+        "percentile": "58",
+        "quartile": "Q2",
+        "rank": "54",
+        "rank_out_of": "",
+        "subject_code": "3105"
+      },
+      {
+        "category": "Biomedical Engineering",
+        "percentile": "47",
+        "quartile": "Q3",
+        "rank": "119",
+        "rank_out_of": "",
+        "subject_code": "2204"
+      },
+      {
+        "category": "Industrial and Manufacturing Engineering",
         "percentile": "60",
         "quartile": "Q2",
         "rank": "134",
         "rank_out_of": "",
-        "subject_code": "2209",
-        "year": ""
+        "subject_code": "2209"
       },
       {
-        "category": "",
-        "citescore": "1.1",
+        "category": "Mechanical Engineering",
+        "percentile": "51",
+        "quartile": "Q2",
+        "rank": "284",
+        "rank_out_of": "",
+        "subject_code": "2210"
+      },
+      {
+        "category": "Civil and Structural Engineering",
+        "percentile": "50",
+        "quartile": "Q2",
+        "rank": "149",
+        "rank_out_of": "",
+        "subject_code": "2205"
+      },
+      {
+        "category": "Instrumentation",
+        "percentile": "41",
+        "quartile": "Q3",
+        "rank": "74",
+        "rank_out_of": "",
+        "subject_code": "3105"
+      },
+      {
+        "category": "Biomedical Engineering",
+        "percentile": "35",
+        "quartile": "Q3",
+        "rank": "137",
+        "rank_out_of": "",
+        "subject_code": "2204"
+      },
+      {
+        "category": "Industrial and Manufacturing Engineering",
         "percentile": "54",
         "quartile": "Q2",
         "rank": "151",
         "rank_out_of": "",
-        "subject_code": "2209",
-        "year": ""
+        "subject_code": "2209"
+      },
+      {
+        "category": "Mechanical Engineering",
+        "percentile": "42",
+        "quartile": "Q3",
+        "rank": "334",
+        "rank_out_of": "",
+        "subject_code": "2210"
+      },
+      {
+        "category": "Civil and Structural Engineering",
+        "percentile": "39",
+        "quartile": "Q3",
+        "rank": "173",
+        "rank_out_of": "",
+        "subject_code": "2205"
+      },
+      {
+        "category": "Instrumentation",
+        "percentile": "32",
+        "quartile": "Q3",
+        "rank": "84",
+        "rank_out_of": "",
+        "subject_code": "3105"
+      },
+      {
+        "category": "Biomedical Engineering",
+        "percentile": "24",
+        "quartile": "Q4",
+        "rank": "154",
+        "rank_out_of": "",
+        "subject_code": "2204"
       }
     ],
+    "citescore_ranking_selection": "highest_percentile",
     "citescore_subject_code": "3105",
     "citescore_year": "2025",
     "eissn": "2468-0672",
     "found": true,
-    "ipp": "",
-    "ipp_year": "",
     "issn": "",
     "publisher": "Elsevier Ltd",
     "queried_issn": "2468-0672",
@@ -2522,7 +4625,7 @@
     "source_id": "21100842867",
     "status_code": 200,
     "title": "HardwareX",
-    "updated_at": "2026-07-20T13:04:37+00:00"
+    "updated_at": "2026-07-20T13:27:23+00:00"
   },
   "2673-4192": {
     "citescore": "7.9",
@@ -2531,74 +4634,133 @@
     "citescore_quartile": "Q1",
     "citescore_rank": "15",
     "citescore_rank_out_of": "",
-    "citescore_records": [
+    "citescore_ranking_records": [
       {
-        "category": "",
-        "citescore": "7.9",
-        "percentile": "88",
-        "quartile": "Q1",
-        "rank": "15",
-        "rank_out_of": "",
-        "subject_code": "1704",
-        "year": "2025"
-      },
-      {
-        "category": "",
-        "citescore": "6.2",
+        "category": "Computer Graphics and Computer-Aided Design",
         "percentile": "82",
         "quartile": "Q1",
         "rank": "24",
         "rank_out_of": "",
-        "subject_code": "1704",
-        "year": ""
+        "subject_code": "1704"
       },
       {
-        "category": "",
-        "citescore": "7.9",
+        "category": "Computer Science Applications",
+        "percentile": "75",
+        "quartile": "Q1",
+        "rank": "250",
+        "rank_out_of": "",
+        "subject_code": "1706"
+      },
+      {
+        "category": "Human-Computer Interaction",
+        "percentile": "63",
+        "quartile": "Q2",
+        "rank": "72",
+        "rank_out_of": "",
+        "subject_code": "1709"
+      },
+      {
+        "category": "Computer Graphics and Computer-Aided Design",
         "percentile": "84",
         "quartile": "Q1",
         "rank": "20",
         "rank_out_of": "",
-        "subject_code": "1704",
-        "year": ""
+        "subject_code": "1704"
       },
       {
-        "category": "",
-        "citescore": "8.5",
+        "category": "Computer Science Applications",
+        "percentile": "79",
+        "quartile": "Q1",
+        "rank": "206",
+        "rank_out_of": "",
+        "subject_code": "1706"
+      },
+      {
+        "category": "Human-Computer Interaction",
+        "percentile": "69",
+        "quartile": "Q2",
+        "rank": "61",
+        "rank_out_of": "",
+        "subject_code": "1709"
+      },
+      {
+        "category": "Computer Graphics and Computer-Aided Design",
         "percentile": "88",
         "quartile": "Q1",
         "rank": "15",
         "rank_out_of": "",
-        "subject_code": "1704",
-        "year": ""
+        "subject_code": "1704"
       },
       {
-        "category": "",
-        "citescore": "5.8",
+        "category": "Computer Science Applications",
+        "percentile": "82",
+        "quartile": "Q1",
+        "rank": "165",
+        "rank_out_of": "",
+        "subject_code": "1706"
+      },
+      {
+        "category": "Human-Computer Interaction",
+        "percentile": "75",
+        "quartile": "Q1",
+        "rank": "47",
+        "rank_out_of": "",
+        "subject_code": "1709"
+      },
+      {
+        "category": "Computer Graphics and Computer-Aided Design",
         "percentile": "78",
         "quartile": "Q1",
         "rank": "23",
         "rank_out_of": "",
-        "subject_code": "1704",
-        "year": ""
+        "subject_code": "1704"
       },
       {
-        "category": "",
-        "citescore": "2.9",
+        "category": "Computer Science Applications",
+        "percentile": "67",
+        "quartile": "Q2",
+        "rank": "264",
+        "rank_out_of": "",
+        "subject_code": "1706"
+      },
+      {
+        "category": "Human-Computer Interaction",
+        "percentile": "55",
+        "quartile": "Q2",
+        "rank": "65",
+        "rank_out_of": "",
+        "subject_code": "1709"
+      },
+      {
+        "category": "Computer Graphics and Computer-Aided Design",
         "percentile": "51",
         "quartile": "Q2",
         "rank": "50",
         "rank_out_of": "",
-        "subject_code": "1704",
-        "year": ""
+        "subject_code": "1704"
+      },
+      {
+        "category": "Computer Science Applications",
+        "percentile": "46",
+        "quartile": "Q3",
+        "rank": "426",
+        "rank_out_of": "",
+        "subject_code": "1706"
+      },
+      {
+        "category": "Human-Computer Interaction",
+        "percentile": "32",
+        "quartile": "Q3",
+        "rank": "92",
+        "rank_out_of": "",
+        "subject_code": "1709"
       }
     ],
+    "citescore_ranking_selection": "highest_percentile",
     "citescore_subject_code": "1704",
     "citescore_year": "2025",
     "eissn": "2673-4192",
     "found": true,
-    "ipp": "",
-    "ipp_year": "",
     "issn": "",
     "publisher": "Frontiers Media SA",
     "queried_issn": "2673-4192",
@@ -2611,7 +4773,7 @@
     "source_id": "21101107986",
     "status_code": 200,
     "title": "Frontiers in Virtual Reality",
-    "updated_at": "2026-07-20T13:04:37+00:00"
+    "updated_at": "2026-07-20T13:27:24+00:00"
   },
   "2694-0604": {
     "citescore": "0.4",
@@ -2620,84 +4782,61 @@
     "citescore_quartile": "Q2",
     "citescore_rank": "347",
     "citescore_rank_out_of": "",
-    "citescore_records": [
+    "citescore_ranking_records": [
       {
-        "category": "",
-        "citescore": "0.4",
-        "percentile": "58",
-        "quartile": "Q2",
-        "rank": "347",
-        "rank_out_of": "",
-        "subject_code": "2700",
-        "year": "2025"
-      },
-      {
-        "category": "",
-        "citescore": "0.6",
+        "category": "General Medicine",
         "percentile": "36",
         "quartile": "Q3",
         "rank": "425",
         "rank_out_of": "",
-        "subject_code": "2700",
-        "year": ""
+        "subject_code": "2700"
       },
       {
-        "category": "",
-        "citescore": "0.4",
+        "category": "General Medicine",
         "percentile": "16",
         "quartile": "Q4",
         "rank": "559",
         "rank_out_of": "",
-        "subject_code": "2700",
-        "year": ""
+        "subject_code": "2700"
       },
       {
-        "category": "",
-        "citescore": "0.8",
+        "category": "General Medicine",
         "percentile": "41",
         "quartile": "Q3",
         "rank": "394",
         "rank_out_of": "",
-        "subject_code": "2700",
-        "year": ""
+        "subject_code": "2700"
       },
       {
-        "category": "",
-        "citescore": "0.8",
+        "category": "General Medicine",
         "percentile": "39",
         "quartile": "Q3",
         "rank": "386",
         "rank_out_of": "",
-        "subject_code": "2700",
-        "year": ""
+        "subject_code": "2700"
       },
       {
-        "category": "",
-        "citescore": "2.4",
+        "category": "General Medicine",
         "percentile": "58",
         "quartile": "Q2",
         "rank": "347",
         "rank_out_of": "",
-        "subject_code": "2700",
-        "year": ""
+        "subject_code": "2700"
       },
       {
-        "category": "",
-        "citescore": "0.6",
+        "category": "General Medicine",
         "percentile": "29",
         "quartile": "Q3",
         "rank": "585",
         "rank_out_of": "",
-        "subject_code": "2700",
-        "year": ""
+        "subject_code": "2700"
       }
     ],
+    "citescore_ranking_selection": "highest_percentile",
     "citescore_subject_code": "2700",
     "citescore_year": "2025",
     "eissn": "2694-0604",
     "found": true,
-    "ipp": "",
-    "ipp_year": "",
     "issn": "",
     "publisher": "Institute of Electrical and Electronics Engineers Inc.",
     "queried_issn": "2694-0604",
@@ -2710,7 +4849,7 @@
     "source_id": "21101033200",
     "status_code": 200,
     "title": "Annual International Conference of the IEEE Engineering in Medicine and Biology Society. IEEE Engineering in Medicine and Biology Society. Annual International Conference",
-    "updated_at": "2026-07-20T13:04:38+00:00"
+    "updated_at": "2026-07-20T13:27:24+00:00"
   },
   "2766-6530": {
     "citescore": "0.0",
@@ -2719,44 +4858,69 @@
     "citescore_quartile": "Q4",
     "citescore_rank": "69",
     "citescore_rank_out_of": "",
-    "citescore_records": [
+    "citescore_ranking_records": [
       {
-        "category": "",
-        "citescore": "0.0",
+        "category": "Media Technology",
         "percentile": "18",
         "quartile": "Q4",
         "rank": "69",
         "rank_out_of": "",
-        "subject_code": "2214",
-        "year": "2025"
+        "subject_code": "2214"
       },
       {
-        "category": "",
-        "citescore": "0.2",
-        "percentile": "18",
+        "category": "Artificial Intelligence",
+        "percentile": "7",
         "quartile": "Q4",
-        "rank": "69",
+        "rank": "548",
         "rank_out_of": "",
-        "subject_code": "2214",
-        "year": ""
+        "subject_code": "1702"
       },
       {
-        "category": "",
-        "citescore": "0.0",
+        "category": "Modeling and Simulation",
+        "percentile": "4",
+        "quartile": "Q4",
+        "rank": "384",
+        "rank_out_of": "",
+        "subject_code": "2611"
+      },
+      {
+        "category": "Human-Computer Interaction",
+        "percentile": "0",
+        "quartile": "Q4",
+        "rank": "195",
+        "rank_out_of": "",
+        "subject_code": "1709"
+      },
+      {
+        "category": "Media Technology",
         "percentile": "10",
         "quartile": "Q4",
         "rank": "75",
         "rank_out_of": "",
-        "subject_code": "2214",
-        "year": ""
+        "subject_code": "2214"
+      },
+      {
+        "category": "Artificial Intelligence",
+        "percentile": "3",
+        "quartile": "Q4",
+        "rank": "549",
+        "rank_out_of": "",
+        "subject_code": "1702"
+      },
+      {
+        "category": "Modeling and Simulation",
+        "percentile": "2",
+        "quartile": "Q4",
+        "rank": "388",
+        "rank_out_of": "",
+        "subject_code": "2611"
       }
     ],
+    "citescore_ranking_selection": "highest_percentile",
     "citescore_subject_code": "2214",
     "citescore_year": "2025",
     "eissn": "2766-6530",
     "found": true,
-    "ipp": "",
-    "ipp_year": "",
     "issn": "2831-5510",
     "publisher": "Institute of Electrical and Electronics Engineers Inc.",
     "queried_issn": "2766-6530",
@@ -2769,6 +4933,6 @@
     "source_id": "21101394124",
     "status_code": 200,
     "title": "Proceedings of IEEE Games, Entertainment and Media Conference, GEM",
-    "updated_at": "2026-07-20T13:04:38+00:00"
+    "updated_at": "2026-07-20T13:27:25+00:00"
   }
 }
