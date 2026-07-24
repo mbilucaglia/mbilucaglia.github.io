@@ -145,7 +145,7 @@
     "source_id": "15925",
     "status_code": 200,
     "title": "Journal of Parapsychology",
-    "updated_at": "2026-07-20T14:15:50+00:00"
+    "updated_at": "2026-07-24T08:23:53+00:00"
   },
   "0302-9743": {
     "citescore": "3.1",
@@ -421,7 +421,7 @@
     "source_id": "25674",
     "status_code": 200,
     "title": "Lecture Notes in Computer Science",
-    "updated_at": "2026-07-20T14:15:51+00:00"
+    "updated_at": "2026-07-24T08:23:54+00:00"
   },
   "0589-1019": {
     "citescore": "1.6",
@@ -905,7 +905,7 @@
     "source_id": "34202",
     "status_code": 200,
     "title": "Annual International Conference of the IEEE Engineering in Medicine and Biology - Proceedings",
-    "updated_at": "2026-07-20T14:15:51+00:00"
+    "updated_at": "2026-07-24T08:23:55+00:00"
   },
   "1046-1310": {
     "citescore": "6.2",
@@ -1061,7 +1061,411 @@
     "source_id": "13479",
     "status_code": 200,
     "title": "Current Psychology",
-    "updated_at": "2026-07-20T14:15:52+00:00"
+    "updated_at": "2026-07-24T08:23:55+00:00"
+  },
+  "1662-5153": {
+    "citescore": "6.9",
+    "citescore_category": "Behavioral Neuroscience",
+    "citescore_percentile": "95",
+    "citescore_quartile": "Q1",
+    "citescore_rank": "4",
+    "citescore_rank_out_of": "",
+    "citescore_ranking_records": [
+      {
+        "category": "Neuropsychology and Physiological Psychology",
+        "percentile": "89",
+        "quartile": "Q1",
+        "rank": "9",
+        "rank_out_of": "",
+        "subject_code": "3206"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "82",
+        "quartile": "Q1",
+        "rank": "17",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Cognitive Neuroscience",
+        "percentile": "75",
+        "quartile": "Q1",
+        "rank": "32",
+        "rank_out_of": "",
+        "subject_code": "2805"
+      },
+      {
+        "category": "Neuropsychology and Physiological Psychology",
+        "percentile": "90",
+        "quartile": "Q1",
+        "rank": "8",
+        "rank_out_of": "",
+        "subject_code": "3206"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "84",
+        "quartile": "Q1",
+        "rank": "15",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Cognitive Neuroscience",
+        "percentile": "79",
+        "quartile": "Q1",
+        "rank": "27",
+        "rank_out_of": "",
+        "subject_code": "2805"
+      },
+      {
+        "category": "Neuropsychology and Physiological Psychology",
+        "percentile": "82",
+        "quartile": "Q1",
+        "rank": "14",
+        "rank_out_of": "",
+        "subject_code": "3206"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "69",
+        "quartile": "Q2",
+        "rank": "28",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Cognitive Neuroscience",
+        "percentile": "67",
+        "quartile": "Q2",
+        "rank": "40",
+        "rank_out_of": "",
+        "subject_code": "2805"
+      },
+      {
+        "category": "Neuropsychology and Physiological Psychology",
+        "percentile": "74",
+        "quartile": "Q2",
+        "rank": "20",
+        "rank_out_of": "",
+        "subject_code": "3206"
+      },
+      {
+        "category": "Cognitive Neuroscience",
+        "percentile": "57",
+        "quartile": "Q2",
+        "rank": "49",
+        "rank_out_of": "",
+        "subject_code": "2805"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "55",
+        "quartile": "Q2",
+        "rank": "40",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Neuropsychology and Physiological Psychology",
+        "percentile": "66",
+        "quartile": "Q2",
+        "rank": "23",
+        "rank_out_of": "",
+        "subject_code": "3206"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "57",
+        "quartile": "Q2",
+        "rank": "35",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Cognitive Neuroscience",
+        "percentile": "57",
+        "quartile": "Q2",
+        "rank": "47",
+        "rank_out_of": "",
+        "subject_code": "2805"
+      },
+      {
+        "category": "Neuropsychology and Physiological Psychology",
+        "percentile": "77",
+        "quartile": "Q1",
+        "rank": "15",
+        "rank_out_of": "",
+        "subject_code": "3206"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "76",
+        "quartile": "Q1",
+        "rank": "19",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Cognitive Neuroscience",
+        "percentile": "69",
+        "quartile": "Q2",
+        "rank": "33",
+        "rank_out_of": "",
+        "subject_code": "2805"
+      },
+      {
+        "category": "Neuropsychology and Physiological Psychology",
+        "percentile": "72",
+        "quartile": "Q2",
+        "rank": "17",
+        "rank_out_of": "",
+        "subject_code": "3206"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "64",
+        "quartile": "Q2",
+        "rank": "28",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Cognitive Neuroscience",
+        "percentile": "58",
+        "quartile": "Q2",
+        "rank": "40",
+        "rank_out_of": "",
+        "subject_code": "2805"
+      },
+      {
+        "category": "Neuropsychology and Physiological Psychology",
+        "percentile": "68",
+        "quartile": "Q2",
+        "rank": "20",
+        "rank_out_of": "",
+        "subject_code": "3206"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "62",
+        "quartile": "Q2",
+        "rank": "28",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Cognitive Neuroscience",
+        "percentile": "54",
+        "quartile": "Q2",
+        "rank": "44",
+        "rank_out_of": "",
+        "subject_code": "2805"
+      },
+      {
+        "category": "Neuropsychology and Physiological Psychology",
+        "percentile": "82",
+        "quartile": "Q1",
+        "rank": "11",
+        "rank_out_of": "",
+        "subject_code": "3206"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "77",
+        "quartile": "Q1",
+        "rank": "17",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Cognitive Neuroscience",
+        "percentile": "67",
+        "quartile": "Q2",
+        "rank": "31",
+        "rank_out_of": "",
+        "subject_code": "2805"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "95",
+        "quartile": "Q1",
+        "rank": "4",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Neuropsychology and Physiological Psychology",
+        "percentile": "92",
+        "quartile": "Q1",
+        "rank": "5",
+        "rank_out_of": "",
+        "subject_code": "3206"
+      },
+      {
+        "category": "Cognitive Neuroscience",
+        "percentile": "82",
+        "quartile": "Q1",
+        "rank": "17",
+        "rank_out_of": "",
+        "subject_code": "2805"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "82",
+        "quartile": "Q1",
+        "rank": "12",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Neuropsychology and Physiological Psychology",
+        "percentile": "81",
+        "quartile": "Q1",
+        "rank": "11",
+        "rank_out_of": "",
+        "subject_code": "3206"
+      },
+      {
+        "category": "Cognitive Neuroscience",
+        "percentile": "69",
+        "quartile": "Q2",
+        "rank": "27",
+        "rank_out_of": "",
+        "subject_code": "2805"
+      },
+      {
+        "category": "Neuropsychology and Physiological Psychology",
+        "percentile": "58",
+        "quartile": "Q2",
+        "rank": "24",
+        "rank_out_of": "",
+        "subject_code": "3206"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "53",
+        "quartile": "Q2",
+        "rank": "29",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Cognitive Neuroscience",
+        "percentile": "48",
+        "quartile": "Q3",
+        "rank": "42",
+        "rank_out_of": "",
+        "subject_code": "2805"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "52",
+        "quartile": "Q2",
+        "rank": "28",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Cognitive Neuroscience",
+        "percentile": "46",
+        "quartile": "Q3",
+        "rank": "42",
+        "rank_out_of": "",
+        "subject_code": "2805"
+      },
+      {
+        "category": "Neuropsychology and Physiological Psychology",
+        "percentile": "66",
+        "quartile": "Q2",
+        "rank": "19",
+        "rank_out_of": "",
+        "subject_code": "3206"
+      },
+      {
+        "category": "Cognitive Neuroscience",
+        "percentile": "57",
+        "quartile": "Q2",
+        "rank": "33",
+        "rank_out_of": "",
+        "subject_code": "2805"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "55",
+        "quartile": "Q2",
+        "rank": "26",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Neuropsychology and Physiological Psychology",
+        "percentile": "73",
+        "quartile": "Q2",
+        "rank": "15",
+        "rank_out_of": "",
+        "subject_code": "3206"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "72",
+        "quartile": "Q2",
+        "rank": "16",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Cognitive Neuroscience",
+        "percentile": "68",
+        "quartile": "Q2",
+        "rank": "24",
+        "rank_out_of": "",
+        "subject_code": "2805"
+      },
+      {
+        "category": "Neuropsychology and Physiological Psychology",
+        "percentile": "57",
+        "quartile": "Q2",
+        "rank": "24",
+        "rank_out_of": "",
+        "subject_code": "3206"
+      },
+      {
+        "category": "Behavioral Neuroscience",
+        "percentile": "51",
+        "quartile": "Q2",
+        "rank": "26",
+        "rank_out_of": "",
+        "subject_code": "2802"
+      },
+      {
+        "category": "Cognitive Neuroscience",
+        "percentile": "51",
+        "quartile": "Q2",
+        "rank": "35",
+        "rank_out_of": "",
+        "subject_code": "2805"
+      }
+    ],
+    "citescore_ranking_selection": "highest_percentile",
+    "citescore_subject_code": "2802",
+    "citescore_year": "2025",
+    "eissn": "",
+    "found": true,
+    "issn": "1662-5153",
+    "publisher": "Frontiers Media SA",
+    "queried_issn": "1662-5153",
+    "scopus_source_url": "https://www.scopus.com/sourceid/19700175166",
+    "sjr": "1.077",
+    "sjr_year": "2025",
+    "snip": "1.096",
+    "snip_year": "2025",
+    "source": "Elsevier Serial Title API / Scopus",
+    "source_id": "19700175166",
+    "status_code": 200,
+    "title": "Frontiers in Behavioral Neuroscience",
+    "updated_at": "2026-07-24T08:23:56+00:00"
   },
   "1662-5161": {
     "citescore": "5.9",
@@ -1721,7 +2125,7 @@
     "source_id": "19700175164",
     "status_code": 200,
     "title": "Frontiers in Human Neuroscience",
-    "updated_at": "2026-07-20T14:15:52+00:00"
+    "updated_at": "2026-07-24T08:23:56+00:00"
   },
   "1664-1078": {
     "citescore": "7.0",
@@ -1861,7 +2265,7 @@
     "source_id": "21100216571",
     "status_code": 200,
     "title": "Frontiers in Psychology",
-    "updated_at": "2026-07-20T14:15:53+00:00"
+    "updated_at": "2026-07-24T08:23:57+00:00"
   },
   "1687-4153": {
     "citescore": "3.0",
@@ -2161,7 +2565,7 @@
     "source_id": "4400151506",
     "status_code": 200,
     "title": "Eurasip Journal on Bioinformatics and Systems Biology",
-    "updated_at": "2026-07-20T14:15:54+00:00"
+    "updated_at": "2026-07-24T08:23:57+00:00"
   },
   "1932-6203": {
     "citescore": "4.8",
@@ -2429,7 +2833,7 @@
     "source_id": "10600153309",
     "status_code": 200,
     "title": "PLOS ONE",
-    "updated_at": "2026-07-20T14:15:54+00:00"
+    "updated_at": "2026-07-24T08:23:58+00:00"
   },
   "1936-4733": {
     "citescore": "6.2",
@@ -2585,7 +2989,7 @@
     "source_id": "13479",
     "status_code": 200,
     "title": "Current Psychology",
-    "updated_at": "2026-07-20T14:15:54+00:00"
+    "updated_at": "2026-07-24T08:23:58+00:00"
   },
   "2046-1402": {
     "citescore": "2.9",
@@ -3069,7 +3473,7 @@
     "source_id": "21100258853",
     "status_code": 200,
     "title": "F1000Research",
-    "updated_at": "2026-07-20T14:15:55+00:00"
+    "updated_at": "2026-07-24T08:23:59+00:00"
   },
   "2076-328X": {
     "citescore": "4.1",
@@ -3417,7 +3821,7 @@
     "source_id": "21100901748",
     "status_code": 200,
     "title": "Behavioral Sciences",
-    "updated_at": "2026-07-20T14:15:56+00:00"
+    "updated_at": "2026-07-24T08:23:59+00:00"
   },
   "2190-3018": {
     "citescore": "1.2",
@@ -3701,7 +4105,7 @@
     "source_id": "21100204111",
     "status_code": 200,
     "title": "Smart Innovation, Systems and Technologies",
-    "updated_at": "2026-07-20T14:15:56+00:00"
+    "updated_at": "2026-07-24T08:24:00+00:00"
   },
   "2297-900X": {
     "citescore": "2.9",
@@ -3825,7 +4229,7 @@
     "source_id": "21101061926",
     "status_code": 200,
     "title": "Frontiers in Communication",
-    "updated_at": "2026-07-20T14:15:57+00:00"
+    "updated_at": "2026-07-24T08:24:00+00:00"
   },
   "2304-8158": {
     "citescore": "10.3",
@@ -4197,7 +4601,7 @@
     "source_id": "21100898636",
     "status_code": 200,
     "title": "Foods",
-    "updated_at": "2026-07-20T14:15:57+00:00"
+    "updated_at": "2026-07-24T08:24:01+00:00"
   },
   "2468-0672": {
     "citescore": "4.6",
@@ -4625,7 +5029,7 @@
     "source_id": "21100842867",
     "status_code": 200,
     "title": "HardwareX",
-    "updated_at": "2026-07-20T14:15:58+00:00"
+    "updated_at": "2026-07-24T08:24:02+00:00"
   },
   "2673-4192": {
     "citescore": "7.9",
@@ -4773,7 +5177,7 @@
     "source_id": "21101107986",
     "status_code": 200,
     "title": "Frontiers in Virtual Reality",
-    "updated_at": "2026-07-20T14:15:58+00:00"
+    "updated_at": "2026-07-24T08:24:02+00:00"
   },
   "2694-0604": {
     "citescore": "0.4",
@@ -4849,7 +5253,7 @@
     "source_id": "21101033200",
     "status_code": 200,
     "title": "Annual International Conference of the IEEE Engineering in Medicine and Biology Society. IEEE Engineering in Medicine and Biology Society. Annual International Conference",
-    "updated_at": "2026-07-20T14:15:59+00:00"
+    "updated_at": "2026-07-24T08:24:03+00:00"
   },
   "2766-6530": {
     "citescore": "0.0",
@@ -4933,6 +5337,6 @@
     "source_id": "21101394124",
     "status_code": 200,
     "title": "Proceedings of IEEE Games, Entertainment and Media Conference, GEM",
-    "updated_at": "2026-07-20T14:15:59+00:00"
+    "updated_at": "2026-07-24T08:24:03+00:00"
   }
 }

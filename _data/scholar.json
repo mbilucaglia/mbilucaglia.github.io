@@ -43,6 +43,7 @@
     "casiraghi2025neuronudge",
     "Bellati2023aip",
     "gifuni2026",
+    "Bilucaglia2026",
     "piccoli2025aesthetics",
     "piccoli2025acei",
     "acardi2025npe",
@@ -66,7 +67,7 @@
       "bibtex_key": "zito2021",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:VOx2b1Wkg3QC",
-      "citations": 64,
+      "citations": 63,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:VOx2b1Wkg3QC",
       "publication": "Frontiers in Psychology 12, 1784, 2021",
       "title": "Assessing the emotional response in social communication: the role of neuromarketing",
@@ -220,7 +221,7 @@
       "bibtex_key": "valesi2023",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:BwyfMAYsbu0C",
-      "citations": 16,
+      "citations": 17,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:BwyfMAYsbu0C",
       "publication": "Behavioral Sciences 13 (7), 596, 2023",
       "title": "From Coaching to Neurocoaching: A Neuroscientific Approach during a Coaching Session to Assess the Relational Dynamics between Coach and Coachee—A Pilot Study",
@@ -446,6 +447,8 @@
     },
     {
       "authors": "M Bilucaglia, C Casiraghi, V Russo, M Zito",
+      "bibtex_key": "Bilucaglia2026",
+      "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:buQ7SEKw-1sC",
       "citations": 0,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:buQ7SEKw-1sC",
@@ -770,7 +773,7 @@
       "bibtex_key": "zito2021",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:VOx2b1Wkg3QC",
-      "citations": 64,
+      "citations": 63,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:VOx2b1Wkg3QC",
       "publication": "Frontiers in Psychology 12, 1784, 2021",
       "title": "Assessing the emotional response in social communication: the role of neuromarketing",
@@ -821,5 +824,5 @@
       "year": "2016"
     }
   ],
-  "updated_at": "2026-07-20T14:15:49+00:00"
+  "updated_at": "2026-07-24T08:23:52+00:00"
 }
