@@ -1,6 +1,6 @@
 {
-  "citations": 627,
-  "citations_recent": 519,
+  "citations": 630,
+  "citations_recent": 523,
   "h_index": 16,
   "h_index_recent": 15,
   "i10_index": 21,
@@ -42,8 +42,8 @@
     "bilucaglia2025c",
     "casiraghi2025neuronudge",
     "Bellati2023aip",
-    "gifuni2026",
     "Bilucaglia2026",
+    "gifuni2026",
     "piccoli2025aesthetics",
     "piccoli2025acei",
     "acardi2025npe",
@@ -89,7 +89,7 @@
       "bibtex_key": "fici2024",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:Ri6SYOTghG4C",
-      "citations": 46,
+      "citations": 48,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:Ri6SYOTghG4C",
       "publication": "Behavioral Sciences 14 (7), 596, 2024",
       "title": "From E-Commerce to the Metaverse: A Neuroscientific Analysis of Digital Consumer Behavior",
@@ -155,7 +155,7 @@
       "bibtex_key": "micheletto2025",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:fFSKOagxvKUC",
-      "citations": 26,
+      "citations": 27,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:fFSKOagxvKUC",
       "publication": "Frontiers in Virtual Reality 6, 1515937, 2025",
       "title": "Enjoy it! Cosmetic try-on apps and augmented reality, the impact of enjoyment, informativeness and ease of use.",
@@ -435,17 +435,6 @@
       "year": "2023"
     },
     {
-      "authors": "G Gifuni, E Bigne, M Bilucaglia, V Russo",
-      "bibtex_key": "gifuni2026",
-      "bibtex_match_score": 1.0,
-      "citation_id": "RvAqXUIAAAAJ:QD3KBmkZPeQC",
-      "citations": 0,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:QD3KBmkZPeQC",
-      "publication": "International Conference on Marketing and Technologies (ICMarkTech 2025 …, 2026",
-      "title": "Measuring Brand Reputation Through Consumer Neuroscience: An ERP Approach Based on Semantic Congruence",
-      "year": "2026"
-    },
-    {
       "authors": "M Bilucaglia, C Casiraghi, V Russo, M Zito",
       "bibtex_key": "Bilucaglia2026",
       "bibtex_match_score": 1.0,
@@ -454,6 +443,17 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:buQ7SEKw-1sC",
       "publication": "Frontiers in Behavioral Neuroscience 20, 1740368, 2026",
       "title": "Perspective-Taking in Video Advertising: Insights from EEG Connectivity and Channel-wise Spectral Analysis",
+      "year": "2026"
+    },
+    {
+      "authors": "G Gifuni, E Bigne, M Bilucaglia, V Russo",
+      "bibtex_key": "gifuni2026",
+      "bibtex_match_score": 1.0,
+      "citation_id": "RvAqXUIAAAAJ:QD3KBmkZPeQC",
+      "citations": 0,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:QD3KBmkZPeQC",
+      "publication": "International Conference on Marketing and Technologies (ICMarkTech 2025 …, 2026",
+      "title": "Measuring Brand Reputation Through Consumer Neuroscience: An ERP Approach Based on Semantic Congruence",
       "year": "2026"
     },
     {
@@ -795,7 +795,7 @@
       "bibtex_key": "fici2024",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:Ri6SYOTghG4C",
-      "citations": 46,
+      "citations": 48,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:Ri6SYOTghG4C",
       "publication": "Behavioral Sciences 14 (7), 596, 2024",
       "title": "From E-Commerce to the Metaverse: A Neuroscientific Analysis of Digital Consumer Behavior",
@@ -824,5 +824,5 @@
       "year": "2016"
     }
   ],
-  "updated_at": "2026-07-24T08:23:52+00:00"
+  "updated_at": "2026-07-27T08:47:30+00:00"
 }
