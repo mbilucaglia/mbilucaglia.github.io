@@ -49,11 +49,7 @@
 
   <small class="publication-links">
     {% if entry.doi %}
-      <a href="https://doi.org/{{ entry.doi }}" target="_blank" rel="noopener">DOI</a>
-    {% endif %}
-
-    {% if entry.url %}
-      <a href="{{ entry.url }}" target="_blank" rel="noopener">Link</a>
+      <a href="https://doi.org/{{ entry.doi }}" target="_blank" rel="noopener">Link</a>
     {% endif %}
 
     {% if entry.pdf %}
