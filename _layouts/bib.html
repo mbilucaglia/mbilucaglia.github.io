@@ -3,6 +3,34 @@
 
 {% assign ref = reference | default: '' %}
 
+{% comment %}
+Make the DOI or publication URL already displayed in the formatted
+bibliographic reference clickable. This avoids adding a separate "Link".
+{% endcomment %}
+
+{% if entry.doi != blank %}
+  {% assign doi = entry.doi | strip %}
+
+  {% if doi contains '://' %}
+    {% assign doi_url = doi %}
+  {% else %}
+    {% assign doi_url = 'https://doi.org/' | append: doi %}
+  {% endif %}
+
+  {% capture doi_link %}<a href="{{ doi_url }}" target="_blank" rel="noopener noreferrer">{{ doi_url }}</a>{% endcapture %}
+  {% assign ref = ref | replace: doi_url, doi_link %}
+
+{% elsif entry.url != blank %}
+  {% assign publication_url = entry.url | strip %}
+
+  {% capture publication_link %}<a href="{{ publication_url }}" target="_blank" rel="noopener noreferrer">{{ publication_url }}</a>{% endcapture %}
+  {% assign ref = ref | replace: publication_url, publication_link %}
+{% endif %}
+
+{% comment %}
+Highlight the website owner's name in each bibliographic reference.
+{% endcomment %}
+
 {% assign ref = ref
   | replace: 'Bilucaglia, Marco', '<strong>Bilucaglia, Marco</strong>'
   | replace: 'Marco Bilucaglia', '<strong>Marco Bilucaglia</strong>'
@@ -64,29 +92,16 @@
     </small>
   {% endif %}
 
-  {% if entry.doi != blank
-    or entry.pdf != blank
+  {% comment %}
+  DOI and URL are not included here because they are already displayed
+  and clickable inside the APA-formatted bibliographic reference.
+  {% endcomment %}
+
+  {% if entry.pdf != blank
     or entry.slides != blank
     or entry.poster != blank %}
 
     <small class="publication-links">
-      {% if entry.doi != blank %}
-        {% assign doi = entry.doi | strip %}
-
-        {% if doi contains '://' %}
-          {% assign doi_url = doi %}
-        {% else %}
-          {% assign doi_url = 'https://doi.org/' | append: doi %}
-        {% endif %}
-
-        <a
-          href="{{ doi_url }}"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Link
-        </a>
-      {% endif %}
 
       {% if entry.pdf != blank %}
         {% assign pdf = entry.pdf | strip %}
@@ -143,6 +158,7 @@
           Poster
         </a>
       {% endif %}
+
     </small>
   {% endif %}
 
