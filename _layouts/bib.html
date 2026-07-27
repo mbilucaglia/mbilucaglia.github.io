@@ -1,76 +1,155 @@
 ---
 ---
-{% assign ref = reference
-  | replace: 'Bilucaglia, M.', '<strong>Bilucaglia, M.</strong>'
-  | replace: 'M. Bilucaglia', '<strong>M. Bilucaglia</strong>'
+
+{% assign ref = reference | default: '' %}
+
+{% assign ref = ref
   | replace: 'Bilucaglia, Marco', '<strong>Bilucaglia, Marco</strong>'
-  | replace: 'Marco Bilucaglia', '<strong>Marco Bilucaglia</strong>' %}
+  | replace: 'Marco Bilucaglia', '<strong>Marco Bilucaglia</strong>'
+  | replace: 'Bilucaglia, M.', '<strong>Bilucaglia, M.</strong>'
+  | replace: 'M. Bilucaglia', '<strong>M. Bilucaglia</strong>' %}
 
 {% assign metrics = site.data.publication_metrics[entry.key] %}
+
+{% assign show_citations = false %}
+{% assign show_citescore = false %}
+
+{% if metrics %}
+  {% if metrics.google_scholar_citations != blank
+    and metrics.google_scholar_link != blank %}
+    {% assign show_citations = true %}
+  {% endif %}
+
+  {% if metrics.citescore != blank
+    and metrics.citescore_quartile != blank
+    and metrics.citescore_quartile != "—"
+    and metrics.scopus_source_url != blank %}
+    {% assign show_citescore = true %}
+  {% endif %}
+{% endif %}
 
 <div class="publication-item">
   <div class="publication-reference">
     {{ ref }}
   </div>
 
-  {% if metrics %}
-    {% if metrics.google_scholar_citations or metrics.citescore %}
-      <small class="publication-metrics publication-metrics-compact">
-        {% if metrics.google_scholar_citations %}
-          <span class="publication-metric-line">
-            {% if metrics.google_scholar_link %}
-              <a href="{{ metrics.google_scholar_link }}" target="_blank" rel="noopener">
-                Citations: {{ metrics.google_scholar_citations }}
-              </a> 
-            {% else %}
-              Citations: {{ metrics.google_scholar_citations }}
-            {% endif %}
-          </span>
-        {% endif %}
+  {% if show_citations or show_citescore %}
+    <small class="publication-metrics publication-metrics-compact">
 
-        {% if metrics.citescore %}
-          <span class="publication-metric-line">
-            {% if metrics.scopus_source_url %}
-              <a href="{{ metrics.scopus_source_url }}" target="_blank" rel="noopener">
-                CiteScore{% if metrics.citescore_year %} {{ metrics.citescore_year }}{% endif %}: {{ metrics.citescore }}
-              </a>
-            {% else %}
-              CiteScore{% if metrics.citescore_year %} {{ metrics.citescore_year }}{% endif %}: {{ metrics.citescore }}
-            {% endif %}
+      {% if show_citations %}
+        <span class="publication-metric-line">
+          <a
+            href="{{ metrics.google_scholar_link }}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Citations: {{ metrics.google_scholar_citations }}
+          </a>
+        </span>
+      {% endif %}
 
-            {% if metrics.citescore_quartile and metrics.citescore_quartile != "—" %}
-            , {{ metrics.citescore_quartile }}
-            {% endif %}
-          </span>
-        {% endif %}
-      </small>
-    {% endif %}
+      {% if show_citescore %}
+        <span class="publication-metric-line">
+          <a
+            href="{{ metrics.scopus_source_url }}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            CiteScore{% if metrics.citescore_year != blank %} {{ metrics.citescore_year }}{% endif %}:
+            {{ metrics.citescore }}, {{ metrics.citescore_quartile }}
+          </a>
+        </span>
+      {% endif %}
+
+    </small>
   {% endif %}
 
-  <small class="publication-links">
-    {% if entry.doi %}
-      <a href="https://doi.org/{{ entry.doi }}" target="_blank" rel="noopener">Link</a>
-    {% endif %}
+  {% if entry.doi != blank
+    or entry.pdf != blank
+    or entry.slides != blank
+    or entry.poster != blank %}
 
-    {% if entry.pdf %}
-      <a href="{{ '/assets/files/papers/' | append: entry.pdf | relative_url }}" target="_blank" rel="noopener">PDF</a>
-    {% endif %}
+    <small class="publication-links">
+      {% if entry.doi != blank %}
+        {% assign doi = entry.doi | strip %}
 
-    {% if entry.slides %}
-      <a href="{{ entry.slides }}" target="_blank" rel="noopener">Slides</a>
-    {% endif %}
+        {% if doi contains '://' %}
+          {% assign doi_url = doi %}
+        {% else %}
+          {% assign doi_url = 'https://doi.org/' | append: doi %}
+        {% endif %}
 
-    {% if entry.poster %}
-      <a href="{{ entry.poster }}" target="_blank" rel="noopener">Poster</a>
-    {% endif %}
-  </small>
+        <a
+          href="{{ doi_url }}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Link
+        </a>
+      {% endif %}
 
-  {% if entry.abstract %}
+      {% if entry.pdf != blank %}
+        {% assign pdf = entry.pdf | strip %}
+
+        {% if pdf contains '://' %}
+          {% assign pdf_url = pdf %}
+        {% else %}
+          {% assign pdf_url = '/assets/files/papers/'
+            | append: pdf
+            | relative_url %}
+        {% endif %}
+
+        <a
+          href="{{ pdf_url }}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          PDF
+        </a>
+      {% endif %}
+
+      {% if entry.slides != blank %}
+        {% assign slides = entry.slides | strip %}
+
+        {% if slides contains '://' %}
+          {% assign slides_url = slides %}
+        {% else %}
+          {% assign slides_url = slides | relative_url %}
+        {% endif %}
+
+        <a
+          href="{{ slides_url }}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Slides
+        </a>
+      {% endif %}
+
+      {% if entry.poster != blank %}
+        {% assign poster = entry.poster | strip %}
+
+        {% if poster contains '://' %}
+          {% assign poster_url = poster %}
+        {% else %}
+          {% assign poster_url = poster | relative_url %}
+        {% endif %}
+
+        <a
+          href="{{ poster_url }}"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Poster
+        </a>
+      {% endif %}
+    </small>
+  {% endif %}
+
+  {% if entry.abstract != blank %}
     <details class="publication-abstract">
       <summary>Abstract</summary>
-      <small>
-        {{ entry.abstract }}
-      </small>
+      <small>{{ entry.abstract }}</small>
     </details>
   {% endif %}
 </div>
