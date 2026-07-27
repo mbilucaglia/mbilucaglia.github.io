@@ -47,13 +47,7 @@
     {% endif %}
   {% endif %}
 
-  {% if entry.note %}
-    <div class="publication-note">
-      {{ entry.note }}
-    </div>
-  {% endif %}
-
-  <div class="publication-links">
+  <small class="publication-links">
     {% if entry.doi %}
       <a href="https://doi.org/{{ entry.doi }}" target="_blank" rel="noopener">DOI</a>
     {% endif %}
@@ -73,7 +67,7 @@
     {% if entry.poster %}
       <a href="{{ entry.poster }}" target="_blank" rel="noopener">Poster</a>
     {% endif %}
-  </div>
+  </small>
 
   {% if entry.abstract %}
     <details class="publication-abstract">
