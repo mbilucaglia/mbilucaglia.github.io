@@ -56,7 +56,7 @@
             rel="noopener noreferrer"
           >
             CiteScore{% if metrics.citescore_year != blank %} {{ metrics.citescore_year }}{% endif %}:
-            {{ metrics.citescore }}, {{ metrics.citescore_quartile }}
+            {{ metrics.citescore }} ({{ metrics.citescore_quartile }})
           </a>
         </span>
       {% endif %}
