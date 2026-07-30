@@ -14,6 +14,11 @@ permalink: /publications/
 - **h-index:** {{ scholar.h_index }}
 - **i10-index:** {{ scholar.i10_index }}
 
+## Summary
+- **Journal Articles:** ,
+- **Conference Proceedings:**
+- **Conference Abstracts / Presentations:**
+
 ## Journal Articles {#journal-articles}
 
 {% bibliography --query @article %}
