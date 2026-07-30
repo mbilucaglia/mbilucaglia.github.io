@@ -20,6 +20,7 @@ permalink: /publications/
 - **Conference Abstracts / Presentations:**
 
 ## List of Publications
+{% assign scholar = site.data.scholar %}
 <small>Source: [Google Scholar](https://scholar.google.it/citations?user=RvAqXUIAAAAJ&hl=en) & [Scopus](https://www.scopus.com/sources.uri) | Last updated: {{ scholar.updated_at | date: "%d %B %Y" }}</small>
 
 ### Journal Articles {#journal-articles}
