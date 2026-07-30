@@ -39,7 +39,7 @@ Frontiers in Human Neuroscience [5], Frontiers in Medicine [2], Frontiers in Pub
 - **2024 - 2025:** ["Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience"](https://www.frontiersin.org/research-topics/49742/machine-learningdeep-learning-methods-in-neuromarketing-and-consumer-neuroscience/magazine) co-hosted by Frontiers in Neuroscience, Frontiers in Human Neuroscience and Frontiers in Psychology
 
 ### Conference Services
-- **2025:** Event Comitee Member of the [The 1st International Online Conference on Behavioral Sciences](https://sciforum.net/event/iocbs2026) organised by Behavioural Sciences
+- **2025:** Event Comitee Member of the [1st International Online Conference on Behavioral Sciences](https://sciforum.net/event/iocbs2026), organised by Behavioural Sciences
 
 ## Publications
 Co-author of {% bibliography_count %} peer-reviewes publications, including {% bibliography_count --query @article %} [journal articles](/publications/#journal-articles), {% bibliography_count --query @inproceedings[keywords=paper] %} [conference papers](/publications/#conference-proceedings) and {% bibliography_count --query @inproceedings[keywords=presentation] %}  [conference abstracts / presentations](/publications/#conference-presentations). 
