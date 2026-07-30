@@ -19,14 +19,17 @@ permalink: /publications/
 - **Conference Proceedings:**
 - **Conference Abstracts / Presentations:**
 
-## Journal Articles {#journal-articles}
+## List of Publications
+<small>Source: [Google Scholar](https://scholar.google.it/citations?user=RvAqXUIAAAAJ&hl=en) & [Scopus](https://www.scopus.com/sources.uri) | Last updated: {{ scholar.updated_at | date: "%d %B %Y" }}</small>
+
+### Journal Articles {#journal-articles}
 
 {% bibliography --query @article %}
 
-## Conference Proceedings {#conference-proceedings}
+### Conference Proceedings {#conference-proceedings}
 
 {% bibliography --query @inproceedings[keywords=paper] %}
 
-## Conference Abstracts / Presentations {#conference-presentations}
+### Conference Abstracts / Presentations {#conference-presentations}
 
 {% bibliography --query @inproceedings[keywords=presentation] %}
