@@ -26,13 +26,16 @@ permalink: /publications/
 <small>Source: [Google Scholar](https://scholar.google.it/citations?user=RvAqXUIAAAAJ&hl=en) & [Scopus](https://www.scopus.com/sources.uri) | Last updated: {{ scholar.updated_at | date: "%d %B %Y" }}</small>
 
 ### Journal Articles {#journal-articles}
+<small>† Equal contribution (co-first author) | * Corresponding author</small>
 
 {% bibliography --query @article %}
 
 ### Conference Proceedings {#conference-proceedings}
+<small>† Equal contribution (co-first author) | * Corresponding author</small>
 
 {% bibliography --query @inproceedings[keywords=paper] %}
 
 ### Conference Abstracts / Presentations {#conference-presentations}
+<small>† Equal contribution (co-first author) | * Corresponding author</small>
 
 {% bibliography --query @inproceedings[keywords=presentation] %}
