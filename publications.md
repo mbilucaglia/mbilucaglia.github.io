@@ -14,10 +14,12 @@ permalink: /publications/
 - **h-index:** {{ scholar.h_index }}
 - **i10-index:** {{ scholar.i10_index }}
 
+Co-author of {% bibliography_count %} peer-reviewes publications, including {% bibliography_count --query @article %} [journal articles](/publications/#journal-articles), {% bibliography_count --query @inproceedings[keywords=paper] %} [conference papers](/publications/#conference-proceedings) and {% bibliography_count --query @inproceedings[keywords=presentation] %}  [conference abstracts / presentations](/publications/#conference-presentations). 
+
 ## Summary
-- **Journal Articles:** ,
-- **Conference Proceedings:**
-- **Conference Abstracts / Presentations:**
+- **Journal Articles:** {% bibliography_count --query @article %}
+- **Conference Proceedings:** {% bibliography_count --query @inproceedings[keywords=paper] %}
+- **Conference Abstracts / Presentations:**  {% bibliography_count --query @inproceedings[keywords=presentation] %} 
 
 ## List of Publications
 {% assign scholar = site.data.scholar %}
