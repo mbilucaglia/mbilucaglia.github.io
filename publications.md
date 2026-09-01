@@ -18,8 +18,8 @@ permalink: /publications/
 
 ## Summary
 - [**Journal Articles:**](/publications/#journal-articles) {% bibliography_count --query @article %}
-- **Conference Proceedings:** {% bibliography_count --query @inproceedings[keywords=paper] %}
-- **Conference Abstracts / Presentations:**  {% bibliography_count --query @inproceedings[keywords=presentation] %} 
+- [**Conference Proceedings:**](/publications/#conference-proceedings) {% bibliography_count --query @inproceedings[keywords=paper] %}
+- [**Conference Abstracts / Presentations:**](/publications/#conference-presentations) {% bibliography_count --query @inproceedings[keywords=presentation] %} 
 
 ## List of Publications
 {% assign scholar = site.data.scholar %}
