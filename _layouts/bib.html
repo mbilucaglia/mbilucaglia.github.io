@@ -27,15 +27,48 @@ bibliographic reference clickable. This avoids adding a separate "Link".
   {% assign ref = ref | replace: publication_url, publication_link %}
 {% endif %}
 
+
 {% comment %}
-Highlight the website owner's name in each bibliographic reference.
+Mark authorship roles from the BibTeX `options` field.
+
+Supported options:
+- first   -> no marker, because first authorship is evident from author order
+- cofirst -> † equal contribution / co-first author
+- corr    -> * corresponding author
+
+Examples:
+options = {first}
+options = {first,corr}
+options = {corr,cofirst}
 {% endcomment %}
 
+{% assign author_marker = '' %}
+
+{% if entry.options contains 'cofirst' and entry.options contains 'corr' %}
+  {% assign author_marker = '<sup>†*</sup>' %}
+{% elsif entry.options contains 'cofirst' %}
+  {% assign author_marker = '<sup>†</sup>' %}
+{% elsif entry.options contains 'corr' %}
+  {% assign author_marker = '<sup>*</sup>' %}
+{% endif %}
+
+
+{% comment %}
+Highlight the website owner's name in each bibliographic reference
+and append the appropriate authorship marker.
+{% endcomment %}
+
+{% capture owner_name_1 %}<strong>Bilucaglia, Marco</strong>{{ author_marker }}{% endcapture %}
+{% capture owner_name_2 %}<strong>Marco Bilucaglia</strong>{{ author_marker }}{% endcapture %}
+{% capture owner_name_3 %}<strong>Bilucaglia, M.</strong>{{ author_marker }}{% endcapture %}
+{% capture owner_name_4 %}<strong>M. Bilucaglia</strong>{{ author_marker }}{% endcapture %}
+
 {% assign ref = ref
-  | replace: 'Bilucaglia, Marco', '<strong>Bilucaglia, Marco</strong>'
-  | replace: 'Marco Bilucaglia', '<strong>Marco Bilucaglia</strong>'
-  | replace: 'Bilucaglia, M.', '<strong>Bilucaglia, M.</strong>'
-  | replace: 'M. Bilucaglia', '<strong>M. Bilucaglia</strong>' %}
+  | replace: 'Bilucaglia, Marco', owner_name_1
+  | replace: 'Marco Bilucaglia', owner_name_2
+  | replace: 'Bilucaglia, M.', owner_name_3
+  | replace: 'M. Bilucaglia', owner_name_4 %}
+
 
 {% assign metrics = site.data.publication_metrics[entry.key] %}
 
@@ -55,6 +88,7 @@ Highlight the website owner's name in each bibliographic reference.
     {% assign show_citescore = true %}
   {% endif %}
 {% endif %}
+
 
 <div class="publication-item">
   <div class="publication-reference">
@@ -92,6 +126,7 @@ Highlight the website owner's name in each bibliographic reference.
     </small>
   {% endif %}
 
+
   {% comment %}
   DOI and URL are not included here because they are already displayed
   and clickable inside the APA-formatted bibliographic reference.
@@ -123,6 +158,7 @@ Highlight the website owner's name in each bibliographic reference.
         </a>
       {% endif %}
 
+
       {% if entry.slides != blank %}
         {% assign slides = entry.slides | strip %}
 
@@ -140,6 +176,7 @@ Highlight the website owner's name in each bibliographic reference.
           Slides
         </a>
       {% endif %}
+
 
       {% if entry.poster != blank %}
         {% assign poster = entry.poster | strip %}
@@ -161,6 +198,7 @@ Highlight the website owner's name in each bibliographic reference.
 
     </small>
   {% endif %}
+
 
   {% if entry.abstract != blank %}
     <details class="publication-abstract">
