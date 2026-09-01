@@ -65,8 +65,7 @@ jobs:
           python scripts/update_elsevier_source_metrics.py \
             --bibliography _bibliography/publications.bib \
             --source-output _data/elsevier_source_metrics.json \
-            --publication-output _data/publication_metrics.json \
-            --asjc-codes _data/asjc_codes.json
+            --publication-output _data/publication_metrics.json
 
       - name: Verify bibliometric outputs
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
@@ -80,14 +79,12 @@ jobs:
           top_cited_path = Path("_bibliography/top_cited.bib")
           elsevier_path = Path("_data/elsevier_source_metrics.json")
           publication_metrics_path = Path("_data/publication_metrics.json")
-          asjc_codes_path = Path("_data/asjc_codes.json")
 
           required_paths = [
               scholar_path,
               top_cited_path,
               elsevier_path,
               publication_metrics_path,
-              asjc_codes_path,
           ]
 
           for path in required_paths:
@@ -156,10 +153,6 @@ jobs:
               publication_metrics_path.read_text(encoding="utf-8")
           )
 
-          asjc_codes = json.loads(
-              asjc_codes_path.read_text(encoding="utf-8")
-          )
-
           if not elsevier:
               raise SystemExit(
                   "_data/elsevier_source_metrics.json is empty"
@@ -168,11 +161,6 @@ jobs:
           if not publication_metrics:
               raise SystemExit(
                   "_data/publication_metrics.json is empty"
-              )
-
-          if not asjc_codes:
-              raise SystemExit(
-                  "_data/asjc_codes.json is empty"
               )
 
           matched_elsevier = [
@@ -206,11 +194,6 @@ jobs:
                   "No publications have Google Scholar citation counts"
               )
 
-          if not matched_categories:
-              raise SystemExit(
-                  "No publications have CiteScore category names"
-              )
-
           print("Bibliometric outputs verified")
           print(f"Citations: {scholar['citations']}")
           print(f"h-index: {scholar['h_index']}")
@@ -226,8 +209,14 @@ jobs:
           )
           print(f"Elsevier ISSNs indexed: {len(elsevier)}")
           print(f"Elsevier-matched publications: {len(matched_elsevier)}")
-          print(f"Google Scholar citation-count publications: {len(matched_scholar)}")
-          print(f"CiteScore category publications: {len(matched_categories)}")
+          print(
+              "Google Scholar citation-count publications: "
+              f"{len(matched_scholar)}"
+          )
+          print(
+              "CiteScore category publications: "
+              f"{len(matched_categories)}"
+          )
           PY
 
       - name: Commit updated bibliometric data
