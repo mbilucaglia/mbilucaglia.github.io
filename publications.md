@@ -17,7 +17,7 @@ permalink: /publications/
 
 
 ## Summary
-- *[**Journal Articles:**](/publications/#journal-articles) {% bibliography_count --query @article %}
+- [**Journal Articles:**](/publications/#journal-articles) {% bibliography_count --query @article %}
 - **Conference Proceedings:** {% bibliography_count --query @inproceedings[keywords=paper] %}
 - **Conference Abstracts / Presentations:**  {% bibliography_count --query @inproceedings[keywords=presentation] %} 
 
