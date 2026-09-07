@@ -1,6 +1,6 @@
 {
-  "citations": 641,
-  "citations_recent": 535,
+  "citations": 643,
+  "citations_recent": 537,
   "h_index": 16,
   "h_index_recent": 14,
   "i10_index": 21,
@@ -36,10 +36,10 @@
     "bilucaglia2025a",
     "pasta2023",
     "Tressoldi2014b",
+    "bilucaglia2025c",
     "bilucaglia2022",
     "Gannuscio2025",
     "Casiraghi2025pasta",
-    "bilucaglia2025c",
     "casiraghi2025neuronudge",
     "Bellati2023aip",
     "Bilucaglia2026",
@@ -340,7 +340,7 @@
       "bibtex_key": "bilucaglia2025a",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:2tRrZ1ZAMYUC",
-      "citations": 6,
+      "citations": 7,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:2tRrZ1ZAMYUC",
       "publication": "Frontiers in Human Neuroscience 19, 1661214, 2025",
       "title": "Tuning into Flavour: Predicting Coffee Sensory Attributes from EEG with Boosted-Tree Regression Models",
@@ -367,6 +367,17 @@
       "publication": "Available at SSRN: https://ssrn.com/abstract=2423852, 2014",
       "title": "Brain-to-brain (mind-to-mind) interaction at distance: a pilot study",
       "year": "2014"
+    },
+    {
+      "authors": "M Bilucaglia, L Mainardi, TZ Ramsøy, PJ Zak, M Zito, V Russo",
+      "bibtex_key": "bilucaglia2025c",
+      "bibtex_match_score": 1.0,
+      "citation_id": "RvAqXUIAAAAJ:nVrZBo8bIpAC",
+      "citations": 4,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:nVrZBo8bIpAC",
+      "publication": "Frontiers in Human Neuroscience 19, 1638225, 2025",
+      "title": "Editorial: Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience",
+      "year": "2025"
     },
     {
       "authors": "M Bilucaglia, R Laureanti, R Circi, M Zito, M Bellati, A Fici, F Rivetti, ...",
@@ -399,17 +410,6 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:tH6gc1N1XXoC",
       "publication": "Current Psychology 44 (18), 15183-15199, 2025",
       "title": "Processing every bite: A neuroscientific analysis of the eating experience and its cognitive and emotional dynamics",
-      "year": "2025"
-    },
-    {
-      "authors": "M Bilucaglia, L Mainardi, TZ Ramsøy, PJ Zak, M Zito, V Russo",
-      "bibtex_key": "bilucaglia2025c",
-      "bibtex_match_score": 1.0,
-      "citation_id": "RvAqXUIAAAAJ:nVrZBo8bIpAC",
-      "citations": 3,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:nVrZBo8bIpAC",
-      "publication": "Frontiers in Human Neuroscience 19, 1638225, 2025",
-      "title": "Editorial: Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience",
       "year": "2025"
     },
     {
@@ -824,5 +824,5 @@
       "year": "2022"
     }
   ],
-  "updated_at": "2026-09-01T13:42:57+00:00"
+  "updated_at": "2026-09-07T10:17:44+00:00"
 }
