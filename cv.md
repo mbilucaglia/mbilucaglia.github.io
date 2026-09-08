@@ -6,9 +6,9 @@ title: CV
 {% endif %}
 
 ## Education and Qualifications
-- **2026:** Ph.D. in Cominication Markets and Society, Università IULM (expected)
+- **2026:** Ph.D. in Cominication Markets and Society, Università IULM
 - **2018:** C.Eng. in Information Technology Engineering, Politecnico di Milano
-- **2018:** M.Sc. in Electronics Bioengineering, Alama Mater Studiorum - Università di Bologna, 2018
+- **2018:** M.Sc. in Electronics Bioengineering, Alama Mater Studiorum - Università di Bologna
 - **2014:** B.Sc. in Electronics Engineering, Politecnico di Milano
 
 ## Academic Positions
