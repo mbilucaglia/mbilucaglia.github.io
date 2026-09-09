@@ -13,7 +13,7 @@ title: CV
 
 ## Academic Positions
 - **2022 - 2025:** Ph.D. Fellow, Università IULM
-- **2019 - 2022:** Research Fellow, Department of Business, Law, Economics and Consumer Behaviour "Carlo A. Ricciardi", Università IULM
+- **2019 - 2022:** Research Fellow, Università IULM
 <details class="cv-details">
   <summary>Details</summary>
 
