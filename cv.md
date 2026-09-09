@@ -45,7 +45,7 @@ title: CV
       </p>
       <p>
         <strong>Section</strong><br>
-        Section A (Master's-level)
+        A (Master's-level)
       </p>
     </div>
 
