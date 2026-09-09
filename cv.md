@@ -13,9 +13,30 @@ title: CV
 
 ## Academic Positions
 
-- **2022–2025:** Ph.D. Fellow, Università IULM
+- **2022 - 2025:** Ph.D. Fellow, Università IULM
+  <details class="cv-position-details">
+  <summary>Details</summary>
+  <div class="cv-position-details-content">
+    <p>
+      <strong>Doctoral Programme</strong><br>
+      Communication, Markets and Society (XVIII Cycle)
+    </p>
+    <p>
+      <strong>Research Focus</strong><br>
+      Emotion Recognition based on bioelectrical and biometrical measures and Machine Learning models
+    </p>
+    <p>
+      <strong>Supervisor</strong><br>
+      Prof. V. Russo
+    </p>
+    <p>
+  <strong>Funding</strong><br>
+   Ministerial Ph.D. Scholarship, Ministero dell’Università e della Ricerca (MUR)
+</p>
+  </div>
+</details>
 
-- **2019–2022:** Research Fellow, Università IULM
+- **2019 - 2022:** Research Fellow, Università IULM
   <details class="cv-position-details">
     <summary>Details</summary>
     <div class="cv-position-details-content">
