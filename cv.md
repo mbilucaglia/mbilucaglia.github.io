@@ -49,7 +49,7 @@ title: CV
       </p>
       <p>
         <strong>Research Focus</strong><br>
-        Emotion recognition based on bioelectrical and biometric measures and machine-learning models
+        Emotion recognition based on bioelectrical and biometric measures and Machine Learning models
       </p>
       <p>
         <strong>Supervisor</strong><br>
