@@ -30,6 +30,15 @@ title: CV
     </div>
   </details>
 - **2019:** Research Assistant, Department of General Psychology, University of Padua
+  <details class="cv-position-details">
+    <summary>Details</summary>
+    <div class="cv-position-details-content">
+      **Institution:** Department of Business, Law, Economics and Consumer Behaviour "Carlo A. Ricciardi"</p>
+      Project: Study of psychophysiological, bioelectrical, and electroencephalographic signals
+      for neuromarketing applications in the dairy sector...</p>
+      Supervisor: Prof. V. Russo
+    </div>
+  </details>
 
 <small>Project: "EEG signal analysis using Machine Learning techniques" (Supervisor: Prof. P. Tressoldi)</small>
 
