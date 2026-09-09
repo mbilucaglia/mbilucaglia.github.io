@@ -44,7 +44,7 @@ title: CV
       </p>
       <p>
         <strong>Project</strong><br>
-        EEG signal analysis using Machine Learning techniques
+        EEG signal analysis using Machine Learning techniques (Rif. DPG 2018-14)
       </p>
       <p>
         <strong>Supervisor</strong><br>
