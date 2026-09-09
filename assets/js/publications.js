@@ -28,10 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
         ".bibliography > li"
       );
 
-      const emptyMessage = section.querySelector(
-        ".publication-section-empty"
-      );
-
       let visibleCount = 0;
 
       publications.forEach((publication) => {
@@ -69,10 +65,19 @@ document.addEventListener("DOMContentLoaded", () => {
           counter.textContent = visibleCount;
         });
 
-      if (emptyMessage) {
-        emptyMessage.hidden =
-          terms.length === 0 || visibleCount > 0;
+      let emptyMessage = section.querySelector(
+        ".publication-section-empty"
+      );
+
+      if (!emptyMessage) {
+        emptyMessage = document.createElement("p");
+        emptyMessage.className = "publication-section-empty";
+        emptyMessage.textContent = "No matching entries.";
+        section.appendChild(emptyMessage);
       }
+
+      emptyMessage.hidden =
+        terms.length === 0 || visibleCount > 0;
     });
   }
 
@@ -90,4 +95,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
   );
+
+  filterPublications();
 });
