@@ -5,7 +5,7 @@ title: CV
 [Download CV PDF]({{ site.data.profile.links.cv_pdf | relative_url }})
 {% endif %}
 
-## Education and Qualifications
+## Education
 - **2026:** Ph.D. in Cominication Markets and Society, Università IULM
   <details class="cv-position-details">
     <summary>Details</summary>
@@ -19,7 +19,6 @@ title: CV
         Prof. V. Russo
       </p>
     </div>
-- **2018:** C.Eng. in Information Technology Engineering, Politecnico di Milano
 - **2018:** M.Sc. in Electronics Bioengineering, Alama Mater Studiorum - Università di Bologna
   <details class="cv-position-details">
     <summary>Details</summary>
@@ -34,6 +33,9 @@ title: CV
       </p>
     </div>
 - **2014:** B.Sc. in Electronics Engineering, Politecnico di Milano
+
+## Professional Qualifications
+- **2018:** C.Eng. in Information Technology Engineering, Politecnico di Milano
 
 ## Academic Positions
 
