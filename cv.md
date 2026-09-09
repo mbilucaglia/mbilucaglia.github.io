@@ -13,8 +13,10 @@ title: CV
 
 ## Academic Positions
 - **2022 - 2025:** Ph.D. Fellow (supervisor: Prof. V. Russo), Università IULM
-- **2019 - 2022:** Research Fellow (supervisor: Prof. V. Russo), Università IULM
-- **2019:** Research Assistant (supervisor: Prof. P. Tressoldi), University of Padua
+- **2019 - 2022:** Research Fellow, Department of Business, Law, Economics and Consumer Behaviour "Carlo A. Ricciardi", Università IULM
+  Project: "Study of psychophysiological, bioelectrical, and electroencephalographic signals for neuromarketing applications in the dairy sector, and the use of Machine Learning for the classification of emotional states and their integration with data from traditional market research — AGER Project" (Supervisor: Prof. V. Russo)
+- **2019:** Research Assistant, Department of General Psychology, University of Padua
+  Project: "EEG signal analysis using Machine Learning techniques" (Supervisor: Prof. P. Tressoldi)
 
 ## Professional Affiliations
 - **2020 - present:** Chartered Engineer, Engineers Council of Milan
