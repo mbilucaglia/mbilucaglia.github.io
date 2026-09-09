@@ -54,7 +54,7 @@ title: CV
         Prof. V. Russo
       </p>
       <p>
-        <strong>Funding</strong><br>
+        <strong>Scolarship</strong><br>
         Italian Ministry of University and Research (MUR)
       </p>
     </div>
