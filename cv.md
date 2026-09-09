@@ -16,15 +16,12 @@ title: CV
 - **2019–2022:** Research Fellow, Università IULM
   <details class="cv-position-details">
     <summary>Details</summary>
-
     <div class="cv-position-details-content">
       <p><strong>Department</strong><br>
       Department of Business, Law, Economics and Consumer Behaviour "Carlo A. Ricciardi"</p>
-
       <p><strong>Project</strong><br>
       Study of psychophysiological, bioelectrical, and electroencephalographic signals
       for neuromarketing applications in the dairy sector...</p>
-
       <p><strong>Supervisor</strong><br>
       Prof. V. Russo</p>
     </div>
