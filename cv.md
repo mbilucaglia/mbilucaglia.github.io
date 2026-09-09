@@ -35,7 +35,19 @@ title: CV
 - **2014:** B.Sc. in Electronics Engineering, Politecnico di Milano
 
 ## Professional Qualifications
-- **2018:** C.Eng. in Information Technology Engineering, Politecnico di Milano
+- **2018:** Italian State Examination for Professional Engineer
+  <details class="cv-position-details">
+    <summary>Details</summary>
+    <div class="cv-position-details-content">
+      <p>
+        <strong>Sector</strong><br>
+        Information Engineering
+      </p>
+      <p>
+        <strong>Section</strong><br>
+        Section A (Master's-level)
+      </p>
+    </div>
 
 ## Academic Positions
 
