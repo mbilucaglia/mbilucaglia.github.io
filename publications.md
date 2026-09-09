@@ -44,7 +44,7 @@ permalink: /publications/
       id="publication-search-input"
       class="publication-search-input"
       placeholder="Search publications..."
-      autocomplete="off"
+      autocomplete="on"
       spellcheck="false"
     >
   </div>
