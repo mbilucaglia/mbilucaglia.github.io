@@ -12,10 +12,17 @@ title: CV
 - **2014:** B.Sc. in Electronics Engineering, Politecnico di Milano
 
 ## Academic Positions
-- **2022 - 2025:** Ph.D. Fellow (supervisor: Prof. V. Russo), Università IULM
+- **2022 - 2025:** Ph.D. Fellow, Università IULM
 - **2019 - 2022:** Research Fellow, Department of Business, Law, Economics and Consumer Behaviour "Carlo A. Ricciardi", Università IULM
+- <details class="cv-details">
+  <summary>Details</summary>
 
-<small>Project: "Study of psychophysiological, bioelectrical, and electroencephalographic signals for neuromarketing applications in the dairy sector, and the use of Machine Learning for the classification of emotional states and their integration with data from traditional market research — AGER Project" (Supervisor: Prof. V. Russo)</small>
+  <p><strong>Department:</strong> Department of Business, Law, Economics and Consumer Behaviour "Carlo A. Ricciardi"</p>
+
+  <p><strong>Project:</strong> Study of psychophysiological, bioelectrical, and electroencephalographic signals for neuromarketing applications in the dairy sector, and the use of Machine Learning for the classification of emotional states and their integration with data from traditional market research — AGER Project</p>
+
+  <p><strong>Supervisor:</strong> Prof. V. Russo</p>
+</details>
 
 - **2019:** Research Assistant, Department of General Psychology, University of Padua
 
