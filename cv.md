@@ -13,7 +13,7 @@ title: CV
 
 ## Academic Positions
 - **2022 - 2025:** Ph.D. Fellow, Università IULM
-- **2019–2022:** Research Fellow, Università IULM
+- **2019 - 2022:** Research Fellow, Università IULM
   <details class="cv-position-details">
     <summary>Details</summary>
     <div class="cv-position-details-content">
