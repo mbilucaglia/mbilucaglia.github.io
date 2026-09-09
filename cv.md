@@ -25,7 +25,7 @@ title: CV
       </p>
       <p>
         <strong>Project</strong><br>
-        Study of psychophysiological, bioelectrical, and electroencephalographic signals for neuromarketing applications in the dairy sector, and the use of Machine Learning for the classification of emotional states and their integration with data from traditional market research — AGER Project
+        Study of psychophysiological, bioelectrical, and electroencephalographic signals for neuromarketing applications in the dairy sector, and the use of Machine Learning for the classification of emotional states and their integration with data from traditional market research - AGER Project (reg. n. 18530)
       </p>
       <p>
         <strong>Supervisor</strong><br>
