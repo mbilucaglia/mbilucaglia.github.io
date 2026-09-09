@@ -16,11 +16,8 @@ title: CV
 - **2019 - 2022:** Research Fellow, Università IULM
 <details class="cv-details">
   <summary>Details</summary>
-
   <p><strong>Department:</strong> Department of Business, Law, Economics and Consumer Behaviour "Carlo A. Ricciardi"</p>
-
   <p><strong>Project:</strong> Study of psychophysiological, bioelectrical, and electroencephalographic signals for neuromarketing applications in the dairy sector, and the use of Machine Learning for the classification of emotional states and their integration with data from traditional market research — AGER Project</p>
-
   <p><strong>Supervisor:</strong> Prof. V. Russo</p>
 </details>
 
