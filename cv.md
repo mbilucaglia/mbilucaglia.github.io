@@ -9,6 +9,18 @@ title: CV
 - **2026:** Ph.D. in Cominication Markets and Society, Università IULM
 - **2018:** C.Eng. in Information Technology Engineering, Politecnico di Milano
 - **2018:** M.Sc. in Electronics Bioengineering, Alama Mater Studiorum - Università di Bologna
+  <details class="cv-position-details">
+    <summary>Details</summary>
+    <div class="cv-position-details-content">
+      <p>
+        <strong>Thesis</strong><br>
+        Collection of stimulus–response pairs for Brain–Computer Interface applications
+      </p>
+      <p>
+        <strong>Supervisor</strong><br>
+        Prof. R. Rovatti
+      </p>
+    </div>
 - **2014:** B.Sc. in Electronics Engineering, Politecnico di Milano
 
 ## Academic Positions
