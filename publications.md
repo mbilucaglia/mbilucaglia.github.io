@@ -61,7 +61,7 @@ permalink: /publications/
 {% bibliography --query @article %}
 
 <p class="publication-section-empty" hidden>
-  No matching journal articles.
+  No matching Journal Articles.
 </p>
 </div>
 
@@ -76,7 +76,7 @@ permalink: /publications/
 {% bibliography --query @inproceedings[keywords=paper] %}
 
 <p class="publication-section-empty" hidden>
-  No matching conference proceedings.
+  No matching Conference Proceedings.
 </p>
 </div>
 
@@ -91,7 +91,7 @@ permalink: /publications/
 {% bibliography --query @inproceedings[keywords=presentation] %}
 
 <p class="publication-section-empty" hidden>
-  No matching conference abstracts or presentations.
+  No matching Conference Abstracts / Presentations.
 </p>
 </div>
 
