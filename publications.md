@@ -59,10 +59,6 @@ permalink: /publications/
   data-publication-section="journal"
 >
 {% bibliography --query @article %}
-
-<p class="publication-section-empty" hidden>
-  No matching Journal Articles.
-</p>
 </div>
 
 
@@ -74,10 +70,6 @@ permalink: /publications/
   data-publication-section="proceedings"
 >
 {% bibliography --query @inproceedings[keywords=paper] %}
-
-<p class="publication-section-empty" hidden>
-  No matching Conference Proceedings.
-</p>
 </div>
 
 
@@ -89,10 +81,6 @@ permalink: /publications/
   data-publication-section="presentations"
 >
 {% bibliography --query @inproceedings[keywords=presentation] %}
-
-<p class="publication-section-empty" hidden>
-  No matching Conference Abstracts / Presentations.
-</p>
 </div>
 
 
