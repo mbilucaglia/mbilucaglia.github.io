@@ -31,7 +31,7 @@ title: CV
       </p>
       <p>
         <strong>Funding</strong><br>
-        Ministerial Ph.D. Scholarship, Italian Ministry of University and Research (MUR)
+        Italian Ministry of University and Research (MUR)
       </p>
     </div>
 
