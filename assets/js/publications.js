@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
   const searchInput = document.getElementById("publication-search-input");
-  const searchStatus = document.getElementById("publication-search-status");
-  const noResults = document.getElementById("publication-no-results");
 
   if (!searchInput) {
     return;
@@ -19,27 +17,27 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function filterPublications() {
-    const rawQuery = searchInput.value.trim();
-    const normalizedQuery = normalizeText(rawQuery);
-
-    const terms = normalizedQuery
+    const terms = normalizeText(searchInput.value.trim())
       .split(/\s+/)
       .filter(Boolean);
 
-    let totalVisible = 0;
-
     sections.forEach((section) => {
       const sectionName = section.dataset.publicationSection;
-      const publications = section.querySelectorAll(".bibliography > li");
 
-      let sectionVisible = 0;
+      const publications = section.querySelectorAll(
+        ".bibliography > li"
+      );
+
+      let visibleCount = 0;
 
       publications.forEach((publication) => {
-        const reference =
-          publication.querySelector(".publication-reference");
+        const reference = publication.querySelector(
+          ".publication-reference"
+        );
 
-        const abstract =
-          publication.querySelector(".publication-abstract");
+        const abstract = publication.querySelector(
+          ".publication-abstract"
+        );
 
         const searchableText = normalizeText(
           [
@@ -55,8 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
         publication.hidden = !matches;
 
         if (matches) {
-          sectionVisible++;
-          totalVisible++;
+          visibleCount++;
         }
       });
 
@@ -65,29 +62,23 @@ document.addEventListener("DOMContentLoaded", () => {
           `[data-publication-count="${sectionName}"]`
         )
         .forEach((counter) => {
-          counter.textContent = sectionVisible;
+          counter.textContent = visibleCount;
         });
     });
-
-    if (rawQuery === "") {
-      searchStatus.textContent =
-        `${totalVisible} publication${totalVisible === 1 ? "" : "s"}`;
-    } else {
-      searchStatus.textContent =
-        `${totalVisible} result${totalVisible === 1 ? "" : "s"} for “${rawQuery}”`;
-    }
-
-    noResults.hidden = totalVisible !== 0;
   }
 
-  searchInput.addEventListener("input", filterPublications);
+  searchInput.addEventListener(
+    "input",
+    filterPublications
+  );
 
-  searchInput.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && searchInput.value !== "") {
-      searchInput.value = "";
-      filterPublications();
+  searchInput.addEventListener(
+    "keydown",
+    (event) => {
+      if (event.key === "Escape") {
+        searchInput.value = "";
+        filterPublications();
+      }
     }
-  });
-
-  filterPublications();
+  );
 });
