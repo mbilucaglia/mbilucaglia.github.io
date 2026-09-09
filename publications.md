@@ -24,38 +24,34 @@ permalink: /publications/
 ## List of Publications
 <small>Source: [Google Scholar](https://scholar.google.it/citations?user=RvAqXUIAAAAJ&hl=en) & [Scopus](https://www.scopus.com/sources.uri) | Last updated: {{ scholar.updated_at | date: "%d %B %Y" }}</small>
 
-<div class="publication-search">
-  <label for="publication-search-input" class="publication-search-label">
+<div class="publication-search" role="search">
+  <label for="publication-search-input" class="visually-hidden">
     Search publications
   </label>
 
-  <input
-    type="search"
-    id="publication-search-input"
-    class="publication-search-input"
-    placeholder="Search by title, author, year, journal, keyword..."
-    autocomplete="off"
-    spellcheck="false"
-  >
+  <div class="publication-search-field">
+    <svg
+      class="publication-search-icon"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+    >
+      <circle cx="11" cy="11" r="7"></circle>
+      <path d="M20 20l-4-4"></path>
+    </svg>
 
-  <small
-    id="publication-search-status"
-    class="publication-search-status"
-    aria-live="polite"
-  ></small>
+    <input
+      type="search"
+      id="publication-search-input"
+      class="publication-search-input"
+      placeholder="Search publications..."
+      autocomplete="off"
+      spellcheck="false"
+    >
+  </div>
 </div>
 
-<p
-  id="publication-no-results"
-  class="publication-no-results"
-  hidden
->
-  No publications match your search.
-</p>
 
-
-### Journal Articles (<span data-publication-count="journal">{% bibliography_count --query @article %}</span>) {#journal-articles}
-
+### Journal Articles {#journal-articles}
 <small>† Equal contribution (co-first author) | * Corresponding author</small>
 
 <div
@@ -66,8 +62,7 @@ permalink: /publications/
 </div>
 
 
-### Conference Proceedings (<span data-publication-count="proceedings">{% bibliography_count --query @inproceedings[keywords=paper] %}</span>) {#conference-proceedings}
-
+### Conference Proceedings {#conference-proceedings}
 <small>† Equal contribution (co-first author) | * Corresponding author</small>
 
 <div
@@ -78,8 +73,7 @@ permalink: /publications/
 </div>
 
 
-### Conference Abstracts / Presentations (<span data-publication-count="presentations">{% bibliography_count --query @inproceedings[keywords=presentation] %}</span>) {#conference-presentations}
-
+### Conference Abstracts / Presentations {#conference-presentations}
 <small>† Equal contribution (co-first author) | * Corresponding author</small>
 
 <div
