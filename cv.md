@@ -7,6 +7,18 @@ title: CV
 
 ## Education and Qualifications
 - **2026:** Ph.D. in Cominication Markets and Society, Università IULM
+  <details class="cv-position-details">
+    <summary>Details</summary>
+    <div class="cv-position-details-content">
+      <p>
+        <strong>Thesis</strong><br>
+        Affect Detection in Consumer Neuroscience: a Multimodal Machine Learning Model based on bioelectrical and biometric signals
+      </p>
+      <p>
+        <strong>Supervisor</strong><br>
+        Prof. V. Russo
+      </p>
+    </div>
 - **2018:** C.Eng. in Information Technology Engineering, Politecnico di Milano
 - **2018:** M.Sc. in Electronics Bioengineering, Alama Mater Studiorum - Università di Bologna
   <details class="cv-position-details">
