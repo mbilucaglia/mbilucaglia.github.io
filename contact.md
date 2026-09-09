@@ -32,6 +32,8 @@ permalink: /contact/
   <li><a href="https://www.scopus.com/authid/detail.uri?authorId=57188983512">Scopus</a></li>
   <li><a href="https://www.webofscience.com/wos/author/record/HNC-3309-2023">Web of Science</a></li>
   <li><a href="https://www.researchgate.net/profile/Marco-Bilucaglia">Research Gate</a></li>
+  <li><a href="https://loop.frontiersin.org/people/1132815">Loop</a></li>
+  <li><a href="https://sciprofiles.com/profile/marco-bilucaglia/">SciProfile</a></li>
   {%- if site.data.profile.links.linkedin -%}
     <li><a href="{{ site.data.profile.links.linkedin }}">LinkedIn</a></li>
   {%- endif -%}
