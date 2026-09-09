@@ -467,3 +467,10 @@ h2 {
   color: var(--text);
   font-weight: 600;
 }
+
+.publication-section-empty {
+  margin: 1rem 0 1.5rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-style: italic;
+}
