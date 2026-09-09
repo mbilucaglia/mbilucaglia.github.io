@@ -12,32 +12,46 @@ title: CV
 - **2014:** B.Sc. in Electronics Engineering, Politecnico di Milano
 
 ## Academic Positions
-- **2022 - 2025:** Ph.D. Fellow, Università IULM
-- **2019 - 2022:** Research Fellow, Università IULM
+
+- **2022–2025:** Ph.D. Fellow, Università IULM
+
+- **2019–2022:** Research Fellow, Università IULM
   <details class="cv-position-details">
     <summary>Details</summary>
     <div class="cv-position-details-content">
-      <p><strong>Department</strong><br>
-      Department of Business, Law, Economics and Consumer Behaviour "Carlo A. Ricciardi"</p>
-      <p><strong>Project</strong><br>
-      Study of psychophysiological, bioelectrical, and electroencephalographic signals
-      for neuromarketing applications in the dairy sector...</p>
-      <p><strong>Supervisor</strong><br>
-      Prof. V. Russo</p>
+      <p>
+        <strong>Department</strong><br>
+        Department of Business, Law, Economics and Consumer Behaviour "Carlo A. Ricciardi"
+      </p>
+      <p>
+        <strong>Project</strong><br>
+        Study of psychophysiological, bioelectrical, and electroencephalographic signals for neuromarketing applications in the dairy sector, and the use of Machine Learning for the classification of emotional states and their integration with data from traditional market research — AGER Project
+      </p>
+      <p>
+        <strong>Supervisor</strong><br>
+        Prof. V. Russo
+      </p>
     </div>
   </details>
+
 - **2019:** Research Assistant, University of Padua
   <details class="cv-position-details">
     <summary>Details</summary>
     <div class="cv-position-details-content">
-      **Institution:** Department of Business, Law, Economics and Consumer Behaviour "Carlo A. Ricciardi"</p>
-      Project: Study of psychophysiological, bioelectrical, and electroencephalographic signals
-      for neuromarketing applications in the dairy sector...</p>
-      Supervisor: Prof. V. Russo
+      <p>
+        <strong>Department</strong><br>
+        Department of General Psychology
+      </p>
+      <p>
+        <strong>Project</strong><br>
+        EEG signal analysis using Machine Learning techniques
+      </p>
+      <p>
+        <strong>Supervisor</strong><br>
+        Prof. P. Tressoldi
+      </p>
     </div>
   </details>
-
-<small>Project: "EEG signal analysis using Machine Learning techniques" (Supervisor: Prof. P. Tressoldi)</small>
 
 ## Professional Affiliations
 - **2020 - present:** Chartered Engineer, Engineers Council of Milan
