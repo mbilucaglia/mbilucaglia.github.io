@@ -26,7 +26,7 @@ title: CV
       Prof. V. Russo</p>
     </div>
   </details>
-- **2019:** Research Assistant, Department of General Psychology, University of Padua
+- **2019:** Research Assistant, University of Padua
   <details class="cv-position-details">
     <summary>Details</summary>
     <div class="cv-position-details-content">
