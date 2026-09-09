@@ -28,6 +28,10 @@ document.addEventListener("DOMContentLoaded", () => {
         ".bibliography > li"
       );
 
+      const emptyMessage = section.querySelector(
+        ".publication-section-empty"
+      );
+
       let visibleCount = 0;
 
       publications.forEach((publication) => {
@@ -64,6 +68,11 @@ document.addEventListener("DOMContentLoaded", () => {
         .forEach((counter) => {
           counter.textContent = visibleCount;
         });
+
+      if (emptyMessage) {
+        emptyMessage.hidden =
+          terms.length === 0 || visibleCount > 0;
+      }
     });
   }
 
