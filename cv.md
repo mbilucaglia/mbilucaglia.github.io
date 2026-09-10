@@ -14,7 +14,7 @@ title: CV
 - **2018:** Italian State Examination (License to Practise) for Professional Engineer
 
 ## Academic Positions
-- **2022 – 2025:** Ph.D. Fellow, Università IULM
+- **2022 - 2025:** Ph.D. Fellow, Università IULM
 - **2019 - 2022:** Research Fellow, Università IULM
 - **2019:** Research Assistant, University of Padua
 
