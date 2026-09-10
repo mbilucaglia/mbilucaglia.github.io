@@ -12,11 +12,11 @@ title: CV
 
 ## Professional Qualifications
 - **2018:** Italian State Examination (License to Practise) for Professional Engineer
-- 
+
 ## Academic Positions
 - **2022 – 2025:** Ph.D. Fellow, Università IULM
 - **2019 - 2022:** Research Fellow, Università IULM
-- **2019:** Research Contractor, University of Padua
+- **2019:** Research Assistant, University of Padua
 
 ## Professional Affiliations
 - **2020 - present:** Chartered Information Engineer, Engineers Council of Milan
@@ -27,7 +27,7 @@ title: CV
 ### Editorial Services
 
 #### Editorial Board Memberships
-- **2026 - present:** Community Reviewer (Review Editor) for Frontiers in Human Neuroscience (Cognitive Neuroscience)
+- **2026 - present:** Community Reviewer (Review Editor) for Frontiers in Human Neuroscience
 
 #### Ad hoc Reviewer [manuscripts, reviews]
 Total [47, 80]
