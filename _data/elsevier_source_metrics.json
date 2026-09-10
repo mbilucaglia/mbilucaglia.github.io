@@ -9,9 +9,9 @@
     "citescore_ranking_records": [
       {
         "category": "",
-        "percentile": "25",
+        "percentile": "28",
         "quartile": "Q3",
-        "rank": "89",
+        "rank": "85",
         "rank_out_of": "",
         "subject_code": "3201"
       },
@@ -145,7 +145,7 @@
     "source_id": "15925",
     "status_code": 200,
     "title": "Journal of Parapsychology",
-    "updated_at": "2026-09-07T10:17:45+00:00"
+    "updated_at": "2026-09-10T09:26:12+00:00"
   },
   "0302-9743": {
     "citescore": "3.1",
@@ -157,17 +157,17 @@
     "citescore_ranking_records": [
       {
         "category": "",
-        "percentile": "40",
+        "percentile": "42",
         "quartile": "Q3",
-        "rank": "146",
+        "rank": "143",
         "rank_out_of": "",
         "subject_code": "1700"
       },
       {
         "category": "",
-        "percentile": "40",
+        "percentile": "41",
         "quartile": "Q3",
-        "rank": "81",
+        "rank": "79",
         "rank_out_of": "",
         "subject_code": "2614"
       },
@@ -421,21 +421,505 @@
     "source_id": "25674",
     "status_code": 200,
     "title": "Lecture Notes in Computer Science",
-    "updated_at": "2026-09-07T10:17:46+00:00"
+    "updated_at": "2026-09-10T09:26:13+00:00"
   },
-  "1046-1310": {
-    "citescore": "6.2",
+  "0589-1019": {
+    "citescore": "1.6",
     "citescore_category": "",
-    "citescore_percentile": "85",
-    "citescore_quartile": "Q1",
-    "citescore_rank": "32",
+    "citescore_percentile": "41",
+    "citescore_quartile": "Q3",
+    "citescore_rank": "48",
     "citescore_rank_out_of": "",
     "citescore_ranking_records": [
       {
         "category": "",
-        "percentile": "85",
+        "percentile": "32",
+        "quartile": "Q3",
+        "rank": "704",
+        "rank_out_of": "",
+        "subject_code": "2208"
+      },
+      {
+        "category": "",
+        "percentile": "35",
+        "quartile": "Q3",
+        "rank": "667",
+        "rank_out_of": "",
+        "subject_code": "2208"
+      },
+      {
+        "category": "",
+        "percentile": "40",
+        "quartile": "Q3",
+        "rank": "576",
+        "rank_out_of": "",
+        "subject_code": "2208"
+      },
+      {
+        "category": "",
+        "percentile": "39",
+        "quartile": "Q3",
+        "rank": "483",
+        "rank_out_of": "",
+        "subject_code": "2208"
+      },
+      {
+        "category": "",
+        "percentile": "33",
+        "quartile": "Q3",
+        "rank": "67",
+        "rank_out_of": "",
+        "subject_code": "1707"
+      },
+      {
+        "category": "",
+        "percentile": "30",
+        "quartile": "Q3",
+        "rank": "85",
+        "rank_out_of": "",
+        "subject_code": "1711"
+      },
+      {
+        "category": "",
+        "percentile": "29",
+        "quartile": "Q3",
+        "rank": "87",
+        "rank_out_of": "",
+        "subject_code": "2718"
+      },
+      {
+        "category": "",
+        "percentile": "27",
+        "quartile": "Q3",
+        "rank": "202",
+        "rank_out_of": "",
+        "subject_code": "2204"
+      },
+      {
+        "category": "",
+        "percentile": "34",
+        "quartile": "Q3",
+        "rank": "62",
+        "rank_out_of": "",
+        "subject_code": "1707"
+      },
+      {
+        "category": "",
+        "percentile": "32",
+        "quartile": "Q3",
+        "rank": "78",
+        "rank_out_of": "",
+        "subject_code": "1711"
+      },
+      {
+        "category": "",
+        "percentile": "27",
+        "quartile": "Q3",
+        "rank": "79",
+        "rank_out_of": "",
+        "subject_code": "2718"
+      },
+      {
+        "category": "",
+        "percentile": "25",
+        "quartile": "Q3",
+        "rank": "188",
+        "rank_out_of": "",
+        "subject_code": "2204"
+      },
+      {
+        "category": "",
+        "percentile": "27",
+        "quartile": "Q3",
+        "rank": "79",
+        "rank_out_of": "",
+        "subject_code": "1711"
+      },
+      {
+        "category": "",
+        "percentile": "26",
+        "quartile": "Q3",
+        "rank": "70",
+        "rank_out_of": "",
+        "subject_code": "2718"
+      },
+      {
+        "category": "",
+        "percentile": "26",
+        "quartile": "Q3",
+        "rank": "63",
+        "rank_out_of": "",
+        "subject_code": "1707"
+      },
+      {
+        "category": "",
+        "percentile": "22",
+        "quartile": "Q4",
+        "rank": "177",
+        "rank_out_of": "",
+        "subject_code": "2204"
+      },
+      {
+        "category": "",
+        "percentile": "33",
+        "quartile": "Q3",
+        "rank": "56",
+        "rank_out_of": "",
+        "subject_code": "1707"
+      },
+      {
+        "category": "",
+        "percentile": "33",
+        "quartile": "Q3",
+        "rank": "52",
+        "rank_out_of": "",
+        "subject_code": "2718"
+      },
+      {
+        "category": "",
+        "percentile": "31",
+        "quartile": "Q3",
+        "rank": "71",
+        "rank_out_of": "",
+        "subject_code": "1711"
+      },
+      {
+        "category": "",
+        "percentile": "26",
+        "quartile": "Q3",
+        "rank": "165",
+        "rank_out_of": "",
+        "subject_code": "2204"
+      },
+      {
+        "category": "",
+        "percentile": "41",
+        "quartile": "Q3",
+        "rank": "48",
+        "rank_out_of": "",
+        "subject_code": "1707"
+      },
+      {
+        "category": "",
+        "percentile": "40",
+        "quartile": "Q3",
+        "rank": "61",
+        "rank_out_of": "",
+        "subject_code": "1711"
+      },
+      {
+        "category": "",
+        "percentile": "38",
+        "quartile": "Q3",
+        "rank": "42",
+        "rank_out_of": "",
+        "subject_code": "2718"
+      },
+      {
+        "category": "",
+        "percentile": "29",
+        "quartile": "Q3",
+        "rank": "148",
+        "rank_out_of": "",
+        "subject_code": "2204"
+      },
+      {
+        "category": "",
+        "percentile": "26",
+        "quartile": "Q3",
+        "rank": "74",
+        "rank_out_of": "",
+        "subject_code": "1711"
+      },
+      {
+        "category": "",
+        "percentile": "24",
+        "quartile": "Q4",
+        "rank": "57",
+        "rank_out_of": "",
+        "subject_code": "1707"
+      },
+      {
+        "category": "",
+        "percentile": "23",
+        "quartile": "Q4",
+        "rank": "156",
+        "rank_out_of": "",
+        "subject_code": "2204"
+      },
+      {
+        "category": "",
+        "percentile": "21",
+        "quartile": "Q4",
+        "rank": "49",
+        "rank_out_of": "",
+        "subject_code": "2718"
+      },
+      {
+        "category": "",
+        "percentile": "33",
+        "quartile": "Q3",
+        "rank": "62",
+        "rank_out_of": "",
+        "subject_code": "1711"
+      },
+      {
+        "category": "",
+        "percentile": "25",
+        "quartile": "Q3",
+        "rank": "45",
+        "rank_out_of": "",
+        "subject_code": "2718"
+      },
+      {
+        "category": "",
+        "percentile": "25",
+        "quartile": "Q3",
+        "rank": "52",
+        "rank_out_of": "",
+        "subject_code": "1707"
+      },
+      {
+        "category": "",
+        "percentile": "22",
+        "quartile": "Q4",
+        "rank": "145",
+        "rank_out_of": "",
+        "subject_code": "2204"
+      },
+      {
+        "category": "",
+        "percentile": "33",
+        "quartile": "Q3",
+        "rank": "59",
+        "rank_out_of": "",
+        "subject_code": "1711"
+      },
+      {
+        "category": "",
+        "percentile": "30",
+        "quartile": "Q3",
+        "rank": "2279",
+        "rank_out_of": "",
+        "subject_code": "2700"
+      },
+      {
+        "category": "",
+        "percentile": "28",
+        "quartile": "Q3",
+        "rank": "46",
+        "rank_out_of": "",
+        "subject_code": "1707"
+      },
+      {
+        "category": "",
+        "percentile": "28",
+        "quartile": "Q3",
+        "rank": "132",
+        "rank_out_of": "",
+        "subject_code": "2204"
+      },
+      {
+        "category": "",
+        "percentile": "21",
+        "quartile": "Q4",
+        "rank": "43",
+        "rank_out_of": "",
+        "subject_code": "2718"
+      },
+      {
+        "category": "",
+        "percentile": "29",
+        "quartile": "Q3",
+        "rank": "2296",
+        "rank_out_of": "",
+        "subject_code": "2700"
+      },
+      {
+        "category": "",
+        "percentile": "28",
+        "quartile": "Q3",
+        "rank": "130",
+        "rank_out_of": "",
+        "subject_code": "2204"
+      },
+      {
+        "category": "",
+        "percentile": "26",
+        "quartile": "Q3",
+        "rank": "61",
+        "rank_out_of": "",
+        "subject_code": "1711"
+      },
+      {
+        "category": "",
+        "percentile": "25",
+        "quartile": "Q3",
+        "rank": "48",
+        "rank_out_of": "",
+        "subject_code": "1707"
+      },
+      {
+        "category": "",
+        "percentile": "23",
+        "quartile": "Q4",
+        "rank": "42",
+        "rank_out_of": "",
+        "subject_code": "2718"
+      },
+      {
+        "category": "",
+        "percentile": "22",
+        "quartile": "Q4",
+        "rank": "2497",
+        "rank_out_of": "",
+        "subject_code": "2700"
+      },
+      {
+        "category": "",
+        "percentile": "14",
+        "quartile": "Q4",
+        "rank": "148",
+        "rank_out_of": "",
+        "subject_code": "2204"
+      },
+      {
+        "category": "",
+        "percentile": "11",
+        "quartile": "Q4",
+        "rank": "56",
+        "rank_out_of": "",
+        "subject_code": "1707"
+      },
+      {
+        "category": "",
+        "percentile": "10",
+        "quartile": "Q4",
+        "rank": "68",
+        "rank_out_of": "",
+        "subject_code": "1711"
+      },
+      {
+        "category": "",
+        "percentile": "6",
+        "quartile": "Q4",
+        "rank": "49",
+        "rank_out_of": "",
+        "subject_code": "2718"
+      },
+      {
+        "category": "",
+        "percentile": "15",
+        "quartile": "Q4",
+        "rank": "2693",
+        "rank_out_of": "",
+        "subject_code": "2700"
+      },
+      {
+        "category": "",
+        "percentile": "8",
+        "quartile": "Q4",
+        "rank": "155",
+        "rank_out_of": "",
+        "subject_code": "2204"
+      },
+      {
+        "category": "",
+        "percentile": "2",
+        "quartile": "Q4",
+        "rank": "50",
+        "rank_out_of": "",
+        "subject_code": "2718"
+      },
+      {
+        "category": "",
+        "percentile": "2",
+        "quartile": "Q4",
+        "rank": "57",
+        "rank_out_of": "",
+        "subject_code": "1707"
+      },
+      {
+        "category": "",
+        "percentile": "2",
+        "quartile": "Q4",
+        "rank": "69",
+        "rank_out_of": "",
+        "subject_code": "1711"
+      },
+      {
+        "category": "",
+        "percentile": "5",
+        "quartile": "Q4",
+        "rank": "3002",
+        "rank_out_of": "",
+        "subject_code": "2700"
+      },
+      {
+        "category": "",
+        "percentile": "4",
+        "quartile": "Q4",
+        "rank": "53",
+        "rank_out_of": "",
+        "subject_code": "1707"
+      },
+      {
+        "category": "",
+        "percentile": "3",
+        "quartile": "Q4",
+        "rank": "155",
+        "rank_out_of": "",
+        "subject_code": "2204"
+      },
+      {
+        "category": "",
+        "percentile": "1",
         "quartile": "Q1",
-        "rank": "32",
+        "rank": "49",
+        "rank_out_of": "",
+        "subject_code": "2718"
+      },
+      {
+        "category": "",
+        "percentile": "0",
+        "quartile": "Q4",
+        "rank": "67",
+        "rank_out_of": "",
+        "subject_code": "1711"
+      }
+    ],
+    "citescore_ranking_selection": "highest_percentile",
+    "citescore_subject_code": "1707",
+    "citescore_year": "2025",
+    "eissn": "",
+    "found": true,
+    "issn": "0589-1019",
+    "publisher": "Institute of Electrical and Electronics Engineers Inc.",
+    "queried_issn": "0589-1019",
+    "scopus_source_url": "https://www.scopus.com/sourceid/34202",
+    "sjr": "0.259",
+    "sjr_year": "2025",
+    "snip": "0.337",
+    "snip_year": "2025",
+    "source": "Elsevier Serial Title API / Scopus",
+    "source_id": "34202",
+    "status_code": 200,
+    "title": "Annual International Conference of the IEEE Engineering in Medicine and Biology - Proceedings",
+    "updated_at": "2026-09-10T09:26:13+00:00"
+  },
+  "1046-1310": {
+    "citescore": "6.2",
+    "citescore_category": "",
+    "citescore_percentile": "86",
+    "citescore_quartile": "Q1",
+    "citescore_rank": "30",
+    "citescore_rank_out_of": "",
+    "citescore_ranking_records": [
+      {
+        "category": "",
+        "percentile": "86",
+        "quartile": "Q1",
+        "rank": "30",
         "rank_out_of": "",
         "subject_code": "3200"
       },
@@ -577,14 +1061,7 @@
     "source_id": "13479",
     "status_code": 200,
     "title": "Current Psychology",
-    "updated_at": "2026-09-07T10:17:47+00:00"
-  },
-  "1558-4615": {
-    "found": false,
-    "queried_issn": "1558-4615",
-    "source": "Elsevier Serial Title API / Scopus",
-    "status_code": 404,
-    "updated_at": "2026-09-07T10:17:47+00:00"
+    "updated_at": "2026-09-10T09:26:14+00:00"
   },
   "1662-5153": {
     "citescore": "6.9",
@@ -596,9 +1073,9 @@
     "citescore_ranking_records": [
       {
         "category": "",
-        "percentile": "89",
+        "percentile": "87",
         "quartile": "Q1",
-        "rank": "9",
+        "rank": "10",
         "rank_out_of": "",
         "subject_code": "3206"
       },
@@ -612,9 +1089,9 @@
       },
       {
         "category": "",
-        "percentile": "76",
+        "percentile": "75",
         "quartile": "Q1",
-        "rank": "31",
+        "rank": "33",
         "rank_out_of": "",
         "subject_code": "2805"
       },
@@ -988,7 +1465,7 @@
     "source_id": "19700175166",
     "status_code": 200,
     "title": "Frontiers in Behavioral Neuroscience",
-    "updated_at": "2026-09-07T10:17:47+00:00"
+    "updated_at": "2026-09-10T09:26:14+00:00"
   },
   "1662-5161": {
     "citescore": "5.9",
@@ -1016,25 +1493,25 @@
       },
       {
         "category": "",
-        "percentile": "80",
+        "percentile": "79",
         "quartile": "Q1",
-        "rank": "113",
+        "rank": "120",
         "rank_out_of": "",
         "subject_code": "2738"
       },
       {
         "category": "",
-        "percentile": "77",
+        "percentile": "75",
         "quartile": "Q1",
-        "rank": "46",
+        "rank": "49",
         "rank_out_of": "",
         "subject_code": "2808"
       },
       {
         "category": "",
-        "percentile": "65",
+        "percentile": "63",
         "quartile": "Q2",
-        "rank": "19",
+        "rank": "20",
         "rank_out_of": "",
         "subject_code": "2803"
       },
@@ -1648,7 +2125,7 @@
     "source_id": "19700175164",
     "status_code": 200,
     "title": "Frontiers in Human Neuroscience",
-    "updated_at": "2026-09-07T10:17:48+00:00"
+    "updated_at": "2026-09-10T09:26:15+00:00"
   },
   "1664-1078": {
     "citescore": "7.0",
@@ -1662,7 +2139,7 @@
         "category": "",
         "percentile": "84",
         "quartile": "Q1",
-        "rank": "35",
+        "rank": "36",
         "rank_out_of": "",
         "subject_code": "3200"
       },
@@ -1788,7 +2265,7 @@
     "source_id": "21100216571",
     "status_code": 200,
     "title": "Frontiers in Psychology",
-    "updated_at": "2026-09-07T10:17:49+00:00"
+    "updated_at": "2026-09-10T09:26:16+00:00"
   },
   "1687-4153": {
     "citescore": "3.0",
@@ -2088,7 +2565,7 @@
     "source_id": "4400151506",
     "status_code": 200,
     "title": "Eurasip Journal on Bioinformatics and Systems Biology",
-    "updated_at": "2026-09-07T10:17:49+00:00"
+    "updated_at": "2026-09-10T09:26:16+00:00"
   },
   "1932-6203": {
     "citescore": "4.8",
@@ -2102,7 +2579,7 @@
         "category": "",
         "percentile": "82",
         "quartile": "Q1",
-        "rank": "40",
+        "rank": "39",
         "rank_out_of": "",
         "subject_code": "1000"
       },
@@ -2355,22 +2832,22 @@
     "source": "Elsevier Serial Title API / Scopus",
     "source_id": "10600153309",
     "status_code": 200,
-    "title": "PLOS ONE",
-    "updated_at": "2026-09-07T10:17:50+00:00"
+    "title": "PLOS One",
+    "updated_at": "2026-09-10T09:26:17+00:00"
   },
   "1936-4733": {
     "citescore": "6.2",
     "citescore_category": "",
-    "citescore_percentile": "85",
+    "citescore_percentile": "86",
     "citescore_quartile": "Q1",
-    "citescore_rank": "32",
+    "citescore_rank": "30",
     "citescore_rank_out_of": "",
     "citescore_ranking_records": [
       {
         "category": "",
-        "percentile": "85",
+        "percentile": "86",
         "quartile": "Q1",
-        "rank": "32",
+        "rank": "30",
         "rank_out_of": "",
         "subject_code": "3200"
       },
@@ -2512,7 +2989,7 @@
     "source_id": "13479",
     "status_code": 200,
     "title": "Current Psychology",
-    "updated_at": "2026-09-07T10:17:50+00:00"
+    "updated_at": "2026-09-10T09:26:18+00:00"
   },
   "2046-1402": {
     "citescore": "2.9",
@@ -2524,25 +3001,25 @@
     "citescore_ranking_records": [
       {
         "category": "",
-        "percentile": "82",
+        "percentile": "84",
         "quartile": "Q1",
-        "rank": "122",
+        "rank": "113",
         "rank_out_of": "",
         "subject_code": "1201"
       },
       {
         "category": "",
-        "percentile": "74",
-        "quartile": "Q2",
-        "rank": "191",
+        "percentile": "75",
+        "quartile": "Q1",
+        "rank": "186",
         "rank_out_of": "",
         "subject_code": "3301"
       },
       {
         "category": "",
-        "percentile": "74",
-        "quartile": "Q2",
-        "rank": "170",
+        "percentile": "75",
+        "quartile": "Q1",
+        "rank": "165",
         "rank_out_of": "",
         "subject_code": "2700"
       },
@@ -2550,23 +3027,23 @@
         "category": "",
         "percentile": "71",
         "quartile": "Q2",
-        "rank": "85",
+        "rank": "84",
         "rank_out_of": "",
         "subject_code": "3309"
       },
       {
         "category": "",
-        "percentile": "61",
+        "percentile": "64",
         "quartile": "Q2",
-        "rank": "32",
+        "rank": "29",
         "rank_out_of": "",
         "subject_code": "3000"
       },
       {
         "category": "",
-        "percentile": "49",
-        "quartile": "Q3",
-        "rank": "115",
+        "percentile": "51",
+        "quartile": "Q2",
+        "rank": "111",
         "rank_out_of": "",
         "subject_code": "1300"
       },
@@ -2996,21 +3473,21 @@
     "source_id": "21100258853",
     "status_code": 200,
     "title": "F1000Research",
-    "updated_at": "2026-09-07T10:17:51+00:00"
+    "updated_at": "2026-09-10T09:26:18+00:00"
   },
   "2076-328X": {
     "citescore": "4.1",
     "citescore_category": "",
-    "citescore_percentile": "82",
+    "citescore_percentile": "83",
     "citescore_quartile": "Q1",
-    "citescore_rank": "129",
+    "citescore_rank": "125",
     "citescore_rank_out_of": "",
     "citescore_ranking_records": [
       {
         "category": "",
-        "percentile": "82",
+        "percentile": "83",
         "quartile": "Q1",
-        "rank": "129",
+        "rank": "125",
         "rank_out_of": "",
         "subject_code": "1105"
       },
@@ -3018,15 +3495,15 @@
         "category": "",
         "percentile": "78",
         "quartile": "Q1",
-        "rank": "69",
+        "rank": "68",
         "rank_out_of": "",
         "subject_code": "3303"
       },
       {
         "category": "",
-        "percentile": "73",
+        "percentile": "74",
         "quartile": "Q2",
-        "rank": "59",
+        "rank": "57",
         "rank_out_of": "",
         "subject_code": "3200"
       },
@@ -3040,9 +3517,9 @@
       },
       {
         "category": "",
-        "percentile": "56",
+        "percentile": "59",
         "quartile": "Q2",
-        "rank": "156",
+        "rank": "149",
         "rank_out_of": "",
         "subject_code": "1311"
       },
@@ -3344,7 +3821,7 @@
     "source_id": "21100901748",
     "status_code": 200,
     "title": "Behavioral Sciences",
-    "updated_at": "2026-09-07T10:17:51+00:00"
+    "updated_at": "2026-09-10T09:26:19+00:00"
   },
   "2190-3018": {
     "citescore": "1.2",
@@ -3366,7 +3843,7 @@
         "category": "",
         "percentile": "9",
         "quartile": "Q4",
-        "rank": "221",
+        "rank": "223",
         "rank_out_of": "",
         "subject_code": "1700"
       },
@@ -3628,7 +4105,7 @@
     "source_id": "21100204111",
     "status_code": 200,
     "title": "Smart Innovation, Systems and Technologies",
-    "updated_at": "2026-09-07T10:17:52+00:00"
+    "updated_at": "2026-09-10T09:26:19+00:00"
   },
   "2297-900X": {
     "citescore": "2.9",
@@ -3640,17 +4117,17 @@
     "citescore_ranking_records": [
       {
         "category": "",
-        "percentile": "74",
+        "percentile": "73",
         "quartile": "Q2",
-        "rank": "195",
+        "rank": "204",
         "rank_out_of": "",
         "subject_code": "3301"
       },
       {
         "category": "",
-        "percentile": "73",
+        "percentile": "71",
         "quartile": "Q2",
-        "rank": "148",
+        "rank": "155",
         "rank_out_of": "",
         "subject_code": "3315"
       },
@@ -3752,7 +4229,7 @@
     "source_id": "21101061926",
     "status_code": 200,
     "title": "Frontiers in Communication",
-    "updated_at": "2026-09-07T10:17:52+00:00"
+    "updated_at": "2026-09-10T09:26:20+00:00"
   },
   "2304-8158": {
     "citescore": "10.3",
@@ -4124,7 +4601,7 @@
     "source_id": "21100898636",
     "status_code": 200,
     "title": "Foods",
-    "updated_at": "2026-09-07T10:17:53+00:00"
+    "updated_at": "2026-09-10T09:26:21+00:00"
   },
   "2468-0672": {
     "citescore": "4.6",
@@ -4136,9 +4613,9 @@
     "citescore_ranking_records": [
       {
         "category": "",
-        "percentile": "66",
+        "percentile": "65",
         "quartile": "Q2",
-        "rank": "71",
+        "rank": "73",
         "rank_out_of": "",
         "subject_code": "3105"
       },
@@ -4154,7 +4631,7 @@
         "category": "",
         "percentile": "58",
         "quartile": "Q2",
-        "rank": "184",
+        "rank": "185",
         "rank_out_of": "",
         "subject_code": "2205"
       },
@@ -4162,15 +4639,15 @@
         "category": "",
         "percentile": "56",
         "quartile": "Q2",
-        "rank": "324",
+        "rank": "329",
         "rank_out_of": "",
         "subject_code": "2210"
       },
       {
         "category": "",
-        "percentile": "41",
+        "percentile": "40",
         "quartile": "Q3",
-        "rank": "206",
+        "rank": "210",
         "rank_out_of": "",
         "subject_code": "2204"
       },
@@ -4552,7 +5029,7 @@
     "source_id": "21100842867",
     "status_code": 200,
     "title": "HardwareX",
-    "updated_at": "2026-09-07T10:17:53+00:00"
+    "updated_at": "2026-09-10T09:26:21+00:00"
   },
   "2673-4192": {
     "citescore": "7.9",
@@ -4564,17 +5041,17 @@
     "citescore_ranking_records": [
       {
         "category": "",
-        "percentile": "82",
+        "percentile": "80",
         "quartile": "Q1",
-        "rank": "24",
+        "rank": "26",
         "rank_out_of": "",
         "subject_code": "1704"
       },
       {
         "category": "",
-        "percentile": "76",
-        "quartile": "Q1",
-        "rank": "246",
+        "percentile": "74",
+        "quartile": "Q2",
+        "rank": "268",
         "rank_out_of": "",
         "subject_code": "1706"
       },
@@ -4582,7 +5059,7 @@
         "category": "",
         "percentile": "63",
         "quartile": "Q2",
-        "rank": "72",
+        "rank": "74",
         "rank_out_of": "",
         "subject_code": "1709"
       },
@@ -4700,83 +5177,7 @@
     "source_id": "21101107986",
     "status_code": 200,
     "title": "Frontiers in Virtual Reality",
-    "updated_at": "2026-09-07T10:17:54+00:00"
-  },
-  "2694-0604": {
-    "citescore": "0.4",
-    "citescore_category": "",
-    "citescore_percentile": "58",
-    "citescore_quartile": "Q2",
-    "citescore_rank": "347",
-    "citescore_rank_out_of": "",
-    "citescore_ranking_records": [
-      {
-        "category": "",
-        "percentile": "38",
-        "quartile": "Q3",
-        "rank": "410",
-        "rank_out_of": "",
-        "subject_code": "2700"
-      },
-      {
-        "category": "",
-        "percentile": "16",
-        "quartile": "Q4",
-        "rank": "559",
-        "rank_out_of": "",
-        "subject_code": "2700"
-      },
-      {
-        "category": "",
-        "percentile": "41",
-        "quartile": "Q3",
-        "rank": "394",
-        "rank_out_of": "",
-        "subject_code": "2700"
-      },
-      {
-        "category": "",
-        "percentile": "39",
-        "quartile": "Q3",
-        "rank": "386",
-        "rank_out_of": "",
-        "subject_code": "2700"
-      },
-      {
-        "category": "",
-        "percentile": "58",
-        "quartile": "Q2",
-        "rank": "347",
-        "rank_out_of": "",
-        "subject_code": "2700"
-      },
-      {
-        "category": "",
-        "percentile": "29",
-        "quartile": "Q3",
-        "rank": "585",
-        "rank_out_of": "",
-        "subject_code": "2700"
-      }
-    ],
-    "citescore_ranking_selection": "highest_percentile",
-    "citescore_subject_code": "2700",
-    "citescore_year": "2025",
-    "eissn": "2694-0604",
-    "found": true,
-    "issn": "",
-    "publisher": "Institute of Electrical and Electronics Engineers Inc.",
-    "queried_issn": "2694-0604",
-    "scopus_source_url": "https://www.scopus.com/sourceid/21101033200",
-    "sjr": "0.116",
-    "sjr_year": "2025",
-    "snip": "",
-    "snip_year": "",
-    "source": "Elsevier Serial Title API / Scopus",
-    "source_id": "21101033200",
-    "status_code": 200,
-    "title": "Annual International Conference of the IEEE Engineering in Medicine and Biology Society. IEEE Engineering in Medicine and Biology Society. Annual International Conference",
-    "updated_at": "2026-09-07T10:17:54+00:00"
+    "updated_at": "2026-09-10T09:26:22+00:00"
   },
   "2766-6530": {
     "citescore": "0.0",
@@ -4798,7 +5199,7 @@
         "category": "",
         "percentile": "7",
         "quartile": "Q4",
-        "rank": "554",
+        "rank": "563",
         "rank_out_of": "",
         "subject_code": "1702"
       },
@@ -4812,9 +5213,9 @@
       },
       {
         "category": "",
-        "percentile": "1",
-        "quartile": "Q1",
-        "rank": "194",
+        "percentile": "2",
+        "quartile": "Q4",
+        "rank": "195",
         "rank_out_of": "",
         "subject_code": "1709"
       },
@@ -4868,6 +5269,6 @@
     "source_id": "21101394124",
     "status_code": 200,
     "title": "Proceedings of IEEE Games, Entertainment and Media Conference, GEM",
-    "updated_at": "2026-09-07T10:17:55+00:00"
+    "updated_at": "2026-09-10T09:26:22+00:00"
   }
 }

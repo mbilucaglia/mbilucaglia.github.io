@@ -1,6 +1,6 @@
 {
-  "citations": 643,
-  "citations_recent": 537,
+  "citations": 646,
+  "citations_recent": 540,
   "h_index": 16,
   "h_index_recent": 14,
   "i10_index": 21,
@@ -19,8 +19,8 @@
     "micheletto2025",
     "zito2022",
     "Zito2021b",
-    "Bilucaglia2020b",
     "Bilucaglia2019a",
+    "Bilucaglia2020b",
     "Russo2021b",
     "russo2023",
     "Bilucaglia2019b",
@@ -144,7 +144,7 @@
       "bibtex_key": "micheletto2025",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:fFSKOagxvKUC",
-      "citations": 31,
+      "citations": 32,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:fFSKOagxvKUC",
       "publication": "Frontiers in Virtual Reality 6, 1515937, 2025",
       "title": "Enjoy it! Cosmetic try-on apps and augmented reality, the impact of enjoyment, informativeness and ease of use.",
@@ -173,6 +173,17 @@
       "year": "2021"
     },
     {
+      "authors": "M Bilucaglia, R Laureanti, M Zito, R Circi, A Fici, F Rivetti, R Valesi, ...",
+      "bibtex_key": "Bilucaglia2019a",
+      "bibtex_match_score": 1.0,
+      "citation_id": "RvAqXUIAAAAJ:k_IJM867U9cC",
+      "citations": 25,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:k_IJM867U9cC",
+      "publication": "2019 41st Annual International Conference of the IEEE Engineering in …, 2019",
+      "title": "Looking through blue glasses: bioelectrical measures to assess the awakening after a calm situation",
+      "year": "2019"
+    },
+    {
       "authors": "M Bilucaglia, R Masi, G Di Stanislao, R Laureanti, A Fici, R Circi, M Zito, ...",
       "bibtex_key": "Bilucaglia2020b",
       "bibtex_match_score": 1.0,
@@ -182,17 +193,6 @@
       "publication": "HardwareX 8 (C), e00125, 2020",
       "title": "ESB: a low-cost EEG Synchronization Box",
       "year": "2020"
-    },
-    {
-      "authors": "M Bilucaglia, R Laureanti, M Zito, R Circi, A Fici, F Rivetti, R Valesi, ...",
-      "bibtex_key": "Bilucaglia2019a",
-      "bibtex_match_score": 1.0,
-      "citation_id": "RvAqXUIAAAAJ:k_IJM867U9cC",
-      "citations": 24,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:k_IJM867U9cC",
-      "publication": "2019 41st Annual International Conference of the IEEE Engineering in …, 2019",
-      "title": "Looking through blue glasses: bioelectrical measures to assess the awakening after a calm situation",
-      "year": "2019"
     },
     {
       "authors": "V Russo, M Zito, M Bilucaglia, R Circi, M Bellati, LEM Marin, E Catania, ...",
@@ -250,6 +250,15 @@
       "year": "2021"
     },
     {
+      "authors": "W Giroldini, L Pederzoli, M Bilucaglia, E Prati, PE Tressoldi",
+      "citation_id": "RvAqXUIAAAAJ:M3ejUd6NZC8C",
+      "citations": 15,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:M3ejUd6NZC8C",
+      "publication": "Available at SSRN: https://ssrn.com/abstract=3029605, 2018",
+      "title": "Exploring Brain-to-Brain interaction at a distance: a global or differential relationship?",
+      "year": "2018"
+    },
+    {
       "authors": "R Valesi, G Gabrielli, M Zito, M Bellati, M Bilucaglia, A Caponetto, A Fici, ...",
       "bibtex_key": "valesi2023",
       "bibtex_match_score": 1.0,
@@ -259,15 +268,6 @@
       "publication": "Behavioral Sciences 13 (7), 596, 2023",
       "title": "From Coaching to Neurocoaching: A Neuroscientific Approach during a Coaching Session to Assess the Relational Dynamics between Coach and Coachee—A Pilot Study",
       "year": "2023"
-    },
-    {
-      "authors": "W Giroldini, L Pederzoli, M Bilucaglia, E Prati, PE Tressoldi",
-      "citation_id": "RvAqXUIAAAAJ:M3ejUd6NZC8C",
-      "citations": 14,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:M3ejUd6NZC8C",
-      "publication": "Available at SSRN: https://ssrn.com/abstract=3029605, 2018",
-      "title": "Exploring Brain-to-Brain interaction at a distance: a global or differential relationship?",
-      "year": "2018"
     },
     {
       "authors": "M Bilucaglia, M Zito, A Fici, C Casiraghi, F Rivetti, M Bellati, V Russo",
@@ -824,5 +824,5 @@
       "year": "2022"
     }
   ],
-  "updated_at": "2026-09-07T10:17:44+00:00"
+  "updated_at": "2026-09-10T09:26:11+00:00"
 }
