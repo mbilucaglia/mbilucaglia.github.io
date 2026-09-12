@@ -30,19 +30,18 @@ title: CV
 - **2026 - present:** Community Reviewer (Review Editor) for Frontiers in Human Neuroscience
 
 #### Ad hoc Reviewer [manuscripts, reviews]
-Total [47, 80]
 Frontiers in Psychology [8, 8], Frontiers in Public Health [7, 7], Cognitive Neurodynamics [6, 17], Scientific Reports [6, 16], HardwareX [4, 9], PlosOne [4, 9], Frontiers in Psychiatry [3, 3], Frontiers in Human Neuroscience [2, 2], BMC Research Notes [1, 2], Biocibernetics an Biomedical Engineering [1, 2], Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC) [1, 1], Cognitive Computation [1, 1], Frontiers in Child and Adolescent Psychiatry [1, 1], Frontiers in Physiology [1, 1], Scientific Data [1, 1] 
 
 #### Ad hoc Handling Editor [manuscripts]
 Frontiers in Human Neuroscience [5], Frontiers in Medicine [2], Frontiers in Public Health [1], Frontiers in Social Psychology [1]
 
 #### Guest Editor - Research Topics / Special Issues
-- **2026 - 2027:** ["Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience - Volume III"](https://www.frontiersin.org/research-topics/80492/machine-learningdeep-learning-methods-in-neuromarketing-and-consumer-neuroscience-volume-iii) hosted by Frontiers in Human Neuroscience
-- **2025 - 2026:** ["Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience - Volume II"](https://www.frontiersin.org/research-topics/65160/machine-learningdeep-learning-methods-in-neuromarketing-and-consumer-neuroscience-volume-ii) hosted by Frontiers in Human Neuroscience
-- **2024 - 2025:** ["Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience"](https://www.frontiersin.org/research-topics/49742/machine-learningdeep-learning-methods-in-neuromarketing-and-consumer-neuroscience/magazine) co-hosted by Frontiers in Neuroscience, Frontiers in Human Neuroscience and Frontiers in Psychology
+- **2026 - 2027:** ["Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience - Volume III"](https://www.frontiersin.org/research-topics/80492/machine-learningdeep-learning-methods-in-neuromarketing-and-consumer-neuroscience-volume-iii), Frontiers in Human Neuroscience
+- **2025 - 2026:** ["Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience - Volume II"](https://www.frontiersin.org/research-topics/65160/machine-learningdeep-learning-methods-in-neuromarketing-and-consumer-neuroscience-volume-ii), Frontiers in Human Neuroscience
+- **2024 - 2025:** ["Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience"](https://www.frontiersin.org/research-topics/49742/machine-learningdeep-learning-methods-in-neuromarketing-and-consumer-neuroscience/magazine), Frontiers in Neuroscience, Frontiers in Human Neuroscience and Frontiers in Psychology (co-hosting)
 
 ### Conference Services
-- **2025:** Event Comitee Member of the [1st International Online Conference on Behavioral Sciences](https://sciforum.net/event/iocbs2026), organised by Behavioural Sciences
+- **2025:** Event Comitee Member of the [1st International Online Conference on Behavioral Sciences](https://sciforum.net/event/iocbs2026), Behavioural Sciences
 
 ## Publications
 Co-author of {% bibliography_count %} peer-reviewed [publications](/publications), including {% bibliography_count --query @article %} [journal articles](/publications/#journal-articles), {% bibliography_count --query @inproceedings[keywords=paper] %} [conference papers](/publications/#conference-proceedings) and {% bibliography_count --query @inproceedings[keywords=presentation] %}  [conference abstracts / presentations](/publications/#conference-presentations). 
