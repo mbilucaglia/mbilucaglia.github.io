@@ -23,6 +23,7 @@ permalink: /publications/
 
 ## List of Publications
 <small>Source: [Google Scholar](https://scholar.google.it/citations?user=RvAqXUIAAAAJ&hl=en) & [Scopus](https://www.scopus.com/sources.uri) | Last updated: {{ scholar.updated_at | date: "%d %B %Y" }}</small>
+
 <small>† Equal contribution (co-first author) | * Corresponding author</small>
 
 <div class="publication-search" role="search">
