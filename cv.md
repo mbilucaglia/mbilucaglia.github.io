@@ -14,6 +14,7 @@ title: CV
 - **2018:** Italian State Examination (License to Practise) for Professional Engineer, Politecnico di Milano
 
 ## Academic Positions
+<small>All positions were obtained through competitive public selection procedures</small>
 - **2022 - 2025:** Ph.D. Fellow (Spervisor: Prof. V. Russo), Università IULM
 - **2019 - 2022:** Research Fellow (Supervisor: Prof. V. Russo), Università IULM
 - **2019:** Research Assistant (Supervisor: Dr. P. Tressoldi), University of Padua (Italy)
