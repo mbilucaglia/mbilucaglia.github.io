@@ -1,6 +1,6 @@
 {
-  "citations": 646,
-  "citations_recent": 540,
+  "citations": 655,
+  "citations_recent": 549,
   "h_index": 16,
   "h_index_recent": 14,
   "i10_index": 21,
@@ -14,15 +14,15 @@
     "Laureanti2020",
     "Giroldini2016b",
     "russo2022",
-    "Giroldini2016",
     "Bilucaglia2020a",
+    "Giroldini2016",
     "micheletto2025",
     "zito2022",
     "Zito2021b",
     "Bilucaglia2019a",
     "Bilucaglia2020b",
-    "Russo2021b",
     "russo2023",
+    "Russo2021b",
     "Bilucaglia2019b",
     "Tressoldi2014b",
     "Russo2021",
@@ -34,10 +34,10 @@
     "accardi2025",
     "Laureanti2021",
     "bilucaglia2025a",
-    "pasta2023",
-    "Tressoldi2014b",
     "bilucaglia2025c",
+    "pasta2023",
     "bilucaglia2022",
+    "Tressoldi2014b",
     "Gannuscio2025",
     "Casiraghi2025pasta",
     "casiraghi2025neuronudge",
@@ -67,7 +67,7 @@
       "bibtex_key": "zito2021",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:VOx2b1Wkg3QC",
-      "citations": 63,
+      "citations": 65,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:VOx2b1Wkg3QC",
       "publication": "Frontiers in Psychology 12, 1784, 2021",
       "title": "Assessing the emotional response in social communication: the role of neuromarketing",
@@ -111,11 +111,22 @@
       "bibtex_key": "russo2022",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:7T2F9Uy0os0C",
-      "citations": 38,
+      "citations": 39,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:7T2F9Uy0os0C",
       "publication": "Foods 11 (15), 2349, 2022",
       "title": "The Role of the Emotional Sequence in the Communication of the Territorial Cheeses: A Neuromarketing Approach",
       "year": "2022"
+    },
+    {
+      "authors": "M Bilucaglia, GM Duma, G Mento, L Semenzato, PE Tressoldi",
+      "bibtex_key": "Bilucaglia2020a",
+      "bibtex_match_score": 1.0,
+      "citation_id": "RvAqXUIAAAAJ:RYcK_YlVTxYC",
+      "citations": 34,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:RYcK_YlVTxYC",
+      "publication": "F1000Research 9, 173, 2021",
+      "title": "Applying machine learning EEG signal classification to emotion related brain anticipatory activity",
+      "year": "2021"
     },
     {
       "authors": "W Giroldini, L Pederzoli, M Bilucaglia, P Caini, A Ferrini, S Melloni, E Prati, ...",
@@ -127,17 +138,6 @@
       "publication": "F1000Research 2015 (4), 457, 2015",
       "title": "EEG correlates of social interaction at distance",
       "year": "2015"
-    },
-    {
-      "authors": "M Bilucaglia, GM Duma, G Mento, L Semenzato, PE Tressoldi",
-      "bibtex_key": "Bilucaglia2020a",
-      "bibtex_match_score": 1.0,
-      "citation_id": "RvAqXUIAAAAJ:RYcK_YlVTxYC",
-      "citations": 33,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:RYcK_YlVTxYC",
-      "publication": "F1000Research 9, 173, 2021",
-      "title": "Applying machine learning EEG signal classification to emotion related brain anticipatory activity",
-      "year": "2021"
     },
     {
       "authors": "V Micheletto, S Accardi, A Fici, F Piccoli, C Rossi, M Bilucaglia, V Russo, ...",
@@ -177,7 +177,7 @@
       "bibtex_key": "Bilucaglia2019a",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:k_IJM867U9cC",
-      "citations": 25,
+      "citations": 26,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:k_IJM867U9cC",
       "publication": "2019 41st Annual International Conference of the IEEE Engineering in …, 2019",
       "title": "Looking through blue glasses: bioelectrical measures to assess the awakening after a calm situation",
@@ -195,6 +195,17 @@
       "year": "2020"
     },
     {
+      "authors": "V Russo, M Bilucaglia, C Casiraghi, S Chiarelli, M Columbano, A Fici, ...",
+      "bibtex_key": "russo2023",
+      "bibtex_match_score": 1.0,
+      "citation_id": "RvAqXUIAAAAJ:hMsQuOkrut0C",
+      "citations": 22,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:hMsQuOkrut0C",
+      "publication": "Frontiers in Psychology 14, 1238879, 2023",
+      "title": "Neuroselling: applying neuroscience to selling for a new business perspective. An analysis on teleshopping advertising",
+      "year": "2023"
+    },
+    {
       "authors": "V Russo, M Zito, M Bilucaglia, R Circi, M Bellati, LEM Marin, E Catania, ...",
       "bibtex_key": "Russo2021b",
       "bibtex_match_score": 1.0,
@@ -204,17 +215,6 @@
       "publication": "Foods 10 (10), 2352, 2021",
       "title": "Dairy Products with Certification Marks: The Role of Territoriality and Safety Perception on Intention to Buy",
       "year": "2021"
-    },
-    {
-      "authors": "V Russo, M Bilucaglia, C Casiraghi, S Chiarelli, M Columbano, A Fici, ...",
-      "bibtex_key": "russo2023",
-      "bibtex_match_score": 1.0,
-      "citation_id": "RvAqXUIAAAAJ:hMsQuOkrut0C",
-      "citations": 21,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:hMsQuOkrut0C",
-      "publication": "Frontiers in Psychology 14, 1238879, 2023",
-      "title": "Neuroselling: applying neuroscience to selling for a new business perspective. An analysis on teleshopping advertising",
-      "year": "2023"
     },
     {
       "authors": "M Bilucaglia, L Pederzoli, W Giroldini, E Prati, P Tressoldi",
@@ -274,7 +274,7 @@
       "bibtex_key": "bilucaglia2024",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:LI9QrySNdTsC",
-      "citations": 12,
+      "citations": 13,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:LI9QrySNdTsC",
       "publication": "Frontiers in Human Neuroscience 18, 1347327, 2024",
       "title": "I DARE: IULM Dataset of Affective Responses",
@@ -347,6 +347,17 @@
       "year": "2025"
     },
     {
+      "authors": "M Bilucaglia, L Mainardi, TZ Ramsøy, PJ Zak, M Zito, V Russo",
+      "bibtex_key": "bilucaglia2025c",
+      "bibtex_match_score": 1.0,
+      "citation_id": "RvAqXUIAAAAJ:nVrZBo8bIpAC",
+      "citations": 5,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:nVrZBo8bIpAC",
+      "publication": "Frontiers in Human Neuroscience 19, 1638225, 2025",
+      "title": "Editorial: Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience",
+      "year": "2025"
+    },
+    {
       "authors": "C Pasta, V Russo, M Bilucaglia, G Licitra, G Mangione, V Micheletto, ...",
       "bibtex_key": "pasta2023",
       "bibtex_match_score": 1.0,
@@ -358,6 +369,17 @@
       "year": "2023"
     },
     {
+      "authors": "M Bilucaglia, R Laureanti, R Circi, M Zito, M Bellati, A Fici, F Rivetti, ...",
+      "bibtex_key": "bilucaglia2022",
+      "bibtex_match_score": 0.911,
+      "citation_id": "RvAqXUIAAAAJ:ZfRJV9d4-WMC",
+      "citations": 5,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:ZfRJV9d4-WMC",
+      "publication": "2022 44th Annual International Conference of the IEEE Engineering in …, 2022",
+      "title": "Spectral differences in resting-state EEG associated to individual Emotional Styles",
+      "year": "2022"
+    },
+    {
       "authors": "PE Tressoldi, L Pederzoli, M Bilucaglia, P Caini, P Fedele, A Ferrini, ...",
       "bibtex_key": "Tressoldi2014b",
       "bibtex_match_score": 0.905,
@@ -367,28 +389,6 @@
       "publication": "Available at SSRN: https://ssrn.com/abstract=2423852, 2014",
       "title": "Brain-to-brain (mind-to-mind) interaction at distance: a pilot study",
       "year": "2014"
-    },
-    {
-      "authors": "M Bilucaglia, L Mainardi, TZ Ramsøy, PJ Zak, M Zito, V Russo",
-      "bibtex_key": "bilucaglia2025c",
-      "bibtex_match_score": 1.0,
-      "citation_id": "RvAqXUIAAAAJ:nVrZBo8bIpAC",
-      "citations": 4,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:nVrZBo8bIpAC",
-      "publication": "Frontiers in Human Neuroscience 19, 1638225, 2025",
-      "title": "Editorial: Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience",
-      "year": "2025"
-    },
-    {
-      "authors": "M Bilucaglia, R Laureanti, R Circi, M Zito, M Bellati, A Fici, F Rivetti, ...",
-      "bibtex_key": "bilucaglia2022",
-      "bibtex_match_score": 0.911,
-      "citation_id": "RvAqXUIAAAAJ:ZfRJV9d4-WMC",
-      "citations": 4,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:ZfRJV9d4-WMC",
-      "publication": "2022 44th Annual International Conference of the IEEE Engineering in …, 2022",
-      "title": "Spectral differences in resting-state EEG associated to individual Emotional Styles",
-      "year": "2022"
     },
     {
       "authors": "R Gannuscio, G Gifuni, G Maniaci, D Bongiorno, S Indelicato, C Lino, ...",
@@ -433,6 +433,15 @@
       "publication": "XIX Congresso Nazionale AIP - Sezione di Psicologia delle Organizzazioni, 129, 2023",
       "title": "Pasta Experience: a neuromarketing approach",
       "year": "2023"
+    },
+    {
+      "authors": "M Bilucaglia",
+      "citation_id": "RvAqXUIAAAAJ:48xauSegjOkC",
+      "citations": 0,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:48xauSegjOkC",
+      "publication": "Department of Business, Law, Economics and Consumer Behaviour \"Carlo A …, 2026",
+      "title": "Affect Detection in Consumer Neuroscience: a Multimodal Machine Learning Model based on bioelectrical and biometric signals",
+      "year": "2026"
     },
     {
       "authors": "M Bilucaglia, C Casiraghi, V Russo, M Zito",
@@ -773,7 +782,7 @@
       "bibtex_key": "zito2021",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:VOx2b1Wkg3QC",
-      "citations": 63,
+      "citations": 65,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:VOx2b1Wkg3QC",
       "publication": "Frontiers in Psychology 12, 1784, 2021",
       "title": "Assessing the emotional response in social communication: the role of neuromarketing",
@@ -817,12 +826,12 @@
       "bibtex_key": "russo2022",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:7T2F9Uy0os0C",
-      "citations": 38,
+      "citations": 39,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:7T2F9Uy0os0C",
       "publication": "Foods 11 (15), 2349, 2022",
       "title": "The Role of the Emotional Sequence in the Communication of the Territorial Cheeses: A Neuromarketing Approach",
       "year": "2022"
     }
   ],
-  "updated_at": "2026-09-10T09:26:11+00:00"
+  "updated_at": "2026-09-14T10:38:05+00:00"
 }
