@@ -6,22 +6,22 @@ title: CV
 {% endif %}
 
 ## Education
-- **2026:** Ph.D. in Cominication Markets and Society, Università IULM
-- **2018:** M.Sc. in Electronics Bioengineering, Alama Mater Studiorum - Università di Bologna
-- **2014:** B.Sc. in Electronics Engineering, Politecnico di Milano
+- **2026:** Ph.D. in Cominication Markets and Society, Università IULM (Milan, Italy)
+- **2018:** M.Sc. in Electronics Bioengineering, Alama Mater Studiorum - Università di Bologna (Italy)
+- **2014:** B.Sc. in Electronics Engineering, Politecnico di Milano (Milan, Italy)
 
 ## Professional Qualifications
 - **2018:** Italian State Examination (License to Practise) for Professional Engineer
 
 ## Academic Positions
-- **2022 - 2025:** Ph.D. Fellow, Università IULM
-- **2019 - 2022:** Research Fellow, Università IULM
-- **2019:** Research Assistant, University of Padua
+- **2022 - 2025:** Ph.D. Fellow (Spervisor: Prof. V. Russo), Università IULM
+- **2019 - 2022:** Research Fellow (Supervisor: Prof. V. Russo), Università IULM
+- **2019:** Research Assistant (Supervisor: Dr. P. Tressoldi), University of Padua
 
 ## Professional Affiliations
-- **2020 - present:** Chartered Information Engineer, Engineers Council of Milan
-- **2018 - present:** Member, IEEE-EMBS (Engineering in Medicine and Biology Society)
-- **2014 - present:** Member, IEEE (Institute of Electrical and Electronics Engineers)
+- **2020 - present:** C.Eng, Information Engineering, Engineers Council of Milan (Italy)
+- **2018 - present:** Member, IEEE-EMBS
+- **2014 - present:** Member, IEEE
 
 ## Academic Services
 ### Editorial Services
