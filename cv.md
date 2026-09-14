@@ -19,7 +19,7 @@ title: CV
 - **2019:** Research Assistant (Supervisor: Dr. P. Tressoldi), University of Padua (Italy)
 
 ## Professional Affiliations
-- **2020 - present:** C.Eng, Information Engineering, Engineers Council of Milan
+- **2020 - present:** C.Eng in Information Engineering, Engineers Council of Milan
 - **2018 - present:** Member, IEEE-EMBS
 - **2014 - present:** Member, IEEE
 
