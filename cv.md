@@ -11,7 +11,7 @@ title: CV
 - **2014:** B.Sc. in Electronics Engineering, Politecnico di Milano (Milan, Italy)
 
 ## Professional Qualifications
-- **2018:** Italian State Examination (License to Practise) for Professional Engineer
+- **2018:** Italian State Examination (License to Practise) for Professional Engineer, Politecnico di Milano
 
 ## Academic Positions
 - **2022 - 2025:** Ph.D. Fellow (Spervisor: Prof. V. Russo), Università IULM
