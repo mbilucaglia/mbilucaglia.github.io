@@ -1,6 +1,6 @@
 {
-  "citations": 655,
-  "citations_recent": 549,
+  "citations": 660,
+  "citations_recent": 554,
   "h_index": 16,
   "h_index_recent": 14,
   "i10_index": 21,
@@ -29,11 +29,11 @@
     "valesi2023",
     "bilucaglia2024",
     "Gabrielli2020",
+    "accardi2025",
     "bilucaglia2025ACAIN",
     "Bilucaglia2021",
-    "accardi2025",
-    "Laureanti2021",
     "bilucaglia2025a",
+    "Laureanti2021",
     "bilucaglia2025c",
     "pasta2023",
     "bilucaglia2022",
@@ -78,7 +78,7 @@
       "bibtex_key": "fici2024",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:Ri6SYOTghG4C",
-      "citations": 47,
+      "citations": 48,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:Ri6SYOTghG4C",
       "publication": "Behavioral Sciences 14 (7), 596, 2024",
       "title": "From E-Commerce to the Metaverse: A Neuroscientific Analysis of Digital Consumer Behavior",
@@ -155,7 +155,7 @@
       "bibtex_key": "zito2022",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:tKAzc9rXhukC",
-      "citations": 29,
+      "citations": 30,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:tKAzc9rXhukC",
       "publication": "Frontiers in Psychology 13, 965499, 2022",
       "title": "From Virtual Reality to Augmented Reality: a neuromarketing perspective",
@@ -177,7 +177,7 @@
       "bibtex_key": "Bilucaglia2019a",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:k_IJM867U9cC",
-      "citations": 26,
+      "citations": 27,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:k_IJM867U9cC",
       "publication": "2019 41st Annual International Conference of the IEEE Engineering in …, 2019",
       "title": "Looking through blue glasses: bioelectrical measures to assess the awakening after a calm situation",
@@ -292,6 +292,17 @@
       "year": "2020"
     },
     {
+      "authors": "S Accardi, C Campo, M Bilucaglia, M Zito, M Caccamo, V Russo",
+      "bibtex_key": "accardi2025",
+      "bibtex_match_score": 0.92,
+      "citation_id": "RvAqXUIAAAAJ:F1b5ZUV5XREC",
+      "citations": 9,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:F1b5ZUV5XREC",
+      "publication": "Behavioral Sciences 15 (9), 1241, 2025",
+      "title": "Static vs. Immersive: A Neuromarketing Exploratory Study of Augmented Reality on Packaging Labels",
+      "year": "2025"
+    },
+    {
       "authors": "M Bilucaglia, C Casiraghi, A Bruno, S Chiarelli, A Fici, V Russo, M Zito",
       "bibtex_key": "bilucaglia2025ACAIN",
       "bibtex_match_score": 1.0,
@@ -314,14 +325,14 @@
       "year": "2021"
     },
     {
-      "authors": "S Accardi, C Campo, M Bilucaglia, M Zito, M Caccamo, V Russo",
-      "bibtex_key": "accardi2025",
-      "bibtex_match_score": 0.92,
-      "citation_id": "RvAqXUIAAAAJ:F1b5ZUV5XREC",
+      "authors": "M Bilucaglia, M Bellati, A Fici, V Russo, M Zito",
+      "bibtex_key": "bilucaglia2025a",
+      "bibtex_match_score": 1.0,
+      "citation_id": "RvAqXUIAAAAJ:2tRrZ1ZAMYUC",
       "citations": 8,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:F1b5ZUV5XREC",
-      "publication": "Behavioral Sciences 15 (9), 1241, 2025",
-      "title": "Static vs. Immersive: A Neuromarketing Exploratory Study of Augmented Reality on Packaging Labels",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:2tRrZ1ZAMYUC",
+      "publication": "Frontiers in Human Neuroscience 19, 1661214, 2025",
+      "title": "Tuning into Flavour: Predicting Coffee Sensory Attributes from EEG with Boosted-Tree Regression Models",
       "year": "2025"
     },
     {
@@ -334,17 +345,6 @@
       "publication": "2021 43rd Annual International Conference of the IEEE Engineering in …, 2021",
       "title": "Yellow (Lens) Better: Bioelectrical and Biometrical Measures to Assess Arousing and Focusing Effects",
       "year": "2021"
-    },
-    {
-      "authors": "M Bilucaglia, M Bellati, A Fici, V Russo, M Zito",
-      "bibtex_key": "bilucaglia2025a",
-      "bibtex_match_score": 1.0,
-      "citation_id": "RvAqXUIAAAAJ:2tRrZ1ZAMYUC",
-      "citations": 7,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:2tRrZ1ZAMYUC",
-      "publication": "Frontiers in Human Neuroscience 19, 1661214, 2025",
-      "title": "Tuning into Flavour: Predicting Coffee Sensory Attributes from EEG with Boosted-Tree Regression Models",
-      "year": "2025"
     },
     {
       "authors": "M Bilucaglia, L Mainardi, TZ Ramsøy, PJ Zak, M Zito, V Russo",
@@ -793,7 +793,7 @@
       "bibtex_key": "fici2024",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:Ri6SYOTghG4C",
-      "citations": 47,
+      "citations": 48,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:Ri6SYOTghG4C",
       "publication": "Behavioral Sciences 14 (7), 596, 2024",
       "title": "From E-Commerce to the Metaverse: A Neuroscientific Analysis of Digital Consumer Behavior",
@@ -833,5 +833,5 @@
       "year": "2022"
     }
   ],
-  "updated_at": "2026-09-14T10:38:05+00:00"
+  "updated_at": "2026-09-21T10:43:00+00:00"
 }
