@@ -780,146 +780,171 @@ def extract_category_from_subject_child(
     return subject_code, category
 
 
-def extract_ranking_records(payload: Any) -> list[dict[str, str]]:
-    """Extract CiteScore subject-ranking rows from the Scopus API payload.
+def extract_ranking_records(
+    payload: Any,
+    target_year: str | None = None,
+) -> list[dict[str, str]]:
+    """Extract CiteScore subject rankings for one CiteScore year.
 
-    Important:
-    - The category name is taken directly from the API row when present.
-    - Generic keys such as "code" and "description" are accepted only
-      inside a clear subject/ranking context.
-    - The ASJC mapping is not used here. It is only a later fallback.
+    The CITESCORE view contains historical citeScoreYearInfo entries.  Rankings
+    must therefore be read from the citeScoreInfo belonging to the same year as
+    citeScoreCurrentMetricYear; otherwise historical percentiles can be mixed
+    with the latest CiteScore.
+
+    If target_year is omitted, the latest complete CiteScore year present in
+    citeScoreYearInfo is used.
     """
 
-    records: list[dict[str, str]] = []
+    year_infos: list[dict[str, Any]] = []
 
     for node in iter_nested_values(payload):
         if not isinstance(node, dict):
             continue
 
-        keys = node_keyset(node)
+        raw_year_infos = None
 
-        has_percentile = bool(
-            keys
-            & {
-                "percentile",
-                "citescorepercentile",
-                "percentilevalue",
-            }
-        )
+        for key, value in node.items():
+            if compact_key(key) == "citescoreyearinfo":
+                raw_year_infos = value
+                break
 
-        has_rank = bool(
-            keys
-            & {
-                "rank",
-                "citescorerank",
-                "rankposition",
-            }
-        )
-
-        has_subject_marker = bool(
-            keys
-            & {
-                "subjectarea",
-                "subjectareas",
-                "subjectareaname",
-                "subjectname",
-                "subject",
-                "asjccode",
-                "subjectcode",
-                "subjectareacode",
-                "subjcode",
-            }
-        )
-
-        if not has_percentile:
+        if raw_year_infos is None:
             continue
 
-        if not has_rank and not has_subject_marker:
-            continue
+        if not isinstance(raw_year_infos, list):
+            raw_year_infos = [raw_year_infos]
 
-        percentile = first_value_by_keys(
-            node,
-            {
-                "percentile",
-                "citescorepercentile",
-                "percentilevalue",
-            },
+        year_infos.extend(
+            item
+            for item in raw_year_infos
+            if isinstance(item, dict)
         )
 
-        rank = first_value_by_keys(
-            node,
-            {
-                "rank",
-                "citescorerank",
-                "rankposition",
-            },
-        )
+    if not year_infos:
+        return []
 
-        rank_out_of = first_value_by_keys(
-            node,
-            {
-                "rankoutof",
-                "outof",
-                "citescorerankoutof",
-            },
-        )
+    requested_year = str(target_year or "").strip()
 
-        subject_code = first_value_by_keys(
-            node,
-            {
-                "subjectcode",
-                "asjccode",
-                "subjectareacode",
-                "subjcode",
-            },
-        )
+    if not requested_year:
+        available_years = [
+            text_value(info.get("@year") or info.get("year"))
+            for info in year_infos
+        ]
+        available_years = [
+            year
+            for year in available_years
+            if looks_like_year(year)
+        ]
 
-        category = clean_category(
-            first_value_by_keys(
-                node,
-                {
-                    "subjectareaname",
-                    "subjectname",
-                    "subjectarea",
-                    "subject",
-                    "category",
-                },
-            )
-        )
-
-        if not subject_code or not category:
-            nested_subject_code, nested_category = (
-                extract_category_from_subject_child(node)
+        if available_years:
+            requested_year = max(
+                available_years,
+                key=lambda year: parse_int(year, default=-1),
             )
 
-            if not subject_code:
-                subject_code = nested_subject_code
+    matching_year_infos = [
+        info
+        for info in year_infos
+        if text_value(info.get("@year") or info.get("year"))
+        == requested_year
+    ]
 
-            if not category:
-                category = nested_category
+    if not matching_year_infos:
+        return []
 
-        if not percentile:
-            continue
+    records: list[dict[str, str]] = []
 
-        if not subject_code and not category:
-            continue
-
-        records.append(
-            {
-                "percentile": percentile,
-                "quartile": percentile_to_quartile(percentile),
-                "rank": rank,
-                "rank_out_of": rank_out_of,
-                "category": category,
-                "subject_code": subject_code,
-            }
+    for year_info in matching_year_infos:
+        year = text_value(
+            year_info.get("@year")
+            or year_info.get("year")
         )
+
+        information_lists = year_info.get(
+            "citeScoreInformationList",
+            [],
+        )
+
+        if not isinstance(information_lists, list):
+            information_lists = [information_lists]
+
+        for information_list in information_lists:
+            if not isinstance(information_list, dict):
+                continue
+
+            cite_score_infos = information_list.get(
+                "citeScoreInfo",
+                [],
+            )
+
+            if not isinstance(cite_score_infos, list):
+                cite_score_infos = [cite_score_infos]
+
+            for cite_score_info in cite_score_infos:
+                if not isinstance(cite_score_info, dict):
+                    continue
+
+                subject_ranks = cite_score_info.get(
+                    "citeScoreSubjectRank",
+                    [],
+                )
+
+                if not isinstance(subject_ranks, list):
+                    subject_ranks = [subject_ranks]
+
+                for subject_rank in subject_ranks:
+                    if not isinstance(subject_rank, dict):
+                        continue
+
+                    percentile = text_value(
+                        subject_rank.get("percentile")
+                    )
+
+                    if not percentile:
+                        continue
+
+                    subject_code = text_value(
+                        subject_rank.get("subjectCode")
+                        or subject_rank.get("subject-code")
+                    )
+
+                    rank = text_value(
+                        subject_rank.get("rank")
+                    )
+
+                    rank_out_of = text_value(
+                        subject_rank.get("rankOutOf")
+                        or subject_rank.get("rank-out-of")
+                    )
+
+                    category = clean_category(
+                        text_value(
+                            subject_rank.get("subjectArea")
+                            or subject_rank.get("subjectName")
+                            or subject_rank.get("category")
+                        )
+                    )
+
+                    records.append(
+                        {
+                            "year": year,
+                            "percentile": percentile,
+                            "quartile": percentile_to_quartile(
+                                percentile
+                            ),
+                            "rank": rank,
+                            "rank_out_of": rank_out_of,
+                            "category": category,
+                            "subject_code": subject_code,
+                        }
+                    )
 
     deduped: list[dict[str, str]] = []
-    seen: set[tuple[str, str, str, str, str, str]] = set()
+    seen: set[tuple[str, str, str, str, str, str, str]] = set()
 
     for record in records:
         identity = (
+            record.get("year", ""),
             record.get("percentile", ""),
             record.get("quartile", ""),
             record.get("rank", ""),
@@ -1089,7 +1114,12 @@ def parse_elsevier_payload(
 
     citescore, citescore_year = extract_current_citescore(payload)
 
-    ranking_records = extract_ranking_records(payload)
+    # Use rankings from the same latest complete year as citeScoreCurrentMetric.
+    # The CITESCORE payload also contains historical ranking rows.
+    ranking_records = extract_ranking_records(
+        payload,
+        target_year=citescore_year,
+    )
 
     selected_rank = select_highest_percentile_record(
         ranking_records
