@@ -1,10 +1,10 @@
 {
-  "citations": 660,
-  "citations_recent": 554,
+  "citations": 661,
+  "citations_recent": 555,
   "h_index": 16,
   "h_index_recent": 14,
-  "i10_index": 21,
-  "i10_index_recent": 17,
+  "i10_index": 22,
+  "i10_index_recent": 18,
   "name": "Marco Bilucaglia",
   "profile_url": "https://scholar.google.com/citations?user=RvAqXUIAAAAJ&hl=en",
   "publication_metrics": "_data/publication_metrics.json",
@@ -28,9 +28,9 @@
     "Russo2021",
     "valesi2023",
     "bilucaglia2024",
+    "bilucaglia2025ACAIN",
     "Gabrielli2020",
     "accardi2025",
-    "bilucaglia2025ACAIN",
     "Bilucaglia2021",
     "bilucaglia2025a",
     "Laureanti2021",
@@ -281,6 +281,17 @@
       "year": "2024"
     },
     {
+      "authors": "M Bilucaglia, C Casiraghi, A Bruno, S Chiarelli, A Fici, V Russo, M Zito",
+      "bibtex_key": "bilucaglia2025ACAIN",
+      "bibtex_match_score": 1.0,
+      "citation_id": "RvAqXUIAAAAJ:F9fV5C73w3QC",
+      "citations": 10,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:F9fV5C73w3QC",
+      "publication": "Proceedings of the 10th International Conference on Machine Learning …, 2025",
+      "title": "Emotional Reactions To AI-Generated Images: A Pilot Study Using Neurophysiological Measures",
+      "year": "2025"
+    },
+    {
       "authors": "G Gabrielli, M Bilucaglia, M Zito, R Laureanti, A Caponetto, R Circi, A Fici, ...",
       "bibtex_key": "Gabrielli2020",
       "bibtex_match_score": 1.0,
@@ -300,17 +311,6 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:F1b5ZUV5XREC",
       "publication": "Behavioral Sciences 15 (9), 1241, 2025",
       "title": "Static vs. Immersive: A Neuromarketing Exploratory Study of Augmented Reality on Packaging Labels",
-      "year": "2025"
-    },
-    {
-      "authors": "M Bilucaglia, C Casiraghi, A Bruno, S Chiarelli, A Fici, V Russo, M Zito",
-      "bibtex_key": "bilucaglia2025ACAIN",
-      "bibtex_match_score": 1.0,
-      "citation_id": "RvAqXUIAAAAJ:F9fV5C73w3QC",
-      "citations": 9,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:F9fV5C73w3QC",
-      "publication": "Proceedings of the 10th International Conference on Machine Learning …, 2025",
-      "title": "Emotional Reactions To AI-Generated Images: A Pilot Study Using Neurophysiological Measures",
       "year": "2025"
     },
     {
@@ -441,6 +441,15 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:48xauSegjOkC",
       "publication": "Department of Business, Law, Economics and Consumer Behaviour \"Carlo A …, 2026",
       "title": "Affect Detection in Consumer Neuroscience: a Multimodal Machine Learning Model based on bioelectrical and biometric signals",
+      "year": "2026"
+    },
+    {
+      "authors": "A Fici, M Bilucaglia, G Gifuni, V Pasculli, V Russo, M Zito",
+      "citation_id": "RvAqXUIAAAAJ:lgwcVrK6X84C",
+      "citations": 0,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:lgwcVrK6X84C",
+      "publication": "XXII Congresso Nazionale AIP-Sezione di Psicologia per le Organizzazioni, 16-16, 2026",
+      "title": "L'umorismo nella comunicazione dei servizi funebri: evidenze da misure self-report e neurofisiologiche",
       "year": "2026"
     },
     {
@@ -833,5 +842,5 @@
       "year": "2022"
     }
   ],
-  "updated_at": "2026-09-21T10:43:00+00:00"
+  "updated_at": "2026-09-25T13:20:44+00:00"
 }
