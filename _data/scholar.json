@@ -1,10 +1,10 @@
 {
-  "citations": 661,
-  "citations_recent": 555,
+  "citations": 663,
+  "citations_recent": 557,
   "h_index": 16,
   "h_index_recent": 14,
-  "i10_index": 22,
-  "i10_index_recent": 18,
+  "i10_index": 23,
+  "i10_index_recent": 19,
   "name": "Marco Bilucaglia",
   "profile_url": "https://scholar.google.com/citations?user=RvAqXUIAAAAJ&hl=en",
   "publication_metrics": "_data/publication_metrics.json",
@@ -26,11 +26,11 @@
     "Bilucaglia2019b",
     "Tressoldi2014b",
     "Russo2021",
-    "valesi2023",
     "bilucaglia2024",
+    "valesi2023",
+    "accardi2025",
     "bilucaglia2025ACAIN",
     "Gabrielli2020",
-    "accardi2025",
     "Bilucaglia2021",
     "bilucaglia2025a",
     "Laureanti2021",
@@ -259,6 +259,17 @@
       "year": "2018"
     },
     {
+      "authors": "M Bilucaglia, M Zito, A Fici, C Casiraghi, F Rivetti, M Bellati, V Russo",
+      "bibtex_key": "bilucaglia2024",
+      "bibtex_match_score": 1.0,
+      "citation_id": "RvAqXUIAAAAJ:LI9QrySNdTsC",
+      "citations": 14,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:LI9QrySNdTsC",
+      "publication": "Frontiers in Human Neuroscience 18, 1347327, 2024",
+      "title": "I DARE: IULM Dataset of Affective Responses",
+      "year": "2024"
+    },
+    {
       "authors": "R Valesi, G Gabrielli, M Zito, M Bellati, M Bilucaglia, A Caponetto, A Fici, ...",
       "bibtex_key": "valesi2023",
       "bibtex_match_score": 1.0,
@@ -270,15 +281,15 @@
       "year": "2023"
     },
     {
-      "authors": "M Bilucaglia, M Zito, A Fici, C Casiraghi, F Rivetti, M Bellati, V Russo",
-      "bibtex_key": "bilucaglia2024",
-      "bibtex_match_score": 1.0,
-      "citation_id": "RvAqXUIAAAAJ:LI9QrySNdTsC",
-      "citations": 13,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:LI9QrySNdTsC",
-      "publication": "Frontiers in Human Neuroscience 18, 1347327, 2024",
-      "title": "I DARE: IULM Dataset of Affective Responses",
-      "year": "2024"
+      "authors": "S Accardi, C Campo, M Bilucaglia, M Zito, M Caccamo, V Russo",
+      "bibtex_key": "accardi2025",
+      "bibtex_match_score": 0.92,
+      "citation_id": "RvAqXUIAAAAJ:F1b5ZUV5XREC",
+      "citations": 10,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:F1b5ZUV5XREC",
+      "publication": "Behavioral Sciences 15 (9), 1241, 2025",
+      "title": "Static vs. Immersive: A Neuromarketing Exploratory Study of Augmented Reality on Packaging Labels",
+      "year": "2025"
     },
     {
       "authors": "M Bilucaglia, C Casiraghi, A Bruno, S Chiarelli, A Fici, V Russo, M Zito",
@@ -301,17 +312,6 @@
       "publication": "2020 42nd Annual International Conference of the IEEE Engineering in …, 2020",
       "title": "Neurocoaching: exploring the relationship between coach and coachee by means of bioelectrical signal similarities",
       "year": "2020"
-    },
-    {
-      "authors": "S Accardi, C Campo, M Bilucaglia, M Zito, M Caccamo, V Russo",
-      "bibtex_key": "accardi2025",
-      "bibtex_match_score": 0.92,
-      "citation_id": "RvAqXUIAAAAJ:F1b5ZUV5XREC",
-      "citations": 9,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:F1b5ZUV5XREC",
-      "publication": "Behavioral Sciences 15 (9), 1241, 2025",
-      "title": "Static vs. Immersive: A Neuromarketing Exploratory Study of Augmented Reality on Packaging Labels",
-      "year": "2025"
     },
     {
       "authors": "M Bilucaglia, R Laureanti, M Zito, R Circi, A Fici, V Russo, LT Mainardi",
@@ -842,5 +842,5 @@
       "year": "2022"
     }
   ],
-  "updated_at": "2026-09-25T13:22:15+00:00"
+  "updated_at": "2026-09-28T11:41:08+00:00"
 }
