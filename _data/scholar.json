@@ -1,6 +1,6 @@
 {
-  "citations": 663,
-  "citations_recent": 557,
+  "citations": 671,
+  "citations_recent": 565,
   "h_index": 16,
   "h_index_recent": 14,
   "i10_index": 23,
@@ -32,8 +32,8 @@
     "bilucaglia2025ACAIN",
     "Gabrielli2020",
     "Bilucaglia2021",
-    "bilucaglia2025a",
     "Laureanti2021",
+    "bilucaglia2025a",
     "bilucaglia2025c",
     "pasta2023",
     "bilucaglia2022",
@@ -122,7 +122,7 @@
       "bibtex_key": "Bilucaglia2020a",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:RYcK_YlVTxYC",
-      "citations": 34,
+      "citations": 35,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:RYcK_YlVTxYC",
       "publication": "F1000Research 9, 173, 2021",
       "title": "Applying machine learning EEG signal classification to emotion related brain anticipatory activity",
@@ -144,7 +144,7 @@
       "bibtex_key": "micheletto2025",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:fFSKOagxvKUC",
-      "citations": 32,
+      "citations": 33,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:fFSKOagxvKUC",
       "publication": "Frontiers in Virtual Reality 6, 1515937, 2025",
       "title": "Enjoy it! Cosmetic try-on apps and augmented reality, the impact of enjoyment, informativeness and ease of use.",
@@ -166,7 +166,7 @@
       "bibtex_key": "Zito2021b",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:XiVPGOgt02cC",
-      "citations": 27,
+      "citations": 28,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:XiVPGOgt02cC",
       "publication": "Frontiers in Psychology 12, 673012, 2021",
       "title": "Job assessment through bioelectrical measures: a Neuromanagement perspective",
@@ -199,7 +199,7 @@
       "bibtex_key": "russo2023",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:hMsQuOkrut0C",
-      "citations": 22,
+      "citations": 23,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:hMsQuOkrut0C",
       "publication": "Frontiers in Psychology 14, 1238879, 2023",
       "title": "Neuroselling: applying neuroscience to selling for a new business perspective. An analysis on teleshopping advertising",
@@ -285,7 +285,7 @@
       "bibtex_key": "accardi2025",
       "bibtex_match_score": 0.92,
       "citation_id": "RvAqXUIAAAAJ:F1b5ZUV5XREC",
-      "citations": 10,
+      "citations": 11,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:F1b5ZUV5XREC",
       "publication": "Behavioral Sciences 15 (9), 1241, 2025",
       "title": "Static vs. Immersive: A Neuromarketing Exploratory Study of Augmented Reality on Packaging Labels",
@@ -296,7 +296,7 @@
       "bibtex_key": "bilucaglia2025ACAIN",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:F9fV5C73w3QC",
-      "citations": 10,
+      "citations": 11,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:F9fV5C73w3QC",
       "publication": "Proceedings of the 10th International Conference on Machine Learning …, 2025",
       "title": "Emotional Reactions To AI-Generated Images: A Pilot Study Using Neurophysiological Measures",
@@ -325,6 +325,17 @@
       "year": "2021"
     },
     {
+      "authors": "R Laureanti, M Bilucaglia, M Zito, R Circi, A Fici, F Rivetti, R Valesi, ...",
+      "bibtex_key": "Laureanti2021",
+      "bibtex_match_score": 1.0,
+      "citation_id": "RvAqXUIAAAAJ:_B80troHkn4C",
+      "citations": 9,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:_B80troHkn4C",
+      "publication": "2021 43rd Annual International Conference of the IEEE Engineering in …, 2021",
+      "title": "Yellow (Lens) Better: Bioelectrical and Biometrical Measures to Assess Arousing and Focusing Effects",
+      "year": "2021"
+    },
+    {
       "authors": "M Bilucaglia, M Bellati, A Fici, V Russo, M Zito",
       "bibtex_key": "bilucaglia2025a",
       "bibtex_match_score": 1.0,
@@ -336,22 +347,11 @@
       "year": "2025"
     },
     {
-      "authors": "R Laureanti, M Bilucaglia, M Zito, R Circi, A Fici, F Rivetti, R Valesi, ...",
-      "bibtex_key": "Laureanti2021",
-      "bibtex_match_score": 1.0,
-      "citation_id": "RvAqXUIAAAAJ:_B80troHkn4C",
-      "citations": 8,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:_B80troHkn4C",
-      "publication": "2021 43rd Annual International Conference of the IEEE Engineering in …, 2021",
-      "title": "Yellow (Lens) Better: Bioelectrical and Biometrical Measures to Assess Arousing and Focusing Effects",
-      "year": "2021"
-    },
-    {
       "authors": "M Bilucaglia, L Mainardi, TZ Ramsøy, PJ Zak, M Zito, V Russo",
       "bibtex_key": "bilucaglia2025c",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:nVrZBo8bIpAC",
-      "citations": 5,
+      "citations": 6,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:nVrZBo8bIpAC",
       "publication": "Frontiers in Human Neuroscience 19, 1638225, 2025",
       "title": "Editorial: Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience",
@@ -444,11 +444,20 @@
       "year": "2026"
     },
     {
+      "authors": "G Gifuni, C Casiraghi, M Bilucaglia, T Massimo, D Carmelo, V Russo, ...",
+      "citation_id": "RvAqXUIAAAAJ:ALROH1vI_8AC",
+      "citations": 0,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:ALROH1vI_8AC",
+      "publication": "XXII Congresso Nazionale AIP - Sezione di Psicologia per le Organizzazioni …, 2026",
+      "title": "Quando l’informazione cambia il gusto: bias cognitivi e risposte neurofisiologiche agli alimenti upcycled",
+      "year": "2026"
+    },
+    {
       "authors": "A Fici, M Bilucaglia, G Gifuni, V Pasculli, V Russo, M Zito",
       "citation_id": "RvAqXUIAAAAJ:lgwcVrK6X84C",
       "citations": 0,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:lgwcVrK6X84C",
-      "publication": "XXII Congresso Nazionale AIP-Sezione di Psicologia per le Organizzazioni, 16-16, 2026",
+      "publication": "XXII Congresso Nazionale AIP - Sezione di Psicologia per le Organizzazioni …, 2026",
       "title": "L'umorismo nella comunicazione dei servizi funebri: evidenze da misure self-report e neurofisiologiche",
       "year": "2026"
     },
@@ -842,5 +851,5 @@
       "year": "2022"
     }
   ],
-  "updated_at": "2026-09-28T11:41:08+00:00"
+  "updated_at": "2026-10-05T12:16:09+00:00"
 }
