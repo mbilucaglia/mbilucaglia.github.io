@@ -1,6 +1,6 @@
 {
-  "citations": 671,
-  "citations_recent": 565,
+  "citations": 683,
+  "citations_recent": 577,
   "h_index": 16,
   "h_index_recent": 14,
   "i10_index": 23,
@@ -31,15 +31,15 @@
     "accardi2025",
     "bilucaglia2025ACAIN",
     "Gabrielli2020",
+    "bilucaglia2025a",
     "Bilucaglia2021",
     "Laureanti2021",
-    "bilucaglia2025a",
     "bilucaglia2025c",
+    "Casiraghi2025pasta",
     "pasta2023",
     "bilucaglia2022",
     "Tressoldi2014b",
     "Gannuscio2025",
-    "Casiraghi2025pasta",
     "casiraghi2025neuronudge",
     "Bellati2023aip",
     "Bilucaglia2026",
@@ -67,7 +67,7 @@
       "bibtex_key": "zito2021",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:VOx2b1Wkg3QC",
-      "citations": 65,
+      "citations": 68,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:VOx2b1Wkg3QC",
       "publication": "Frontiers in Psychology 12, 1784, 2021",
       "title": "Assessing the emotional response in social communication: the role of neuromarketing",
@@ -78,7 +78,7 @@
       "bibtex_key": "fici2024",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:Ri6SYOTghG4C",
-      "citations": 48,
+      "citations": 49,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:Ri6SYOTghG4C",
       "publication": "Behavioral Sciences 14 (7), 596, 2024",
       "title": "From E-Commerce to the Metaverse: A Neuroscientific Analysis of Digital Consumer Behavior",
@@ -177,7 +177,7 @@
       "bibtex_key": "Bilucaglia2019a",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:k_IJM867U9cC",
-      "citations": 27,
+      "citations": 28,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:k_IJM867U9cC",
       "publication": "2019 41st Annual International Conference of the IEEE Engineering in …, 2019",
       "title": "Looking through blue glasses: bioelectrical measures to assess the awakening after a calm situation",
@@ -188,7 +188,7 @@
       "bibtex_key": "Bilucaglia2020b",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:rO6llkc54NcC",
-      "citations": 24,
+      "citations": 25,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:rO6llkc54NcC",
       "publication": "HardwareX 8 (C), e00125, 2020",
       "title": "ESB: a low-cost EEG Synchronization Box",
@@ -314,6 +314,17 @@
       "year": "2020"
     },
     {
+      "authors": "M Bilucaglia, M Bellati, A Fici, V Russo, M Zito",
+      "bibtex_key": "bilucaglia2025a",
+      "bibtex_match_score": 1.0,
+      "citation_id": "RvAqXUIAAAAJ:2tRrZ1ZAMYUC",
+      "citations": 9,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:2tRrZ1ZAMYUC",
+      "publication": "Frontiers in Human Neuroscience 19, 1661214, 2025",
+      "title": "Tuning into Flavour: Predicting Coffee Sensory Attributes from EEG with Boosted-Tree Regression Models",
+      "year": "2025"
+    },
+    {
       "authors": "M Bilucaglia, R Laureanti, M Zito, R Circi, A Fici, V Russo, LT Mainardi",
       "bibtex_key": "Bilucaglia2021",
       "bibtex_match_score": 1.0,
@@ -336,17 +347,6 @@
       "year": "2021"
     },
     {
-      "authors": "M Bilucaglia, M Bellati, A Fici, V Russo, M Zito",
-      "bibtex_key": "bilucaglia2025a",
-      "bibtex_match_score": 1.0,
-      "citation_id": "RvAqXUIAAAAJ:2tRrZ1ZAMYUC",
-      "citations": 8,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:2tRrZ1ZAMYUC",
-      "publication": "Frontiers in Human Neuroscience 19, 1661214, 2025",
-      "title": "Tuning into Flavour: Predicting Coffee Sensory Attributes from EEG with Boosted-Tree Regression Models",
-      "year": "2025"
-    },
-    {
       "authors": "M Bilucaglia, L Mainardi, TZ Ramsøy, PJ Zak, M Zito, V Russo",
       "bibtex_key": "bilucaglia2025c",
       "bibtex_match_score": 1.0,
@@ -355,6 +355,17 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:nVrZBo8bIpAC",
       "publication": "Frontiers in Human Neuroscience 19, 1638225, 2025",
       "title": "Editorial: Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience",
+      "year": "2025"
+    },
+    {
+      "authors": "C Casiraghi, A Fici, M Bilucaglia, C Rossi, M Zito, V Russo",
+      "bibtex_key": "Casiraghi2025pasta",
+      "bibtex_match_score": 1.0,
+      "citation_id": "RvAqXUIAAAAJ:tH6gc1N1XXoC",
+      "citations": 5,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:tH6gc1N1XXoC",
+      "publication": "Current Psychology 44 (18), 15183-15199, 2025",
+      "title": "Processing every bite: A neuroscientific analysis of the eating experience and its cognitive and emotional dynamics",
       "year": "2025"
     },
     {
@@ -395,21 +406,10 @@
       "bibtex_key": "Gannuscio2025",
       "bibtex_match_score": 0.977,
       "citation_id": "RvAqXUIAAAAJ:sJsF-0ZLhtgC",
-      "citations": 3,
+      "citations": 4,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:sJsF-0ZLhtgC",
       "publication": "Foods 14 (19), 3334, 2025",
       "title": "Fresh Pecorino Cheese Produced by Ewes Fed Silage with Prickly Pear By-Products: VOC, Chemical, and Sensory Characteristics Detected with a Neuro-Sensory Approach Combining EEG …",
-      "year": "2025"
-    },
-    {
-      "authors": "C Casiraghi, A Fici, M Bilucaglia, C Rossi, M Zito, V Russo",
-      "bibtex_key": "Casiraghi2025pasta",
-      "bibtex_match_score": 1.0,
-      "citation_id": "RvAqXUIAAAAJ:tH6gc1N1XXoC",
-      "citations": 3,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:tH6gc1N1XXoC",
-      "publication": "Current Psychology 44 (18), 15183-15199, 2025",
-      "title": "Processing every bite: A neuroscientific analysis of the eating experience and its cognitive and emotional dynamics",
       "year": "2025"
     },
     {
@@ -417,7 +417,7 @@
       "bibtex_key": "casiraghi2025neuronudge",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:gVv57TyPmFsC",
-      "citations": 2,
+      "citations": 4,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:gVv57TyPmFsC",
       "publication": "PloS one 20 (6), e0325804, 2025",
       "title": "How to nudge students toward healthier snacks? Consumer neuroscience insights on multisensory nudge interventions in university vending machines",
@@ -800,7 +800,7 @@
       "bibtex_key": "zito2021",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:VOx2b1Wkg3QC",
-      "citations": 65,
+      "citations": 68,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:VOx2b1Wkg3QC",
       "publication": "Frontiers in Psychology 12, 1784, 2021",
       "title": "Assessing the emotional response in social communication: the role of neuromarketing",
@@ -811,7 +811,7 @@
       "bibtex_key": "fici2024",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:Ri6SYOTghG4C",
-      "citations": 48,
+      "citations": 49,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:Ri6SYOTghG4C",
       "publication": "Behavioral Sciences 14 (7), 596, 2024",
       "title": "From E-Commerce to the Metaverse: A Neuroscientific Analysis of Digital Consumer Behavior",
@@ -851,5 +851,5 @@
       "year": "2022"
     }
   ],
-  "updated_at": "2026-10-05T12:16:09+00:00"
+  "updated_at": "2026-10-12T13:09:41+00:00"
 }
