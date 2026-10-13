@@ -44,6 +44,7 @@
     "Bellati2023aip",
     "Bilucaglia2026",
     "gifuni2026",
+    "Gifuni2026",
     "piccoli2025aesthetics",
     "piccoli2025acei",
     "acardi2025npe",
@@ -484,6 +485,17 @@
       "year": "2026"
     },
     {
+      "authors": "G Gifuni, C Casiraghi, M Bilucaglia, M Todaro, C Danzì, V Russo, M Zito",
+      "bibtex_key": "Gifuni2026",
+      "bibtex_match_score": 1.0,
+      "citation_id": "RvAqXUIAAAAJ:1lhNe0rCu4AC",
+      "citations": 0,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:1lhNe0rCu4AC",
+      "publication": "Sistemi intelligenti 38 (2), 335-362, 2026",
+      "title": "Cognitive Biases and the Perception of Upcycled Foods: How Pre-Consumption Information Shapes Sustainable Food Evaluation",
+      "year": "2026"
+    },
+    {
       "authors": "F Piccoli, M Bilucaglia, M Zito, V Russo",
       "bibtex_key": "piccoli2025aesthetics",
       "bibtex_match_score": 1.0,
@@ -851,5 +863,5 @@
       "year": "2022"
     }
   ],
-  "updated_at": "2026-10-12T13:09:41+00:00"
+  "updated_at": "2026-10-13T10:54:23+00:00"
 }
