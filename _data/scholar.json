@@ -1,6 +1,6 @@
 {
-  "citations": 683,
-  "citations_recent": 577,
+  "citations": 691,
+  "citations_recent": 585,
   "h_index": 16,
   "h_index_recent": 14,
   "i10_index": 23,
@@ -14,9 +14,9 @@
     "Laureanti2020",
     "Giroldini2016b",
     "russo2022",
+    "micheletto2025",
     "Bilucaglia2020a",
     "Giroldini2016",
-    "micheletto2025",
     "zito2022",
     "Zito2021b",
     "Bilucaglia2019a",
@@ -28,8 +28,8 @@
     "Russo2021",
     "bilucaglia2024",
     "valesi2023",
-    "accardi2025",
     "bilucaglia2025ACAIN",
+    "accardi2025",
     "Gabrielli2020",
     "bilucaglia2025a",
     "Bilucaglia2021",
@@ -79,7 +79,7 @@
       "bibtex_key": "fici2024",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:Ri6SYOTghG4C",
-      "citations": 49,
+      "citations": 50,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:Ri6SYOTghG4C",
       "publication": "Behavioral Sciences 14 (7), 596, 2024",
       "title": "From E-Commerce to the Metaverse: A Neuroscientific Analysis of Digital Consumer Behavior",
@@ -119,6 +119,17 @@
       "year": "2022"
     },
     {
+      "authors": "V Micheletto, S Accardi, A Fici, F Piccoli, C Rossi, M Bilucaglia, V Russo, ...",
+      "bibtex_key": "micheletto2025",
+      "bibtex_match_score": 1.0,
+      "citation_id": "RvAqXUIAAAAJ:fFSKOagxvKUC",
+      "citations": 35,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:fFSKOagxvKUC",
+      "publication": "Frontiers in Virtual Reality 6, 1515937, 2025",
+      "title": "Enjoy it! Cosmetic try-on apps and augmented reality, the impact of enjoyment, informativeness and ease of use.",
+      "year": "2025"
+    },
+    {
       "authors": "M Bilucaglia, GM Duma, G Mento, L Semenzato, PE Tressoldi",
       "bibtex_key": "Bilucaglia2020a",
       "bibtex_match_score": 1.0,
@@ -141,17 +152,6 @@
       "year": "2015"
     },
     {
-      "authors": "V Micheletto, S Accardi, A Fici, F Piccoli, C Rossi, M Bilucaglia, V Russo, ...",
-      "bibtex_key": "micheletto2025",
-      "bibtex_match_score": 1.0,
-      "citation_id": "RvAqXUIAAAAJ:fFSKOagxvKUC",
-      "citations": 33,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:fFSKOagxvKUC",
-      "publication": "Frontiers in Virtual Reality 6, 1515937, 2025",
-      "title": "Enjoy it! Cosmetic try-on apps and augmented reality, the impact of enjoyment, informativeness and ease of use.",
-      "year": "2025"
-    },
-    {
       "authors": "V Russo, M Bilucaglia, M Zito",
       "bibtex_key": "zito2022",
       "bibtex_match_score": 1.0,
@@ -167,7 +167,7 @@
       "bibtex_key": "Zito2021b",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:XiVPGOgt02cC",
-      "citations": 28,
+      "citations": 29,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:XiVPGOgt02cC",
       "publication": "Frontiers in Psychology 12, 673012, 2021",
       "title": "Job assessment through bioelectrical measures: a Neuromanagement perspective",
@@ -211,7 +211,7 @@
       "bibtex_key": "Russo2021b",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:Mojj43d5GZwC",
-      "citations": 22,
+      "citations": 23,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:Mojj43d5GZwC",
       "publication": "Foods 10 (10), 2352, 2021",
       "title": "Dairy Products with Certification Marks: The Role of Territoriality and Safety Perception on Intention to Buy",
@@ -282,6 +282,17 @@
       "year": "2023"
     },
     {
+      "authors": "M Bilucaglia, C Casiraghi, A Bruno, S Chiarelli, A Fici, V Russo, M Zito",
+      "bibtex_key": "bilucaglia2025ACAIN",
+      "bibtex_match_score": 1.0,
+      "citation_id": "RvAqXUIAAAAJ:F9fV5C73w3QC",
+      "citations": 12,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:F9fV5C73w3QC",
+      "publication": "Proceedings of the 10th International Conference on Machine Learning …, 2025",
+      "title": "Emotional Reactions To AI-Generated Images: A Pilot Study Using Neurophysiological Measures",
+      "year": "2025"
+    },
+    {
       "authors": "S Accardi, C Campo, M Bilucaglia, M Zito, M Caccamo, V Russo",
       "bibtex_key": "accardi2025",
       "bibtex_match_score": 0.92,
@@ -290,17 +301,6 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:F1b5ZUV5XREC",
       "publication": "Behavioral Sciences 15 (9), 1241, 2025",
       "title": "Static vs. Immersive: A Neuromarketing Exploratory Study of Augmented Reality on Packaging Labels",
-      "year": "2025"
-    },
-    {
-      "authors": "M Bilucaglia, C Casiraghi, A Bruno, S Chiarelli, A Fici, V Russo, M Zito",
-      "bibtex_key": "bilucaglia2025ACAIN",
-      "bibtex_match_score": 1.0,
-      "citation_id": "RvAqXUIAAAAJ:F9fV5C73w3QC",
-      "citations": 11,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:F9fV5C73w3QC",
-      "publication": "Proceedings of the 10th International Conference on Machine Learning …, 2025",
-      "title": "Emotional Reactions To AI-Generated Images: A Pilot Study Using Neurophysiological Measures",
       "year": "2025"
     },
     {
@@ -352,7 +352,7 @@
       "bibtex_key": "bilucaglia2025c",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:nVrZBo8bIpAC",
-      "citations": 6,
+      "citations": 7,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:nVrZBo8bIpAC",
       "publication": "Frontiers in Human Neuroscience 19, 1638225, 2025",
       "title": "Editorial: Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience",
@@ -363,7 +363,7 @@
       "bibtex_key": "Casiraghi2025pasta",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:tH6gc1N1XXoC",
-      "citations": 5,
+      "citations": 6,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:tH6gc1N1XXoC",
       "publication": "Current Psychology 44 (18), 15183-15199, 2025",
       "title": "Processing every bite: A neuroscientific analysis of the eating experience and its cognitive and emotional dynamics",
@@ -823,7 +823,7 @@
       "bibtex_key": "fici2024",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:Ri6SYOTghG4C",
-      "citations": 49,
+      "citations": 50,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:Ri6SYOTghG4C",
       "publication": "Behavioral Sciences 14 (7), 596, 2024",
       "title": "From E-Commerce to the Metaverse: A Neuroscientific Analysis of Digital Consumer Behavior",
@@ -863,5 +863,5 @@
       "year": "2022"
     }
   ],
-  "updated_at": "2026-10-13T10:54:23+00:00"
+  "updated_at": "2026-10-19T10:45:44+00:00"
 }
