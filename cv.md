@@ -6,8 +6,8 @@ title: CV
 {% endif %}
 
 ## Education
-- **2026:** Ph.D. in Cominication Markets and Society, Università IULM (Milan, Italy)
-- **2018:** M.Sc. in Electronics Engineering (Bioengineering curriculum), Alama Mater Studiorum - Università di Bologna (Italy)
+- **2026:** Ph.D. in Communication, Markets and Society, Università IULM (Milan, Italy)
+- **2018:** M.Sc. in Electronics Engineering (Bioengineering curriculum), Alma Mater Studiorum - Università di Bologna (Italy)
 - **2014:** B.Sc. in Electronics Engineering, Politecnico di Milano (Milan, Italy)
 
 ## Professional Qualifications
@@ -15,7 +15,7 @@ title: CV
 
 ## Academic Positions
 <small>All positions were obtained through competitive public selection procedures</small>
-- **2022 - 2025:** Ph.D. Fellow (Spervisor: Prof. V. Russo), Università IULM
+- **2022 - 2025:** Ph.D. Fellow (Supervisor: Prof. V. Russo), Università IULM
 - **2019 - 2022:** Research Fellow (Supervisor: Prof. V. Russo), Università IULM
 - **2019:** Research Assistant (Supervisor: Dr. P. Tressoldi), University of Padua (Italy)
 
@@ -31,7 +31,7 @@ title: CV
 - **2026 - present:** Community Reviewer (Review Editor), Frontiers in Human Neuroscience
 
 #### Ad hoc Reviewer [manuscripts, reviews]
-Frontiers in Psychology [8, 8], Frontiers in Public Health [7, 7], Cognitive Neurodynamics [6, 17], Scientific Reports [6, 16], HardwareX [4, 9], PlosOne [4, 9], Frontiers in Psychiatry [3, 3], Frontiers in Human Neuroscience [2, 2], BMC Research Notes [1, 2], Biocibernetics an Biomedical Engineering [1, 2], Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC) [1, 1], Cognitive Computation [1, 1], Frontiers in Child and Adolescent Psychiatry [1, 1], Frontiers in Physiology [1, 1], Scientific Data [1, 1] 
+Frontiers in Psychology [8, 8], Frontiers in Public Health [7, 7], Cognitive Neurodynamics [6, 17], Scientific Reports [6, 16], HardwareX [4, 9], PLOS ONE [4, 9], Frontiers in Psychiatry [3, 3], Frontiers in Human Neuroscience [2, 2], BMC Research Notes [1, 2], Biocybernetics and Biomedical Engineering [1, 2], Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC) [1, 1], Cognitive Computation [1, 1], Frontiers in Child and Adolescent Psychiatry [1, 1], Frontiers in Physiology [1, 1], Scientific Data [1, 1] 
 
 #### Ad hoc Handling Editor [manuscripts]
 Frontiers in Human Neuroscience [5], Frontiers in Medicine [2], Frontiers in Public Health [1], Frontiers in Social Psychology [1]
@@ -42,7 +42,7 @@ Frontiers in Human Neuroscience [5], Frontiers in Medicine [2], Frontiers in Pub
 - **2024 - 2025:** ["Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience"](https://www.frontiersin.org/research-topics/49742/machine-learningdeep-learning-methods-in-neuromarketing-and-consumer-neuroscience/magazine), Frontiers in Neuroscience, Frontiers in Human Neuroscience and Frontiers in Psychology (co-hosting)
 
 ### Conference Services
-- **2025:** Event Comitee Member of the [1st International Online Conference on Behavioral Sciences](https://sciforum.net/event/iocbs2026), Behavioural Sciences
+- **2025:** Event Committee Member of the [1st International Online Conference on Behavioral Sciences](https://sciforum.net/event/iocbs2026), Behavioural Sciences
 
 ## Publications
 Co-author of {% bibliography_count %} peer-reviewed [publications](/publications), including {% bibliography_count --query @article %} [journal articles](/publications/#journal-articles), {% bibliography_count --query @inproceedings[keywords=paper] %} [conference papers](/publications/#conference-proceedings) and {% bibliography_count --query @inproceedings[keywords=presentation] %}  [conference abstracts / presentations](/publications/#conference-presentations). 
