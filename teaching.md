@@ -6,48 +6,38 @@ permalink: /teaching/
 
 # Teaching
 
+My teaching at Università IULM spans master's degree programmes and executive education, with a focus on machine learning, neuroscience, and psychophysiological methods.
+
 {% assign academic = site.data.teaching | where: "track", "academic" %}
-{% assign professional = site.data.teaching | where: "track", "postgrad_professional" %}
-{% assign phd = site.data.teaching | where: "track", "phd" %}
+{% assign executive = site.data.teaching | where: "track", "executive" %}
 
-## Academic Courses
+## Master's Degree Programmes
 
-{% if academic and academic.size > 0 %}
-  {% for item in academic %}
-  - **{{ item.title }}**  
-    {{ item.level }}, {{ item.role }}  
-    {{ item.institution }}, {{ item.year }}  
-    **Length:** {{ item.hours }} hours{% if item.sessions %} ({{ item.sessions }} sessions){% endif %}{% if item.notes %}  
-    *{{ item.notes }}*{% endif %}
-  {% endfor %}
-{% else %}
-No academic courses listed yet.
-{% endif %}
+{% for item in academic %}
+<article class="teaching-item">
+  <h3>{{ item.title }}</h3>
+  <p class="teaching-meta"><strong>{{ item.role }}</strong> · {{ item.level }} · {{ item.institution }} · {{ item.year }}</p>
+  <ul class="compact-list teaching-details">
+    {% if item.program %}<li><strong>Programme:</strong> {{ item.program }}</li>{% endif %}
+    {% if item.instructor %}<li><strong>Instructor:</strong> {{ item.instructor }}</li>{% endif %}
+    {% if item.activities %}<li><strong>Activities:</strong> {{ item.activities }}</li>{% endif %}
+    {% if item.students %}<li><strong>Approx. class size:</strong> {{ item.students }} students</li>{% endif %}
+    {% if item.topics %}<li><strong>Topics:</strong> {{ item.topics }}</li>{% endif %}
+  </ul>
+</article>
+{% endfor %}
 
-## Postgraduate / Professional Courses
+## Executive Education
 
-{% if professional and professional.size > 0 %}
-  {% for item in professional %}
-  - **{{ item.title }}**  
-    {{ item.level }}, {{ item.role }}  
-    {{ item.institution }}, {{ item.year }}  
-    **Length:** {{ item.hours }} hours{% if item.sessions %} ({{ item.sessions }} sessions){% endif %}{% if item.notes %}  
-    *{{ item.notes }}*{% endif %}
-  {% endfor %}
-{% else %}
-No postgraduate or professional courses listed yet.
-{% endif %}
-
-## Ph.D. Courses
-
-{% if phd and phd.size > 0 %}
-  {% for item in phd %}
-  - **{{ item.title }}**  
-    {{ item.level }}, {{ item.role }}  
-    {{ item.institution }}, {{ item.year }}  
-    **Length:** {{ item.hours }} hours{% if item.sessions %} ({{ item.sessions }} sessions){% endif %}{% if item.notes %}  
-    *{{ item.notes }}*{% endif %}
-  {% endfor %}
-{% else %}
-No Ph.D. courses listed yet.
-{% endif %}
+{% for item in executive %}
+<article class="teaching-item">
+  <h3>{{ item.title }}</h3>
+  <p class="teaching-meta"><strong>{{ item.role }}</strong> · {{ item.level }} · {{ item.institution }} · {{ item.year }}</p>
+  <ul class="compact-list teaching-details">
+    {% if item.program %}<li><strong>Programme:</strong> {{ item.program }}</li>{% endif %}
+    {% if item.activities %}<li><strong>Activities:</strong> {{ item.activities }}</li>{% endif %}
+    {% if item.students %}<li><strong>Approx. class size:</strong> {{ item.students }} students</li>{% endif %}
+    {% if item.topics %}<li><strong>Topics:</strong> {{ item.topics }}</li>{% endif %}
+  </ul>
+</article>
+{% endfor %}
