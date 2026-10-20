@@ -5,16 +5,7 @@ affiliation: "Behavior and Brain Lab IULM - Neuromarketing Research Center, Univ
 email: "marco.bilucaglia@studenti.iulm.it"
 office: "Behavior and Brain Lab IULM, Via Pietro Filargo, 38"
 location: "Milan, Italy"
-short_bio: "I am a bioengineer at the [Behaviour and Brain Lab IULM - Neuromarketing Research Center](https://en.brainlabiulm.com/) at [Università IULM](https://www.iulm.it/en/home). My work spans the experimental lifecycle of psychophysiological and neurophysiological data, from study design and multimodal acquisition and synchronization to signal processing, statistical analysis, machine-learning modelling, data visualisation, and interpretation. My research focuses on digital signal processing and machine learning applied to neurophysiological data, with applications in consumer and affective neuroscience, neuromarketing, and human performance."
-research_interests:
-  - name: "Biomedical Signal Processing"
-    description: "EEG and multimodal physiological-signal processing, including ERP and spectral analysis, robust quantification, and evaluation of signal-processing methods."
-  - name: "Machine Learning for Neurophysiological Data"
-    description: "Feature engineering, classification and regression of EEG and multimodal biosignals, with emphasis on validation, robustness, and interpretable prediction."
-  - name: "Consumer & Affective Neuroscience"
-    description: "Neurophysiological and behavioural measurement of emotion, engagement, preference, and decision processes in consumer and communication contexts."
-  - name: "Human Performance & Neuroergonomics"
-    description: "EEG, skin conductance, cardiac, and eye-tracking measures of attention, workload, stress, interpersonal synchrony, and performance."
+short_bio: "I am a bioengineer at the [Behavior and Brain Lab IULM – Neuromarketing Research Center](https://en.brainlabiulm.com/) at Università IULM. My work spans experimental design, physiological data acquisition, multimodal synchronization, signal processing, and machine learning, primarily applied to consumer neuroscience, affective neuroscience, and human performance."
 links:
   google_scholar: "https://scholar.google.it/citations?user=RvAqXUIAAAAJ&hl"
   orcid: "https://orcid.org/0000-0002-8718-2825"
