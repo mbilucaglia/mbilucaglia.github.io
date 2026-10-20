@@ -12,23 +12,23 @@ permalink: /teaching/
 ## Master's Degree Programmes
 
 {% for item in academic %}
-<div class="teaching-item">
-  <strong class="teaching-course-title">{{ item.title }}</strong>
-  <div>{{ item.role }} · {{ item.year }}</div>
-  <div>{{ item.program }} · {{ item.institution }}</div>
-  <div class="teaching-activity"><em>Activities:</em> {{ item.activities }}{% unless item.activities contains '.' %}.{% endunless %}</div>
-  <div><em>Students:</em> Approximately {{ item.students }}.</div>
-</div>
+
+**{{ item.title }}**  
+{{ item.role }} · {{ item.year }}  
+{{ item.program }} · {{ item.institution }}  
+*Activities:* {{ item.activities }}{% unless item.activities contains '.' %}.{% endunless %}  
+*Students:* Approximately {{ item.students }}.
+
 {% endfor %}
 
 ## Executive Education
 
 {% for item in executive %}
-<div class="teaching-item">
-  <strong class="teaching-course-title">{{ item.title }}</strong>
-  <div>{{ item.role }} · {{ item.year }}</div>
-  <div>{{ item.program }} · {{ item.institution }}</div>
-  <div class="teaching-activity"><em>Activities:</em> {{ item.activities }}{% unless item.activities contains '.' %}.{% endunless %}</div>
-  <div><em>Students:</em> Approximately {{ item.students }}.</div>
-</div>
+
+**{{ item.title }}**  
+{{ item.role }} · {{ item.year }}  
+{{ item.program }} · {{ item.institution }}  
+*Activities:* {{ item.activities }}{% unless item.activities contains '.' %}.{% endunless %}  
+*Students:* Approximately {{ item.students }}.
+
 {% endfor %}
