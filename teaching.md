@@ -13,11 +13,11 @@ permalink: /teaching/
 
 {% for item in academic %}
 
-  **{{ item.title }}**  
-  {{ item.role }} · {{ item.year }}  
-  {{ item.program }} · {{ item.institution }}  
-  *Activities:* {{ item.activities }}{% unless item.activities contains '.' %}.{% endunless %}  
-  *Students:* Approximately {{ item.students }}.
+**{{ item.title }}**  
+{{ item.role }} · {{ item.year }}  
+{{ item.program }} · {{ item.institution }}  
+*Activities:* {{ item.activities }}{% unless item.activities contains '.' %}.{% endunless %}  
+*Students:* Approximately {{ item.students }}.
 
 {% endfor %}
 
@@ -25,10 +25,10 @@ permalink: /teaching/
 
 {% for item in executive %}
 
-  **{{ item.title }}**  
-  {{ item.role }} · {{ item.year }}  
-  {{ item.program }} · {{ item.institution }}  
-  *Activities:* {{ item.activities }}{% unless item.activities contains '.' %}.{% endunless %}  
-  *Students:* Approximately {{ item.students }}.
+**{{ item.title }}**  
+{{ item.role }} · {{ item.year }}  
+{{ item.program }} · {{ item.institution }}  
+*Activities:* {{ item.activities }}{% unless item.activities contains '.' %}.{% endunless %}  
+*Students:* Approximately {{ item.students }}.
 
 {% endfor %}
