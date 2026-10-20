@@ -478,3 +478,24 @@ h2 {
   color: var(--text);
   font-weight: 600;
 }
+
+/* CV PDF download link */
+.cv-download-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0.3rem 0 1.25rem;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--accent);
+  border-radius: 0.45rem;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.cv-download-button:hover,
+.cv-download-button:focus-visible {
+  color: #fff;
+  text-decoration: none;
+  filter: brightness(0.9);
+}
