@@ -59,37 +59,8 @@ jobs:
             latexmk biber texlive-latex-extra texlive-bibtex-extra \
             texlive-fonts-recommended texlive-science
 
-      - name: Compile public CV (exclude working manuscripts)
+      - name: Compile CV from MyCV source
         run: |
-          python3 - <<'PY'
-          from pathlib import Path
-          import re
-
-          root = Path("mycv-source")
-          main = root / "main.tex"
-          text = main.read_text(encoding="utf-8")
-          text = re.sub(
-              r"^\\addbibresource\{ref/references_working\.bib\}\s*\n",
-              "",
-              text,
-              flags=re.MULTILINE,
-          )
-          main.write_text(text, encoding="utf-8")
-
-          publications = root / "publications.tex"
-          text = publications.read_text(encoding="utf-8")
-          text, removed = re.subn(
-              r"\\begin\{refsegment\}\s*"
-              r"\\newrefcontext\[sorting=ydvenue,labelprefix=W\]"
-              r".*?\\end\{refsegment\}",
-              "",
-              text,
-              flags=re.DOTALL,
-          )
-          if removed != 1:
-              raise SystemExit("Could not locate working manuscripts section")
-          publications.write_text(text, encoding="utf-8")
-          PY
           cd mycv-source
           latexmk -pdf -interaction=nonstopmode -halt-on-error -file-line-error main.tex
           test -s main.pdf
