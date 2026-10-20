@@ -499,3 +499,53 @@ h2 {
   text-decoration: none;
   filter: brightness(0.9);
 }
+
+
+/* Homepage research interests */
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.research-interest-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1rem 1.1rem;
+}
+
+.research-interest-card h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+}
+
+.research-interest-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* Teaching */
+
+.teaching-item h3 {
+  margin: 0 0 0.3rem;
+}
+
+.teaching-meta {
+  margin: 0 0 0.7rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.teaching-details li {
+  margin: 0.2rem 0;
+}
+
+@media (max-width: 640px) {
+  .research-grid {
+    grid-template-columns: 1fr;
+  }
+}
