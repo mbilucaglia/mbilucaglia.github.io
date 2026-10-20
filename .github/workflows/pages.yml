@@ -38,6 +38,7 @@ jobs:
           repository: mbilucaglia/MyCV
           ref: main
           path: mycv-source
+          token: ${{ secrets.BIBLIOGRAPHY_ACCESS_TOKEN }}
           persist-credentials: false
 
       - name: Assemble bibliography (exclude work in progress)
