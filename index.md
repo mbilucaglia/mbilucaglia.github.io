@@ -17,15 +17,22 @@ title: Home
   {% assign interests = site.data.profile.research_interests | default: empty %}
   {% if interests.size > 0 %}
   <h2>Research Interests</h2>
-  <ul class="interests-list">
+  <div class="research-grid">
     {% for item in interests %}
-    <li>{{ item }}</li>
+    <article class="research-interest-card">
+      <h3>{{ item.name }}</h3>
+      {% if item.description %}
+      <p>{{ item.description }}</p>
+      {% endif %}
+    </article>
     {% endfor %}
-  </ul>
+  </div>
   {% endif %}
 
   <div class="button-row">
     <a class="button" href="{{ '/publications/' | relative_url }}">View Publications</a>
+    <a class="button button-secondary" href="{{ '/teaching/' | relative_url }}">Teaching</a>
+    <a class="button button-secondary" href="{{ '/cv/' | relative_url }}">CV</a>
     <a class="button button-secondary" href="{{ '/contact/' | relative_url }}">Contact</a>
   </div>
 </section>
