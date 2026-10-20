@@ -13,6 +13,4 @@ title: Home
   <div class="short-bio">
     {{ site.data.profile.short_bio | markdownify }}
   </div>
-
-
 </section>
