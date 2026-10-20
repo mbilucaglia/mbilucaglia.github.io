@@ -2,7 +2,7 @@
 title: CV
 ---
 {% if site.data.profile.links.cv_pdf != "" %}
-[Download CV PDF]({{ site.data.profile.links.cv_pdf | relative_url }})
+<a class="cv-download-button" href="{{ site.data.profile.links.cv_pdf | relative_url }}" download>Download CV (PDF)</a>
 {% endif %}
 
 ## Education
