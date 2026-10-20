@@ -49,7 +49,7 @@ jobs:
             mycv-source/ref/references_abstracts.bib \
             > _bibliography/publications.bib
           test -s _bibliography/publications.bib
-          echo "Bibliography entries: $(grep -Eic '^@[[:alpha:]]+[[:space:]]*\\{' _bibliography/publications.bib)"
+          echo "Bibliography entries: $(grep -c '^@' _bibliography/publications.bib)"
           rm -rf mycv-source
 
       - name: Set up Python
