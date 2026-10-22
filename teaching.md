@@ -17,7 +17,7 @@ permalink: /teaching/
 {{ item.role }} · {{ item.year }}  
 {{ item.program }} · {{ item.institution }}  
 *Activities:* {{ item.activities }}{% unless item.activities contains '.' %}.{% endunless %}  
-*Students:* Approximately {{ item.students }}.
+*Students:* Approximately {{ item.students }}
 
 {% endfor %}
 
@@ -29,6 +29,6 @@ permalink: /teaching/
 {{ item.role }} · {{ item.year }}  
 {{ item.program }} · {{ item.institution }}  
 *Activities:* {{ item.activities }}{% unless item.activities contains '.' %}.{% endunless %}  
-*Students:* Approximately {{ item.students }}.
+*Students:* Approximately {{ item.students }}
 
 {% endfor %}
