@@ -29,6 +29,7 @@ title: CV
 
 #### Editorial Board Memberships
 - **2026 - present:** Community Reviewer (Review Editor), Frontiers in Human Neuroscience
+- **2026 - present:** Associate Editor, Academia Neuroscience and Brain Research
 
 #### Ad hoc Reviewer [manuscripts, reviews]
 Frontiers in Psychology [8, 8], Frontiers in Public Health [7, 7], Cognitive Neurodynamics [6, 17], Scientific Reports [6, 16], HardwareX [4, 9], PLOS ONE [4, 9], Frontiers in Psychiatry [3, 3], Frontiers in Human Neuroscience [2, 2], BMC Research Notes [1, 2], Biocybernetics and Biomedical Engineering [1, 2], Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC) [1, 1], Cognitive Computation [1, 1], Frontiers in Child and Adolescent Psychiatry [1, 1], Frontiers in Physiology [1, 1], Scientific Data [1, 1] 
