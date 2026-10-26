@@ -1,6 +1,6 @@
 {
-  "citations": 691,
-  "citations_recent": 585,
+  "citations": 692,
+  "citations_recent": 586,
   "h_index": 16,
   "h_index_recent": 14,
   "i10_index": 23,
@@ -34,8 +34,8 @@
     "bilucaglia2025a",
     "Bilucaglia2021",
     "Laureanti2021",
-    "bilucaglia2025c",
     "Casiraghi2025pasta",
+    "bilucaglia2025c",
     "pasta2023",
     "bilucaglia2022",
     "Tressoldi2014b",
@@ -44,6 +44,10 @@
     "Bellati2023aip",
     "bilucaglia2026",
     "gifuni2026",
+    "fici2026icap2",
+    "campo2026icap",
+    "brivio2026icap",
+    "fici2026icap",
     "gifuni2026b",
     "piccoli2025aesthetics",
     "piccoli2025acei",
@@ -348,6 +352,17 @@
       "year": "2021"
     },
     {
+      "authors": "C Casiraghi, A Fici, M Bilucaglia, C Rossi, M Zito, V Russo",
+      "bibtex_key": "Casiraghi2025pasta",
+      "bibtex_match_score": 1.0,
+      "citation_id": "RvAqXUIAAAAJ:tH6gc1N1XXoC",
+      "citations": 7,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:tH6gc1N1XXoC",
+      "publication": "Current Psychology 44 (18), 15183-15199, 2025",
+      "title": "Processing every bite: A neuroscientific analysis of the eating experience and its cognitive and emotional dynamics",
+      "year": "2025"
+    },
+    {
       "authors": "M Bilucaglia, L Mainardi, TZ Ramsøy, PJ Zak, M Zito, V Russo",
       "bibtex_key": "bilucaglia2025c",
       "bibtex_match_score": 1.0,
@@ -356,17 +371,6 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:nVrZBo8bIpAC",
       "publication": "Frontiers in Human Neuroscience 19, 1638225, 2025",
       "title": "Editorial: Machine-Learning/Deep-Learning methods in Neuromarketing and Consumer Neuroscience",
-      "year": "2025"
-    },
-    {
-      "authors": "C Casiraghi, A Fici, M Bilucaglia, C Rossi, M Zito, V Russo",
-      "bibtex_key": "Casiraghi2025pasta",
-      "bibtex_match_score": 1.0,
-      "citation_id": "RvAqXUIAAAAJ:tH6gc1N1XXoC",
-      "citations": 6,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:tH6gc1N1XXoC",
-      "publication": "Current Psychology 44 (18), 15183-15199, 2025",
-      "title": "Processing every bite: A neuroscientific analysis of the eating experience and its cognitive and emotional dynamics",
       "year": "2025"
     },
     {
@@ -482,6 +486,50 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:QD3KBmkZPeQC",
       "publication": "International Conference on Marketing and Technologies (ICMarkTech 2025 …, 2026",
       "title": "Measuring Brand Reputation Through Consumer Neuroscience: An ERP Approach Based on Semantic Congruence",
+      "year": "2026"
+    },
+    {
+      "authors": "A Fici, C Casiraghi, M Bilucaglia, R Cristina, M Bellati, M Zito, V Russo",
+      "bibtex_key": "fici2026icap2",
+      "bibtex_match_score": 1.0,
+      "citation_id": "RvAqXUIAAAAJ:43bX7VzcjpAC",
+      "citations": 0,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:43bX7VzcjpAC",
+      "publication": "31st International Congress of Applied Psychology-ICAP2026, 2948-2948, 2026",
+      "title": "Health communication and chronic disease: neurophysiological evidence on effective doctor–patient interaction",
+      "year": "2026"
+    },
+    {
+      "authors": "C Campo, S Accardi, M Bilucaglia, M Bellati, S Guida, F Piccoli, E Brivio, ...",
+      "bibtex_key": "campo2026icap",
+      "bibtex_match_score": 1.0,
+      "citation_id": "RvAqXUIAAAAJ:zCSUwVk65WsC",
+      "citations": 0,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:zCSUwVk65WsC",
+      "publication": "31st International Congress of Applied Psychology-ICAP2026, 1160-1160, 2026",
+      "title": "Food sharing and social connection: a neuroscientific study on pasta consumption",
+      "year": "2026"
+    },
+    {
+      "authors": "E Brivio, C Casiraghi, S Chiarelli, G Gifuni, A Fici, M Bilucaglia, ...",
+      "bibtex_key": "brivio2026icap",
+      "bibtex_match_score": 1.0,
+      "citation_id": "RvAqXUIAAAAJ:jgBuDB5drN8C",
+      "citations": 0,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:jgBuDB5drN8C",
+      "publication": "31st International Congress of Applied Psychology-ICAP2026, 3192-3192, 2026",
+      "title": "The power of scent and sight from lab to field research: exploring “healthy” sensory nudges in vending machines",
+      "year": "2026"
+    },
+    {
+      "authors": "A Fici, G Gifuni, V Pasculli, M Bilucaglia, V Russo, M Zito",
+      "bibtex_key": "fici2026icap",
+      "bibtex_match_score": 1.0,
+      "citation_id": "RvAqXUIAAAAJ:ubry08Y2EpUC",
+      "citations": 0,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:ubry08Y2EpUC",
+      "publication": "31st International Congress of Applied Psychology-ICAP2026, 1296-1297, 2026",
+      "title": "Breaking the silence: how humor shapes neurophysiological responses to death-related advertising",
       "year": "2026"
     },
     {
@@ -863,5 +911,5 @@
       "year": "2022"
     }
   ],
-  "updated_at": "2026-10-20T18:30:09+00:00"
+  "updated_at": "2026-10-26T12:28:09+00:00"
 }
