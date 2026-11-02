@@ -1,6 +1,6 @@
 {
-  "citations": 692,
-  "citations_recent": 586,
+  "citations": 694,
+  "citations_recent": 588,
   "h_index": 16,
   "h_index_recent": 14,
   "i10_index": 23,
@@ -72,7 +72,7 @@
       "bibtex_key": "zito2021",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:VOx2b1Wkg3QC",
-      "citations": 68,
+      "citations": 69,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:VOx2b1Wkg3QC",
       "publication": "Frontiers in Psychology 12, 1784, 2021",
       "title": "Assessing the emotional response in social communication: the role of neuromarketing",
@@ -378,7 +378,7 @@
       "bibtex_key": "pasta2023",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:L7CI7m0gUJcC",
-      "citations": 5,
+      "citations": 6,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:L7CI7m0gUJcC",
       "publication": "Foods 12 (14), 2754, 2023",
       "title": "Can Traditional Food Product Communication Convey Safety to the Younger Generations? The Role of Sustainable Packaging",
@@ -860,7 +860,7 @@
       "bibtex_key": "zito2021",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:VOx2b1Wkg3QC",
-      "citations": 68,
+      "citations": 69,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:VOx2b1Wkg3QC",
       "publication": "Frontiers in Psychology 12, 1784, 2021",
       "title": "Assessing the emotional response in social communication: the role of neuromarketing",
@@ -911,5 +911,5 @@
       "year": "2022"
     }
   ],
-  "updated_at": "2026-10-26T12:28:09+00:00"
+  "updated_at": "2026-11-02T13:30:49+00:00"
 }
