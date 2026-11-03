@@ -24,7 +24,11 @@ bibliographic reference clickable. This avoids adding a separate "Link".
   {% assign publication_url = entry.url | strip %}
 
   {% capture publication_link %}<a href="{{ publication_url }}" target="_blank" rel="noopener noreferrer">{{ publication_url }}</a>{% endcapture %}
-  {% assign ref = ref | replace: publication_url, publication_link %}
+  {% if ref contains publication_url %}
+    {% assign ref = ref | replace: publication_url, publication_link %}
+  {% else %}
+    {% assign ref = ref | append: ' ' | append: publication_link %}
+  {% endif %}
 {% endif %}
 
 
@@ -74,9 +78,17 @@ and append the appropriate authorship marker.
 
 {% assign show_citations = false %}
 {% assign show_citescore = false %}
+{% assign citations_eligible = false %}
+
+{% if entry.type == 'article' %}
+  {% assign citations_eligible = true %}
+{% elsif entry.type == 'inproceedings' and entry.keywords contains 'paper' %}
+  {% assign citations_eligible = true %}
+{% endif %}
 
 {% if metrics %}
-  {% if metrics.google_scholar_citations != blank
+  {% if citations_eligible
+    and metrics.google_scholar_citations != blank
     and metrics.google_scholar_link != blank %}
     {% assign show_citations = true %}
   {% endif %}
