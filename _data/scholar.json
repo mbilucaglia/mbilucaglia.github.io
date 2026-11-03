@@ -44,6 +44,7 @@
     "Bellati2023aip",
     "bilucaglia2026",
     "gifuni2026",
+    "brivio2026",
     "fici2026icap2",
     "campo2026icap",
     "brivio2026icap",
@@ -489,6 +490,17 @@
       "year": "2026"
     },
     {
+      "authors": "E Brivio, G Gifuni, M Bilucaglia, C Campo, C Casiraghi, S Chiarelli, A Fici, ...",
+      "bibtex_key": "brivio2026",
+      "bibtex_match_score": 1.0,
+      "citation_id": "RvAqXUIAAAAJ:BzfGm06jWhQC",
+      "citations": 0,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:BzfGm06jWhQC",
+      "publication": "Annual Review of Cybertherapy and Telemedicine 24, 198-204, 2026",
+      "title": "AI, emotion, and collaboration: A neurocognitive investigation of learning",
+      "year": "2026"
+    },
+    {
       "authors": "A Fici, C Casiraghi, M Bilucaglia, R Cristina, M Bellati, M Zito, V Russo",
       "bibtex_key": "fici2026icap2",
       "bibtex_match_score": 1.0,
@@ -911,5 +923,5 @@
       "year": "2022"
     }
   ],
-  "updated_at": "2026-11-02T13:30:49+00:00"
+  "updated_at": "2026-11-03T07:17:22+00:00"
 }

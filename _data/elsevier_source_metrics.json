@@ -34,7 +34,7 @@
     "source_id": "15925",
     "status_code": 200,
     "title": "Journal of Parapsychology",
-    "updated_at": "2026-11-02T13:30:50+00:00"
+    "updated_at": "2026-11-03T07:17:23+00:00"
   },
   "0302-9743": {
     "citescore": "3.1",
@@ -80,7 +80,7 @@
     "source_id": "25674",
     "status_code": 200,
     "title": "Lecture Notes in Computer Science",
-    "updated_at": "2026-11-02T13:30:51+00:00"
+    "updated_at": "2026-11-03T07:17:24+00:00"
   },
   "0589-1019": {
     "citescore": "1.6",
@@ -117,7 +117,7 @@
     "source_id": "34202",
     "status_code": 200,
     "title": "Annual International Conference of the IEEE Engineering in Medicine and Biology - Proceedings",
-    "updated_at": "2026-11-02T13:30:51+00:00"
+    "updated_at": "2026-11-03T07:17:25+00:00"
   },
   "1120-9550": {
     "citescore": "0.8",
@@ -190,7 +190,71 @@
     "source_id": "21100204931",
     "status_code": 200,
     "title": "Sistemi Intelligenti",
-    "updated_at": "2026-11-02T13:30:52+00:00"
+    "updated_at": "2026-11-03T07:17:25+00:00"
+  },
+  "1554-8716": {
+    "citescore": "0.7",
+    "citescore_category": "",
+    "citescore_percentile": "17",
+    "citescore_quartile": "Q4",
+    "citescore_rank": "142",
+    "citescore_rank_out_of": "",
+    "citescore_ranking_records": [
+      {
+        "category": "",
+        "percentile": "17",
+        "quartile": "Q4",
+        "rank": "142",
+        "rank_out_of": "",
+        "subject_code": "2742",
+        "year": "2025"
+      },
+      {
+        "category": "",
+        "percentile": "16",
+        "quartile": "Q4",
+        "rank": "99",
+        "rank_out_of": "",
+        "subject_code": "3201",
+        "year": "2025"
+      },
+      {
+        "category": "",
+        "percentile": "10",
+        "quartile": "Q4",
+        "rank": "161",
+        "rank_out_of": "",
+        "subject_code": "1701",
+        "year": "2025"
+      },
+      {
+        "category": "",
+        "percentile": "8",
+        "quartile": "Q4",
+        "rank": "68",
+        "rank_out_of": "",
+        "subject_code": "2801",
+        "year": "2025"
+      }
+    ],
+    "citescore_ranking_selection": "highest_percentile",
+    "citescore_subject_code": "2742",
+    "citescore_year": "2025",
+    "eissn": "",
+    "found": true,
+    "issn": "1554-8716",
+    "publisher": "Virtual Reality Medical Institute",
+    "queried_issn": "1554-8716",
+    "scopus_source_url": "https://www.scopus.com/sourceid/19700174668",
+    "sjr": "0.185",
+    "sjr_year": "2025",
+    "snip": "0.148",
+    "snip_year": "2025",
+    "source": "Elsevier Serial Title API / Scopus",
+    "source_id": "19700174668",
+    "status_code": 200,
+    "title": "Annual Review of CyberTherapy and Telemedicine",
+    "updated_at": "2026-11-03T07:17:26+00:00"
   },
   "1662-5153": {
     "citescore": "6.9",
@@ -245,7 +309,7 @@
     "source_id": "19700175166",
     "status_code": 200,
     "title": "Frontiers in Behavioral Neuroscience",
-    "updated_at": "2026-11-02T13:30:53+00:00"
+    "updated_at": "2026-11-03T07:17:27+00:00"
   },
   "1662-5161": {
     "citescore": "5.9",
@@ -318,7 +382,7 @@
     "source_id": "19700175164",
     "status_code": 200,
     "title": "Frontiers in Human Neuroscience",
-    "updated_at": "2026-11-02T13:30:53+00:00"
+    "updated_at": "2026-11-03T07:17:27+00:00"
   },
   "1664-1078": {
     "citescore": "7.0",
@@ -355,7 +419,7 @@
     "source_id": "21100216571",
     "status_code": 200,
     "title": "Frontiers in Psychology",
-    "updated_at": "2026-11-02T13:30:54+00:00"
+    "updated_at": "2026-11-03T07:17:28+00:00"
   },
   "1687-4153": {
     "citescore": "3.0",
@@ -410,7 +474,7 @@
     "source_id": "4400151506",
     "status_code": 200,
     "title": "Eurasip Journal on Bioinformatics and Systems Biology",
-    "updated_at": "2026-11-02T13:30:54+00:00"
+    "updated_at": "2026-11-03T07:17:28+00:00"
   },
   "1932-6203": {
     "citescore": "4.8",
@@ -447,7 +511,7 @@
     "source_id": "10600153309",
     "status_code": 200,
     "title": "PLOS One",
-    "updated_at": "2026-11-02T13:30:55+00:00"
+    "updated_at": "2026-11-03T07:17:29+00:00"
   },
   "1936-4733": {
     "citescore": "6.2",
@@ -484,7 +548,7 @@
     "source_id": "13479",
     "status_code": 200,
     "title": "Current Psychology",
-    "updated_at": "2026-11-02T13:30:56+00:00"
+    "updated_at": "2026-11-03T07:17:29+00:00"
   },
   "2046-1402": {
     "citescore": "2.9",
@@ -575,7 +639,7 @@
     "source_id": "21100258853",
     "status_code": 200,
     "title": "F1000Research",
-    "updated_at": "2026-11-02T13:30:56+00:00"
+    "updated_at": "2026-11-03T07:17:30+00:00"
   },
   "2076-328X": {
     "citescore": "4.1",
@@ -648,7 +712,7 @@
     "source_id": "21100901748",
     "status_code": 200,
     "title": "Behavioral Sciences",
-    "updated_at": "2026-11-02T13:30:57+00:00"
+    "updated_at": "2026-11-03T07:17:31+00:00"
   },
   "2190-3018": {
     "citescore": "1.2",
@@ -694,7 +758,7 @@
     "source_id": "21100204111",
     "status_code": 200,
     "title": "Smart Innovation, Systems and Technologies",
-    "updated_at": "2026-11-02T13:30:57+00:00"
+    "updated_at": "2026-11-03T07:17:31+00:00"
   },
   "2297-900X": {
     "citescore": "2.9",
@@ -740,7 +804,7 @@
     "source_id": "21101061926",
     "status_code": 200,
     "title": "Frontiers in Communication",
-    "updated_at": "2026-11-02T13:30:58+00:00"
+    "updated_at": "2026-11-03T07:17:32+00:00"
   },
   "2304-8158": {
     "citescore": "10.3",
@@ -813,7 +877,7 @@
     "source_id": "21100898636",
     "status_code": 200,
     "title": "Foods",
-    "updated_at": "2026-11-02T13:30:58+00:00"
+    "updated_at": "2026-11-03T07:17:32+00:00"
   },
   "2468-0672": {
     "citescore": "4.6",
@@ -886,7 +950,7 @@
     "source_id": "21100842867",
     "status_code": 200,
     "title": "HardwareX",
-    "updated_at": "2026-11-02T13:30:59+00:00"
+    "updated_at": "2026-11-03T07:17:33+00:00"
   },
   "2673-4192": {
     "citescore": "7.9",
@@ -941,7 +1005,7 @@
     "source_id": "21101107986",
     "status_code": 200,
     "title": "Frontiers in Virtual Reality",
-    "updated_at": "2026-11-02T13:31:00+00:00"
+    "updated_at": "2026-11-03T07:17:34+00:00"
   },
   "2766-6530": {
     "citescore": "0.0",
@@ -1005,6 +1069,6 @@
     "source_id": "21101394124",
     "status_code": 200,
     "title": "Proceedings of IEEE Games, Entertainment and Media Conference, GEM",
-    "updated_at": "2026-11-02T13:31:00+00:00"
+    "updated_at": "2026-11-03T07:17:34+00:00"
   }
 }
