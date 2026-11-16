@@ -1,10 +1,10 @@
 {
-  "citations": 694,
-  "citations_recent": 588,
+  "citations": 700,
+  "citations_recent": 594,
   "h_index": 16,
-  "h_index_recent": 14,
-  "i10_index": 23,
-  "i10_index_recent": 19,
+  "h_index_recent": 15,
+  "i10_index": 24,
+  "i10_index_recent": 20,
   "name": "Marco Bilucaglia",
   "profile_url": "https://scholar.google.com/citations?user=RvAqXUIAAAAJ&hl=en",
   "publication_metrics": "_data/publication_metrics.json",
@@ -25,13 +25,13 @@
     "Russo2021b",
     "Bilucaglia2019b",
     "Tressoldi2014b",
+    "valesi2023",
     "Russo2021",
     "bilucaglia2024",
-    "valesi2023",
     "bilucaglia2025ACAIN",
     "accardi2025",
-    "Gabrielli2020",
     "bilucaglia2025a",
+    "Gabrielli2020",
     "Bilucaglia2021",
     "Laureanti2021",
     "Casiraghi2025pasta",
@@ -73,7 +73,7 @@
       "bibtex_key": "zito2021",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:VOx2b1Wkg3QC",
-      "citations": 69,
+      "citations": 71,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:VOx2b1Wkg3QC",
       "publication": "Frontiers in Psychology 12, 1784, 2021",
       "title": "Assessing the emotional response in social communication: the role of neuromarketing",
@@ -106,7 +106,7 @@
       "bibtex_key": "Giroldini2016b",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:d1gkVwhDpl0C",
-      "citations": 42,
+      "citations": 43,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:d1gkVwhDpl0C",
       "publication": "EURASIP Journal on Bioinformatics and Systems Biology 2016 (1), 11, 2016",
       "title": "A new method to detect event-related potentials based on Pearson’s correlation",
@@ -194,7 +194,7 @@
       "bibtex_key": "Bilucaglia2020b",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:rO6llkc54NcC",
-      "citations": 25,
+      "citations": 26,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:rO6llkc54NcC",
       "publication": "HardwareX 8 (C), e00125, 2020",
       "title": "ESB: a low-cost EEG Synchronization Box",
@@ -245,6 +245,17 @@
       "year": "2014"
     },
     {
+      "authors": "R Valesi, G Gabrielli, M Zito, M Bellati, M Bilucaglia, A Caponetto, A Fici, ...",
+      "bibtex_key": "valesi2023",
+      "bibtex_match_score": 1.0,
+      "citation_id": "RvAqXUIAAAAJ:BwyfMAYsbu0C",
+      "citations": 15,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:BwyfMAYsbu0C",
+      "publication": "Behavioral Sciences 13 (7), 596, 2023",
+      "title": "From Coaching to Neurocoaching: A Neuroscientific Approach during a Coaching Session to Assess the Relational Dynamics between Coach and Coachee—A Pilot Study",
+      "year": "2023"
+    },
+    {
       "authors": "V Russo, LE Milani Marin, A Fici, M Bilucaglia, R Circi, F Rivetti, M Bellati, ...",
       "bibtex_key": "Russo2021",
       "bibtex_match_score": 1.0,
@@ -276,17 +287,6 @@
       "year": "2024"
     },
     {
-      "authors": "R Valesi, G Gabrielli, M Zito, M Bellati, M Bilucaglia, A Caponetto, A Fici, ...",
-      "bibtex_key": "valesi2023",
-      "bibtex_match_score": 1.0,
-      "citation_id": "RvAqXUIAAAAJ:BwyfMAYsbu0C",
-      "citations": 14,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:BwyfMAYsbu0C",
-      "publication": "Behavioral Sciences 13 (7), 596, 2023",
-      "title": "From Coaching to Neurocoaching: A Neuroscientific Approach during a Coaching Session to Assess the Relational Dynamics between Coach and Coachee—A Pilot Study",
-      "year": "2023"
-    },
-    {
       "authors": "M Bilucaglia, C Casiraghi, A Bruno, S Chiarelli, A Fici, V Russo, M Zito",
       "bibtex_key": "bilucaglia2025ACAIN",
       "bibtex_match_score": 1.0,
@@ -309,6 +309,17 @@
       "year": "2025"
     },
     {
+      "authors": "M Bilucaglia, M Bellati, A Fici, V Russo, M Zito",
+      "bibtex_key": "bilucaglia2025a",
+      "bibtex_match_score": 1.0,
+      "citation_id": "RvAqXUIAAAAJ:2tRrZ1ZAMYUC",
+      "citations": 10,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:2tRrZ1ZAMYUC",
+      "publication": "Frontiers in Human Neuroscience 19, 1661214, 2025",
+      "title": "Tuning into Flavour: Predicting Coffee Sensory Attributes from EEG with Boosted-Tree Regression Models",
+      "year": "2025"
+    },
+    {
       "authors": "G Gabrielli, M Bilucaglia, M Zito, R Laureanti, A Caponetto, R Circi, A Fici, ...",
       "bibtex_key": "Gabrielli2020",
       "bibtex_match_score": 1.0,
@@ -318,17 +329,6 @@
       "publication": "2020 42nd Annual International Conference of the IEEE Engineering in …, 2020",
       "title": "Neurocoaching: exploring the relationship between coach and coachee by means of bioelectrical signal similarities",
       "year": "2020"
-    },
-    {
-      "authors": "M Bilucaglia, M Bellati, A Fici, V Russo, M Zito",
-      "bibtex_key": "bilucaglia2025a",
-      "bibtex_match_score": 1.0,
-      "citation_id": "RvAqXUIAAAAJ:2tRrZ1ZAMYUC",
-      "citations": 9,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:2tRrZ1ZAMYUC",
-      "publication": "Frontiers in Human Neuroscience 19, 1661214, 2025",
-      "title": "Tuning into Flavour: Predicting Coffee Sensory Attributes from EEG with Boosted-Tree Regression Models",
-      "year": "2025"
     },
     {
       "authors": "M Bilucaglia, R Laureanti, M Zito, R Circi, A Fici, V Russo, LT Mainardi",
@@ -439,6 +439,15 @@
       "publication": "XIX Congresso Nazionale AIP - Sezione di Psicologia delle Organizzazioni, 129, 2023",
       "title": "Pasta Experience: a neuromarketing approach",
       "year": "2023"
+    },
+    {
+      "authors": "A Fici, M Bilucaglia, AC Jacomuzzi, G Gifuni, V Pasculli, V Russo, M Zito",
+      "citation_id": "RvAqXUIAAAAJ:v1_lew4L6wgC",
+      "citations": 0,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:v1_lew4L6wgC",
+      "publication": "Frontiers in Communication 11, 2002696, 2026",
+      "title": "Should I Laugh? Humor in Funeral Advertising: Self-Report and Neurophysiological Evidence",
+      "year": "2026"
     },
     {
       "authors": "M Bilucaglia",
@@ -872,7 +881,7 @@
       "bibtex_key": "zito2021",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:VOx2b1Wkg3QC",
-      "citations": 69,
+      "citations": 71,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:VOx2b1Wkg3QC",
       "publication": "Frontiers in Psychology 12, 1784, 2021",
       "title": "Assessing the emotional response in social communication: the role of neuromarketing",
@@ -905,7 +914,7 @@
       "bibtex_key": "Giroldini2016b",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:d1gkVwhDpl0C",
-      "citations": 42,
+      "citations": 43,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:d1gkVwhDpl0C",
       "publication": "EURASIP Journal on Bioinformatics and Systems Biology 2016 (1), 11, 2016",
       "title": "A new method to detect event-related potentials based on Pearson’s correlation",
@@ -923,5 +932,5 @@
       "year": "2022"
     }
   ],
-  "updated_at": "2026-11-09T13:54:53+00:00"
+  "updated_at": "2026-11-16T09:59:28+00:00"
 }
