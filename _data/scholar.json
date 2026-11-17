@@ -183,7 +183,7 @@
       "bibtex_key": "Bilucaglia2019a",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:k_IJM867U9cC",
-      "citations": 28,
+      "citations": 27,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:k_IJM867U9cC",
       "publication": "2019 41st Annual International Conference of the IEEE Engineering in …, 2019",
       "title": "Looking through blue glasses: bioelectrical measures to assess the awakening after a calm situation",
@@ -227,7 +227,7 @@
       "bibtex_key": "Bilucaglia2019b",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:Zph67rFs4hoC",
-      "citations": 16,
+      "citations": 17,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:Zph67rFs4hoC",
       "publication": "F1000Research 2019 (8), 43, 2019",
       "title": "EEG correlation at a distance: A re-analysis of two studies using a machine learning approach",
@@ -932,5 +932,5 @@
       "year": "2022"
     }
   ],
-  "updated_at": "2026-11-16T13:39:45+00:00"
+  "updated_at": "2026-11-17T14:14:57+00:00"
 }

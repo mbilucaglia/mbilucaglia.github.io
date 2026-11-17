@@ -34,7 +34,7 @@
     "source_id": "15925",
     "status_code": 200,
     "title": "Journal of Parapsychology",
-    "updated_at": "2026-11-16T13:39:46+00:00"
+    "updated_at": "2026-11-17T14:14:58+00:00"
   },
   "0302-9743": {
     "citescore": "3.1",
@@ -80,7 +80,7 @@
     "source_id": "25674",
     "status_code": 200,
     "title": "Lecture Notes in Computer Science",
-    "updated_at": "2026-11-16T13:39:46+00:00"
+    "updated_at": "2026-11-17T14:14:59+00:00"
   },
   "0589-1019": {
     "citescore": "1.6",
@@ -117,7 +117,7 @@
     "source_id": "34202",
     "status_code": 200,
     "title": "Annual International Conference of the IEEE Engineering in Medicine and Biology - Proceedings",
-    "updated_at": "2026-11-16T13:39:47+00:00"
+    "updated_at": "2026-11-17T14:14:59+00:00"
   },
   "1120-9550": {
     "citescore": "0.8",
@@ -190,7 +190,7 @@
     "source_id": "21100204931",
     "status_code": 200,
     "title": "Sistemi Intelligenti",
-    "updated_at": "2026-11-16T13:39:48+00:00"
+    "updated_at": "2026-11-17T14:15:00+00:00"
   },
   "1554-8716": {
     "citescore": "0.7",
@@ -254,7 +254,7 @@
     "source_id": "19700174668",
     "status_code": 200,
     "title": "Annual Review of CyberTherapy and Telemedicine",
-    "updated_at": "2026-11-16T13:39:48+00:00"
+    "updated_at": "2026-11-17T14:15:00+00:00"
   },
   "1662-5153": {
     "citescore": "6.9",
@@ -309,7 +309,7 @@
     "source_id": "19700175166",
     "status_code": 200,
     "title": "Frontiers in Behavioral Neuroscience",
-    "updated_at": "2026-11-16T13:39:49+00:00"
+    "updated_at": "2026-11-17T14:15:01+00:00"
   },
   "1662-5161": {
     "citescore": "5.9",
@@ -382,7 +382,7 @@
     "source_id": "19700175164",
     "status_code": 200,
     "title": "Frontiers in Human Neuroscience",
-    "updated_at": "2026-11-16T13:39:50+00:00"
+    "updated_at": "2026-11-17T14:15:01+00:00"
   },
   "1664-1078": {
     "citescore": "7.0",
@@ -419,7 +419,7 @@
     "source_id": "21100216571",
     "status_code": 200,
     "title": "Frontiers in Psychology",
-    "updated_at": "2026-11-16T13:39:50+00:00"
+    "updated_at": "2026-11-17T14:15:02+00:00"
   },
   "1687-4153": {
     "citescore": "3.0",
@@ -474,7 +474,7 @@
     "source_id": "4400151506",
     "status_code": 200,
     "title": "Eurasip Journal on Bioinformatics and Systems Biology",
-    "updated_at": "2026-11-16T13:39:51+00:00"
+    "updated_at": "2026-11-17T14:15:02+00:00"
   },
   "1932-6203": {
     "citescore": "4.8",
@@ -511,7 +511,7 @@
     "source_id": "10600153309",
     "status_code": 200,
     "title": "PLOS One",
-    "updated_at": "2026-11-16T13:39:51+00:00"
+    "updated_at": "2026-11-17T14:15:03+00:00"
   },
   "1936-4733": {
     "citescore": "6.2",
@@ -548,7 +548,44 @@
     "source_id": "13479",
     "status_code": 200,
     "title": "Current Psychology",
-    "updated_at": "2026-11-16T13:39:52+00:00"
+    "updated_at": "2026-11-17T14:15:03+00:00"
+  },
+  "2045-2322": {
+    "citescore": "6.4",
+    "citescore_category": "",
+    "citescore_percentile": "87",
+    "citescore_quartile": "Q1",
+    "citescore_rank": "29",
+    "citescore_rank_out_of": "",
+    "citescore_ranking_records": [
+      {
+        "category": "",
+        "percentile": "87",
+        "quartile": "Q1",
+        "rank": "29",
+        "rank_out_of": "",
+        "subject_code": "1000",
+        "year": "2025"
+      }
+    ],
+    "citescore_ranking_selection": "highest_percentile",
+    "citescore_subject_code": "1000",
+    "citescore_year": "2025",
+    "eissn": "2045-2322",
+    "found": true,
+    "issn": "",
+    "publisher": "Nature Research",
+    "queried_issn": "2045-2322",
+    "scopus_source_url": "https://www.scopus.com/sourceid/21100200805",
+    "sjr": "0.893",
+    "sjr_year": "2025",
+    "snip": "1.339",
+    "snip_year": "2025",
+    "source": "Elsevier Serial Title API / Scopus",
+    "source_id": "21100200805",
+    "status_code": 200,
+    "title": "Scientific Reports",
+    "updated_at": "2026-11-17T14:15:04+00:00"
   },
   "2046-1402": {
     "citescore": "2.9",
@@ -639,7 +676,7 @@
     "source_id": "21100258853",
     "status_code": 200,
     "title": "F1000Research",
-    "updated_at": "2026-11-16T13:39:52+00:00"
+    "updated_at": "2026-11-17T14:15:04+00:00"
   },
   "2076-328X": {
     "citescore": "4.1",
@@ -712,7 +749,7 @@
     "source_id": "21100901748",
     "status_code": 200,
     "title": "Behavioral Sciences",
-    "updated_at": "2026-11-16T13:39:53+00:00"
+    "updated_at": "2026-11-17T14:15:05+00:00"
   },
   "2190-3018": {
     "citescore": "1.2",
@@ -758,7 +795,7 @@
     "source_id": "21100204111",
     "status_code": 200,
     "title": "Smart Innovation, Systems and Technologies",
-    "updated_at": "2026-11-16T13:39:54+00:00"
+    "updated_at": "2026-11-17T14:15:05+00:00"
   },
   "2297-900X": {
     "citescore": "2.9",
@@ -804,7 +841,7 @@
     "source_id": "21101061926",
     "status_code": 200,
     "title": "Frontiers in Communication",
-    "updated_at": "2026-11-16T13:39:54+00:00"
+    "updated_at": "2026-11-17T14:15:06+00:00"
   },
   "2304-8158": {
     "citescore": "10.3",
@@ -877,7 +914,7 @@
     "source_id": "21100898636",
     "status_code": 200,
     "title": "Foods",
-    "updated_at": "2026-11-16T13:39:55+00:00"
+    "updated_at": "2026-11-17T14:15:06+00:00"
   },
   "2468-0672": {
     "citescore": "4.6",
@@ -950,7 +987,7 @@
     "source_id": "21100842867",
     "status_code": 200,
     "title": "HardwareX",
-    "updated_at": "2026-11-16T13:39:55+00:00"
+    "updated_at": "2026-11-17T14:15:07+00:00"
   },
   "2673-4192": {
     "citescore": "7.9",
@@ -1005,7 +1042,7 @@
     "source_id": "21101107986",
     "status_code": 200,
     "title": "Frontiers in Virtual Reality",
-    "updated_at": "2026-11-16T13:39:56+00:00"
+    "updated_at": "2026-11-17T14:15:07+00:00"
   },
   "2766-6530": {
     "citescore": "0.0",
@@ -1069,6 +1106,6 @@
     "source_id": "21101394124",
     "status_code": 200,
     "title": "Proceedings of IEEE Games, Entertainment and Media Conference, GEM",
-    "updated_at": "2026-11-16T13:39:56+00:00"
+    "updated_at": "2026-11-17T14:15:08+00:00"
   }
 }
