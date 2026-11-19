@@ -11,13 +11,13 @@ title: CV
 - **2014:** B.Sc. in Electronics Engineering, Politecnico di Milano (Milan, Italy)
 
 ## Professional Qualifications
-- **2018:** Italian State Examination (License to Practise) for Professional Engineer, Politecnico di Milano
+- **2020:** Italian State Examination (License to Practise) for Professional Engineer, Politecnico di Milano
 
 ## Academic Positions
 <small>All positions were obtained through competitive public selection procedures</small>
 - **2022 - 2025:** Ph.D. Fellow (Supervisor: Prof. V. Russo), Università IULM
 - **2019 - 2022:** Research Fellow (Supervisor: Prof. V. Russo), Università IULM
-- **2019:** Research Assistant (Supervisor: Dr. P. Tressoldi), University of Padua (Italy)
+- **2018:** Research Assistant (Supervisor: Dr. P. Tressoldi), University of Padua (Italy)
 
 ## Professional Affiliations
 - **2020 - present:** C.Eng in Information Engineering, Engineers Council of Milan
