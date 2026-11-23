@@ -1,10 +1,10 @@
 {
-  "citations": 700,
-  "citations_recent": 594,
+  "citations": 706,
+  "citations_recent": 600,
   "h_index": 16,
   "h_index_recent": 15,
-  "i10_index": 24,
-  "i10_index_recent": 20,
+  "i10_index": 25,
+  "i10_index_recent": 21,
   "name": "Marco Bilucaglia",
   "profile_url": "https://scholar.google.com/citations?user=RvAqXUIAAAAJ&hl=en",
   "publication_metrics": "_data/publication_metrics.json",
@@ -28,20 +28,21 @@
     "valesi2023",
     "Russo2021",
     "bilucaglia2024",
-    "bilucaglia2025ACAIN",
     "accardi2025",
+    "bilucaglia2025ACAIN",
     "bilucaglia2025a",
-    "Gabrielli2020",
     "Bilucaglia2021",
+    "Gabrielli2020",
     "Laureanti2021",
     "Casiraghi2025pasta",
     "bilucaglia2025c",
     "pasta2023",
+    "casiraghi2025neuronudge",
     "bilucaglia2022",
     "Tressoldi2014b",
     "Gannuscio2025",
-    "casiraghi2025neuronudge",
     "Bellati2023aip",
+    "fici2025",
     "bilucaglia2026",
     "gifuni2026",
     "brivio2026",
@@ -84,7 +85,7 @@
       "bibtex_key": "fici2024",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:Ri6SYOTghG4C",
-      "citations": 50,
+      "citations": 51,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:Ri6SYOTghG4C",
       "publication": "Behavioral Sciences 14 (7), 596, 2024",
       "title": "From E-Commerce to the Metaverse: A Neuroscientific Analysis of Digital Consumer Behavior",
@@ -183,7 +184,7 @@
       "bibtex_key": "Bilucaglia2019a",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:k_IJM867U9cC",
-      "citations": 27,
+      "citations": 28,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:k_IJM867U9cC",
       "publication": "2019 41st Annual International Conference of the IEEE Engineering in …, 2019",
       "title": "Looking through blue glasses: bioelectrical measures to assess the awakening after a calm situation",
@@ -205,7 +206,7 @@
       "bibtex_key": "russo2023",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:hMsQuOkrut0C",
-      "citations": 23,
+      "citations": 24,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:hMsQuOkrut0C",
       "publication": "Frontiers in Psychology 14, 1238879, 2023",
       "title": "Neuroselling: applying neuroscience to selling for a new business perspective. An analysis on teleshopping advertising",
@@ -287,6 +288,17 @@
       "year": "2024"
     },
     {
+      "authors": "S Accardi, C Campo, M Bilucaglia, M Zito, M Caccamo, V Russo",
+      "bibtex_key": "accardi2025",
+      "bibtex_match_score": 0.92,
+      "citation_id": "RvAqXUIAAAAJ:F1b5ZUV5XREC",
+      "citations": 12,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:F1b5ZUV5XREC",
+      "publication": "Behavioral Sciences 15 (9), 1241, 2025",
+      "title": "Static vs. Immersive: A Neuromarketing Exploratory Study of Augmented Reality on Packaging Labels",
+      "year": "2025"
+    },
+    {
       "authors": "M Bilucaglia, C Casiraghi, A Bruno, S Chiarelli, A Fici, V Russo, M Zito",
       "bibtex_key": "bilucaglia2025ACAIN",
       "bibtex_match_score": 1.0,
@@ -295,17 +307,6 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:F9fV5C73w3QC",
       "publication": "Proceedings of the 10th International Conference on Machine Learning …, 2025",
       "title": "Emotional Reactions To AI-Generated Images: A Pilot Study Using Neurophysiological Measures",
-      "year": "2025"
-    },
-    {
-      "authors": "S Accardi, C Campo, M Bilucaglia, M Zito, M Caccamo, V Russo",
-      "bibtex_key": "accardi2025",
-      "bibtex_match_score": 0.92,
-      "citation_id": "RvAqXUIAAAAJ:F1b5ZUV5XREC",
-      "citations": 11,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:F1b5ZUV5XREC",
-      "publication": "Behavioral Sciences 15 (9), 1241, 2025",
-      "title": "Static vs. Immersive: A Neuromarketing Exploratory Study of Augmented Reality on Packaging Labels",
       "year": "2025"
     },
     {
@@ -320,6 +321,17 @@
       "year": "2025"
     },
     {
+      "authors": "M Bilucaglia, R Laureanti, M Zito, R Circi, A Fici, V Russo, LT Mainardi",
+      "bibtex_key": "Bilucaglia2021",
+      "bibtex_match_score": 1.0,
+      "citation_id": "RvAqXUIAAAAJ:PELIpwtuRlgC",
+      "citations": 10,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:PELIpwtuRlgC",
+      "publication": "2021 43rd Annual International Conference of the IEEE Engineering in …, 2021",
+      "title": "It’s a Question of Methods: Computational Factors Influencing the Frontal Asymmetry in Measuring the Emotional Valence",
+      "year": "2021"
+    },
+    {
       "authors": "G Gabrielli, M Bilucaglia, M Zito, R Laureanti, A Caponetto, R Circi, A Fici, ...",
       "bibtex_key": "Gabrielli2020",
       "bibtex_match_score": 1.0,
@@ -329,17 +341,6 @@
       "publication": "2020 42nd Annual International Conference of the IEEE Engineering in …, 2020",
       "title": "Neurocoaching: exploring the relationship between coach and coachee by means of bioelectrical signal similarities",
       "year": "2020"
-    },
-    {
-      "authors": "M Bilucaglia, R Laureanti, M Zito, R Circi, A Fici, V Russo, LT Mainardi",
-      "bibtex_key": "Bilucaglia2021",
-      "bibtex_match_score": 1.0,
-      "citation_id": "RvAqXUIAAAAJ:PELIpwtuRlgC",
-      "citations": 9,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:PELIpwtuRlgC",
-      "publication": "2021 43rd Annual International Conference of the IEEE Engineering in …, 2021",
-      "title": "It’s a Question of Methods: Computational Factors Influencing the Frontal Asymmetry in Measuring the Emotional Valence",
-      "year": "2021"
     },
     {
       "authors": "R Laureanti, M Bilucaglia, M Zito, R Circi, A Fici, F Rivetti, R Valesi, ...",
@@ -386,6 +387,17 @@
       "year": "2023"
     },
     {
+      "authors": "C Casiraghi, S Chiarelli, G Gifuni, A Fici, M Bilucaglia, AC Jacomuzzi, ...",
+      "bibtex_key": "casiraghi2025neuronudge",
+      "bibtex_match_score": 1.0,
+      "citation_id": "RvAqXUIAAAAJ:gVv57TyPmFsC",
+      "citations": 5,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:gVv57TyPmFsC",
+      "publication": "PloS one 20 (6), e0325804, 2025",
+      "title": "How to nudge students toward healthier snacks? Consumer neuroscience insights on multisensory nudge interventions in university vending machines",
+      "year": "2025"
+    },
+    {
       "authors": "M Bilucaglia, R Laureanti, R Circi, M Zito, M Bellati, A Fici, F Rivetti, ...",
       "bibtex_key": "bilucaglia2022",
       "bibtex_match_score": 0.911,
@@ -419,17 +431,6 @@
       "year": "2025"
     },
     {
-      "authors": "C Casiraghi, S Chiarelli, G Gifuni, A Fici, M Bilucaglia, AC Jacomuzzi, ...",
-      "bibtex_key": "casiraghi2025neuronudge",
-      "bibtex_match_score": 1.0,
-      "citation_id": "RvAqXUIAAAAJ:gVv57TyPmFsC",
-      "citations": 4,
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:gVv57TyPmFsC",
-      "publication": "PloS one 20 (6), e0325804, 2025",
-      "title": "How to nudge students toward healthier snacks? Consumer neuroscience insights on multisensory nudge interventions in university vending machines",
-      "year": "2025"
-    },
-    {
       "authors": "M Bellati, M Bilucaglia, C Casiraghi, A Fici, F Rivetti, G Rondi",
       "bibtex_key": "Bellati2023aip",
       "bibtex_match_score": 1.0,
@@ -439,6 +440,17 @@
       "publication": "XIX Congresso Nazionale AIP - Sezione di Psicologia delle Organizzazioni, 129, 2023",
       "title": "Pasta Experience: a neuromarketing approach",
       "year": "2023"
+    },
+    {
+      "authors": "A Fici, C Casiraghi, B Monticelli, S Accardi, M Bilucaglia, C Rossi, ...",
+      "bibtex_key": "fici2025",
+      "bibtex_match_score": 1.0,
+      "citation_id": "RvAqXUIAAAAJ:kVjdVfd2voEC",
+      "citations": 0,
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:kVjdVfd2voEC",
+      "publication": "Scientific Reports, 2026",
+      "title": "A consumer neuroscience approach to examining how augmented reality and QR codes support product and brand sustainability communication in retail settings",
+      "year": "2026"
     },
     {
       "authors": "A Fici, M Bilucaglia, AC Jacomuzzi, G Gifuni, V Pasculli, V Russo, M Zito",
@@ -892,7 +904,7 @@
       "bibtex_key": "fici2024",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:Ri6SYOTghG4C",
-      "citations": 50,
+      "citations": 51,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:Ri6SYOTghG4C",
       "publication": "Behavioral Sciences 14 (7), 596, 2024",
       "title": "From E-Commerce to the Metaverse: A Neuroscientific Analysis of Digital Consumer Behavior",
@@ -932,5 +944,5 @@
       "year": "2022"
     }
   ],
-  "updated_at": "2026-11-17T14:14:57+00:00"
+  "updated_at": "2026-11-23T16:03:48+00:00"
 }
