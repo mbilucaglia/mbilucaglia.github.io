@@ -25,7 +25,7 @@ def scopus():
     response = requests.get(
         "https://api.elsevier.com/content/author/author_id/57188983512",
         headers=headers,
-        params={"field": "document-count,citation-count,h-index,dc:identifier"},
+        params={"view": "METRICS"},
         timeout=30,
     )
     response.raise_for_status()
@@ -72,11 +72,30 @@ def main():
     parser.add_argument("--cv", type=Path, required=True)
     parser.add_argument("--scholar", type=Path, default=Path("_data/scholar.json"))
     parser.add_argument("--refresh-scopus", action="store_true")
+    parser.add_argument("--scopus-cache", type=Path)
+    parser.add_argument("--require-scopus", action="store_true")
     args = parser.parse_args()
     text = args.cv.read_text(encoding="utf-8")
     sources = [("Google Scholar", lambda: scholar(args.scholar))]
-    if args.refresh_scopus:
-        sources.append(("Scopus", scopus))
+    def scopus_metrics():
+        if args.refresh_scopus:
+            try:
+                metrics = scopus()
+                if args.scopus_cache:
+                    args.scopus_cache.parent.mkdir(parents=True, exist_ok=True)
+                    args.scopus_cache.write_text(json.dumps(metrics), encoding="utf-8")
+                return metrics
+            except (requests.RequestException, ValueError, KeyError, IndexError, TypeError, OSError) as exc:
+                if args.require_scopus:
+                    raise RuntimeError("Scopus live validation failed: " + type(exc).__name__) from None
+                print("::warning::Scopus refresh failed; trying previous metrics")
+        if args.scopus_cache and args.scopus_cache.exists():
+            data = json.loads(args.scopus_cache.read_text(encoding="utf-8"))
+            return {label: integer(data[label]) for label in ("Citations", "Documents", "h-index")}
+        raise ValueError("No cached Scopus metrics")
+
+    if args.refresh_scopus or args.scopus_cache:
+        sources.append(("Scopus", scopus_metrics))
     for name, fetch in sources:
         try:
             text = replace_section(text, name, fetch())
