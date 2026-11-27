@@ -265,16 +265,33 @@ jobs:
           git commit -m "Update bibliometric data"
           git push
 
+      - name: Test CV metrics updater
+        run: python -m unittest discover -s scripts -p 'test_generate_cv_bibliometrics.py'
+
+      - name: Restore last valid Scopus metrics
+        uses: actions/cache/restore@v4
+        with:
+          path: ${{ runner.temp }}/cv-metrics/scopus.json
+          key: cv-scopus-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: cv-scopus-v1-
+
       - name: Generate CV bibliometric indices
         env:
           ELSEVIER_API_KEY: ${{ secrets.ELSEVIER_API_KEY }}
           ELSEVIER_INSTTOKEN: ${{ secrets.ELSEVIER_INSTTOKEN }}
         run: |
           if [ "$GITHUB_EVENT_NAME" = "push" ]; then
-            python scripts/generate_cv_bibliometrics.py --cv mycv-source/bibliographic_indices.tex
+            python scripts/generate_cv_bibliometrics.py --cv mycv-source/bibliographic_indices.tex --scopus-cache "$RUNNER_TEMP/cv-metrics/scopus.json"
           else
-            python scripts/generate_cv_bibliometrics.py --cv mycv-source/bibliographic_indices.tex --refresh-scopus
+            python scripts/generate_cv_bibliometrics.py --cv mycv-source/bibliographic_indices.tex --scopus-cache "$RUNNER_TEMP/cv-metrics/scopus.json" --refresh-scopus
           fi
+
+      - name: Save last valid Scopus metrics
+        if: github.event_name != 'push'
+        uses: actions/cache/save@v4
+        with:
+          path: ${{ runner.temp }}/cv-metrics/scopus.json
+          key: cv-scopus-v1-${{ github.run_id }}-${{ github.run_attempt }}
 
       - name: Install LaTeX and Biber
         run: |
