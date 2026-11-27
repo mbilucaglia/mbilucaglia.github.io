@@ -34,13 +34,13 @@ jobs:
           path: mycv-source
           token: ${{ secrets.BIBLIOGRAPHY_ACCESS_TOKEN }}
           persist-credentials: false
-      - name: Test actual Scholar data and Scopus API
+      - name: Test actual Scholar data
         env:
           ELSEVIER_API_KEY: ${{ secrets.ELSEVIER_API_KEY }}
           ELSEVIER_INSTTOKEN: ${{ secrets.ELSEVIER_INSTTOKEN }}
         run: |
           cp mycv-source/bibliographic_indices.tex "$RUNNER_TEMP/original.tex"
-          python scripts/generate_cv_bibliometrics.py --cv mycv-source/bibliographic_indices.tex --refresh-scopus --require-scopus
+          python scripts/generate_cv_bibliometrics.py --cv mycv-source/bibliographic_indices.tex
           python - <<'PY'
           import os
           import sys
@@ -52,7 +52,8 @@ jobs:
           expected = updater.replace_section(original, "Google Scholar", updater.scholar(Path("_data/scholar.json")))
           assert actual.split(r"\subsection*{Scopus}")[0] == expected.split(r"\subsection*{Scopus}")[0]
           assert actual.split(r"\subsection*{Web of Science}")[1] == original.split(r"\subsection*{Web of Science}")[1]
-          print("Scholar integration and unchanged WoS section verified")
+          assert actual.split(r"\subsection*{Scopus}")[1] == original.split(r"\subsection*{Scopus}")[1]
+          print("Scholar integration and unchanged Scopus/WoS sections verified")
           PY
       - name: Compile temporary CV
         run: |
