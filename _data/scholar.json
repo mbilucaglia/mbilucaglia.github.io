@@ -1,6 +1,6 @@
 {
-  "citations": 706,
-  "citations_recent": 600,
+  "citations": 707,
+  "citations_recent": 601,
   "h_index": 16,
   "h_index_recent": 15,
   "i10_index": 25,
@@ -42,7 +42,8 @@
     "Tressoldi2014b",
     "Gannuscio2025",
     "Bellati2023aip",
-    "fici2025",
+    "fici2026scirep",
+    "fici2026",
     "bilucaglia2026",
     "gifuni2026",
     "brivio2026",
@@ -184,7 +185,7 @@
       "bibtex_key": "Bilucaglia2019a",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:k_IJM867U9cC",
-      "citations": 28,
+      "citations": 29,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:k_IJM867U9cC",
       "publication": "2019 41st Annual International Conference of the IEEE Engineering in …, 2019",
       "title": "Looking through blue glasses: bioelectrical measures to assess the awakening after a calm situation",
@@ -443,7 +444,7 @@
     },
     {
       "authors": "A Fici, C Casiraghi, B Monticelli, S Accardi, M Bilucaglia, C Rossi, ...",
-      "bibtex_key": "fici2025",
+      "bibtex_key": "fici2026scirep",
       "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:kVjdVfd2voEC",
       "citations": 0,
@@ -454,6 +455,8 @@
     },
     {
       "authors": "A Fici, M Bilucaglia, AC Jacomuzzi, G Gifuni, V Pasculli, V Russo, M Zito",
+      "bibtex_key": "fici2026",
+      "bibtex_match_score": 1.0,
       "citation_id": "RvAqXUIAAAAJ:v1_lew4L6wgC",
       "citations": 0,
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RvAqXUIAAAAJ&pagesize=100&citation_for_view=RvAqXUIAAAAJ:v1_lew4L6wgC",
@@ -944,5 +947,5 @@
       "year": "2022"
     }
   ],
-  "updated_at": "2026-11-23T16:03:48+00:00"
+  "updated_at": "2026-11-27T10:07:07+00:00"
 }
