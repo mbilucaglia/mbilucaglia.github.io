@@ -86,9 +86,20 @@ def main():
                     args.scopus_cache.write_text(json.dumps(metrics), encoding="utf-8")
                 return metrics
             except (requests.RequestException, ValueError, KeyError, IndexError, TypeError, OSError) as exc:
+                detail = type(exc).__name__
+                if isinstance(exc, requests.HTTPError) and exc.response is not None:
+                    detail = f"HTTP {exc.response.status_code}"
+                    try:
+                        payload = exc.response.json()
+                        status = payload.get("service-error", {}).get("status", {})
+                        code = status.get("statusCode", "")
+                        if re.fullmatch(r"[A-Z0-9_]{1,64}", str(code)):
+                            detail += f" ({code})"
+                    except (ValueError, TypeError, AttributeError):
+                        pass
                 if args.require_scopus:
-                    raise RuntimeError("Scopus live validation failed: " + type(exc).__name__) from None
-                print("::warning::Scopus refresh failed; trying previous metrics")
+                    raise RuntimeError("Scopus live validation failed: " + detail) from None
+                print(f"::warning::Scopus refresh failed ({detail}); trying previous metrics")
         if args.scopus_cache and args.scopus_cache.exists():
             data = json.loads(args.scopus_cache.read_text(encoding="utf-8"))
             return {label: integer(data[label]) for label in ("Citations", "Documents", "h-index")}
